@@ -68,4 +68,80 @@ parseman - parse commit info from a git directory
 This will parse all commits from the given git repo(s) and dump the results as
 JSON objects on stdout, one per line.
 
+=head1 DESCRIPTION
+
+This script will take a git repository and run C<git log --all> on it,
+transforming its output into structured JSON. This output can be piped into
+another program.
+
+The output consists of several JSON-encoded objects, one object per line. The
+consuming program can just read one line at a time, JSON-decode each one and
+then handle its contents.
+
+For example output, just run C<./parseman .> to see the output for this here
+repository.
+
+Each JSON object is just a mapping from string keys to string values. Empty
+values will be empty strings. The following values are in the object:
+
+=over
+
+=item repo
+
+The path to the repository's local folder. If you want to run further git
+commands on it, you might need to append C</.git> to it.
+
+=item hash
+
+The commit's sha-1 hash.
+
+=item author_name
+
+The name of the commit's author.
+
+=item author_mail
+
+The e-mail address of the author. Might not actually be a valid e-mail address,
+git doesn't check this.
+
+=item author_date
+
+The date that the commit was authored as a Unix timestamp. Note that this is a
+string of digits, not an integer.
+
+=item committer_name
+
+The name of the committer, which may or may not be different from the author.
+
+=item committer_mail
+
+The e-mail address of the committer. Same caveat as for the author applies.
+
+=item committer_date
+
+The date that the commit was committed.
+
+=item subject
+
+The commit message subject line.
+
+=item body
+
+The rest of the commit message.
+
+=item notes
+
+The notes attached to the commit. Basically a message in addition to the
+regular commit message.
+
+=item signer
+
+Who signed the commit, if anybody did.
+
+=item signer_key
+
+The signature key of who signed the commit.
+
+=back
+
 =cut
