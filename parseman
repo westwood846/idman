@@ -1,0 +1,50 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use autodie;
+use charnames ':full';
+use JSON::PP;
+
+
+my %COMMIT_ARGS = (
+    hash           => '%H',
+    author_name    => '%aN',
+    author_mail    => '%aE',
+    author_date    => '%aI',
+    committer_name => '%cN',
+    committer_mail => '%cE',
+    committer_date => '%cI',
+    reflog_name    => '%gN',
+    reflog_mail    => '%gE',
+    reflog_subject => '%gs',
+    subject        => '%s',
+    body           => '%b',
+    notes          => '%N',
+    signer         => '%GS',
+    signer_key     => '%GK',
+);
+
+my @COMMIT_KEYS      = sort keys %COMMIT_ARGS;
+my @FORMAT_ARGS      = @COMMIT_ARGS{@COMMIT_KEYS};
+my $COMMIT_SEPARATOR = "\N{RECORD SEPARATOR}";
+
+# separate each field within a commit with a NUL
+# terminate each commit with a RECORD SEPARATOR
+my $FORMAT = join('%x00', @FORMAT_ARGS) . $COMMIT_SEPARATOR;
+
+
+for my $repo_path (@ARGV) {
+    open my $fh, '-|', 'git', 'log', '--all', "--format=$FORMAT", $repo_path;
+
+    # split lines by our commit separator, rather than just a newline
+    local $/ = "$COMMIT_SEPARATOR\n";
+
+    while (<$fh>) {
+        chomp;
+        my %commit;
+        @commit{@COMMIT_KEYS} = split "\0", $_, -1;
+        print encode_json(\%commit), "\n";
+    }
+
+    close $fh;
+}
