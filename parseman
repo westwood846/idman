@@ -43,7 +43,8 @@ my $FORMAT = join('%x00', @FORMAT_ARGS) . $COMMIT_SEPARATOR;
 
 
 for my $repo_path (@ARGV) {
-    open my $fh, '-|', 'git', 'log', '--all', "--format=$FORMAT", $repo_path;
+    open my $fh, '-|', 'git', "--git-dir=$repo_path/.git",
+                              'log', '--all', "--format=$FORMAT",;
 
     # split lines by our commit separator, rather than just a newline
     local $/ = "$COMMIT_SEPARATOR\n";
