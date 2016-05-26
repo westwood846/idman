@@ -4,6 +4,15 @@ use warnings;
 use autodie;
 use charnames ':full';
 use JSON::PP;
+use Pod::Usage;
+
+
+if (!@ARGV) {
+    pod2usage('Missing arguments.');
+}
+elsif (grep { /^--?h(elp)?$/ } @ARGV) {
+    pod2usage(-verbose => 2);
+}
 
 
 my %COMMIT_ARGS = (
@@ -48,3 +57,19 @@ for my $repo_path (@ARGV) {
 
     close $fh;
 }
+
+
+__END__
+
+=head1 NAME
+
+parseman - parse commit info from a git directory
+
+=head1 SYNOPSIS
+
+    parseman GIT_REPO_FOLDER...
+
+This will parse all commits from the given git repo(s) and dump the results as
+JSON objects on stdout, one per line.
+
+=cut
