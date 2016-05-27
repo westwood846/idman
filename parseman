@@ -42,7 +42,7 @@ my $FORMAT = join('%x00', @FORMAT_ARGS) . $COMMIT_SEPARATOR;
 for my $repo_path (@ARGV) {
     open my $fh, '-|:encoding(UTF-8)', 'git', "--git-dir=$repo_path/.git",
                                        'log', '--all', "--format=$FORMAT";
-    $fh->input_record_separator("$COMMIT_SEPARATOR\n");
+    local $/ = "$COMMIT_SEPARATOR\n";
 
     while (<$fh>) {
         chomp;
