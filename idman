@@ -1,0 +1,4 @@
+#!/bin/sh
+backend="$1"
+shift
+./parseman "$@" | ./"$backend"
