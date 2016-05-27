@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 import sys
-import subprocess
 import json
 
 class SetEncoder(json.JSONEncoder):
@@ -10,13 +9,6 @@ class SetEncoder(json.JSONEncoder):
         if isinstance(obj, set):
             return list(obj)
         return json.JSONEncoder.default(self, obj)
-
-def main(args):
-    dataset = []
-    process = subprocess.Popen(['./parseman', args[0]], shell=False, stdout=subprocess.PIPE)
-    for line in process.stdout.readlines():
-        dataset=learnDev(dataset,line)
-    print json.dumps(dataset,indent=1,cls=SetEncoder)
 
 def addToSet(set,el):
     if el:
@@ -67,5 +59,8 @@ def isEMailSim(email1, emails):
             return True
     return False
 
-if __name__ == "__main__":
-    main(sys.argv[1:])
+
+dataset = []
+for line in sys.stdin:
+    dataset=learnDev(dataset,line)
+print json.dumps(dataset,indent=1,cls=SetEncoder)
