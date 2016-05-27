@@ -1,7 +1,12 @@
 # idman
-Do the Identity Management Dance!!! :dancer::dancer::dancer:
 
-💃🏽
+Usage: `./idman BACKEND GIT_REPO_FOLDER`.
+
+## Backends
+
+### clustering
+
+Mysterious set-based approach that does things to a dataset.
 
 ## Papers
 
