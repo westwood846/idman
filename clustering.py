@@ -3,7 +3,7 @@
 
 import sys
 import subprocess
-import simplejson as json
+import json
 
 class SetEncoder(json.JSONEncoder):
     def default(self, obj):
