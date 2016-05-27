@@ -1,4 +1,16 @@
 #!/bin/sh
+dir="$(dirname "$0")"
+
+if [ "$#" -lt 2 ]; then
+    echo 'Usage: idman BACKEND GIT_REPO_FOLDER' 1>&2
+    exit 1
+fi
+
 backend="$1"
 shift
-./parseman "$@" | ./"$backend"
+if [ ! -e "$dir/$backend" ]; then
+    echo "No such backend: '$backend'" 1>&2
+    exit 2
+fi
+
+"$dir/parseman" "$@" | "$dir/$backend"
