@@ -3,6 +3,7 @@
 
 import sys
 import json
+import re
 
 ## Helper for set-Encoding in json  (to list)
 class SetEncoder(json.JSONEncoder):
@@ -13,9 +14,13 @@ class SetEncoder(json.JSONEncoder):
 
 # Helper Function for only adding non-falsy values
 def addToSet(set,el):
-    if el:
+    if not el:
+        return set
+    elif isinstance(el,basestring) and  not re.sub("[^\w]", "", el).strip():#drop values without alphanumeric characters
+        return set
+    else:
         set.add(el)
-    return set
+        return set
 
 ## Adds the developers participating at the commit to the commit
 def learnDev(dataset,com):
@@ -31,11 +36,13 @@ def processSingleDev(dataset, name, mail, signer=None, skey=None):
             addToSet(d['Names'],name)
             addToSet(d['Names'],signer) #Signer makes commit
             addToSet(d['Mails'],mail)
+            addToSet(d['Mailusers'],mail.split('@')[0])
             addToSet(d['Keys'],skey)
             return dataset
     tmp={}
     tmp['Names']=addToSet(set(),name)
     tmp['Mails']=addToSet(set(),mail)
+    tmp['Mailusers']=addToSet(set(),mail.split('@')[0])
     addToSet(tmp['Names'],signer)
     tmp['Keys']=addToSet(set(),skey)
     dataset.append(tmp)
@@ -46,8 +53,8 @@ def isEMailSim(email1, data):
     if not isinstance(email1,basestring):
         return False
     username = email1.split("@")[0]
-    for mail in data['Mails']:
-        if mail.split('@') == username:
+    for mail in data['Mailusers']:
+        if mail == username:
             return True
     for name in data['Names']:
         if username == name:
@@ -101,7 +108,7 @@ if __name__ == "__main__":
 		dataset=learnDev(dataset,line)
 	#minimize dataset
 	dsize=0
-	while not dsize == len(dataset):#as long as combination is not noop
+	while not dsize == len(dataset):#combination is not noop
 		dsize=len(dataset)
 		dataset = combineElements(dataset)
 	for line in dataset:
