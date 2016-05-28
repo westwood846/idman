@@ -1,0 +1,95 @@
+\documentclass[slidestop,usenames,dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{fancyvrb}
+\usepackage[absolute,overlay]{textpos}
+
+\title{Idman}
+\subtitle{Doing the Identity Management Dance}
+\author{Marco Brack \and Carsten Hartenfels \and Michael Monschau}
+\date{2016-05-31}
+
+\beamertemplatenavigationsymbolsempty
+\usetheme{Boadilla}
+\usecolortheme{whale}
+\setbeamertemplate{itemize items}[default]
+\setbeamertemplate{enumerate items}[default]
+\defbeamertemplate*{footline}{my infolines theme} {
+    \leavevmode
+    \hbox{
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}
+        \usebeamerfont{author in head/foot}Brack, Hartenfels, Monschau
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
+        \usebeamerfont{title in head/foot}Bug Assignee Recommendation
+    \end{beamercolorbox}
+    \begin{beamercolorbox}[wd=.309\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}
+        \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+        \insertframenumber{} / \inserttotalframenumber\hspace*{2ex}
+    \end{beamercolorbox}}
+    \vskip0pt
+}
+
+\newcounter{FrameCounter}
+\newcommand{\nextframe}[0]{\stepcounter{FrameCounter}}
+\newcommand{\framecount}[1]{\frametitle{\arabic{FrameCounter}. {#1}}}
+\newcommand{\fitem}{\pause\vfill\item}
+\newcommand{\gitem}{\vfill\item}
+\newcommand{\fimage}[2]{\pause\vfill\begin{center}\includegraphics[width={#2}]{#1}\end{center}}
+
+\begin{document}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+    \frametitle{Content}
+    \begin{itemize}
+        \gitem Scenario
+        \gitem Research Questions
+        \gitem Methodology
+        \gitem Evaluation
+        \gitem Results and Validation
+        \gitem Threats to Validity
+        \gitem Reproducibility
+        \gitem More on Validation
+        \gitem Relevance to the Course
+    \end{itemize}
+    \vfill
+\end{frame}
+
+\nextframe
+\begin{frame}
+    \framecount{Scenario}
+    \begin{itemize}
+        \fitem Mining Bug Repositories
+        \begin{itemize}
+            \fitem ATLAS: Savannah
+            \fitem Eclipse BIRT: Bugzilla
+            \fitem UNICASE: Custom Bug Tracker
+        \end{itemize}
+        \fitem Assignee Recommendation
+        \begin{itemize}
+            \fitem Finding Correct Person to Handle the Bug
+        \end{itemize}
+    \end{itemize}
+    \vfill
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\nextframe
+\begin{frame}
+    \vfill
+    \begin{center}
+        {\Huge Thank You All For Listening}\\
+    \end{center}
+\end{frame}
+
+\end{document}
