@@ -40,7 +40,7 @@ for line in sys.stdin:
     artifacts = set(artifacts) # Remove duplicates
     for artifact in artifacts:
         G.add_node(artifact)
-    for u, v in itertools.combinations(artifact, 2):
+    for u, v in itertools.combinations(artifacts, 2):
         # Use "label" instead of "weight" to trick dot into drawing it
         if G.has_edge(u, v):
             G[u][v]["label"] += 1
