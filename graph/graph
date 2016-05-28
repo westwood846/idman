@@ -8,7 +8,7 @@
 # The connected components of the resulting graph are individual identities.
 # The edges are weighted by the number of commits where they appeared.
 # Supports json output (default) and graphviz output (use --dot flag).
-# When outputting for graphviz, the --filter min argument may be used to remove all edges with a weight below min.
+# The --filter min argument may be used to remove all edges with a weight below min.
 # Input is read as one commit per line in json format from stdin.
 
 import networkx as nx
@@ -20,7 +20,7 @@ import itertools
 
 
 if "--help" in sys.argv:
-    print "Useage: graph [--dot [--filter min]]"
+    print "Useage: graph [--dot] [--filter min]"
     sys.exit(0)
 
 
@@ -57,8 +57,7 @@ if "--filter" in sys.argv:
             G.remove_edge(u, v)
 
 
+if "--dot" in sys.argv:
+    print nx.drawing.nx_agraph.to_agraph(G)
 else:
-    if "--dot" in sys.argv:
-        print nx.drawing.nx_agraph.to_agraph(G)
-    else:
-        print json.dumps(identities, indent=1, cls=SetEncoder)
+    print json.dumps(identities, indent=1, cls=SetEncoder)
