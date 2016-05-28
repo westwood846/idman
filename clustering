@@ -21,7 +21,7 @@ def addToSet(set,el):
 def learnDev(dataset,com):
     commit = json.loads(com)
     dataset = processSingleDev(dataset,commit['author_name'],commit['author_mail'])
-    dataset= processSingleDev(dataset,commit['committer_name'],commit['committer_mail'],commit['signer'],commit['signer_key'])
+    dataset = processSingleDev(dataset,commit['committer_name'],commit['committer_mail'],commit['signer'],commit['signer_key'])
     return dataset
 
 ## Tries to find exsisting developer in dataset and adds him if not found
@@ -50,15 +50,59 @@ def isEMailSim(email1, data):
         if mail.split('@') == username:
             return True
     for name in data['Names']:
-	if username == name:
+        if username == name:
             return True
     return False
+
+# combines Elements of the dataset if they share values
+### ATTENTION: deletes the given dataset
+def combineElements(dataset):
+	newdata = []
+	for d in dataset[:]:
+		try:
+			dataset.remove(d)
+			tmp = d
+			for comp in dataset[:]:
+				if len(dictIntersection(d,comp)):
+					tmp = dictUnion(tmp,comp)
+					try:
+						dataset.remove(comp)
+					except ValueError:
+						pass
+			newdata.append(tmp)
+			#print tmp
+		except ValueError:
+			continue
+	return newdata
+
+## Intersects dictionaries interpreting values as set
+def dictIntersection(d1,d2):
+	result = {} 
+	for k in set(d1.keys()).intersection(set(d2.keys())):
+		result[k] = set(d1[k]).intersection(set(d2[k]))
+		if not result[k]:
+			del result[k]
+	return result
+
+## Intersects dictionaries interpreting values as set
+def dictUnion(d1,d2):
+	result = {} 
+	for k in set(d1.keys()).union(set(d2.keys())):
+		result[k] = set(d1.get(k,[])).union(set(d2.get(k,[])))
+		if not result[k]:
+			del result[k]
+	return result
 
 
 if __name__ == "__main__":
 	dataset = []
+	#inital data aquisition
 	for line in sys.stdin:
 		dataset=learnDev(dataset,line)
-	##TODO a few more tries to remove duplicate developers
+	#minimize dataset
+	dsize=0
+	while not dsize == len(dataset):#as long as combination is not noop
+		dsize=len(dataset)
+		dataset = combineElements(dataset)
 	for line in dataset:
-		print json.dumps(dataset,cls=SetEncoder)
+		print json.dumps(line,cls=SetEncoder)
