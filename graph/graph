@@ -10,8 +10,6 @@
 # Supports json output (default) and graphviz output (use --dot flag).
 # When outputting for graphviz, the --filter min argument may be used to remove all edges with a weight below min.
 # Input is read as one commit per line in json format from stdin.
-#
-# Dependencies: python-networkx (apt-get)
 
 import networkx as nx
 from networkx.drawing.nx_agraph import graphviz_layout
