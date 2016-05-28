@@ -17,3 +17,8 @@ Clusters developers on name/emailuser equality.
 * **Developer identication methods for integrated data from various sources** (<http://2005.msrconf.org/papers/23.pdf>)
 * **On the Need of Graph Support for Developer Identification in Software Repositories** (<http://www.kde.cs.uni-kassel.de/conf/lwa10/papers/kdml23.pdf>)
 * **Mining Email Social Networks** (<http://macbeth.cs.ucdavis.edu/msr06.pdf>)
+
+
+## Tools/Datasets in the naming context
+
+* c't 40 000 Namen : <http://www.heise.de/ct/ftp/07/17/182/>
