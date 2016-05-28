@@ -20,6 +20,11 @@ import itertools
 
 
 
+if "--help" in sys.argv:
+    print "Useage: graph [--dot [--filter min]]"
+    sys.exit(0)
+
+
 class SetEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, set):
@@ -52,9 +57,9 @@ if "--filter" in sys.argv:
         if data["label"] < minimum:
             G.remove_edge(u, v)
 
-if "--dot" in sys.argv:
-    print nx.drawing.nx_agraph.to_agraph(G)
-elif "--json" in sys.argv:
-    print json.dumps(identities, indent=1, cls=SetEncoder)
+
 else:
-    print "Useage: graph.py --dot|--json [--filter min]"
+    if "--dot" in sys.argv:
+        print nx.drawing.nx_agraph.to_agraph(G)
+    else:
+        print json.dumps(identities, indent=1, cls=SetEncoder)
