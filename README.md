@@ -6,7 +6,7 @@ Usage: `./idman BACKEND GIT_REPO_FOLDER`.
 
 ### clustering
 
-Mysterious set-based approach that does things to a dataset.
+Clusters developers on name/emailuser equality.
 
 ## Papers
 
