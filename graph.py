@@ -1,7 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Dependencies: python-networkx
+# Graph based identity algorithm.
+#
+# Each identity-artifact (e.g. "author_email") is a node.
+# If artifacts appear in the metadata of the same commit, they are connected by an edge.
+# The connected components of the resulting graph are individual identities.
+# The edges are weighted by the number of commits where they appeared.
+# Supports json output with (--json) and graphviz output (--dot).
+# When outputting for graphviz, the --filter min argument may be used to remove all edges with a weight below min.
+#
+# Dependencies: python-networkx (apt-get)
 
 import networkx as nx
 from networkx.drawing.nx_agraph import graphviz_layout
@@ -39,9 +48,15 @@ identities = []
 for component in nx.connected_components(G):
     identities.append(component)
 
+if "--filter" in sys.argv:
+    minimum = int(sys.argv[sys.argv.index("--filter") + 1])
+    for u, v, data in G.edges(data=True):
+        if data["label"] < minimum:
+            G.remove_edge(u, v)
+
 if "--dot" in sys.argv:
     print nx.drawing.nx_agraph.to_agraph(G)
 elif "--json" in sys.argv:
     print json.dumps(identities, indent=1, cls=SetEncoder)
 else:
-    print "Useage: graph.py --dot|--json"
+    print "Useage: graph.py --dot|--json [--filter min]"
