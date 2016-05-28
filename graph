@@ -7,7 +7,7 @@
 # If artifacts appear in the metadata of the same commit, they are connected by an edge.
 # The connected components of the resulting graph are individual identities.
 # The edges are weighted by the number of commits where they appeared.
-# Supports json output with (--json) and graphviz output (--dot).
+# Supports json output (default) and graphviz output (use --dot flag).
 # When outputting for graphviz, the --filter min argument may be used to remove all edges with a weight below min.
 #
 # Dependencies: python-networkx (apt-get)
