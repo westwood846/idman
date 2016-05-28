@@ -28,8 +28,12 @@ for line in sys.stdin:
     items = set(items)
     for item in items:
         G.add_node(item)
-    for combination in itertools.combinations(items, 2):
-        G.add_edge(combination[0], combination[1])
+    for u, v in itertools.combinations(items, 2):
+        # Use "label" instead of "weight" to trick dot into drawing it
+        if G.has_edge(u, v):
+            G[u][v]["label"] += 1
+        else:
+            G.add_edge(u, v, label=1)
 
 identities = []
 for component in nx.connected_components(G):
