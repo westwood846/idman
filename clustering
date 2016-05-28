@@ -3,64 +3,113 @@
 
 import sys
 import json
+import re
 
+## Helper for set-Encoding in json  (to list)
 class SetEncoder(json.JSONEncoder):
     def default(self, obj):
         if isinstance(obj, set):
             return list(obj)
         return json.JSONEncoder.default(self, obj)
 
+# Helper Function for only adding non-falsy values
 def addToSet(set,el):
-    if el:
+    if not el:
+        return set
+    elif isinstance(el,basestring) and  not re.sub("[^\w]", "", el).strip():#drop values without alphanumeric characters
+        return set
+    else:
         set.add(el)
-    return set
+        return set
 
+## Adds the developers participating at the commit to the commit
 def learnDev(dataset,com):
     commit = json.loads(com)
-    found = False
-    for d in dataset:
-        if commit['author_name'] in d['Names'] or isEMailSim(commit['author_mail'],d['Mails']):
-            addToSet(d['Names'],commit['author_name'])
-            addToSet(d['Mails'],commit['author_mail'])
-            found = True
-            break
-    if not found:
-        tmp={}
-        tmp['Names']=addToSet(set(),commit['author_name'])
-        tmp['Mails']=addToSet(set(),commit['author_mail'])
-        tmp['Keys']=set()
-        dataset.append(tmp)
-        print tmp
-    found = False
-    for d in dataset:
-        if commit['committer_name'] in d['Names'] or isEMailSim(commit['committer_mail'],d['Mails']) or commit['signer'] in d['Names'] or commit['signer_key'] in d['Keys']:
-            addToSet(d['Names'],commit['committer_name'])
-            addToSet(d['Names'],commit['signer']) #Signer makes commit
-            addToSet(d['Mails'],commit['committer_mail'])
-            addToSet(d['Keys'],commit['signer_key'])
-            found = True
-            break
-    if not found:
-        tmp={}
-        tmp['Names']=addToSet(set(),commit['committer_name'])
-        tmp['Mails']=addToSet(set(),commit['committer_mail'])
-        addToSet(tmp['Names'],commit['signer'])
-        tmp['Keys']=addToSet(set(),commit['signer_key'])
-        print tmp
-        dataset.append(tmp)
+    dataset = processSingleDev(dataset,commit['author_name'],commit['author_mail'])
+    dataset = processSingleDev(dataset,commit['committer_name'],commit['committer_mail'],commit['signer'],commit['signer_key'])
     return dataset
 
-def isEMailSim(email1, emails):
+## Tries to find exsisting developer in dataset and adds him if not found
+def processSingleDev(dataset, name, mail, signer=None, skey=None):
+    for d in dataset:
+         if  name in d['Names'] or isEMailSim(mail,d) or signer in d['Names'] or skey in d['Keys']:
+            addToSet(d['Names'],name)
+            addToSet(d['Names'],signer) #Signer makes commit
+            addToSet(d['Mails'],mail)
+            addToSet(d['Mailusers'],mail.split('@')[0])
+            addToSet(d['Keys'],skey)
+            return dataset
+    tmp={}
+    tmp['Names']=addToSet(set(),name)
+    tmp['Mails']=addToSet(set(),mail)
+    tmp['Mailusers']=addToSet(set(),mail.split('@')[0])
+    addToSet(tmp['Names'],signer)
+    tmp['Keys']=addToSet(set(),skey)
+    dataset.append(tmp)
+    return dataset
+
+#searches for email-user in exsisting usernames and emails
+def isEMailSim(email1, data):
     if not isinstance(email1,basestring):
         return False
     username = email1.split("@")[0]
-    for mail in emails:
-        if mail.startswith(username):
+    for mail in data['Mailusers']:
+        if mail == username:
+            return True
+    for name in data['Names']:
+        if username == name:
             return True
     return False
 
+# combines Elements of the dataset if they share values
+### ATTENTION: deletes the given dataset
+def combineElements(dataset):
+	newdata = []
+	for d in dataset[:]:
+		try:
+			dataset.remove(d)
+			tmp = d
+			for comp in dataset[:]:
+				if len(dictIntersection(d,comp)):
+					tmp = dictUnion(tmp,comp)
+					try:
+						dataset.remove(comp)
+					except ValueError:
+						pass
+			newdata.append(tmp)
+			#print tmp
+		except ValueError:
+			continue
+	return newdata
 
-dataset = []
-for line in sys.stdin:
-    dataset=learnDev(dataset,line)
-print json.dumps(dataset,indent=1,cls=SetEncoder)
+## Intersects dictionaries interpreting values as set
+def dictIntersection(d1,d2):
+	result = {} 
+	for k in set(d1.keys()).intersection(set(d2.keys())):
+		result[k] = set(d1[k]).intersection(set(d2[k]))
+		if not result[k]:
+			del result[k]
+	return result
+
+## Intersects dictionaries interpreting values as set
+def dictUnion(d1,d2):
+	result = {} 
+	for k in set(d1.keys()).union(set(d2.keys())):
+		result[k] = set(d1.get(k,[])).union(set(d2.get(k,[])))
+		if not result[k]:
+			del result[k]
+	return result
+
+
+if __name__ == "__main__":
+	dataset = []
+	#inital data aquisition
+	for line in sys.stdin:
+		dataset=learnDev(dataset,line)
+	#minimize dataset
+	dsize=0
+	while not dsize == len(dataset):#combination is not noop
+		dsize=len(dataset)
+		dataset = combineElements(dataset)
+	for line in dataset:
+		print json.dumps(line,cls=SetEncoder)
