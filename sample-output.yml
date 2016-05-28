@@ -1,0 +1,69 @@
+# This is actually JSON, but I want comments. So that's why it's a YAML file.
+{
+    # List of identities. Each array in here is an identity, which again
+    # contains an array of identifiers (if you'd call it that). In this case,
+    # there's names, nicknames and e-mail addresses. I don't think it's our
+    # problem to annotate the kind of identifier, since we might not know
+    # ourself (case in point: signing a commit). The consumer can figure that
+    # out if they really need to.
+    "identities": [
+        [
+            "Marco Brack",
+            "Mario Braik",
+            "turbopope",
+            "turbopope@uni-koblenz.de"
+        ],
+        [
+            "Michael Monschau"
+        ],
+        [
+            "Carsten Hartenfels",
+            "hartenfels@uni-koblenz.de"
+        ]
+    ],
+    # Mapping from commits to the identities. Each number references an index
+    # in the identities above. These are the commits from this here repo, so
+    # the authors and committers are always the same and nobody signs the
+    # commits, but you get the idea.
+    "commits": {
+        "968e2233146bda48019f2a64b65add6ec89b83b3": {author: 1, committer: 1, signer: null},
+        "f715c8a9f3d0cca3e3b512d6991fc788dbc902ae": {author: 1, committer: 1, signer: null},
+        "3ada4b587310b0d6d6c44acf9598acf3c37d79d6": {author: 1, committer: 1, signer: null},
+        "431debb66751a07add89ca3633b5f63fe63d2465": {author: 2, committer: 2, signer: null},
+        "5332b985a53ff2ef4d0e362297b55f3fe9860a7e": {author: 2, committer: 2, signer: null},
+        "f867e345c3f03f74fa53075f60311f38897c8abf": {author: 2, committer: 2, signer: null},
+        "8dde276ae4168846097c0964aebddf11e0fa771d": {author: 2, committer: 2, signer: null},
+        "69d1b9045685c013d48a5f0328c1cdec5b7d5702": {author: 2, committer: 2, signer: null},
+        "b7713c7dec30e67d2d6fa027c3a15da480f49b6e": {author: 2, committer: 2, signer: null},
+        "f5e9d32e1f6fdc60dac32c1c611aa1f4cbc0568d": {author: 2, committer: 2, signer: null},
+        "5237354e9a7f37521898f34a0d1b7419a60b4f9c": {author: 2, committer: 2, signer: null},
+        "a867264172afe9fd32adc7023425f917498020de": {author: 2, committer: 2, signer: null},
+        "01b571da2f706562032c0352530c41087ed3cd0b": {author: 1, committer: 1, signer: null},
+        "0e0cc442b6019c5591e44cbb3d1a8a736c631250": {author: 2, committer: 2, signer: null},
+        "ff1d347e5d0555a2c14345a3e8adc248258620e3": {author: 2, committer: 2, signer: null},
+        "8a01b26ab12e5b1286983924c9e55d892accc260": {author: 2, committer: 2, signer: null},
+        "4abd606657b733dd122010d4e39697de1f2f053f": {author: 2, committer: 2, signer: null},
+        "130eba0d660cec27ae0605bb8011564a3731a016": {author: 2, committer: 2, signer: null},
+        "78c3f5c3c9e1ea615ef2ae76a20610dc14483bcc": {author: 2, committer: 2, signer: null},
+        "2158544ece1554fafa09a615386d330236856f7a": {author: 2, committer: 2, signer: null},
+        "2c2bde13d843c06e328863e1ef511c72bc048c3f": {author: 2, committer: 2, signer: null},
+        "731cfda7afefa9ce6ec54d2ee21c0e300b3c18a5": {author: 2, committer: 2, signer: null},
+        "129cc8e715219333a3aab72642ca870c71069c6b": {author: 1, committer: 1, signer: null},
+        "bc208e5713ecd5a47b02122fe775a43b4453bfab": {author: 0, committer: 0, signer: null},
+        "24feadf106ddd9d0aa9ce57dc26d8d4043f7dad9": {author: 1, committer: 1, signer: null},
+        "97baae5f9f226078bfeec54aad1f262a8e2af6ef": {author: 0, committer: 0, signer: null},
+        "2e5588a3bf4b942a512d73932f5da570b90fc5b0": {author: 1, committer: 1, signer: null},
+        "78098549a1def2d8875b8abf53118c8e40080b23": {author: 2, committer: 2, signer: null},
+        "98056e97d9c61a4c676ecd91888e4c09af25a762": {author: 2, committer: 2, signer: null},
+        "3348a1105262fb8184a1fce0fd08af9052dfba32": {author: 0, committer: 0, signer: null},
+        "ae9ccd758a75829be4fa99d7eb70bfeb808c968f": {author: 0, committer: 0, signer: null},
+        "f9fb2c80cf2834f5c7b782b2d0a9de1d1b5dcaea": {author: 0, committer: 0, signer: null},
+        "85eb47c79984d43ed1b2e9f90af159e9a6cf5775": {author: 2, committer: 2, signer: null},
+        "273005d3d14d2142a985aad15356cce967f082b7": {author: 0, committer: 0, signer: null},
+        "b46c5aad072d80286375125146759f00b018814f": {author: 0, committer: 0, signer: null},
+        "ef0f08b929f04bf75caee0493c2aa3d8d8c87ebd": {author: 0, committer: 0, signer: null},
+        "fd5cc3542d1543edd0b7aa7a63e5fc650f998c7d": {author: 0, committer: 0, signer: null},
+        "5692d637deaaf0e9d5eb33bfc9f185d04682a770": {author: 0, committer: 0, signer: null}
+    }
+}
+
