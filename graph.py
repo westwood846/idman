@@ -17,7 +17,6 @@ from networkx.drawing.nx_agraph import graphviz_layout
 import sys
 import json
 import itertools
-import getopt
 
 
 
@@ -28,16 +27,15 @@ class SetEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, obj)
 
 
-
 G = nx.Graph()
 
 for line in sys.stdin:
     commit = json.loads(line)
-    items = [commit['author_name'], commit['author_mail'], commit['committer_mail'], commit['committer_name']]
-    items = set(items)
-    for item in items:
-        G.add_node(item)
-    for u, v in itertools.combinations(items, 2):
+    artifacts = [commit['author_name'], commit['author_mail'], commit['committer_mail'], commit['committer_name']]
+    artifacts = set(artifacts) # Remove duplicates
+    for artifact in artifacts:
+        G.add_node(artifact)
+    for u, v in itertools.combinations(artifact, 2):
         # Use "label" instead of "weight" to trick dot into drawing it
         if G.has_edge(u, v):
             G[u][v]["label"] += 1
