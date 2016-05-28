@@ -1,6 +1,6 @@
 # idman
 
-Usage: `./idman BACKEND GIT_REPO_FOLDER`.
+Usage: `./idman GIT_REPO_FOLDER BACKEND [BACKEND_ARGS...]`.
 
 ## Backends
 
