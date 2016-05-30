@@ -37,7 +37,7 @@ artifact_graph = nx.Graph()
 
 for line in sys.stdin:
     commit = json.loads(line)
-    artifact_graph = algorithm.learn_commit(artifact_graph, commit)
+    algorithm.learn_commit(artifact_graph, commit)
 
 identities = []
 for component in nx.connected_components(artifact_graph):
