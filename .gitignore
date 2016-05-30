@@ -1,2 +1,9 @@
 *.dot
 *.png
+*.aux
+*.log
+*.nav
+*.out
+*.pdf
+*.snm
+*.toc

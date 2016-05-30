@@ -1,0 +1,60 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use autodie;
+use Encode qw(decode);
+use List::Util qw(any);
+use JSON::PP;
+
+
+my ($input_file) = @ARGV;
+
+my $identities = do {
+    open my $fh, '<:encoding(UTF-8)', $input_file;
+    my $content = do { local $/; <$fh> };
+    close $fh;
+    decode_json($content);
+};
+
+
+my %identity_map;
+
+for my $i (0 .. $#$identities) {
+    for my $identifier (@{$identities->[$i]}) {
+        if (exists $identity_map{$identifier}) {
+            die "Duplicate identifier '$identifier'\n";
+        }
+        $identity_map{$identifier} = $i;
+    }
+}
+
+
+sub identify {
+    my ($first, @rest) = grep { defined } @identity_map{@_};
+
+    if (any { $_ ne $first } @rest) {
+        my $keys   = join ', ', grep { defined } @_;
+        my $values = join ', ', $first, @rest;
+        die "Multiple different identities for $keys: $values\n";
+    }
+
+    return $first;
+}
+
+
+my %commit_map;
+
+while (<STDIN>) {
+    my $commit = decode_json(decode('UTF-8', $_));
+    $commit_map{$commit->{hash}} = {
+        author    => identify(@{$commit}{   'author_name',    'author_mail'}),
+        committer => identify(@{$commit}{'committer_name', 'committer_mail'}),
+        signer    => identify($commit->{signer}),
+    };
+}
+
+
+print encode_json({
+    identities => $identities,
+    commits    => \%commit_map,
+});
