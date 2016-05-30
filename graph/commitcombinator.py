@@ -2,6 +2,7 @@ import itertools
 
 
 def learn_artifacts(artifact_graph, artifacts):
+    artifacts = artifacts.values()
     for u, v in itertools.combinations(artifacts, 2):
         if artifact_graph.has_edge(u, v):
             artifact_graph[u][v]["label"] += 1
