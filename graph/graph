@@ -15,7 +15,7 @@ import networkx as nx
 from networkx.drawing.nx_agraph import graphviz_layout
 import sys
 import json
-import commitcombinator as algorithm
+import importlib
 
 
 
@@ -31,6 +31,8 @@ class SetEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, obj)
 
 
+algorithm = importlib.import_module(sys.argv[1])
+
 artifact_graph = nx.Graph()
 
 for line in sys.stdin:
@@ -41,6 +43,7 @@ for line in sys.stdin:
 identities = []
 for component in nx.connected_components(artifact_graph):
     identities.append(component)
+
 
 if "--filter" in sys.argv:
     minimum = int(sys.argv[sys.argv.index("--filter") + 1])
