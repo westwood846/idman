@@ -2,18 +2,18 @@
 dir="$(dirname "$0")"
 
 if [ "$#" -lt 2 ]; then
-    echo 'Usage: idman GIT_REPO_FOLDER BACKEND [BACKEND_ARGS...]' 1>&2
+    echo 'Usage: idman GIT_REPO_FOLDER ALGORITHM [ARGS...]' 1>&2
     exit 1
 fi
 
 repo="$1"
 shift
 
-backend=$1
+algorithm=$1
 shift
-if [ ! -e "$dir/$backend" ]; then
-    echo "No such backend: '$backend'" 1>&2
+if [ ! -e "$dir/graph/${algorithm}.py" ]; then
+    echo "No such algorithm: '$algorithm'" 1>&2
     exit 2
 fi
 
-"$dir/parseman" "$repo" | "$dir/$backend" "$@"
+"$dir/parseman" "$repo" | "$dir/graph/graph" "$algorithm" "$@"
