@@ -37,17 +37,7 @@ artifact_graph = nx.Graph()
 
 for line in sys.stdin:
     commit = json.loads(line)
-    artifacts = {
-        "author_name": commit['author_name'],
-        "author_mail": commit['author_mail'],
-        "committer_mail": commit['committer_mail'],
-        "committer_name": commit['committer_name']
-    }
-    if (commit['signer'] != ""):
-        artifacts["signer"] = commit['signer']
-    if (commit['signer_key'] != ""):
-        artifacts["signer_key"] = commit['signer_key']
-    artifact_graph = algorithm.learn_artifacts(artifact_graph, artifacts)
+    artifact_graph = algorithm.learn_commit(artifact_graph, commit)
 
 identities = []
 for component in nx.connected_components(artifact_graph):
