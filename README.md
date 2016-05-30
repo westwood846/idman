@@ -1,12 +1,21 @@
 # idman
 
-Usage: `./idman GIT_REPO_FOLDER BACKEND [BACKEND_ARGS...]`.
+Usage: `./idman GIT_REPO_FOLDER ALGORITHM [ARGS...]`.
 
-## Backends
 
-### clustering
+## Algorithms
 
-Clusters developers on name/emailuser equality.
+### lazy
+
+### occurrence
+
+### retarded-occurence
+
+
+## assocman
+
+Associates each commit with an identity for author, committer and signer.
+
 
 ## Papers
 
