@@ -31,20 +31,20 @@ class SetEncoder(json.JSONEncoder):
         return json.JSONEncoder.default(self, obj)
 
 
+def learn_artifacts(graph, artifacts):
+    for u, v in itertools.combinations(artifacts, 2):
+        if graph.has_edge(u, v):
+            graph[u][v]["label"] += 1
+        else:
+            graph.add_edge(u, v, label=1)
+
+
 G = nx.Graph()
 
 for line in sys.stdin:
     commit = json.loads(line)
     artifacts = [commit['author_name'], commit['author_mail'], commit['committer_mail'], commit['committer_name']]
-    artifacts = set(artifacts) # Remove duplicates
-    for artifact in artifacts:
-        G.add_node(artifact)
-    for u, v in itertools.combinations(artifacts, 2):
-        # Use "label" instead of "weight" to trick dot into drawing it
-        if G.has_edge(u, v):
-            G[u][v]["label"] += 1
-        else:
-            G.add_edge(u, v, label=1)
+    learn_artifacts(G, artifacts)
 
 identities = []
 for component in nx.connected_components(G):
