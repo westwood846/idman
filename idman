@@ -16,4 +16,4 @@ if [ ! -e "$dir/graph/${algorithm}.py" ]; then
     exit 2
 fi
 
-"$dir/parseman" "$repo" | "$dir/graph/graph" "$algorithm" "$@"
+"$dir/parseman" "$repo" | "$dir/graph/graphman" "$algorithm" "$@"
