@@ -16,7 +16,7 @@ from networkx.drawing.nx_agraph import graphviz_layout
 import sys
 import json
 import importlib
-import setencoder
+from setencoder import SetEncoder
 
 
 
