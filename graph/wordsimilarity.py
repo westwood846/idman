@@ -24,7 +24,7 @@ def learn_person(artifact_graph, artifacts,min_similarity=0.9):
 	add_person(artifact_graph,artifacts)
 	for a in artifacts:
 		for n in artifact_graph:
-			if calc_similarity(a,n) >= min_similarity:
+			if calc_similarity(a,n) >= min_similarity and not a == n:
 				if artifact_graph.has_edge(a, n):
 					artifact_graph[a][n]["label"] += 1
 				else:
