@@ -31,6 +31,7 @@ for my $i (0 .. $#$identities) {
 
 sub identify {
     my ($first, @rest) = grep { defined } @identity_map{@_};
+    return undef unless defined $first;
 
     if (any { $_ ne $first } @rest) {
         my $keys   = join ', ', grep { defined } @_;
@@ -38,7 +39,7 @@ sub identify {
         die "Multiple different identities for $keys: $values\n";
     }
 
-    return $first;
+    return int $first;
 }
 
 
