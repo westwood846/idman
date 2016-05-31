@@ -10,7 +10,7 @@ use JSON::PP;
 my ($input_file) = @ARGV;
 
 my $identities = do {
-    open my $fh, '<:encoding(UTF-8)', $input_file;
+    open my $fh, '<', $input_file;
     my $content = do { local $/; <$fh> };
     close $fh;
     decode_json($content);
@@ -45,7 +45,7 @@ sub identify {
 my %commit_map;
 
 while (<STDIN>) {
-    my $commit = decode_json(decode('UTF-8', $_));
+    my $commit = decode_json($_);
     $commit_map{$commit->{hash}} = {
         author    => identify(@{$commit}{   'author_name',    'author_mail'}),
         committer => identify(@{$commit}{'committer_name', 'committer_mail'}),
