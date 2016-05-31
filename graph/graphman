@@ -16,19 +16,13 @@ from networkx.drawing.nx_agraph import graphviz_layout
 import sys
 import json
 import importlib
+import setencoder
 
 
 
 if "--help" in sys.argv:
     print "Useage: graph algorithm [--dot] [--filter min]"
     sys.exit(0)
-
-
-class SetEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, set):
-            return list(obj)
-        return json.JSONEncoder.default(self, obj)
 
 
 algorithm = importlib.import_module(sys.argv[1])
