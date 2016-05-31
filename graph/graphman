@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-# Graph based identity algorithm.
+# Graph based identity management.
 #
 # Each identity-artifact (e.g. "author_email") is a node.
-# If artifacts appear in the metadata of the same commit, they are connected by an edge.
+# Nodes are connected by edges according to pluggable algorithms.
 # The connected components of the resulting graph are individual identities.
-# The edges are weighted by the number of commits where they appeared.
 # Supports json output (default) and graphviz output (use --dot flag).
 # The --filter min argument may be used to remove all edges with a weight below min.
 # Input is read as one commit per line in json format from stdin.
+# See lazy algorithm for an example on how to interface with parseman.
 
 import networkx as nx
 from networkx.drawing.nx_agraph import graphviz_layout
@@ -20,7 +20,7 @@ import importlib
 
 
 if "--help" in sys.argv:
-    print "Useage: graph [--dot] [--filter min]"
+    print "Useage: graph algorithm [--dot] [--filter min]"
     sys.exit(0)
 
 

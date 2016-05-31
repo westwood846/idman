@@ -1,3 +1,6 @@
+# Connection criterion: name and mail or signer and signer_key appear in the same commit
+# The edges are weighted by the number of commits where they appeared.
+
 import itertools
 
 
