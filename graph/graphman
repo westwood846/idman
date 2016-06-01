@@ -17,6 +17,7 @@ import sys
 import json
 import importlib
 from setencoder import SetEncoder
+from stats_recorder import StatsRecorder
 
 
 
@@ -26,12 +27,14 @@ if "--help" in sys.argv:
 
 
 algorithm = importlib.import_module(sys.argv[1])
+statsRecorder = StatsRecorder()
 
 artifact_graph = nx.Graph()
 
 for line in sys.stdin:
     commit = json.loads(line)
     algorithm.learn_commit(artifact_graph, commit)
+    statsRecorder.record_commit(commit)
 
 identities = []
 for component in nx.connected_components(artifact_graph):
@@ -47,5 +50,18 @@ if "--filter" in sys.argv:
 
 if "--dot" in sys.argv:
     print nx.drawing.nx_agraph.to_agraph(artifact_graph)
+if "--stats" in sys.argv:
+    stats = {
+        "commits": statsRecorder.commits,
+        "author_mails": len(statsRecorder.author_mails),
+        "author_names": len(statsRecorder.author_names),
+        "committer_mails": len(statsRecorder.committer_mails),
+        "committer_names": len(statsRecorder.committer_names),
+        "signers": len(statsRecorder.signers),
+        "signer_keys": len(statsRecorder.signer_keys),
+        "unique_artifacts": len(artifact_graph.nodes()),
+        "identities_found": len(identities)
+    }
+    print json.dumps(stats, indent=1, cls=SetEncoder)
 else:
     print json.dumps(identities, indent=1, cls=SetEncoder)
