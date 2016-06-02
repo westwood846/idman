@@ -12,6 +12,12 @@ def load_categorized_list_from_csv(csvFile,delim=",",quote="\""):
 			result[line[type_index]].append(line[name_index])
 		return result
 
+#read the csv column with the given name
+def load_csv_column(csvFile,colname,delim=",",quote="\""):
+		tmp = read_csv(csvFile,delim,quote)
+		index = tmp[0].index(colname)
+		return map(lambda x: x[index],tmp)
+
 #reads a csv-file to a list of lists reomoving empty lines
 def read_csv(csvFile,delim=",",quote="\""):
 		file = open(csvFile,"rb")
