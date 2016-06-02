@@ -7,14 +7,7 @@ use List::Util qw(any);
 use JSON::PP;
 
 
-my ($input_file) = @ARGV;
-
-my $identities = do {
-    open my $fh, '<', $input_file;
-    my $content = do { local $/; <$fh> };
-    close $fh;
-    decode_json($content);
-};
+my $identities = decode_json(scalar <STDIN>);
 
 
 my %identity_map;
@@ -55,7 +48,7 @@ while (<STDIN>) {
 }
 
 
-print encode_json({
+print JSON::PP->new->utf8->pretty->canonical->encode({
     identities => $identities,
     commits    => \%commit_map,
 });
