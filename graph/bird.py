@@ -43,7 +43,6 @@ def alias_contains_first_and_last(alias, first, last):
     return len(first) >= 2 and len(last) >= 2 and first in alias and last in alias
 
 def alias_contains_first_or_last_and_first_letter(e, first, last):
-    # Really bad description, had to guess what they meant, I hope this is right
     length_ok = len(first) >= 2 and len(last) >= 2
     first_partly_in_e = last in e and e.startswith(first[1])
     last_partly_in_e = first in e and e.startswith(last[1])
@@ -120,9 +119,6 @@ def learn_name_and_mail(artifact_graph, name, mail):
         learn_name(firstname, lastname, artifact_graph)
     learn_alias(mail, artifact_graph)
 
-
-    # Go through all nodes and generate similarity scores.
-    # Create an edge if the maximum similarity score is above a threshold
 
 def learn_commit(artifact_graph, commit):
     learn_name_and_mail(artifact_graph, commit["committer_name"], commit["committer_mail"])
