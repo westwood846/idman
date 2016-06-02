@@ -51,7 +51,7 @@ if "--filter" in sys.argv:
 
 if "--dot" in sys.argv:
     print nx.drawing.nx_agraph.to_agraph(artifact_graph)
-if "--stats" in sys.argv:
+elif "--stats" in sys.argv:
     stats = {
         "commits": statsRecorder.commits,
         "author_mails": len(statsRecorder.author_mails),
