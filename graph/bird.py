@@ -2,7 +2,6 @@ import re
 from statistical.levenshtein import levenshtein
 
 
-
 def normalize_name(name):
     # We remove all punctuation, suffixes
     # ("jr"); turn all whitespace into a single space; remove
@@ -58,7 +57,7 @@ def learn_name(firstname, lastname, artifact_graph):
 
         # Rule 1
         if similar(node, name):
-            print "Rule 1 %s -- %s" % (node, name)
+            # print "Rule 1 %s -- %s" % (node, name)
             artifact_graph.add_edge(node, name)
             break
 
@@ -66,20 +65,20 @@ def learn_name(firstname, lastname, artifact_graph):
         if data["type"] == "name":
             first2, last2 = split_name(node)
             if similar_firstfirst_lastlast(firstname, lastname, first2, last2):
-                print "Rule 2 %s -- %s" % (node, name)
+                # print "Rule 2 %s -- %s" % (node, name)
                 artifact_graph.add_edge(node, name)
                 break
 
         if data["type"] == "alias":
             # Rule 4
             if alias_contains_first_and_last(node, firstname, lastname):
-                print "Rule 4 %s -- %s" % (node, name)
+                # print "Rule 4 %s -- %s" % (node, name)
                 artifact_graph.add_edge(node, name)
                 break
 
             # Rule 5
             if alias_contains_first_or_last_and_first_letter(node, firstname, lastname):
-                print "Rule 5 %s -- %s" % (node, name)
+                # print "Rule 5 %s -- %s" % (node, name)
                 artifact_graph.add_edge(node, name)
                 break
 
@@ -93,7 +92,7 @@ def learn_alias(alias, artifact_graph):
 
         # Rule 3 (or 1, they are identical for mails)
         if similar(node, alias):
-            print "Rule 3 %s -- %s" % (node, alias)
+            # print "Rule 3 %s -- %s" % (node, alias)
             artifact_graph.add_edge(node, alias)
             break
 
@@ -101,13 +100,13 @@ def learn_alias(alias, artifact_graph):
             # Rule 4
             firstname, lastname = split_name(node)
             if alias_contains_first_and_last(alias, firstname, lastname):
-                print "Rule 4 %s -- %s" % (node, alias)
+                # print "Rule 4 %s -- %s" % (node, alias)
                 artifact_graph.add_edge(node, alias)
                 break
 
             # Rule 5
             if alias_contains_first_or_last_and_first_letter(alias, firstname, lastname):
-                print "Rule 5 %s -- %s" % (node, alias)
+                # print "Rule 5 %s -- %s" % (node, alias)
                 artifact_graph.add_edge(node, alias)
                 break
 
