@@ -34,24 +34,53 @@ my %COMMIT_ARGS = (
 my @COMMIT_KEYS      = sort keys %COMMIT_ARGS;
 my @FORMAT_ARGS      = @COMMIT_ARGS{@COMMIT_KEYS};
 my $COMMIT_SEPARATOR = "\N{RECORD SEPARATOR}";
+my $DIFF_SEPARATOR   = "\N{UNIT SEPARATOR}";
 
+# separate log data from diff with a UNIT SEPARATOR
 # separate each field within a commit with a NUL
 # terminate each commit with a RECORD SEPARATOR
-my $FORMAT = join('%x00', @FORMAT_ARGS) . $COMMIT_SEPARATOR;
+my $FORMAT = $COMMIT_SEPARATOR . join('%x00', @FORMAT_ARGS) . $DIFF_SEPARATOR;
+
+
+sub parse_log {
+    my ($log) = @_;
+    my @fields = split "\0", $log, -1;
+    return map { $COMMIT_KEYS[$_] => $fields[$_] } 0 .. $#fields;
+}
+
+sub parse_diff {
+    my ($diff) = @_;
+    my %changes = (
+        touched_files => 0,
+        insertions    => 0,
+        deletions     => 0,
+    );
+
+    for my $diff_line (split "\n", $diff) {
+        next unless $diff_line =~ /^(\d+)\s+(\d+)\s+(.+?)\s*$/;
+        $changes{insertions} += $1;
+        $changes{deletions } += $2;
+        $changes{touched_files}++;
+    }
+
+    return %changes;
+}
 
 
 for my $repo_path (@ARGV) {
-    open my $fh, '-|', 'git', "--git-dir=$repo_path/.git",
-                       'log', '--all', "--format=$FORMAT";
-    local $/ = "$COMMIT_SEPARATOR\n";
+    open my $fh, '-|', 'git', "--git-dir=$repo_path/.git", 'log', '--all',
+                       "--format=$FORMAT", '-M', '-C', '--numstat';
+    local $/ = "\n$COMMIT_SEPARATOR";
 
     while (<$fh>) {
         chomp;
         my $line = decode('UTF-8', $_);
-
-        my %commit = (repo => $repo_path);
-        @commit{@COMMIT_KEYS} = split "\0", $line, -1;
-        print encode_json(\%commit), "\n";
+        my ($log, $diff) = split $DIFF_SEPARATOR, $line;
+        print encode_json({
+            repo => $repo_path,
+            parse_log($log),
+            parse_diff($line),
+        }), "\n";
     }
 
     close $fh;
