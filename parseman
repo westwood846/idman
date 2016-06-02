@@ -76,12 +76,11 @@ for my $repo_path (@ARGV) {
 
     while (<$fh>) {
         chomp;
-        my $line = decode('UTF-8', $_);
-        my ($log, $diff) = split $DIFF_SEPARATOR, $line;
+        my ($log, $diff) = split $DIFF_SEPARATOR, decode('UTF-8', $_);
         print encode_json({
             repo => $repo_path,
             parse_log($log),
-            parse_diff($line),
+            parse_diff($diff),
         }), "\n";
     }
 
