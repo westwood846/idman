@@ -179,7 +179,7 @@ The signature key of who signed the commit.
 
 =item deletions
 
-The amuont of modified files, inserted lines and deleted lines in the commit,
+The amount of modified files, inserted lines and deleted lines in the commit,
 respectively.  Renamed files are taken into account properly, so a rename on
 its own counts as a single changed file with zero inserted or deleted lines.
 
