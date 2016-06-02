@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 from statistical.levenshtein import levenshtein
 
@@ -84,7 +86,7 @@ def learn_name(firstname, lastname, artifact_graph):
                 break
 
 def learn_alias(alias, artifact_graph):
-    alias = alias.encode('ascii', 'ignore')
+    # alias = alias.encode('ascii', 'ignore')
     artifact_graph.add_node(alias, type="alias")
 
     for node, data in artifact_graph.nodes(data=True):
