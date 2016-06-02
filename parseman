@@ -3,6 +3,7 @@ use strict;
 use warnings;
 use autodie;
 use charnames ':full';
+use Encode qw(decode);
 use JSON::PP;
 use Pod::Usage;
 
@@ -40,14 +41,16 @@ my $FORMAT = join('%x00', @FORMAT_ARGS) . $COMMIT_SEPARATOR;
 
 
 for my $repo_path (@ARGV) {
-    open my $fh, '-|:encoding(UTF-8)', 'git', "--git-dir=$repo_path/.git",
-                                       'log', '--all', "--format=$FORMAT";
+    open my $fh, '-|', 'git', "--git-dir=$repo_path/.git",
+                       'log', '--all', "--format=$FORMAT";
     local $/ = "$COMMIT_SEPARATOR\n";
 
     while (<$fh>) {
         chomp;
+        my $line = decode('UTF-8', $_);
+
         my %commit = (repo => $repo_path);
-        @commit{@COMMIT_KEYS} = split "\0", $_, -1;
+        @commit{@COMMIT_KEYS} = split "\0", $line, -1;
         print encode_json(\%commit), "\n";
     }
 
