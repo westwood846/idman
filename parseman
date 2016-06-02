@@ -70,6 +70,8 @@ sub parse_diff {
 for my $repo_path (@ARGV) {
     open my $fh, '-|', 'git', "--git-dir=$repo_path/.git", 'log', '--all',
                        "--format=$FORMAT", '-M', '-C', '--numstat';
+
+    read $fh, $_, length $COMMIT_SEPARATOR; # strip leading separator
     local $/ = "\n$COMMIT_SEPARATOR";
 
     while (<$fh>) {
