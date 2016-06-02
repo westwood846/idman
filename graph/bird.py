@@ -15,10 +15,11 @@ def normalize_name(name):
     for term in insignificant_words:
         term_re = re.compile(re.escape(term), re.IGNORECASE)
         name = term_re.sub("", name).strip()
-    return name
+    # The paper does not mention case-sensitivity, but we obviously need to do this case-insensitive
+    return name.lower()
 
 def extract_mail_prefix(mail):
-    return mail.split("@")[0]
+    return mail.split("@")[0].lower()
 
 def split_name(name):
     split = name.split(" ") # TODO: Split commas
