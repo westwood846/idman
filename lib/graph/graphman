@@ -19,15 +19,26 @@ import json
 import importlib
 from util.setencoder import SetEncoder
 from util.stats_recorder import StatsRecorder
+import argparse
 import os
 
+algorithms = map(lambda x:x.replace(".py",""),filter(lambda x: x.endswith('.py'),os.listdir(os.path.dirname(os.path.realpath(__file__))+os.path.sep+"algorithm")))
+algorithms.remove("__init__")
 
-if "--help" in sys.argv:
-    print "Useage: graph algorithm [--dot | --stats] [--filter min]"
-    sys.exit(0)
+#Set Possible Command Line Arguments and their help messages
+cl_argument_parser = argparse.ArgumentParser()
+cl_argument_parser.add_argument("algorithm", help="the algorithm to use for creating connections",choices=sorted(algorithms))
+outputgroup = cl_argument_parser.add_mutually_exclusive_group()
+outputgroup.add_argument("--dot", action="store_true", help="use graphviz output")
+outputgroup.add_argument("--stats", action="store_true", help="print statistics, instead of results")
+cl_argument_parser.add_argument("--filter", help="remove all edges with a weight below", type=int)
+
+#Parse the Command Line Arguments
+args = cl_argument_parser.parse_args()
 
 
-algorithm = importlib.import_module("algorithm."+sys.argv[1])
+
+algorithm = importlib.import_module("algorithm."+args.algorithm)
 statsRecorder = StatsRecorder()
 
 artifact_graph = nx.Graph()
@@ -42,16 +53,16 @@ for component in nx.connected_components(artifact_graph):
     identities.append(component)
 
 
-if "--filter" in sys.argv:
-    minimum = int(sys.argv[sys.argv.index("--filter") + 1])
+if args.filter:
+    minimum = args.filter
     for u, v, data in artifact_graph.edges(data=True):
         if data["label"] < minimum:
             artifact_graph.remove_edge(u, v)
 
 
-if "--dot" in sys.argv:
+if args.dot:
     print nx.drawing.nx_agraph.to_agraph(artifact_graph)
-elif "--stats" in sys.argv:
+elif args.stats:
     stats = {
         "commits": statsRecorder.commits,
         "author_mails": len(statsRecorder.author_mails),
