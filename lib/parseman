@@ -34,24 +34,52 @@ my %COMMIT_ARGS = (
 my @COMMIT_KEYS      = sort keys %COMMIT_ARGS;
 my @FORMAT_ARGS      = @COMMIT_ARGS{@COMMIT_KEYS};
 my $COMMIT_SEPARATOR = "\N{RECORD SEPARATOR}";
+my $DIFF_SEPARATOR   = "\N{UNIT SEPARATOR}";
 
-# separate each field within a commit with a NUL
-# terminate each commit with a RECORD SEPARATOR
-my $FORMAT = join('%x00', @FORMAT_ARGS) . $COMMIT_SEPARATOR;
+# See the “Internals” in the documentation (run `perldoc parseman`)
+my $FORMAT = $COMMIT_SEPARATOR . join('%x00', @FORMAT_ARGS) . $DIFF_SEPARATOR;
+
+
+sub parse_log {
+    my ($log) = @_;
+    my @fields = split "\0", $log, -1;
+    return map { $COMMIT_KEYS[$_] => $fields[$_] } 0 .. $#fields;
+}
+
+sub parse_diff {
+    my ($diff) = @_;
+    my %changes = (
+        touched_files => 0,
+        insertions    => 0,
+        deletions     => 0,
+    );
+
+    for my $diff_line (split "\n", $diff) {
+        next unless $diff_line =~ /^(\d+)\s+(\d+)\s+(.+?)\s*$/;
+        $changes{insertions} += $1;
+        $changes{deletions } += $2;
+        $changes{touched_files}++;
+    }
+
+    return %changes;
+}
 
 
 for my $repo_path (@ARGV) {
-    open my $fh, '-|', 'git', "--git-dir=$repo_path/.git",
-                       'log', '--all', "--format=$FORMAT";
-    local $/ = "$COMMIT_SEPARATOR\n";
+    open my $fh, '-|', 'git', "--git-dir=$repo_path/.git", 'log', '--all',
+                       "--format=$FORMAT", '-M', '-C', '--numstat';
+
+    read $fh, $_, length $COMMIT_SEPARATOR; # strip leading separator
+    local $/ = "\n$COMMIT_SEPARATOR";
 
     while (<$fh>) {
         chomp;
-        my $line = decode('UTF-8', $_);
-
-        my %commit = (repo => $repo_path);
-        @commit{@COMMIT_KEYS} = split "\0", $line, -1;
-        print encode_json(\%commit), "\n";
+        my ($log, $diff) = split $DIFF_SEPARATOR, decode('UTF-8', $_);
+        print encode_json({
+            repo => $repo_path,
+            parse_log($log),
+            parse_diff($diff),
+        }), "\n";
     }
 
     close $fh;
@@ -145,6 +173,52 @@ Who signed the commit, if anybody did.
 
 The signature key of who signed the commit.
 
+=item touched_files
+
+=item insertions
+
+=item deletions
+
+The amount of modified files, inserted lines and deleted lines in the commit,
+respectively. Renamed files are taken into account properly, so a rename on
+its own counts as a single changed file with zero inserted or deleted lines.
+
+See the C<--find-renames> and C<--find-copies> options in C<git log --help> for
+details.
+
 =back
+
+=head1 INTERNALS
+
+Calling C<git log> on every commit would be the easiest implementation for this
+script, but that is just prohibitively slow. So instead, we run it only one
+single time with a specially formatted output so that we can separate each
+commit properly.
+
+The format works as follows:
+
+=over
+
+=item
+
+Each commit is prefixed with a C<RECORD SEPARATOR> character. This separates
+the commits from each other.
+
+=item
+
+Each of the fields within a commit (hash, message, author name etc.) is
+separated with a C<NUL> character.
+
+=item
+
+After those fields follows a C<UNIT SEPARATOR>, after which git automatically
+puts the diff information (changed files and lines).
+
+=back
+
+Parsing the format works by splitting the input by C<RECORD SEPARATOR>s and
+splitting each of those records by C<UNIT SEPARATOR>s into a fields portion and
+a diff portion. The fields are then simply split by C<NUL>s and the diff is
+parsed via regular expression.
 
 =cut

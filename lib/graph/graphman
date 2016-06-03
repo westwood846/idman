@@ -65,4 +65,4 @@ elif "--stats" in sys.argv:
     }
     print json.dumps(stats, indent=1, cls=SetEncoder)
 else:
-    print json.dumps(identities, indent=1, cls=SetEncoder, ensure_ascii=False).encode('utf8')
+    print json.dumps(identities, cls=SetEncoder, ensure_ascii=False).encode('utf8')
