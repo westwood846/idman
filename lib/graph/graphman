@@ -17,9 +17,9 @@ from networkx.drawing.nx_agraph import graphviz_layout
 import sys
 import json
 import importlib
-from setencoder import SetEncoder
-from stats_recorder import StatsRecorder
-
+from util.setencoder import SetEncoder
+from util.stats_recorder import StatsRecorder
+import os
 
 
 if "--help" in sys.argv:
@@ -27,7 +27,7 @@ if "--help" in sys.argv:
     sys.exit(0)
 
 
-algorithm = importlib.import_module(sys.argv[1])
+algorithm = importlib.import_module(sys.argv[1],"algorithm")
 statsRecorder = StatsRecorder()
 
 artifact_graph = nx.Graph()

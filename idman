@@ -18,8 +18,8 @@ elsif (grep { /^--?h(elp)?$/ } @ARGV) {
 my $dir = dirname($0) . '/lib';
 my ($repo, $algorithm, @args) = @ARGV;
 
-if (!-e "$dir/graph/$algorithm.py") {
-    die "No such algorithm found at '$dir/graph/$algorithm.py'\n";
+if (!-e "$dir/graph/algorithm/$algorithm.py") {
+    die "No such algorithm found at '$dir/graph/algorithm/$algorithm.py'\n";
 }
 
 
