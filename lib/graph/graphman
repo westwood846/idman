@@ -27,7 +27,7 @@ if "--help" in sys.argv:
     sys.exit(0)
 
 
-algorithm = importlib.import_module(sys.argv[1],"algorithm")
+algorithm = importlib.import_module("algorithm."+sys.argv[1])
 statsRecorder = StatsRecorder()
 
 artifact_graph = nx.Graph()
