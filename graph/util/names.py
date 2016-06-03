@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import re
 
 def normalize_name(name):
@@ -20,7 +22,7 @@ def extract_mail_prefix(mail):
     return mail.split("@")[0].lower()
 
 def split_name(name):
-    split = name.split() # TODO: Split commas # split without argument splits at whitespace characters
+    split = remove_non_alphnum_from_name(name).split() # split without argument splits at whitespace characters
     return " ".join(split[:-1]), split[-1]
 
 def join_name(firstname, lastname):
