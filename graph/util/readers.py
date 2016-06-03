@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 import csv
 
 ##Requires a csv-file with 2 columns with headings name and type
