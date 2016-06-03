@@ -2,6 +2,21 @@
 
 Usage: `./idman GIT_REPO_FOLDER ALGORITHM [ARGS...]`.
 
+Will perform the given identity merge `ALGORITHM` (optionally with additional
+`ARGS`) on the given `GIT_REPO_FOLDER` and output the author, committer and
+signer of every commit in that repository according to the merged identities.
+
+
+## Requirements
+
+* git (obviously)
+
+* perl (git depends on this, so you probably have it already)
+
+* Python 2
+
+* networkx, a graph library for Python
+
 
 ## Algorithms
 
@@ -10,11 +25,6 @@ Usage: `./idman GIT_REPO_FOLDER ALGORITHM [ARGS...]`.
 ### occurrence
 
 ### retarded-occurence
-
-
-## assocman
-
-Associates each commit with an identity for author, committer and signer.
 
 
 ## Papers
