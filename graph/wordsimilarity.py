@@ -1,5 +1,6 @@
 from difflib import SequenceMatcher
 import itertools
+import networkx as nx
 
 def learn_commit(artifact_graph, commit,min_similarity=0.9):
 	author_artifacts = [commit["author_name"], commit["author_mail"]]
@@ -23,12 +24,14 @@ def learn_artifacts(artifact_graph, commit,min_similarity=0.9):
 def learn_person(artifact_graph, artifacts,min_similarity=0.9):
 	add_person(artifact_graph,artifacts)
 	for a in artifacts:
-		for n in artifact_graph:
-			if calc_similarity(a,n) >= min_similarity and not a == n:
-				if artifact_graph.has_edge(a, n):
-					artifact_graph[a][n]["label"] += 1
-				else:
-					artifact_graph.add_edge(a, n, label=1)
+		for cluster in nx.connected_components(artifact_graph):#, key=len, reverse=True):#Iterate over clusters largest to smallest
+			for n in cluster:
+				if calc_similarity(a,n) >= min_similarity and not a == n:
+					if artifact_graph.has_edge(a, n):
+						artifact_graph[a][n]["label"] += 1
+					else:
+						artifact_graph.add_edge(a, n, label=1)
+					break
 
 
 def add_person(artifact_graph, artifacts):
