@@ -1,4 +1,8 @@
-from difflib import SequenceMatcher
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+## Connection Criterium: String similarity
+
 import itertools
 import networkx as nx
 import importlib
