@@ -1,5 +1,5 @@
 def calc_similarity(w1, w2):
-	return 1-bag_distance(w1,w2)/max([len(w1),len(w2)])
+	return 1-bag_distance(w1,w2)/min([len(w1),len(w2)])
 	
 
 def bag_distance(word1,word2):
