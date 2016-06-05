@@ -21,22 +21,18 @@ from util.setencoder import SetEncoder
 from util.stats_recorder import StatsRecorder
 import argparse
 import os
-
-algorithms = map(lambda x:x.replace(".py",""),filter(lambda x: x.endswith('.py'),os.listdir(os.path.dirname(os.path.realpath(__file__))+os.path.sep+"algorithm")))
-algorithms.remove("__init__")
+import pkgutil
 
 #Set Possible Command Line Arguments and their help messages
-cl_argument_parser = argparse.ArgumentParser()
-cl_argument_parser.add_argument("algorithm", help="the algorithm to use for creating connections",choices=sorted(algorithms))
+cl_argument_parser = argparse.ArgumentParser(description='Graph based identity management',epilog='(c) 2016 Marco Brack, Carsten Hartenfels, Michael Monschau')
+cl_argument_parser.add_argument("algorithm",metavar="algorithm", help="the algorithm to use for creating connections",choices=[modname for importer, modname, ispkg in pkgutil.iter_modules(importlib.import_module("algorithm").__path__)])
 outputgroup = cl_argument_parser.add_mutually_exclusive_group()
 outputgroup.add_argument("--dot", action="store_true", help="use graphviz output")
 outputgroup.add_argument("--stats", action="store_true", help="print statistics, instead of results")
-cl_argument_parser.add_argument("--filter", help="remove all edges with a weight below", type=int)
+cl_argument_parser.add_argument("--filter", help="remove all edges with a weight below", type=int, metavar="min")
 
 #Parse the Command Line Arguments
 args = cl_argument_parser.parse_args()
-
-
 
 algorithm = importlib.import_module("algorithm."+args.algorithm)
 statsRecorder = StatsRecorder()
