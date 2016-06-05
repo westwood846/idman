@@ -129,7 +129,7 @@ def learn_name_and_mail(artifact_graph, name, mail):
     learn_alias(mail, artifact_graph)
 
 
-def learn_commit(artifact_graph, commit):
+def learn_commit(artifact_graph, commit,args):
     learn_name_and_mail(artifact_graph, commit["committer_name"], commit["committer_mail"])
     learn_name_and_mail(artifact_graph, commit["author_name"], commit["author_mail"])
     return artifact_graph

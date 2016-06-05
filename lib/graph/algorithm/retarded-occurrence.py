@@ -14,7 +14,7 @@ def extract_artifacts(commit):
         artifacts["signer_key"] = commit['signer_key']
     return artifacts
 
-def learn_commit(artifact_graph, commit):
+def learn_commit(artifact_graph, commit,args):
     artifacts = extract_artifacts(commit).values()
     for u, v in itertools.combinations(artifacts, 2):
         if artifact_graph.has_edge(u, v):

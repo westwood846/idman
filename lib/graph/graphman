@@ -13,19 +13,20 @@
 # See lazy algorithm for an example on how to interface with parseman.
 
 import networkx as nx
-from networkx.drawing.nx_agraph import graphviz_layout
+#from networkx.drawing.nx_agraph import graphviz_layout
 import sys
 import json
 import importlib
 from util.setencoder import SetEncoder
 from util.stats_recorder import StatsRecorder
 import argparse
-import os
 import pkgutil
 
 #Set Possible Command Line Arguments and their help messages
 cl_argument_parser = argparse.ArgumentParser(description='Graph based identity management',epilog='(c) 2016 Marco Brack, Carsten Hartenfels, Michael Monschau')
 cl_argument_parser.add_argument("algorithm",metavar="algorithm", help="the algorithm to use for creating connections",choices=[modname for importer, modname, ispkg in pkgutil.iter_modules(importlib.import_module("algorithm").__path__)])
+cl_argument_parser.add_argument("-m","--metric",metavar="metric", help="for an similarity-based Algorithm: the similarity-measure to be used; defaults to 'sequence'",choices=[modname for importer, modname, ispkg in pkgutil.iter_modules(importlib.import_module("statistical").__path__)],default="sequence")
+cl_argument_parser.add_argument("--min_similarity",metavar="sim",help="for an similarity-based Algorithm: the minimal requied similarity (between 0.00 and 1.00)  for an match; defaults to 0.9",default=0.9, type=float)
 outputgroup = cl_argument_parser.add_mutually_exclusive_group()
 outputgroup.add_argument("--dot", action="store_true", help="use graphviz output")
 outputgroup.add_argument("--stats", action="store_true", help="print statistics, instead of results")
@@ -41,7 +42,7 @@ artifact_graph = nx.Graph()
 
 for line in sys.stdin:
     commit = json.loads(line)
-    algorithm.learn_commit(artifact_graph, commit)
+    algorithm.learn_commit(artifact_graph, commit,args)
     statsRecorder.record_commit(commit)
 
 identities = []

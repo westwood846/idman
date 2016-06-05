@@ -15,7 +15,7 @@ def learn_artifacts(artifact_graph, artifacts):
         else:
             artifact_graph.add_edge(u, v, label=1)
 
-def learn_commit(artifact_graph, commit):
+def learn_commit(artifact_graph, commit,args):
     author_artifacts = [commit["author_name"], commit["author_mail"]]
     learn_artifacts(artifact_graph, author_artifacts)
 
