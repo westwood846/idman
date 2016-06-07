@@ -28,10 +28,6 @@ def split_name(name):
 def join_name(firstname, lastname):
     return " ".join([firstname, lastname])
 
-
-def similar_firstfirst_lastlast(first1, last1, first2, last2):
-    return lev_similar(first1, first2) and similar (last1, last2)
-
 def alias_contains_first_and_last(alias, first, last):
     return len(first) >= 2 and len(last) >= 2 and first in alias and last in alias
 
@@ -44,3 +40,10 @@ def alias_contains_first_or_last_and_first_letter(e, first, last):
 def learn_name(firstname, lastname, artifact_graph):
     name = join_name(firstname, lastname)
     artifact_graph.add_node(name, type="name")
+    
+def create_n_grams(word, length,prechar=False):
+    gramsource = word
+    if prechar:
+        tmp = [" " for i in range(length)]
+        gramsource = tmp + gramsource +gramsource
+    return zip(*[gramsource[i:] for i in range(length)])
