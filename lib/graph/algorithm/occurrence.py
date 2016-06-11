@@ -2,10 +2,11 @@
 # The edges are weighted by the number of commits where they appeared.
 
 import itertools
-
+from util import filters
 
 
 def learn_artifacts(artifact_graph, artifacts):
+    artifacts=filters.clean_list(artifacts)
     for artifact in artifacts:
         artifact_graph.add_node(artifact)
 
@@ -22,9 +23,5 @@ def learn_commit(artifact_graph, commit,args):
     committer_artifacts = [commit["committer_name"], commit["committer_mail"]]
     learn_artifacts(artifact_graph, committer_artifacts)
 
-    signer_artifacts = []
-    if (commit['signer']):
-        signer_artifacts.append(commit['signer'])
-    if (commit['signer_key']):
-        signer_artifacts.append(commit['signer_key'])
+    signer_artifacts = [commit['signer'],commit['signer_key']]
     learn_artifacts(artifact_graph, signer_artifacts)

@@ -114,22 +114,24 @@ def learn_alias(alias, artifact_graph):
                 break
 
 def learn_name_and_mail(artifact_graph, name, mail):
-    name = normalize_name(name)
-    mail = extract_mail_prefix(mail)
-    firstname, lastname = split_name(name)
+    if name:
+        name = normalize_name(name)
+        firstname, lastname = split_name(name)
 
-    if not firstname:
-        # Bird's algorithm assumes that names are real names.
-        # Since git usernames have no such restriction, we need to treat nicknames differently.
-        # Treating them as aliases like the email prefixes should yield comparable results.
-        learn_alias(lastname, artifact_graph)
-        return
-    else:
-        learn_name(firstname, lastname, artifact_graph)
-    learn_alias(mail, artifact_graph)
+        if not firstname:
+            # Bird's algorithm assumes that names are real names.
+            # Since git usernames have no such restriction, we need to treat nicknames differently.
+            # Treating them as aliases like the email prefixes should yield comparable results.
+            learn_alias(lastname, artifact_graph)
+            return
+        else:
+            learn_name(firstname, lastname, artifact_graph)
+    if mail:
+        mail = extract_mail_prefix(mail)
+        learn_alias(mail, artifact_graph)
 
 
 def learn_commit(artifact_graph, commit,args):
-    learn_name_and_mail(artifact_graph, commit["committer_name"], commit["committer_mail"])
-    learn_name_and_mail(artifact_graph, commit["author_name"], commit["author_mail"])
+    learn_name_and_mail(artifact_graph, commit.get("committer_name",None), commit.get("committer_mail",None))
+    learn_name_and_mail(artifact_graph, commit.get("author_name",None), commit.get("author_mail",None))
     return artifact_graph
