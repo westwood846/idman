@@ -9,10 +9,10 @@ class StatsRecorder:
         self.signer_keys = set()
 
     def record_commit(self, commit):
-        if commit["author_mail"]:       self.author_mails.add(commit["author_mail"])
-        if commit["author_name"]:       self.author_names.add(commit["author_name"])
-        if commit["committer_mail"]:    self.committer_mails.add(commit["committer_mail"])
-        if commit["committer_name"]:    self.committer_names.add(commit["committer_name"])
-        if commit["signer"]:            self.signers.add(commit["signer"])
-        if commit["signer_key"]:        self.signer_keys.add()
+        if commit.get("author_mail", None):       self.author_mails.add(commit["author_mail"])
+        if commit.get("author_name", None):       self.author_names.add(commit["author_name"])
+        if commit.get("committer_mail", None):    self.committer_mails.add(commit["committer_mail"])
+        if commit.get("committer_name", None):    self.committer_names.add(commit["committer_name"])
+        if commit.get("signer", None):            self.signers.add(commit["signer"])
+        if commit.get("signer_key", None):        self.signer_keys.add(commit["signer_key"])
         self.commits += 1
