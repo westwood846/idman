@@ -22,17 +22,24 @@ from util.stats_recorder import StatsRecorder
 import argparse
 import pkgutil
 
-#Set Possible Command Line Arguments and their help messages
+# Set Possible Command Line Arguments and their help messages
 cl_argument_parser = argparse.ArgumentParser(description='Graph based identity management',epilog='(c) 2016 Marco Brack, Carsten Hartenfels, Michael Monschau')
 cl_argument_parser.add_argument("algorithm",metavar="algorithm", help="the algorithm to use for creating connections",choices=[modname for importer, modname, ispkg in pkgutil.iter_modules(importlib.import_module("algorithm").__path__)])
 cl_argument_parser.add_argument("-m","--metric",metavar="metric", help="for an similarity-based Algorithm: the similarity-measure to be used; defaults to 'sequence'",choices=[modname for importer, modname, ispkg in pkgutil.iter_modules(importlib.import_module("statistical").__path__)],default="sequence")
 cl_argument_parser.add_argument("--min_similarity",metavar="sim",help="for an similarity-based Algorithm: the minimal requied similarity (between 0.00 and 1.00)  for an match; defaults to 0.9",default=0.9, type=float)
+cl_argument_parser.add_argument("--filter", help="remove all edges with a weight below min", type=int, metavar="min")
+
 outputgroup = cl_argument_parser.add_mutually_exclusive_group()
 outputgroup.add_argument("--dot", action="store_true", help="use graphviz output")
 outputgroup.add_argument("--stats", action="store_true", help="print statistics, instead of results")
-cl_argument_parser.add_argument("--filter", help="remove all edges with a weight below", type=int, metavar="min")
 
-#Parse the Command Line Arguments
+used_data = cl_argument_parser.add_mutually_exclusive_group()
+used_data.add_argument("--commiters-only", action="store_true", help="use only committer-data")
+used_data.add_argument("--authors-only", action="store_true", help="use only author-data")
+used_data.add_argument("--signers-only", action="store_true", help="use only signer-data")
+
+
+# Parse the Command Line Arguments
 args = cl_argument_parser.parse_args()
 
 algorithm = importlib.import_module("algorithm."+args.algorithm)
