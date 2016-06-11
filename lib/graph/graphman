@@ -21,6 +21,7 @@ from util.setencoder import SetEncoder
 from util.stats_recorder import StatsRecorder
 import argparse
 import pkgutil
+from util import filters
 
 # Set Possible Command Line Arguments and their help messages
 cl_argument_parser = argparse.ArgumentParser(description='Graph based identity management',epilog='(c) 2016 Marco Brack, Carsten Hartenfels, Michael Monschau')
@@ -34,7 +35,7 @@ outputgroup.add_argument("--dot", action="store_true", help="use graphviz output
 outputgroup.add_argument("--stats", action="store_true", help="print statistics, instead of results")
 
 used_data = cl_argument_parser.add_mutually_exclusive_group()
-used_data.add_argument("--commiters-only", action="store_true", help="use only committer-data")
+used_data.add_argument("--committers-only", action="store_true", help="use only committer-data")
 used_data.add_argument("--authors-only", action="store_true", help="use only author-data")
 used_data.add_argument("--signers-only", action="store_true", help="use only signer-data")
 
@@ -49,8 +50,15 @@ artifact_graph = nx.Graph()
 
 for line in sys.stdin:
     commit = json.loads(line)
-    algorithm.learn_commit(artifact_graph, commit,args)
     statsRecorder.record_commit(commit)
+    if args.authors_only:
+        commit = filters.get_certain_keys(commit,"author")
+    elif args.committers_only:
+        commit = filters.get_certain_keys(commit, "committer")
+    elif args.signers_only:
+        commit = filters.get_certain_keys(commit, "signer")
+    algorithm.learn_commit(artifact_graph, commit, args)
+
 
 identities = []
 for component in nx.connected_components(artifact_graph):
