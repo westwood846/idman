@@ -1,3 +1,4 @@
+# coding=utf-8
 # Connection criterion: name and mail or signer and signer_key appear in the same commit
 # The edges are weighted by the number of commits where they appeared.
 
@@ -6,7 +7,12 @@ from util import filters
 
 
 def learn_artifacts(artifact_graph, artifacts):
-    artifacts=filters.clean_list(artifacts)
+    """
+
+    :param artifact_graph:
+    :param artifacts:
+    """
+    artifacts = filters.clean_list(artifacts)
     for artifact in artifacts:
         artifact_graph.add_node(artifact)
 
@@ -16,12 +22,20 @@ def learn_artifacts(artifact_graph, artifacts):
         else:
             artifact_graph.add_edge(u, v, label=1)
 
-def learn_commit(artifact_graph, commit,args):
+
+# noinspection PyUnusedLocal
+def learn_commit(artifact_graph, commit, args):
+    """
+
+    :param artifact_graph:
+    :param commit:
+    :param args:
+    """
     author_artifacts = [commit["author_name"], commit["author_mail"]]
     learn_artifacts(artifact_graph, author_artifacts)
 
     committer_artifacts = [commit["committer_name"], commit["committer_mail"]]
     learn_artifacts(artifact_graph, committer_artifacts)
 
-    signer_artifacts = [commit['signer'],commit['signer_key']]
+    signer_artifacts = [commit['signer'], commit['signer_key']]
     learn_artifacts(artifact_graph, signer_artifacts)

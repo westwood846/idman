@@ -13,7 +13,7 @@
 # See lazy algorithm for an example on how to interface with parseman.
 
 import networkx as nx
-#from networkx.drawing.nx_agraph import graphviz_layout
+# from networkx.drawing.nx_agraph import graphviz_layout
 import sys
 import json
 import importlib
@@ -24,11 +24,27 @@ import pkgutil
 from util import filters
 
 # Set Possible Command Line Arguments and their help messages
-cl_argument_parser = argparse.ArgumentParser(description='Graph based identity management',epilog='(c) 2016 Marco Brack, Carsten Hartenfels, Michael Monschau')
-cl_argument_parser.add_argument("algorithm",metavar="algorithm", help="the algorithm to use for creating connections",choices=[modname for importer, modname, ispkg in pkgutil.iter_modules(importlib.import_module("algorithm").__path__)])
-cl_argument_parser.add_argument("-m","--metric",metavar="metric", help="for an similarity-based Algorithm: the similarity-measure to be used; defaults to 'sequence'",choices=[modname for importer, modname, ispkg in pkgutil.iter_modules(importlib.import_module("statistical").__path__)],default="sequence")
-cl_argument_parser.add_argument("--min_similarity",metavar="sim",help="for an similarity-based Algorithm: the minimal requied similarity (between 0.00 and 1.00)  for an match; defaults to 0.9",default=0.9, type=float)
-cl_argument_parser.add_argument("--filter", help="remove all edges with a weight below min", type=int, metavar="min")
+cl_argument_parser = argparse.ArgumentParser(description='Graph based identity management',
+                                             epilog='(c) 2016 Marco Brack, Carsten Hartenfels, Michael Monschau')
+cl_argument_parser.add_argument("algorithm", metavar="algorithm",
+                                help="the algorithm to use for creating connections",
+                                choices=[modname for importer, modname, ispkg in
+                                         pkgutil.iter_modules(
+                                                 importlib.import_module("algorithm").__path__)])
+# noinspection PyRedeclaration,PyRedeclaration
+cl_argument_parser.add_argument("-m", "--metric", metavar="metric",
+                                help="for an similarity-based Algorithm: the similarity-measure to be used; "
+                                     "defaults to 'sequence'",
+                                choices=[modname for importer, modname, ispkg in
+                                         pkgutil.iter_modules(
+                                                 importlib.import_module("statistical").__path__)],
+                                default="sequence")
+cl_argument_parser.add_argument("--min_similarity", metavar="sim",
+                                help="for an similarity-based Algorithm: the minimal requied similarity (between "
+                                     "0.00 and 1.00)  for an match; defaults to 0.9",
+                                default=0.9, type=float)
+cl_argument_parser.add_argument("--filter", help="remove all edges with a weight below min", type=int,
+                                metavar="min")
 
 outputgroup = cl_argument_parser.add_mutually_exclusive_group()
 outputgroup.add_argument("--dot", action="store_true", help="use graphviz output")
@@ -39,11 +55,10 @@ used_data.add_argument("--committers-only", action="store_true", help="use only 
 used_data.add_argument("--authors-only", action="store_true", help="use only author-data")
 used_data.add_argument("--signers-only", action="store_true", help="use only signer-data")
 
-
 # Parse the Command Line Arguments
 args = cl_argument_parser.parse_args()
 
-algorithm = importlib.import_module("algorithm."+args.algorithm)
+algorithm = importlib.import_module("algorithm." + args.algorithm)
 statsRecorder = StatsRecorder()
 
 artifact_graph = nx.Graph()
@@ -52,25 +67,22 @@ for line in sys.stdin:
     commit = json.loads(line)
     statsRecorder.record_commit(commit)
     if args.authors_only:
-        commit = filters.get_certain_keys(commit,"author")
+        commit = filters.get_certain_keys(commit, "author")
     elif args.committers_only:
         commit = filters.get_certain_keys(commit, "committer")
     elif args.signers_only:
         commit = filters.get_certain_keys(commit, "signer")
     algorithm.learn_commit(artifact_graph, commit, args)
 
-
 identities = []
 for component in nx.connected_components(artifact_graph):
     identities.append(component)
-
 
 if args.filter:
     minimum = args.filter
     for u, v, data in artifact_graph.edges(data=True):
         if data["label"] < minimum:
             artifact_graph.remove_edge(u, v)
-
 
 if args.dot:
     print nx.drawing.nx_agraph.to_agraph(artifact_graph)
