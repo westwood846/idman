@@ -18,8 +18,7 @@ def learn_artifacts(artifact_graph, artifacts):
     :param artifacts:
     """
     artifacts = filters.clean_list(artifacts)
-    artifacts += [rx.sub("", x.lower()) for x in artifacts]
-
+    artifacts = set(artifacts + [rx.sub("", x.lower()) for x in artifacts])
     for artifact in artifacts:
         artifact_graph.add_node(artifact)
 
