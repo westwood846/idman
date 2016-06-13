@@ -7,7 +7,7 @@ use IPC::Open2;
 use Pod::Usage;
 
 
-if (@ARGV < 2) {
+if (@ARGV < 1) {
     pod2usage('Missing arguments.');
 }
 elsif (grep { /^--?h(elp)?$/ } @ARGV) {
@@ -17,6 +17,7 @@ elsif (grep { /^--?h(elp)?$/ } @ARGV) {
 
 my $dir = dirname($0) . '/lib';
 my ($repo, $algorithm, @args) = @ARGV;
+$algorithm //= 'default';
 
 if (!-e "$dir/graph/algorithm/$algorithm.py") {
     die "No such algorithm found at '$dir/graph/algorithm/$algorithm.py'\n";
@@ -55,6 +56,6 @@ idman - identify unique contributors of a git repository
 
 =head1 SYNOPSIS
 
-    idman GIT_REPO_FOLDER ALGORITHM [ARGS...]
+    idman GIT_REPO_FOLDER [ALGORITHM ARGS...]
 
 =cut
