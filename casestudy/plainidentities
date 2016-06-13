@@ -1,0 +1,29 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use autodie;
+use File::Basename qw(basename);
+use JSON::PP;
+
+my $json = JSON::PP->new->utf8->pretty->canonical;
+
+
+for my $repo (glob 'repos/*') {
+    my $name = basename($repo);
+    print "$name\n";
+
+    my %identities;
+    open my $parseman, '-|', '../lib/parseman', $repo;
+
+    while (<$parseman>) {
+        my $commit = $json->decode($_);
+        $identities{"$commit->{   author_name}\0$commit->{   author_mail}"} = 1;
+        $identities{"$commit->{committer_name}\0$commit->{committer_mail}"} = 1;
+    }
+
+    close $parseman;
+
+    open my $fh, '>', "output/$name.json";
+    print {$fh} $json->encode([map { [split "\0"] } keys %identities]);
+    close $fh;
+}
