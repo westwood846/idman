@@ -24,7 +24,7 @@
         \usebeamerfont{author in head/foot}Brack, Hartenfels, Monschau
     \end{beamercolorbox}
     \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
-        \usebeamerfont{title in head/foot}Bug Assignee Recommendation
+        \usebeamerfont{title in head/foot}Idman
     \end{beamercolorbox}
     \begin{beamercolorbox}[wd=.309\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}
         \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
@@ -126,6 +126,21 @@ What methods of identity management can we use?
     \gitem No Signers: Nobody signs anything.
     \gitem Most identities are both authors and committers
   \end{itemize}
+  \begin{table}[]
+    \centering
+    \caption{Results of Identity-Merges}
+    \label{tab:results}
+    \begin{tabular}{|l|l|l|l|}
+      \hline
+      \textbf{Repo}    & \textbf{Git} & \textbf{Default} & \textbf{Occurrence} \\ \hline
+      django-cms       & 564          & 454              & 457                 \\ \hline
+      django-oscar     & 250          & 207              & 208                 \\ \hline
+      django-wiki      & 81           & 69               & 69                  \\ \hline
+      elasticsearch    & 913          & 795              & 797                 \\ \hline
+      libgdx           & 517          & 420              & 421                 \\ \hline
+      spring-framework & 230          & 188              & 188                 \\ \hline
+    \end{tabular}
+  \end{table}
   \vfill
 \end{frame}
 
