@@ -1,0 +1,23 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use autodie ':all';
+use File::Basename qw(basename);
+
+my @ALGORITHMS = qw(
+    default
+    occurrence
+);
+
+mkdir 'results' if not -d 'results';
+
+for my $algorithm (@ALGORITHMS) {
+    my $dir = "results/$algorithm";
+    mkdir $dir if not -d $dir;
+
+    for my $repo (glob 'repos/*') {
+        my $base = basename($repo);
+        print "$algorithm\t$base\n";
+        system "../idman $repo $algorithm > $dir/$base.json";
+    }
+}

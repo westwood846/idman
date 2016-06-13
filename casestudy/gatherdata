@@ -1,0 +1,81 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use autodie;
+use File::Basename qw(basename);
+use JSON::PP;
+
+use constant AUTHOR    => 1;
+use constant COMMITTER => 2;
+use constant BOTH      => AUTHOR | COMMITTER;
+
+
+sub slurp_json {
+    my ($path) = @_;
+    open my $fh, '<', $path;
+    my $content = do { local $/; <$fh> };
+    close $fh;
+    return decode_json($content);
+}
+
+sub spew_json {
+    my ($path, $data) = @_;
+    my $encoded = JSON::PP->new->utf8->pretty->canonical->encode($data);
+
+    print $encoded;
+
+    open my $fh, '>', $path;
+    print {$fh} $encoded;
+    close $fh;
+}
+
+mkdir 'output' if not -d 'output';
+
+for my $dir (glob 'results/*') {
+    my $algorithm = basename($dir);
+    mkdir "output/$algorithm" if not -d "output/$algorithm";
+
+    for my $file (glob "$dir/*") {
+        my $stats = slurp_json($file);
+        my $repo  = basename($file);
+        $repo =~ s/\.json$//;
+
+        my $out = "output/$algorithm/$repo.json";
+        print "\n$out\n";
+
+        my @contributors;
+        my %data = (
+            same      => 0,
+            different => 0,
+            signers   => 0,
+        );
+
+        for my $commit (values %{$stats->{commits}}) {
+            my ($a, $c, $s) = @{$commit}{qw(author committer signer)};
+
+            $contributors[$a] |= AUTHOR;
+            $contributors[$c] |= COMMITTER;
+
+            if ($a == $c) {
+                $data{same}++;
+            }
+            else {
+                $data{different}++;
+            }
+
+            if (defined $s) {
+                $data{signer}++;
+            }
+        }
+
+        $data{authors   } = grep { $_ == AUTHOR    } @contributors;
+        $data{committers} = grep { $_ == COMMITTER } @contributors;
+        $data{both      } = grep { $_ == BOTH      } @contributors;
+
+        for (grep { $contributors[$_] == COMMITTER } 0 .. $#contributors) {
+            print join(' ', $_, @{$stats->{identities}[$_]}), "\n";
+        }
+
+        spew_json($out, \%data);
+    }
+}

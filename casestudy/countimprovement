@@ -1,0 +1,37 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use feature qw(say);
+use File::Basename qw(basename);
+use Path::Tiny;
+use JSON::PP;
+
+
+sub name {
+    my ($path) = @_;
+    return basename($path) =~ s/\.json$//r;
+}
+
+
+my %repos;
+
+for (glob 'output/*.json') {
+    my $identities = decode_json(path($_)->slurp);
+    $repos{name($_)}{none} = @$identities;
+}
+
+for my $algo (glob 'results/*') {
+    for (glob "$algo/*.json") {
+        print "$_\n";
+        my $result = decode_json(path($_)->slurp);
+        $repos{name($_)}{$algo} = @{$result->{identities}};
+    }
+}
+
+for my $repo (sort keys %repos) {
+    print $repo;
+    for my $algo (sort keys %{$repos{$repo}}) {
+        print "\t$repos{$repo}{$algo}";
+    }
+    print "\n";
+}

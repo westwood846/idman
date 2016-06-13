@@ -1,0 +1,9 @@
+#!/bin/sh
+mkdir -p repos
+cd repos
+git clone https://github.com/django-oscar/django-oscar.git
+git clone https://github.com/divio/django-cms.git
+git clone https://github.com/django-wiki/django-wiki.git
+git clone https://github.com/elastic/elasticsearch.git
+git clone https://github.com/libgdx/libgdx.git
+git clone https://github.com/spring-projects/spring-framework.git
