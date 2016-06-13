@@ -3,9 +3,12 @@
 \usepackage{fancyvrb}
 \usepackage[absolute,overlay]{textpos}
 \usepackage{comment}
+\usepackage{newunicodechar}
+\usepackage{graphicx}
+\newunicodechar{💃}{\includegraphics{dancer}}
 
 \title{Idman}
-\subtitle{Doing the Identity Management Dance}
+\subtitle{💃 Doing the Identity Management Dance 💃}
 \author{Marco Brack \and Carsten Hartenfels \and Michael Monschau}
 \date{2016-05-31}
 
@@ -90,7 +93,13 @@
 
 \begin{frame}
 	\frametitle{Method}
-	%Graph-based
+  \begin{itemize}
+    \gitem Artifacts are nodes
+    \gitem Artifacts are connected if they belong to the same identity
+    \gitem This is decided by alogithms
+    \gitem Connected components of resulting graph are identities
+  \end{itemize}
+  \vfill
 \end{frame}
 
 \nextframe
@@ -101,12 +110,23 @@ What methods of identity management can we use?
 \end{comment}
 
 \begin{frame}
-	\frametitle{Alorithms}
+	\frametitle{Algorithms}
+  \begin{itemize}
+    \gitem Lazy
+    \gitem Occurrence
+    \gitem Wordsimilarity
+    \gitem Bird
+  \end{itemize}
 \end{frame}
 \nextframe
 
 \begin{frame}
 	\frametitle{Results}
+  \begin{itemize}
+    \gitem No Signers: Nobody signs anything.
+    \gitem Most identities are both authors and committers
+  \end{itemize}
+  \vfill
 \end{frame}
 
 
