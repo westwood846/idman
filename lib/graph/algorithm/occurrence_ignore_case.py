@@ -1,9 +1,14 @@
 # coding=utf-8
 # Connection criterion: name and mail or signer and signer_key appear in the same commit
+# Case is ignored and `.(none)` on mails is stripped
 # The edges are weighted by the number of commits where they appeared.
 
 import itertools
+import re
 from util import filters
+
+
+rx = re.compile(r'\.?\(none\)$');
 
 
 def learn_artifacts(artifact_graph, artifacts):
@@ -13,7 +18,8 @@ def learn_artifacts(artifact_graph, artifacts):
     :param artifacts:
     """
     artifacts = filters.clean_list(artifacts)
-    artifacts = artifacts + [x.lower() for x in artifacts]
+    artifacts += [rx.sub("", x.lower()) for x in artifacts]
+
     for artifact in artifacts:
         artifact_graph.add_node(artifact)
 
