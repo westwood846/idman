@@ -1,3 +1,7 @@
+![django-wiki](/header.png?raw=true)
+
+
+
 # idman
 
 Usage: `./idman GIT_REPO_FOLDER ALGORITHM [ARGS...]`.
