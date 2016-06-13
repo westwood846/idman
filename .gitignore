@@ -8,3 +8,4 @@
 *.snm
 *.toc
 *.pyc
+!presentation/dancer.pdf
