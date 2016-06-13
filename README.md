@@ -45,3 +45,7 @@ signer of every commit in that repository according to the merged identities.
 * c't 40 000 Namen : <http://www.heise.de/ct/ftp/07/17/182/>
 * "Frequency and Ranking of Baby Names by Year and Gender" in Alberta (Canada): <http://open.alberta.ca/dataset/frequency-and-ranking-of-baby-names-by-year-and-gender>
 
+## Accompanying Music
+
+Alle sind Amerikaner: <https://www.youtube.com/watch?v=96gZ_yptUNk>
+Identity: <https://www.youtube.com/watch?v=TpRj_wz5vx8>
