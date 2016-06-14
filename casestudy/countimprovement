@@ -24,14 +24,19 @@ for my $algo (glob 'results/*') {
     for (glob "$algo/*.json") {
         print "$_\n";
         my $result = decode_json(path($_)->slurp);
-        $repos{name($_)}{$algo} = @{$result->{identities}};
+        $repos{name($_)}{basename($algo)} = @{$result->{identities}};
     }
 }
 
+
+my @algorithms = qw(none occurrence wordsimilarity default);
+print join ' & ', map { "\\textbf{\u$_}" } 'repo', @algorithms;
+print "\\\\\\hline\n";
+
 for my $repo (sort keys %repos) {
     print $repo;
-    for my $algo (sort keys %{$repos{$repo}}) {
-        print "\t$repos{$repo}{$algo}";
+    for my $algo (@algorithms) {
+        print " & $repos{$repo}{$algo}";
     }
-    print "\n";
+    print "\\\\\\hline\n";
 }
