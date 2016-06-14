@@ -41,6 +41,7 @@ my %commit_map;
 while (<STDIN>) {
     my $commit = decode_json($_);
     $commit_map{$commit->{hash}} = {
+        %$commit,
         author    => identify(@{$commit}{   'author_name',    'author_mail'}),
         committer => identify(@{$commit}{'committer_name', 'committer_mail'}),
         signer    => identify($commit->{signer}),
