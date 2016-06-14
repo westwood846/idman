@@ -56,8 +56,8 @@
        \gitem Terminology
        \gitem Available Information
        \gitem Method
-       \gitem Approaches to id-management
        \gitem Results
+       \gitem Usage
     \end{itemize}
     \vfill
 \end{frame}
@@ -65,39 +65,49 @@
 \nextframe
 
 \begin{frame}
-	\frametitle{What are the differences between committers and authors?}
-	\begin{itemize}
-		\gitem Commiter: ``Uploader''
-		\gitem Author: ``Writer''
-	\end{itemize}
-	\vfill
+    \framecount{Terminology}
+    \begin{itemize}
+        \gitem Author
+        \begin{itemize}
+            \gitem Developer That Writes the Code
+        \end{itemize}
+        \gitem Committer
+        \begin{itemize}
+            \gitem Person That Applies Patch to the Repo
+        \end{itemize}
+        \gitem Signer
+        \begin{itemize}
+            \gitem Person That Signed a Commit With Their GPG Key
+        \end{itemize}
+    \end{itemize}
+    \vfill
 \end{frame}
 
 \nextframe
 
 \begin{frame}
-	% What developer information can we access / use?
-	\frametitle{Available Information}
-	\begin{itemize}
-		\gitem Author name
-		\gitem Author mail
-		\gitem Committer name
-		\gitem Committer mail
-		\gitem Signer (name)
-		\gitem Signer key
-	\end{itemize}
-	\vfill
+    % What developer information can we access / use?
+    \framecount{Available Information}
+    \begin{itemize}
+        \gitem Author Name
+        \gitem Author Mail
+        \gitem Committer Name
+        \gitem Committer Mail
+        \gitem Signer
+        \gitem Signer Key
+    \end{itemize}
+    \vfill
 \end{frame}
 
 \nextframe
 
 \begin{frame}
-	\frametitle{Method}
+  \framecount{Method}
   \begin{itemize}
-    \gitem Artifacts are nodes
-    \gitem Artifacts are connected if they belong to the same identity
-    \gitem This is decided by alogithms
-    \gitem Connected components of resulting graph are identities
+    \gitem Artifacts are Nodes
+    \gitem Artifacts are Connected If They Belong to the Same Identity
+    \gitem This is Decided by Algoithms
+    \gitem Connected Components of Resulting Graph are Identities
   \end{itemize}
   \vfill
 \end{frame}
@@ -110,7 +120,7 @@ What methods of identity management can we use?
 \end{comment}
 
 \begin{frame}
-	\frametitle{Algorithms}
+  \framecount{Algorithms}
   \begin{itemize}
     \gitem Lazy
     \gitem Occurrence
@@ -121,10 +131,52 @@ What methods of identity management can we use?
 \nextframe
 
 \begin{frame}
-	\frametitle{Results}
+  \framecount{Results}
   \begin{itemize}
-    \gitem No Signers: Nobody signs anything.
-    \gitem Most identities are both authors and committers
+    \gitem Nobody Signs Anything
+    \gitem Most Commits Have the Same Author and Committer
+  \end{itemize}
+  \vfill
+\end{frame}
+
+\begin{frame}
+  \framecount{Results}
+  \begin{itemize}
+    \gitem Very Few ``Pure'' Committers
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[height=150pt]{img/django-wiki}
+    \caption{django-wiki}
+  \end{figure}
+  \vfill
+\end{frame}
+\begin{frame}
+  \framecount{Results}
+  \begin{itemize}
+    \gitem Very Few ``Pure'' Committers
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[height=150pt]{img/django-oscar}
+    \caption{django-oscar}
+  \end{figure}
+  \vfill
+\end{frame}
+\begin{frame}
+  \framecount{Results}
+  \begin{itemize}
+    \gitem Very Few ``Pure'' Committers
+  \end{itemize}
+  \begin{figure}
+    \includegraphics[height=150pt]{img/elasticsearch}
+    \caption{elasticsearch}
+  \end{figure}
+  \vfill
+\end{frame}
+
+\begin{frame}
+  \framecount{Results}
+  \begin{itemize}
+    \gitem Simple Occurrence Algorithm is Fine
   \end{itemize}
   \begin{table}[]
     \centering
@@ -132,16 +184,29 @@ What methods of identity management can we use?
     \label{tab:results}
     \begin{tabular}{|l|l|l|l|}
       \hline
-      \textbf{Repo}    & \textbf{Git} & \textbf{Default} & \textbf{Occurrence} \\ \hline
-      django-cms       & 564          & 454              & 457                 \\ \hline
-      django-oscar     & 250          & 207              & 208                 \\ \hline
-      django-wiki      & 81           & 69               & 69                  \\ \hline
-      elasticsearch    & 913          & 795              & 797                 \\ \hline
-      libgdx           & 517          & 420              & 421                 \\ \hline
-      spring-framework & 230          & 188              & 188                 \\ \hline
+      \textbf{Repo}    & \textbf{Git} & \textbf{Occurrence} & \textbf{Default} \\ \hline
+      django-cms       & 564          & 457                 & 454              \\ \hline
+      django-oscar     & 250          & 208                 & 207              \\ \hline
+      django-wiki      & 81           & 69                  & 69               \\ \hline
+      elasticsearch    & 913          & 797                 & 795              \\ \hline
+      libgdx           & 517          & 421                 & 420              \\ \hline
+      spring-framework & 230          & 188                 & 188              \\ \hline
     \end{tabular}
   \end{table}
   \vfill
+\end{frame}
+
+
+\nextframe
+\begin{frame}
+    \framecount{Usage}
+    \begin{itemize}
+        \gitem Clone \url{https://github.com/turbopope/idman}
+        \gitem Install \texttt{networkx} Python package
+        \gitem Run \texttt{idman path/to/repo}
+        \gitem Get Commits With Identities
+    \end{itemize}
+    \vfill
 \end{frame}
 
 
