@@ -109,6 +109,24 @@ See the `--find-renames` and `--find-copies` options in `git log --help` for
 details.
 
 
+## Structure
+
+[idman](idman) is the controller that executes all the pieces in [lib](lib) and
+pipes them together properly.
+
+[parseman](lib/parseman) gathers all commit information from git and spews out
+a JSON object for each of them on stdout.
+
+[graphman](lib/graph/graphman) does the identity merging from the commit
+information it receives from [parseman](lib/parseman). It can pick from various
+[identity merging algorithms](lib/graph/algorithm).
+
+[assocman](lib/assocman) receives the results from
+[graphman](lib/graph/graphman) and the raw commit information from
+[parseman](lib/parseman) and associates the two, producing the final output. If
+the algorithm is bad and results in ambiguous associations, assocman will die.
+
+
 ## Algorithms
 
 ### occurrence
