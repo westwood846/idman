@@ -11,25 +11,18 @@ mkdir 'charts' if not -d 'charts';
 for (glob 'output/default/*.json') {
     my $name = basename($_) =~ s/\.json$//r;
     my $json = decode_json(path($_)->slurp);
-    my @csv  = join "\n", map { "\u$_,$json->{$_}" } qw(authors committers both);
 
-    open my $fh, '>:encoding(UTF-8)', "charts/$name.tex";
-    print {$fh} <<HERE;
-\\documentclass{standalone}
-\\usepackage{datapie}
-\\begin{filecontents}{$name.csv}
-Name,Quantity
-@csv
-\\end{filecontents}
-\\DTLloaddb{$name}{$name.csv}
-\\begin{document}
-\\DTLpiechart{variable=\\quantity,outerlabel=\\name}{$name}{\\name=Name,\\quantity=Quantity}
-\\end{document}
-HERE
-    close $fh;
-}
+    {
+        my @csv  = join "\n", map { "\u$_,$json->{$_}" } qw(authors committers both);
+        open my $fh, '>:encoding(UTF-8)', "charts/$name-authors.csv";
+        print {$fh} "@csv\n";
+        close $fh;
+    }
 
-chdir 'charts';
-for (glob '*.tex') {
-    system pdflatex => $_;
+    {
+        my @csv  = join "\n", map { "\u$_,$json->{$_}" } qw(same different);
+        open my $fh, '>:encoding(UTF-8)', "charts/$name-commits.csv";
+        print {$fh} "@csv\n";
+        close $fh;
+    }
 }
