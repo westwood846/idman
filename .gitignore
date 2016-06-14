@@ -9,3 +9,4 @@
 *.toc
 *.pyc
 !presentation/dancer.pdf
+!header.png
