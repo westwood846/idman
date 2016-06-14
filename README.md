@@ -23,80 +23,80 @@ If no `ALGORITHM` is given, the default one is used.
 
 The idman output will be a JSON object. It contains the following keys:
 
-### `identities`
+#### `identities`
 
 An array of identities, each representing an individual contributor. Each
 identity is a list of identifiers, such as usernames and e-mail addresses.
 
-### `commits`
+#### `commits`
 
 An object representing all commits in the repository, keyed by their hash. Each
 individual commit contains the following keys:
 
-#### `author`
+##### `author`
 
-#### `committer`
+##### `committer`
 
-#### `signer`
+##### `signer`
 
 These values are integers referring to indexes in the `identities` array, or
 null if no such association exists. Use these to tell who authored, committed
 or signed this particular commit.
 
-#### `author_name`
+##### `author_name`
 
-#### `author_mail`
+##### `author_mail`
 
-#### `committer_name`
+##### `committer_name`
 
-#### `committer_mail`
+##### `committer_mail`
 
-#### `signer`
+##### `signer`
 
 These are the raw names and e-mails from git. Don't use these for
 identification, they are raw and the identities aren't merged! Use `author`,
 `committer` and `signer` instead.
 
-#### `repo`
+##### `repo`
 
 The path to the repository's local folder. If you want to run further git
 commands on it, you might need to append `/.git` to it.
 
-#### `hash`
+##### `hash`
 
 The commit's sha-1 hash.
 
-#### `author_date`
+##### `author_date`
 
 The date that the commit was authored as a Unix timestamp. Note that this is a
 string of digits, not an integer.
 
-#### `committer_date`
+##### `committer_date`
 
 The date that the commit was committed.
 
-#### `subject`
+##### `subject`
 
 The commit message subject line.
 
-#### `body`
+##### `body`
 
 The rest of the commit message.
 
-#### `notes`
+##### `notes`
 
 The notes attached to the commit. Basically a message in addition to the
 regular commit message.
 
-#### `signer_key`
+##### `signer_key`
 
 The signature key of who signed the commit.
 
-#### `touched_files`
+##### `touched_files`
 
-#### `insertions`
+##### `insertions`
 
-#### `deletions`
+##### `deletions`
 
 The amount of modified files, inserted lines and deleted lines in the commit,
 respectively. Renamed files are taken into account properly, so a rename on
