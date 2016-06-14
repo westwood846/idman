@@ -21,6 +21,9 @@ If no `ALGORITHM` is given, the default one is used.
 
 ## Output
 
+See [sample-output.json](sample-output.json) for an example. It's the output
+for this here repository.
+
 The idman output will be a JSON object. It contains the following keys:
 
 #### `identities`
