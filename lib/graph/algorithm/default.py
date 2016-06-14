@@ -37,11 +37,11 @@ def learn_commit(artifact_graph, commit, args):
     :param commit:
     :param args:
     """
-    author_artifacts = [commit["author_name"], commit["author_mail"]]
+    author_artifacts = [commit.get("author_name",None), commit.get("author_mail",None)]
     learn_artifacts(artifact_graph, author_artifacts)
 
-    committer_artifacts = [commit["committer_name"], commit["committer_mail"]]
+    committer_artifacts = [commit.get("committer_name",None), commit.get("committer_mail",None)]
     learn_artifacts(artifact_graph, committer_artifacts)
 
-    signer_artifacts = [commit['signer'], commit['signer_key']]
+    signer_artifacts = [commit.get('signer',None), commit.get('signer_key',None)]
     learn_artifacts(artifact_graph, signer_artifacts)

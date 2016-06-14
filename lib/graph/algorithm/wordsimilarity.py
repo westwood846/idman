@@ -53,7 +53,9 @@ def learn_person(artifact_graph, artifacts, min_similarity=0.9, metric="sequence
     for a in artifacts:
         for cluster in nx.connected_components(artifact_graph):
             for n in cluster:
-                if metric_calc.calc_similarity(a, n) >= min_similarity and not a == n:
+                if a == n: #node already present
+                    break
+                elif metric_calc.calc_similarity(a, n) >= min_similarity:
                     if artifact_graph.has_edge(a, n):
                         artifact_graph[a][n]["label"] += 1
                     else:

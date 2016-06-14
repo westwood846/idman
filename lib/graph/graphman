@@ -26,7 +26,8 @@ from util import filters
 # Set Possible Command Line Arguments and their help messages
 cl_argument_parser = argparse.ArgumentParser(description='Graph based identity management',
                                              epilog='(c) 2016 Marco Brack, Carsten Hartenfels, Michael Monschau')
-cl_argument_parser.add_argument("algorithm", metavar="algorithm",
+cl_argument_parser.add_argument("algorithm", metavar="algorithm", 
+                                default="default", nargs="?",
                                 help="the algorithm to use for creating connections",
                                 choices=[modname for importer, modname, ispkg in
                                          pkgutil.iter_modules(
