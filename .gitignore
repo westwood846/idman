@@ -7,6 +7,8 @@
 *.pdf
 *.snm
 *.toc
+*.synctex.gz
 *.pyc
+.idea
 !presentation/dancer.pdf
 !header.png
