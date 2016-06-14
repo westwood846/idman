@@ -148,8 +148,11 @@ explain how to write algorithms, it's useless otherwise.
 
 ### retarded-occurence
 
+Like occurrence but without distinction between committer, author and signer.
+
 ### wordsimilarity
 
+Like occurrence but additionally connects nodes if identifiers are similar according to a [statistical metric](lib/graph/statistical).
 
 ## Papers
 
