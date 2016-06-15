@@ -19,6 +19,6 @@ for my $algorithm (@ALGORITHMS) {
     for my $repo (glob 'repos/*') {
         my $base = basename($repo);
         print "$algorithm\t$base\n";
-        system "../idman $repo $algorithm > $dir/$base.json";
+        system "../../idman $repo $algorithm > $dir/$base.json";
     }
 }
