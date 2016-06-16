@@ -43,6 +43,8 @@
          ]
       }
    ],
+   "precision" : 1,
+   "recall" : 0.970149253731343,
    "true_positives" : 65,
    "wrongly_merged" : []
 }
