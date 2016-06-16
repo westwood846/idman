@@ -1,4 +1,7 @@
 {
+   "false_negatives" : 0,
+   "false_positives" : 0,
    "not_merged" : [],
+   "true_positives" : 4,
    "wrongly_merged" : []
 }

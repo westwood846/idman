@@ -66,6 +66,7 @@ sub find_identities {
 sub compare {
     my ($repo, $algorithm, $reference, $got) = @_;
     my %result = (
+        true_positives => 0,
         not_merged     => [],
         wrongly_merged => [],
     );
@@ -83,15 +84,19 @@ sub compare {
                 got      => \@got_ids,
             };
         }
-
-        my $got_id = [map { @$_ } @got_ids];
-        if (@$got_id != @$ref_id) {
+        elsif (@{$got_ids[0]} != @$ref_id) {
             push @{$result{wrongly_merged}}, {
                 expected => $ref_id,
-                got      => $got_id,
+                got      => \$got_ids[0],
             };
         }
+        else {
+            $result{true_positives}++;
+        }
     }
+
+    $result{false_negatives} = @{$result{not_merged}};
+    $result{false_positives} = @{$result{wrongly_merged}};
 
     return \%result;
 }

@@ -1,4 +1,6 @@
 {
+   "false_negatives" : 3,
+   "false_positives" : 0,
    "not_merged" : [
       {
          "expected" : [
@@ -57,5 +59,6 @@
          ]
       }
    ],
+   "true_positives" : 202,
    "wrongly_merged" : []
 }
