@@ -1,0 +1,61 @@
+{
+   "not_merged" : [
+      {
+         "expected" : [
+            "Andrew Ingram",
+            "andrew.ingram@tangentlabs.co.uk",
+            "AndrewIngram",
+            "andy@andrewingram.net"
+         ],
+         "got" : [
+            [
+               "andy@andrewingram.net",
+               "AndrewIngram"
+            ],
+            [
+               "andrew.ingram@tangentlabs.co.uk",
+               "Andrew Ingram"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            "Dan",
+            "Dan Atkinson",
+            "dan@danatkinson.com",
+            "danatk@gmail.com"
+         ],
+         "got" : [
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            "Fish",
+            "fish",
+            "fish@BM12.(none)",
+            "okfish@yandex.ru",
+            "Oleg Rybkin"
+         ],
+         "got" : [
+            [
+               "Fish",
+               "Oleg Rybkin",
+               "okfish@yandex.ru"
+            ],
+            [
+               "fish@BM12.(none)",
+               "fish"
+            ]
+         ]
+      }
+   ],
+   "wrongly_merged" : []
+}

@@ -1,0 +1,45 @@
+{
+   "not_merged" : [
+      {
+         "expected" : [
+            "guettliml.github@thomas-guettler.de",
+            "info.git@thomas-guettler.de",
+            "Thomas Guettler",
+            "Thomas Güttler"
+         ],
+         "got" : [
+            [
+               "Thomas Güttler",
+               "guettliml.github@thomas-guettler.de"
+            ],
+            [
+               "Thomas Guettler",
+               "info.git@thomas-guettler.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            "Russell Jones",
+            "Russell-Jones",
+            "Russell-Jones@github.com",
+            "Russell-Jones@users.noreply.github.com",
+            "russell.jones@gmail.com",
+            "russell@yellow.(none)"
+         ],
+         "got" : [
+            [
+               "Russell-Jones@github.com",
+               "russell.jones@gmail.com",
+               "Russell Jones",
+               "russell@yellow.(none)"
+            ],
+            [
+               "Russell-Jones@users.noreply.github.com",
+               "Russell-Jones"
+            ]
+         ]
+      }
+   ],
+   "wrongly_merged" : []
+}

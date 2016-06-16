@@ -1,0 +1,41 @@
+{
+   "not_merged" : [
+      {
+         "expected" : [
+            "Andrew Ingram",
+            "andrew.ingram@tangentlabs.co.uk",
+            "AndrewIngram",
+            "andy@andrewingram.net"
+         ],
+         "got" : [
+            [
+               "andy@andrewingram.net",
+               "AndrewIngram"
+            ],
+            [
+               "andrew.ingram@tangentlabs.co.uk",
+               "Andrew Ingram"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            "Dan",
+            "Dan Atkinson",
+            "dan@danatkinson.com",
+            "danatk@gmail.com"
+         ],
+         "got" : [
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ]
+         ]
+      }
+   ],
+   "wrongly_merged" : []
+}

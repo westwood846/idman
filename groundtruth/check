@@ -1,0 +1,115 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use autodie ':all';
+use List::Util qw(any);
+use JSON::PP;
+use Path::Tiny;
+
+my %REPOS = (
+    'idman'            => 'https://github.com/turbopope/idman.git',
+    'django-oscar'     => 'https://github.com/django-oscar/django-oscar.git',
+    'django-wiki'      => 'https://github.com/django-wiki/django-wiki.git',
+    'spring-framework' => 'https://github.com/spring-projects/spring-framework.git',
+);
+
+my @ALGORITHMS = qw(
+    occurrence
+    default
+);
+
+my $json = JSON::PP->new->utf8->pretty->canonical;
+
+
+sub maybe_mkdir {
+    for my $dir (@_) {
+        mkdir $dir unless -e $dir;
+    }
+}
+
+
+sub clone_repos {
+    maybe_mkdir('repos');
+    for my $name (sort keys %REPOS) {
+        next if -e "repos/$name";
+        system 'git', 'clone', $REPOS{$name}, "repos/$name";
+    }
+}
+
+
+sub identify {
+    my ($repo, $algorithm) = @_;
+    my $file = "algorithms/$algorithm/$repo.json";
+
+    if (!-e $file) {
+        maybe_mkdir("algorithms/$algorithm");
+        system "../idman repos/$repo $algorithm > $file";
+    }
+
+    return $json->decode(path($file)->slurp)->{identities};
+}
+
+
+sub strip_garbage {
+    my ($reference, $got) = @_;
+    my %valid = map { ($_ => 1) } map { @$_ } @$reference;
+    return [map { [grep { $valid{$_} } @$_] } @$got];
+}
+
+
+sub find_identities {
+    my ($got, $ref_id) = @_;
+    my %ref = map { ($_ => 1) } @$ref_id;
+    return grep { any { $ref{$_} } @$_ } @$got;
+}
+
+sub compare {
+    my ($repo, $algorithm, $reference, $got) = @_;
+    my %result = (
+        not_merged     => [],
+        wrongly_merged => [],
+    );
+
+    for my $ref_id (@$reference) {
+        my @got_ids = find_identities($got, $ref_id);
+
+        if (!@got_ids) {
+            die "Weird $algorithm lost an identity: ", $json->encode($ref_id);
+        }
+
+        if (@got_ids > 1) {
+            push @{$result{not_merged}}, {
+                expected => $ref_id,
+                got      => \@got_ids,
+            };
+        }
+
+        my $got_id = [map { @$_ } @got_ids];
+        if (@$got_id != @$ref_id) {
+            push @{$result{wrongly_merged}}, {
+                expected => $ref_id,
+                got      => $got_id,
+            };
+        }
+    }
+
+    return \%result;
+}
+
+
+clone_repos;
+maybe_mkdir('algorithms', 'results');
+
+for my $repo (sort keys %REPOS) {
+    my $expected = $json->decode(path("reference/$repo.json")->slurp);
+
+    for my $algorithm (@ALGORITHMS) {
+        print "$repo $algorithm\n";
+
+        my $got    = strip_garbage($expected, identify($repo, $algorithm));
+        my $result = compare($repo, $algorithm, $expected, $got);
+
+        maybe_mkdir("results/$algorithm");
+        path("results/$algorithm/$repo.json")->spew($json->encode($result));
+    }
+}
