@@ -83,7 +83,9 @@ if args.filter:
 
 identities = []
 for component in nx.connected_components(artifact_graph):
-        identities.append(filter(lambda x: x not in artifact_graph.derived_artifacts, component))
+        component= filter(lambda x: x not in artifact_graph.derived_artifacts, component)
+        if component:
+            identities.append(component)
 
 if args.dot:
     print nx.drawing.nx_agraph.to_agraph(artifact_graph)
