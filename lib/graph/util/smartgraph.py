@@ -30,6 +30,8 @@ class SmartGraph(Graph):
             self.derived_artifacts.add(node)
             if attr_dict:
                 attr_dict['isDerived'] = True
+        if not node and not node == 0:
+            return
         Graph.add_node(self, node, attr_dict, **attr)
 
     def add_path(self, nodes, **attr):
