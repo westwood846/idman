@@ -17,8 +17,7 @@ import networkx as nx
 import sys
 import json
 import importlib
-from util.setencoder import SetEncoder
-from util.stats_recorder import StatsRecorder
+from util import SetEncoder,StatsRecorder,SmartGraph
 import argparse
 import pkgutil
 from util import filters
@@ -62,11 +61,12 @@ args = cl_argument_parser.parse_args()
 algorithm = importlib.import_module("algorithm." + args.algorithm)
 statsRecorder = StatsRecorder()
 
-artifact_graph = nx.Graph()
+artifact_graph = SmartGraph()
 
 for line in sys.stdin:
     commit = json.loads(line)
     statsRecorder.record_commit(commit)
+    artifact_graph.learn_current_commit(commit)
     if args.authors_only:
         commit = filters.get_certain_keys(commit, "author")
     elif args.committers_only:
@@ -75,15 +75,15 @@ for line in sys.stdin:
         commit = filters.get_certain_keys(commit, "signer")
     algorithm.learn_commit(artifact_graph, commit, args)
 
-identities = []
-for component in nx.connected_components(artifact_graph):
-    identities.append(component)
-
 if args.filter:
     minimum = args.filter
     for u, v, data in artifact_graph.edges(data=True):
         if data["label"] < minimum:
             artifact_graph.remove_edge(u, v)
+
+identities = []
+for component in nx.connected_components(artifact_graph):
+        identities.append(filter(lambda x: x not in artifact_graph.derived_artifacts, component))
 
 if args.dot:
     print nx.drawing.nx_agraph.to_agraph(artifact_graph)
