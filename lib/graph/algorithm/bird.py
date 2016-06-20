@@ -1,122 +1,17 @@
 # -*- coding: utf-8 -*-
 
-import re
-# noinspection PyUnresolvedReferences
-from statistical.levenshtein import levenshtein
+import networkx as nx
+from bird_rules import *
+from bird_tools import *
 
 
-def normalize_name(name):
-    # We remove all punctuation, suffixes
-    # ("jr"); turn all whitespace into a single space; remove
-    # generic terms like "admin", "support", from the name;
-    """
-
-    :param name:
-    :return:
-    """
-    prefixes = ["mr.", "mrs.", "miss", "ms.", "prof.", "pr.", "dr.", "ir.", "rev.", "ing.", "jr.",
-                "d.d.s.", "ph.d.",
-                "capt.", "lt."]
-    tech_terms = ["administrator", "admin.", "support", "development", "dev.", "developer", "maint.",
-                  "maintainer"]
-    # other_terms = ["i18n", "spam", "bug", "bugs", "root", "mailing", "list", "contact", "project"]
-    project_specific_terms = ["elasticsearch", "gdx", "libgdx", "spring", "spring-framework", "django"]
-    custom_terms = ["github"]
-    insignificant_words = prefixes + tech_terms + project_specific_terms + custom_terms
-    for term in insignificant_words:
-        term_re = re.compile(re.escape(term), re.IGNORECASE)
-        name = term_re.sub("", name).strip()
-    # The paper does not mention case-sensitivity, but we obviously need to do this case-insensitive
-    return name.lower()
+originals = {}
 
 
-def extract_mail_prefix(mail):
-    """
-
-    :param mail:
-    :return:
-    """
-    return mail.split("@")[0].lower()
-
-
-def split_name(name):
-    """
-
-    :param name:
-    :return:
-    """
-    split = name.split(" ")  # TODO: Split commas
-    return " ".join(split[:-1]), split[-1]
-
-
-def join_name(firstname, lastname):
-    """
-
-    :param firstname:
-    :param lastname:
-    :return:
-    """
-    return " ".join([firstname, lastname])
-
-
-def lev_similar(l1, l2, threshold=0.5):
-    """
-
-    :param l1:
-    :param l2:
-    :param threshold:
-    :return:
-    """
-    distance = float(levenshtein(l1, l2))
-    max_length = float(max(len(l1), len(l2)))
-    return 1 - (distance / max_length) >= threshold
-
-
-def similar(l1, l2):
-    """
-
-    :param l1:
-    :param l2:
-    :return:
-    """
-    return lev_similar(l1, l2)
-
-
-def similar_firstfirst_lastlast(first1, last1, first2, last2):
-    """
-
-    :param first1:
-    :param last1:
-    :param first2:
-    :param last2:
-    :return:
-    """
-    return lev_similar(first1, first2) and similar(last1, last2)
-
-
-def alias_contains_first_and_last(alias, first, last):
-    """
-
-    :param alias:
-    :param first:
-    :param last:
-    :return:
-    """
-    return len(first) >= 2 and len(last) >= 2 and first in alias and last in alias
-
-
-def alias_contains_first_or_last_and_first_letter(e, first, last):
-    """
-
-    :param e:
-    :param first:
-    :param last:
-    :return:
-    """
-    length_ok = len(first) >= 2 and len(last) >= 2
-    first_partly_in_e = last in e and e.startswith(first[1])
-    last_partly_in_e = first in e and e.startswith(last[1])
-    return length_ok and (first_partly_in_e or last_partly_in_e)
+def safe_artifact(original, projection):
+    if (originals.has_key(projection) and originals[projection] != original):
+        print "Alarm! " + originals[projection] + " != " + original
+    originals[projection] = original
 
 
 def learn_name(firstname, lastname, artifact_graph):
@@ -162,7 +57,6 @@ def learn_name(firstname, lastname, artifact_graph):
                 artifact_graph.add_edge(node, name)
                 break
 
-
 def learn_alias(alias, artifact_graph):
     # alias = alias.encode('ascii', 'ignore')
     """
@@ -198,7 +92,6 @@ def learn_alias(alias, artifact_graph):
                 artifact_graph.add_edge(node, alias)
                 break
 
-
 def learn_name_and_mail(artifact_graph, name, mail):
     """
 
@@ -208,8 +101,9 @@ def learn_name_and_mail(artifact_graph, name, mail):
     :return:
     """
     if name:
-        name = normalize_name(name)
-        firstname, lastname = split_name(name)
+        normalized_name = normalize_name(name)
+        safe_artifact(name, normalized_name)
+        firstname, lastname = split_name(normalized_name)
 
         if not firstname:
             # Bird's algorithm assumes that names are real names.
@@ -220,9 +114,9 @@ def learn_name_and_mail(artifact_graph, name, mail):
         else:
             learn_name(firstname, lastname, artifact_graph)
     if mail:
-        mail = extract_mail_prefix(mail)
-        learn_alias(mail, artifact_graph)
-
+        mail_prefix = extract_mail_prefix(mail)
+        safe_artifact(mail, mail_prefix)
+        learn_alias(mail_prefix, artifact_graph)
 
 # noinspection PyUnusedLocal,PyUnusedLocal,PyUnusedLocal,PyUnusedLocal
 def learn_commit(artifact_graph, commit, args):
@@ -237,3 +131,7 @@ def learn_commit(artifact_graph, commit, args):
                         commit.get("committer_mail", None))
     learn_name_and_mail(artifact_graph, commit.get("author_name", None), commit.get("author_mail", None))
     return artifact_graph
+
+def restore(artifact_graph):
+    originals.pop("", None)
+    nx.relabel_nodes(artifact_graph, originals, False)
