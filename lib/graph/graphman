@@ -78,6 +78,9 @@ for line in sys.stdin:
         commit = filters.get_certain_keys(commit, "signer")
     algorithm.learn_commit(artifact_graph, commit, args)
 
+if (callable(getattr(algorithm, "restore", None))):
+    algorithm.restore(artifact_graph)
+
 if args.filter:
     minimum = args.filter
     for u, v, data in artifact_graph.edges(data=True):
