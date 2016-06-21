@@ -10,6 +10,12 @@ sub new {
 }
 
 
+sub process_artifacts {
+    my ($self, @artifacts) = @_;
+    return @artifacts;
+}
+
+
 sub should_merge {
     my ($self, $id1, $id2) = @_;
 

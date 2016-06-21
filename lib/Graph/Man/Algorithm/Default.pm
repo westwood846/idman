@@ -5,7 +5,7 @@ use feature qw(fc);
 use base 'Graph::Man::Algorithm';
 
 
-sub handle_artifacts {
+sub process_artifacts {
     my ($self, @artifacts) = @_;
     for (@artifacts) {
         $_ = fc($_);

@@ -53,7 +53,7 @@ while (<STDIN>) {
         if (!exists $done{$set}) {
             push @identities, {
                 real      => \@real,
-                processed => [unique($logic->handle_artifacts(@real))],
+                processed => [unique($logic->process_artifacts(@real))],
             };
             $done{$set} = 1;
         }
