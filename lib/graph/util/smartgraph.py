@@ -18,6 +18,7 @@ class SmartGraph(Graph):
         :param commit: current commit
         """
         self.commit = commit
+	self.derived_artifacts = set(filter(lambda x: x not in commit.values(), self.derived_artifacts))
 
     def add_node(self, node, attr_dict=None, **attr):
         """
@@ -30,6 +31,8 @@ class SmartGraph(Graph):
             self.derived_artifacts.add(node)
             if attr_dict:
                 attr_dict['isDerived'] = True
+        elif attr_dict:
+            attr_dict['isDerived'] = False
         if not node and not node == 0:
             return
         Graph.add_node(self, node, attr_dict, **attr)
