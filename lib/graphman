@@ -61,6 +61,8 @@ while (<STDIN>) {
 }
 
 
+%done = ();
+
 my $again;
 do {
     $again = 0;
@@ -69,6 +71,10 @@ do {
 
         for (my $y = $x + 1; $y < @identities; ++$y) {
             my $id2 = $identities[$y]{processed};
+            my $set = join "\0", @$id1, @$id2;
+
+            next if exists $done{$set};
+            $done{$set} = 1;
 
             if ($logic->should_merge($id1, $id2)) {
                 merge_identities($x, $y);
