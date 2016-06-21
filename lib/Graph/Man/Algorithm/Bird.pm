@@ -2,11 +2,7 @@ package Graph::Man::Algorithm::Bird;
 use strict;
 use warnings;
 use feature qw(fc);
-use base 'Graph::Man::Algorithm';
-use Getopt::Long qw(GetOptionsFromArray);
-use List::Util qw(max);
-use Memoize;
-use Text::Levenshtein::XS qw(distance);
+use base 'Graph::Man::Algorithm::Similarity';
 
 
 sub make_alternation {
@@ -22,14 +18,6 @@ our @SUFFIXES = qw(mr. mrs. miss ms. prof. pr. dr. ir. rev.
 our $TERM   = qr/\b${\make_alternation(@TERMS)}\b/;
 our $SUFFIX = qr/${\make_alternation(@SUFFIXES)}$/;
 
-
-memoize 'normalized_distance';
-
-sub normalized_distance {
-    my ($str1, $str2) = @_;
-    return 0 unless length($str1) && length($str2);
-    return 1 - distance($str1, $str2) / max(length $str1, length $str2);
-}
 
 sub normalize {
     my ($str) = @_;
@@ -54,19 +42,9 @@ sub initial_and_rest {
 
 sub new {
     my ($class, @args) = @_;
-
-    my $threshold = $ENV{GRAPHMAN_THRESHOLD};
-    GetOptionsFromArray(\@args, 'threshold|t=f' => \$threshold)
-        or die "$class: error parsing arguments.\n";
-
-    unless ($threshold > 0 && $threshold <= 1) {
-        my $got = defined($threshold) ? "'$threshold'" : 'nothing';
-        die "$class: a threshold > 0 and <= 1 is required, but I got $got.\n",
-            "Specify it via `--threshold` on the command line or the ",
-            "`GRAPHMAN_THRESHOLD` environment variable.\n",
-    }
-
-    return bless {artifacts => {}, threshold => $threshold}, $class;
+    my $self = $class->SUPER::new(@args);
+    $self->{artifacts} = {};
+    return $self;
 }
 
 
@@ -105,11 +83,6 @@ sub process_artifacts {
     return @artifacts;
 }
 
-
-sub _similar {
-    my ($self, $str1, $str2) = @_;
-    return normalized_distance($str1, $str2) >= $self->{threshold};
-}
 
 sub _cmp_name_name {
     my ($self, $a1, $a2) = @_;
