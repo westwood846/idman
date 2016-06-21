@@ -78,6 +78,9 @@ for line in sys.stdin:
         commit = filters.get_certain_keys(commit, "signer")
     algorithm.learn_commit(artifact_graph, commit, args)
 
+
+artifact_graph.learn_current_commit(None)
+
 if (callable(getattr(algorithm, "restore", None))):
     algorithm.restore(artifact_graph)
 
