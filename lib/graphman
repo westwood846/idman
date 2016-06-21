@@ -7,12 +7,6 @@ use Graph::Man::Algorithm;
 use Graph::Man::JSON;
 
 
-my $algorithm = ucfirst lc shift @ARGV;
-require "Graph/Man/Algorithm/$algorithm.pm";
-my $logic = "Graph::Man::Algorithm::$algorithm"->new(@ARGV);
-my @identities;
-
-
 sub unique {
     my %merge;
     @merge{@_} = ();
@@ -20,70 +14,84 @@ sub unique {
 }
 
 
-sub merge_identities {
-    my ($x,   $y  ) = @_;
-    my ($id1, $id2) = @identities[$x, $y];
+sub gather_identities {
+    my ($fh, $logic) = @_;
+    my (@identities, %done);
 
-    $identities[$x] = {
+    while (<$fh>) {
+        my $commit = decode_json($_);
+
+        use constant ARTIFACT_SETS => (
+            ['author_name',    'author_mail'   ],
+            ['committer_name', 'committer_mail'],
+            ['signer',         'signer_key'    ],
+        );
+
+        for my $keys (ARTIFACT_SETS) {
+            my @real = grep { length } unique(@{$commit}{@$keys});
+            next unless @real;
+
+            my $set = join "\0", @real;
+
+            if (!exists $done{$set}) {
+                push @identities, {
+                    real      => \@real,
+                    processed => [unique($logic->process_artifacts(@real))],
+                };
+                $done{$set} = 1;
+            }
+        }
+    }
+
+    return \@identities;
+}
+
+
+sub merge {
+    my ($identities, $x, $y) = @_;
+    my ($id1, $id2) = @{$identities}[$x, $y];
+
+    $identities->[$x] = {
         real      => [unique(@{$id1->{real     }}, @{$id2->{real     }})],
         processed => [unique(@{$id1->{processed}}, @{$id2->{processed}})],
     };
 
-    splice @identities, $y, 1;
+    splice @$identities, $y, 1;
 }
 
+sub iterative_merge {
+    my ($identities, $logic, $key) = @_;
+    my ($again, %done);
 
-my %done;
+    do {
+        $again = 0;
+        for (my $x = 0; $x < @$identities; ++$x) {
+            my $id1 = $identities->[$x]{$key};
 
-while (<STDIN>) {
-    my $commit = decode_json($_);
+            for (my $y = $x + 1; $y < @$identities; ++$y) {
+                my $id2 = $identities->[$y]{$key};
+                my $set = join "\0", @$id1, @$id2;
 
-    use constant ARTIFACT_SETS => (
-        ['author_name',    'author_mail'   ],
-        ['committer_name', 'committer_mail'],
-        ['signer',         'signer_key'    ],
-    );
+                next if exists $done{$set};
+                $done{$set} = 1;
 
-    for my $keys (ARTIFACT_SETS) {
-        my @real = grep { length } unique(@{$commit}{@$keys});
-        next unless @real;
-
-        my $set = join "\0", @real;
-
-        if (!exists $done{$set}) {
-            push @identities, {
-                real      => \@real,
-                processed => [unique($logic->process_artifacts(@real))],
-            };
-            $done{$set} = 1;
-        }
-    }
-}
-
-
-%done = ();
-
-my $again;
-do {
-    $again = 0;
-    for (my $x = 0; $x < @identities; ++$x) {
-        my $id1 = $identities[$x]{processed};
-
-        for (my $y = $x + 1; $y < @identities; ++$y) {
-            my $id2 = $identities[$y]{processed};
-            my $set = join "\0", @$id1, @$id2;
-
-            next if exists $done{$set};
-            $done{$set} = 1;
-
-            if ($logic->should_merge($id1, $id2)) {
-                merge_identities($x, $y);
-                $again = 1;
-                --$y;
+                if ($logic->should_merge($id1, $id2)) {
+                    merge($identities, $x, $y);
+                    $again = 1;
+                    --$y;
+                }
             }
         }
-    }
-} while ($again);
+    } while ($again);
+}
 
 
-print encode_json([map { [sort @{$_->{real}}] } @identities]), "\n";
+my $algorithm = ucfirst lc shift @ARGV;
+require "Graph/Man/Algorithm/$algorithm.pm";
+my $logic = "Graph::Man::Algorithm::$algorithm"->new(@ARGV);
+
+my $identities = gather_identities(\*STDIN, $logic);
+iterative_merge($identities, $logic,                  'processed');
+iterative_merge($identities, 'Graph::Man::Algorithm', 'real'     );
+
+print encode_json([map { [sort @{$_->{real}}] } @$identities]), "\n";
