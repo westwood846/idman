@@ -1,0 +1,73 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use autodie ':all';
+use File::Basename qw(basename dirname);
+use JSON;
+use List::Util qw(any pairs);
+use Path::Tiny;
+use Text::CSV;
+
+
+sub count_commits {
+    no warnings 'uninitialized';
+    my ($artifacts, $commits) = @_;
+
+    my %ids      = map { ($_ => 1) } @$artifacts;
+    my @relevant = sort { $b->{author_date} <=> $a->{author_date} }
+                   grep { any { $ids{$_} } @{$_}{'author_name', 'author_mail'} }
+                   values %$commits;
+
+    return [$relevant[0]{author_mail}, scalar @relevant];
+}
+
+
+sub count_commits_badly {
+    my ($commits) = @_;
+    my %counts;
+    $counts{$_->{author_mail}}++ for values %$commits;
+    return pairs %counts;
+}
+
+
+sub spew_csv {
+    my $path = shift;
+    my $csv  = Text::CSV->new({binary => 1, eol => "\n"});
+
+    mkdir dirname($path) if not -d dirname($path);
+
+    open my $fh, '>:encoding(UTF-8)', $path;
+    $csv->print($fh, $_) for @_;
+    close $fh;
+}
+
+
+my $did_unmerged_graph;
+mkdir 'graphs' if not -d 'graphs';
+
+for my $dir (glob 'results/*') {
+    my $algorithm = basename($dir);
+
+    for my $file (glob "$dir/*") {
+        my $name = basename($file) =~ s/\.json$//r;
+        print "$algorithm\t$name\n";
+
+        my $data  = decode_json(path($file)->slurp);
+        my @graph = sort { $b->[1] <=> $a->[1] }
+                    map  { count_commits($_, $data->{commits}) }
+                    @{$data->{identities}};
+
+        spew_csv("graphs/$algorithm/$name.csv", @graph);
+
+        if (!$did_unmerged_graph) {
+            print "naive\t$name\n";
+
+            @graph = sort { $b->[1] <=> $a->[1] }
+                          count_commits_badly($data->{commits});
+
+            spew_csv("graphs/naive/$name.csv", @graph);
+        }
+    }
+
+    $did_unmerged_graph = 1;
+}
