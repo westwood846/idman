@@ -9,9 +9,10 @@ originals = {}
 
 
 def safe_artifact(original, projection):
-    if (originals.has_key(projection) and originals[projection] != original):
-        print "Alarm! " + originals[projection] + " != " + original
-    originals[projection] = original
+    if (originals.has_key(projection)):
+        originals[projection].add(original)
+    else:
+        originals[projection] = set([original])
 
 
 def learn_name(firstname, lastname, artifact_graph):
@@ -132,6 +133,15 @@ def learn_commit(artifact_graph, commit, args):
     learn_name_and_mail(artifact_graph, commit.get("author_name", None), commit.get("author_mail", None))
     return artifact_graph
 
+def duplicate_node(artifact_graph, node, new_node):
+    artifact_graph.add_node(new_node)
+    for neighbor in artifact_graph[node]:
+        artifact_graph.add_edge(neighbor, new_node)
+
 def restore(artifact_graph):
     originals.pop("", None)
-    nx.relabel_nodes(artifact_graph, originals, False)
+    for projection, originals_set in originals.iteritems():
+        first_rename = originals_set.pop()
+        nx.relabel_nodes(artifact_graph, {projection: first_rename}, False)
+        for original in originals_set:
+            duplicate_node(artifact_graph, first_rename, original)
