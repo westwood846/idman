@@ -15,8 +15,8 @@
                "guettliml.github@thomas-guettler.de"
             ],
             [
-               "info.git@thomas-guettler.de",
-               "Thomas Guettler"
+               "Thomas Guettler",
+               "info.git@thomas-guettler.de"
             ]
          ]
       },
@@ -31,14 +31,14 @@
          ],
          "got" : [
             [
-               "russell@yellow.(none)",
-               "Russell Jones",
-               "Russell-Jones@github.com",
-               "russell.jones@gmail.com"
+               "Russell-Jones",
+               "Russell-Jones@users.noreply.github.com"
             ],
             [
-               "Russell-Jones@users.noreply.github.com",
-               "Russell-Jones"
+               "Russell Jones",
+               "Russell-Jones@github.com",
+               "russell.jones@gmail.com",
+               "russell@yellow.(none)"
             ]
          ]
       }
