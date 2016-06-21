@@ -1,0 +1,76 @@
+#!/usr/bin/env perl
+use strict;
+use warnings;
+use File::Basename qw(dirname);
+use lib dirname(__FILE__);
+use Graph::Man::Algorithm;
+use Graph::Man::JSON;
+
+
+my $algorithm = ucfirst lc shift @ARGV;
+require "Graph/Man/Algorithm/$algorithm.pm";
+my $logic = "Graph::Man::Algorithm::$algorithm"->new(@ARGV);
+my @identities;
+
+
+sub unique {
+    my %merge;
+    @merge{@_} = ();
+    return keys %merge;
+}
+
+
+sub merge_identities {
+    my ($x,   $y  ) = @_;
+    my ($id1, $id2) = @identities[$x, $y];
+
+    $identities[$x] = {
+        real      => [unique(@{$id1->{real     }}, @{$id2->{real     }})],
+        processed => [unique(@{$id1->{processed}}, @{$id2->{processed}})],
+    };
+
+    splice @identities, $y, 1;
+}
+
+
+while (<STDIN>) {
+    my $commit = decode_json($_);
+
+    use constant ARTIFACT_SETS => (
+        ['author_name',    'author_mail'   ],
+        ['committer_name', 'committer_mail'],
+        ['signer',         'signer_key'    ],
+    );
+
+    for my $keys (ARTIFACT_SETS) {
+        my @real = grep { length } unique(@{$commit}{@$keys});
+        next unless @real;
+
+        push @identities, {
+            real      => \@real,
+            processed => [unique($logic->handle_artifacts(@real))],
+        };
+    }
+}
+
+
+my $again;
+do {
+    $again = 0;
+    for (my $x = 0; $x < @identities; ++$x) {
+        my $id1 = $identities[$x]{processed};
+
+        for (my $y = $x + 1; $y < @identities; ++$y) {
+            my $id2 = $identities[$y]{processed};
+
+            if ($logic->should_merge($id1, $id2)) {
+                merge_identities($x, $y);
+                $again = 1;
+                --$y;
+            }
+        }
+    }
+} while ($again);
+
+
+print encode_json([map { [sort @{$_->{real}}] } @identities]), "\n";
