@@ -1,0 +1,28 @@
+{
+   "false_negatives" : 1,
+   "false_positives" : 0,
+   "not_merged" : [
+      {
+         "expected" : [
+            "Dan",
+            "Dan Atkinson",
+            "dan@danatkinson.com",
+            "danatk@gmail.com"
+         ],
+         "got" : [
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.995121951219512,
+   "true_positives" : 204,
+   "wrongly_merged" : []
+}

@@ -14,8 +14,11 @@ my %REPOS = (
 );
 
 my @ALGORITHMS = (
-    'occurrence',
     'default',
+    'occurrence',
+    'similarity -t 1.0',
+    'similarity -t 0.9',
+    'similarity -t 0.8',
     'bird -t 1.0',
     'bird -t 0.9',
     'bird -t 0.8',

@@ -1,0 +1,46 @@
+{
+   "false_negatives" : 2,
+   "false_positives" : 0,
+   "not_merged" : [
+      {
+         "expected" : [
+            "Andrew Ingram",
+            "andrew.ingram@tangentlabs.co.uk",
+            "AndrewIngram",
+            "andy@andrewingram.net"
+         ],
+         "got" : [
+            [
+               "Andrew Ingram",
+               "andrew.ingram@tangentlabs.co.uk"
+            ],
+            [
+               "AndrewIngram",
+               "andy@andrewingram.net"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            "Dan",
+            "Dan Atkinson",
+            "dan@danatkinson.com",
+            "danatk@gmail.com"
+         ],
+         "got" : [
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.990243902439024,
+   "true_positives" : 203,
+   "wrongly_merged" : []
+}
