@@ -19,7 +19,7 @@ my $dir = dirname($0) . '/lib';
 my ($repo, $algorithm, @args) = @ARGV;
 $algorithm = ucfirst(lc($algorithm // 'default'));
 
-my $algorithm_file = "$dir/lib/Graphman/Algorithm/$algorithm.pm";
+my $algorithm_file = "$dir/Graph/Man/Algorithm/$algorithm.pm";
 if (!-e $algorithm_file) {
     die "No such algorithm found at '$algorithm_file'\n";
 }
