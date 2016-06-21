@@ -14,10 +14,6 @@ If no `ALGORITHM` is given, the default one is used.
 
 * perl (git depends on this, so you probably have it already)
 
-* Python 2
-
-* networkx, a graph library for Python
-
 
 ## Output
 
