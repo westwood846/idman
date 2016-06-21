@@ -33,6 +33,8 @@ sub merge_identities {
 }
 
 
+my %done;
+
 while (<STDIN>) {
     my $commit = decode_json($_);
 
@@ -46,10 +48,15 @@ while (<STDIN>) {
         my @real = grep { length } unique(@{$commit}{@$keys});
         next unless @real;
 
-        push @identities, {
-            real      => \@real,
-            processed => [unique($logic->handle_artifacts(@real))],
-        };
+        my $set = join "\0", @real;
+
+        if (!exists $done{$set}) {
+            push @identities, {
+                real      => \@real,
+                processed => [unique($logic->handle_artifacts(@real))],
+            };
+            $done{$set} = 1;
+        }
     }
 }
 
