@@ -131,12 +131,11 @@ sub _cmp_name_alias {
     my ($first, $last)   = @{$a1}{'first', 'last'};
     my  $alias            = $a2->{alias};
 
-    return initial_and_rest($alias, $first, $last )
-        || initial_and_rest($alias, $last,  $first)
-        || length($first) >= 2
+    return length($first) >= 2
         && length($last ) >= 2
-        && index($alias, $first) != -1
-        && index($alias, $last ) != -1;
+        && (initial_and_rest($alias, $first, $last )
+         || initial_and_rest($alias, $last,  $first)
+         || index($alias, $first) != -1 && index($alias, $last) != -1);
 }
 
 sub _cmp_alias_name {
