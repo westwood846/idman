@@ -1,0 +1,31 @@
+#!/usr/bin/perl
+use strict;
+use warnings;
+use autodie ':all';
+use File::Basename;
+use JSON;
+use Path::Tiny;
+
+for my $file (glob 'default/*') {
+    my $name = basename($file);
+
+    my %naive;
+    open my $fh, '<:encoding(UTF-8)', "naive/$name";
+    while (<$fh>) {
+        /^(.*),(\d+)$/ or die "$_ is bad";
+        $naive{$1} = $2;
+    }
+    close $fh;
+
+    open my $in,  '<:encoding(UTF-8)', $file;
+    open my $out, '>:encoding(UTF-8)', $name;
+
+    while (<$in>) {
+        /^(.*),(\d+)$/ or die "$_ is bad";
+        my $n = $naive{$1} // 0;
+        print {$out} "$1,$2,$n\n";
+    }
+
+    close $in;
+    close $out;
+}
