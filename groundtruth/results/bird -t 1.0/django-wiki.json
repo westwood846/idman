@@ -1,0 +1,28 @@
+{
+   "false_negatives" : 1,
+   "false_positives" : 0,
+   "not_merged" : [
+      {
+         "expected" : [
+            "guettliml.github@thomas-guettler.de",
+            "info.git@thomas-guettler.de",
+            "Thomas Guettler",
+            "Thomas Güttler"
+         ],
+         "got" : [
+            [
+               "Thomas Güttler",
+               "guettliml.github@thomas-guettler.de"
+            ],
+            [
+               "Thomas Guettler",
+               "info.git@thomas-guettler.de"
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.985074626865672,
+   "true_positives" : 66,
+   "wrongly_merged" : []
+}
