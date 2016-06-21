@@ -87,7 +87,7 @@ sub compare {
         elsif (@{$got_ids[0]} != @$ref_id) {
             push @wrongly_merged, {
                 expected => $ref_id,
-                got      => \$got_ids[0],
+                got      => $got_ids[0],
             };
         }
         else {
