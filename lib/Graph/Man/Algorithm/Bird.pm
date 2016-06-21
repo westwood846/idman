@@ -76,8 +76,7 @@ sub _save_artifact {
     if (!$self->{artifacts}{$str}) {
         my %artifact;
 
-        if ($str =~ /^(?<full>(?<first>\pL+)\pP(?<last>\pL+))@/
-        ||  $str =~ /^(?<first>\S+)\s+(?<last>\S+)$/
+        if ($str =~ /^(?<first>\S+)\s+(?<last>\S+)$/
         ||  $str =~ /^(?<last>\S+)\s*,\s*(?<first>\S+)$/) {
             %artifact = (
                 type  => 'name',
