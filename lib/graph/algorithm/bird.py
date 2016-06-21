@@ -101,8 +101,8 @@ def learn_name_and_mail(artifact_graph, name, mail):
     :param mail:
     :return:
     """
+    normalized_name = normalize_name(name)
     if name:
-        normalized_name = normalize_name(name)
         safe_artifact(name, normalized_name)
         firstname, lastname = split_name(normalized_name)
 
@@ -111,13 +111,15 @@ def learn_name_and_mail(artifact_graph, name, mail):
             # Since git usernames have no such restriction, we need to treat nicknames differently.
             # Treating them as aliases like the email prefixes should yield comparable results.
             learn_alias(lastname, artifact_graph)
-            return
+            return;
         else:
             learn_name(firstname, lastname, artifact_graph)
+    mail_prefix = extract_mail_prefix(mail)
     if mail:
-        mail_prefix = extract_mail_prefix(mail)
         safe_artifact(mail, mail_prefix)
         learn_alias(mail_prefix, artifact_graph)
+    if name and mail:
+        artifact_graph.add_edge(normalized_name, mail_prefix)
 
 # noinspection PyUnusedLocal,PyUnusedLocal,PyUnusedLocal,PyUnusedLocal
 def learn_commit(artifact_graph, commit, args):
