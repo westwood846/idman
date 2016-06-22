@@ -53,3 +53,29 @@ print JSON::PP->new->utf8->pretty->canonical->encode({
     identities => $identities,
     commits    => \%commit_map,
 });
+
+
+__END__
+
+=head1 NAME
+
+assocman - associate commits with merged identities
+
+=head1 SYNOPSIS
+
+Just run this with C<idman>, it needs the output from both C<graphman> and
+C<parseman>, which is non-trivial to do with pipelines on the command line.
+
+=head1 DESCRIPTION
+
+The input on stdin takes the form of one JSON object per line, the first one
+being the C<graphman> output and the rest being the C<parseman> output.
+
+The output on stdout will be a pretty-printed JSON object, see F<../README.md>
+for the detailed description of the structure.
+
+If a single artifact cannot be clearly mapped to an identity or if a
+author/committer/signer resolves to more than one identity, this will die,
+overwhelmed from all the ambiguity.
+
+=cut

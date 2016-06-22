@@ -14,9 +14,7 @@ If no `ALGORITHM` is given, the default one is used.
 
 * perl (git depends on this, so you probably have it already)
 
-* Python 2
-
-* networkx, a graph library for Python
+* some [algorithms](#algorithms) may require additional things
 
 
 ## Output
@@ -117,23 +115,27 @@ pipes them together properly.
 [parseman](lib/parseman) gathers all commit information from git and spews out
 a JSON object for each of them on stdout.
 
-[graphman](lib/graph/graphman) does the identity merging from the commit
-information it receives from [parseman](lib/parseman). It can pick from various
-[identity merging algorithms](lib/graph/algorithm).
+[graphman](lib/graphman) does the identity merging from the commit information
+it receives from [parseman](lib/parseman). It can pick from various [identity
+merging algorithms](lib/Graph/Man/Algorithm).
 
-[assocman](lib/assocman) receives the results from
-[graphman](lib/graph/graphman) and the raw commit information from
-[parseman](lib/parseman) and associates the two, producing the final output. If
-the algorithm is bad and results in ambiguous associations, assocman will die.
+[assocman](lib/assocman) receives the results from [graphman](lib/graphman) and
+the raw commit information from [parseman](lib/parseman) and associates the
+two, producing the final output. If the algorithm is bad and results in
+ambiguous associations, assocman will die.
+
+Most of that code has embedded documentation at the bottom of the respective
+files. You can see it nicely formatted by running `perldoc FILE`.
 
 
 ## Algorithms
 
-### occurrence
+### [occurrence](lib/Graph/Man/Algorithm/Occurrence.pm)
 
-Connects nodes in the graph if they contain the same identifier.
+Merges identities if they contain identical artifacts (names or e-mail
+addresses).
 
-### default
+### [default](lib/Graph/Man/Algorithm/Default.pm)
 
 Like occurrence, but ignores case and strips off `.(none)` at the end of e-mail
 addresses, which git seems to randomly attach and remove if the e-mail doesn't
@@ -141,18 +143,25 @@ contain a dot.
 
 As the name implies, this is the default algorithm.
 
-### lazy
+### [similarity](lib/Graph/Man/Algorithm/Similarity.pm)
 
-Does nothing and treats every identifier as its own identity. This is just to
-explain how to write algorithms, it's useless otherwise.
+Like occurrence, but merges identity if their normalized Levenshtein distance
+is less than a predefined threshold. You *must* specify a threshold, where `0 <
+threshold <= 1`. You can either do this by passing `--threshold NUMBER` as a
+command-line argument or by defining the `GRAPHMAN_THRESHOLD` environment
+variable.
 
-### retarded-occurence
+This algorithm requires the `Text::Levenshtein::XS` Perl module. Install it via
+`sudo cpan Text::Levenshtein::XS`.
 
-Like occurrence but without distinction between committer, author and signer.
+### [bird](lib/Graph/Man/Algorithm/Bird.pm)
 
-### wordsimilarity
+An extension of the similarity algorithm above, the same requirements apply.
+Implements the algorithm used by [Bird et al. in the paper “Mining Email social
+networks”](http://macbeth.cs.ucdavis.edu/msr06.pdf).  This does a whole bunch
+of pre-processing on the identities and pays attention to the difference
+between usernames and real first and last names.
 
-Like occurrence but additionally connects nodes if identifiers are similar according to a [statistical metric](lib/graph/statistical).
 
 ## Papers
 

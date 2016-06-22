@@ -11,12 +11,12 @@
          ],
          "got" : [
             [
-               "andy@andrewingram.net",
-               "AndrewIngram"
+               "Andrew Ingram",
+               "andrew.ingram@tangentlabs.co.uk"
             ],
             [
-               "andrew.ingram@tangentlabs.co.uk",
-               "Andrew Ingram"
+               "AndrewIngram",
+               "andy@andrewingram.net"
             ]
          ]
       },
@@ -53,8 +53,8 @@
                "okfish@yandex.ru"
             ],
             [
-               "fish@BM12.(none)",
-               "fish"
+               "fish",
+               "fish@BM12.(none)"
             ]
          ]
       }

@@ -1,0 +1,9 @@
+{
+   "false_negatives" : 0,
+   "false_positives" : 0,
+   "not_merged" : [],
+   "precision" : 1,
+   "recall" : 1,
+   "true_positives" : 188,
+   "wrongly_merged" : []
+}
