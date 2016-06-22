@@ -8,8 +8,8 @@
 \usepackage{graphicx}
 \newunicodechar{💃}{\includegraphics{dancer}}
 
-\title{Idman}
-\subtitle{💃\ Doing the Identity Management Dance 💃}
+\title{Idman 2 -- Electric Boogaloo}
+\subtitle{💃\ Still Doing the Identity Management Dance 💃}
 \author{Marco Brack \and Carsten Hartenfels \and Michael Monschau}
 %\date{2016-05-31}
 
@@ -25,7 +25,7 @@
         \usebeamerfont{author in head/foot}Brack, Hartenfels, Monschau
     \end{beamercolorbox}
     \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}
-        \usebeamerfont{title in head/foot}Idman
+        \usebeamerfont{title in head/foot}Idman 2 -- Electric Boogaloo
     \end{beamercolorbox}
     \begin{beamercolorbox}[wd=.309\paperwidth,ht=2.25ex,dp=1ex,center]{date in head/foot}
         \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
@@ -54,100 +54,17 @@
 \begin{frame}
     \frametitle{Content}
     \begin{itemize}
-       \gitem Terminology
-       \gitem Available Information
-       \gitem Method
-       \gitem Results
+       \gitem More Results
+       \gitem Some Graphs
        \gitem Usage
     \end{itemize}
     \vfill
 \end{frame}
 
-\nextframe
-
-\begin{frame}
-    \framecount{Terminology}
-    \begin{itemize}
-        \gitem Author
-        \begin{itemize}
-            \gitem Developer That Writes the Code
-        \end{itemize}
-        \gitem Committer
-        \begin{itemize}
-            \gitem Person That Applies Patch to the Repo
-        \end{itemize}
-        \gitem Signer
-        \begin{itemize}
-            \gitem Person That Signed a Commit With Their GPG Key
-        \end{itemize}
-    \end{itemize}
-    \vfill
-\end{frame}
 
 \nextframe
-
 \begin{frame}
-    % What developer information can we access / use?
-    \framecount{Available Information}
-    \begin{itemize}
-        \gitem Author Name
-        \gitem Author Mail
-        \gitem Committer Name
-        \gitem Committer Mail
-        \gitem Signer
-        \gitem Signer Key
-    \end{itemize}
-    \vfill
-\end{frame}
-
-\nextframe
-
-\begin{frame}
-  \framecount{Method}
-  \begin{itemize}
-    \gitem Artifacts are Nodes
-    \gitem Artifacts are Connected If They Belong to the Same Identity
-    \gitem This is Decided by Algorithms
-    \gitem Connected Components of Resulting Graph are Identities
-  \end{itemize}
-  \vfill
-\end{frame}
-
-\nextframe
-
-\begin{comment}
-How do we identify that different commit identities belong to the same developer?
-What methods of identity management can we use?
-\end{comment}
-
-\begin{frame}
-  \framecount{Algorithms}
-  \begin{itemize}
-    \gitem Lazy
-    \gitem Occurrence
-    \gitem Wordsimilarity
-    \gitem Bird
-    \gitem ``Default''
-  \end{itemize}
-  \vfill
-\end{frame}
-\nextframe
-
-\begin{frame}
-  \framecount{Results}
-  \begin{itemize}
-    \gitem Don't Believe Git, Identities Need Merging
-    \gitem Nobody Signs Anything
-    \gitem Simple Occurrence Algorithm is Fine
-    \gitem Very Few ``Pure'' Committers
-    \gitem Most Commits Have the Same Author and Committer
-  \end{itemize}
-  \vfill
-\end{frame}
-
-
-\begin{frame}
-  \framecount{Results}
+  \frametitle{Results}
   \begin{itemize}
     \gitem Fancy Algorithms Bring No Improvement
     \gitem Similar Names are Not the Problem
@@ -172,81 +89,53 @@ What methods of identity management can we use?
 
 
 \begin{frame}
-  \framecount{Results: django-oscar}
-  \begin{itemize}
-    \gitem Some Authors Don't Commit $\Rightarrow$ External Pull Requests
-  \end{itemize}
-  \begin{figure}
-    \includegraphics[height=150pt]{img/django-oscar}
-    \caption{Responsibility in django-oscar}
-  \end{figure}
+  \frametitle{Results: django-cms}
   \vfill
-\end{frame}
-\begin{frame}
-  \framecount{Results: django-oscar}
-  \begin{itemize}
-    \gitem More Internal Commits Than Pull Requests
-  \end{itemize}
-  \begin{figure}
-    \includegraphics[height=150pt]{img/django-oscar-commits}
-    \caption{Commits in django-oscar}
-  \end{figure}
+  \includegraphics[width=\textwidth]{img/graph-django-cms}
   \vfill
 \end{frame}
 
 \begin{frame}
-  \framecount{Results: django-wiki}
-  \begin{itemize}
-    \gitem Everyone is Both Committer and Author
-  \end{itemize}
-  \begin{figure}
-    \includegraphics[height=150pt]{img/django-wiki}
-    \caption{Responsibility in django-wiki}
-  \end{figure}
+  \frametitle{Results: django-oscar}
   \vfill
-\end{frame}
-\begin{frame}
-  \framecount{Results: django-wiki}
-  \begin{itemize}
-    \gitem Authors Do Their Own Commits
-  \end{itemize}
-  \begin{figure}
-    \includegraphics[height=150pt]{img/django-wiki-commits}
-    \caption{Commits in django-wiki}
-  \end{figure}
+  \includegraphics[width=\textwidth]{img/graph-django-oscar}
   \vfill
 \end{frame}
 
 \begin{frame}
-  \framecount{Results: elasticsearch}
-  \begin{itemize}
-    \gitem Many External Authors...
-  \end{itemize}
-  \begin{figure}
-    \includegraphics[height=150pt]{img/elasticsearch}
-    \caption{Responsibility in elasticsearch}
-  \end{figure}
+  \frametitle{Results: django-wiki}
+  \vfill
+  \includegraphics[width=\textwidth]{img/graph-django-wiki}
   \vfill
 \end{frame}
+
 \begin{frame}
-  \framecount{Results: elasticsearch}
-  \begin{itemize}
-    \gitem ...With Only Few Contributions
-  \end{itemize}
-  \begin{figure}
-    \includegraphics[height=150pt]{img/elasticsearch-commits}
-    \caption{Commits in elasticsearch}
-  \end{figure}
+  \frametitle{Results: elasticsearch}
+  \vfill
+  \includegraphics[width=\textwidth]{img/graph-elasticsearch}
+  \vfill
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results: libgdx}
+  \vfill
+  \includegraphics[width=\textwidth]{img/graph-libgdx}
+  \vfill
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results: spring-framework}
+  \vfill
+  \includegraphics[width=\textwidth]{img/graph-spring-framework}
   \vfill
 \end{frame}
 
 
 \nextframe
 \begin{frame}
-    \framecount{Usage}
+    \frametitle{Usage}
     \begin{itemize}
         \gitem Clone \url{https://github.com/turbopope/idman}
-        \gitem Install \texttt{networkx} Python package
         \gitem Run \texttt{idman path/to/repo}
         \gitem Get Commits With Identities
     \end{itemize}
