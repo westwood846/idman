@@ -100,3 +100,70 @@ sub identify {
 
 
 1;
+__END__
+
+=head1 NAME
+
+Graph::Man - master controller of the graph
+
+=head1 SYNOPSIS
+
+Just run C<identify> and it'll give you the identities as a JSON-encoded
+string.
+
+=head1 FUNCTIONS
+
+=head2 identify
+
+    identify($fh, $algorithm, @args)
+
+Does identity merging from the input given on the file handle C<$fh>, using the
+given C<$algorithm>. The C<@args> are passed directly to the algorithm's
+constructor.
+
+Returns single-line JSON-encoded string of the resulting merged identities.
+
+=head1 INTERNALS
+
+Don't meddle with these from the outside.
+
+=head2 _unique
+
+    unique(@strings)
+
+Returns the given list of C<@strings> with all duplicates removed. The
+resulting list is in no particular order.
+
+=head2 _gather_identities
+
+    _gather_identities($fh, $logic)
+
+Collects all identities from the given file handle C<$fh>, using the algorithm
+instantiated in C<$logic>. Returns an array reference of the resulting
+identities, with each element being a hash reference looking like this:
+
+    {
+        real      => ['list', 'of', 'raw', 'artifacts'],
+        processed => ['artifacts', 'processed', 'by', 'algorithm'],
+    }
+
+=head2 _merge
+
+    _merge(\@identities, $x, $y)
+
+Merges the identity at index C<$y> into the identity at index C<$x> and removes
+C<< $identities->[$x] >> from the array. The resulting identity will not
+contain duplicates.
+
+=head2 _iterative_merge
+
+    _iterative_merge(\@identities, $logic, $key)
+
+Simulates a graph connecting different nodes by iteratively merging the list of
+C<$identities> until it doesn't change anymore. Uses C<< $logic->should_merge
+>> to decide if any two identities should be merged.
+
+The C<$key> can be either C<'real'> or C<'processed'>, depending on what set of
+identities you want to merge.
+
+=cut

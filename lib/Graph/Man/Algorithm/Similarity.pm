@@ -59,3 +59,60 @@ sub artifacts_equal {
 
 
 1;
+__END__
+
+=head1 NAME
+
+Graph::Man::Algorithm::Similarity - identity merging with Levenshtein distance
+
+=head1 SYNOPSIS
+
+Does some basic preprocessing in the form of case-folding and stripping out
+punctuation. Compares artifacts using normalized Levenshtein distance and
+considers them equal if they are below a given threshold.
+
+Depends on L<Text::Levenshtein::XS>, so you gotta install that module.
+
+=head1 METHODS
+
+=head2 new
+
+    Graph::Man::Algorithm::Similarity->new('--threshold=0.8')
+
+Constructor, requires a threshold, where C<< 0 < threshold <= 1 >>. Specify it
+either via C<--threshold=NUMBER> on the command line or via the
+C<GRAPHMAN_THRESHOLD> environment variable.
+
+=head2 similar
+
+    $self->similar($str1, $str2)
+
+Returns if the normalized Levenshtein between the given strings exceeds the
+threshold passed to L</new>.
+
+=head2 process_artifacts
+
+    $self->process_artifacts(@artifacts)
+
+Override. Casefolds all C<@artifacts> and strips punctuation from them.
+
+=head1 ATTRIBUTES
+
+=head2 threshold
+
+    $self->{threshold}
+
+The threshold given in the constructor.
+
+=head1 INTERNALS
+
+Don't call these from outside.
+
+=head2 _normalized_distance
+
+    _normalized_distance($str1, $str2)
+
+Returns the normalized Levenshtein distance between the given strings. This
+function is cached via L<Memoize>.
+
+=cut

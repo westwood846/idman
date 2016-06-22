@@ -62,7 +62,7 @@ basically get the C<occurrence> algorithm.
 
 =head2 new
 
-    my ($class, @args_from_argv) = @_;
+    Graph::Man::Algorithm->new(@args_from_argv)
 
 The constructor here just builds an empty object. If you need attributes in
 your algorithm object, override this and C<bless> it yourself. You'll be given
@@ -70,7 +70,7 @@ the values from C<@ARGV> as your arguments, so do with those what you want.
 
 =head2 process_artifacts
 
-    my ($self, @artifacts) = @_;
+    $self->process_artifacts(@artifacts)
 
 This method gives you a chance to pre-process your artifacts. For example, you
 could case-fold them so that you can compare them case-insensitively later. You
@@ -80,7 +80,7 @@ The default is to just return C<@artifacts> and not do any pre-processing.
 
 =head2 should_merge
 
-    my ($self, $id1, $id2) = @_;
+    $self->should_merge($id1, $id2)
 
 Decide if the given C<$id1> and C<$id2> should be merged together. They are
 array references containing strings. Return something true if you want them
@@ -91,7 +91,7 @@ L</artifacts_equal> if you want to override this equality check.
 
 =head2 artifacts_equal
 
-    my ($self, $a1, $a2) = @_;
+    $self->artifacts_equal($a1, $a2)
 
 Decide if the given artifacts C<$a1> and C<$a2> are equal. Return an
 appropriately truthy or falsy value.
