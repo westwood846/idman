@@ -2,7 +2,7 @@ package Graph::Man::Algorithm::Similarity;
 use strict;
 use warnings;
 use feature qw(fc);
-use base 'Graph::Man::Algorithm';
+use parent 'Graph::Man::Algorithm';
 use Getopt::Long qw(GetOptionsFromArray);
 use List::Util qw(max);
 use Memoize;

@@ -1,5 +1,5 @@
 package Graph::Man::Algorithm::Occurrence;
-use base 'Graph::Man::Algorithm';
+use parent 'Graph::Man::Algorithm';
 
 # doesn't need to override anything
 

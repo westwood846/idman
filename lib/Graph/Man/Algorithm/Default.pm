@@ -2,7 +2,7 @@ package Graph::Man::Algorithm::Default;
 use strict;
 use warnings;
 use feature qw(fc);
-use base 'Graph::Man::Algorithm';
+use parent 'Graph::Man::Algorithm';
 
 
 sub process_artifacts {

@@ -2,7 +2,7 @@ package Graph::Man::Algorithm::Bird;
 use strict;
 use warnings;
 use feature qw(fc);
-use base 'Graph::Man::Algorithm::Similarity';
+use parent 'Graph::Man::Algorithm::Similarity';
 
 
 sub _make_alternation {
