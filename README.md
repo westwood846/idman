@@ -158,9 +158,9 @@ This algorithm requires the `Text::Levenshtein::XS` Perl module. Install it via
 
 An extension of the similarity algorithm above, the same requirements apply.
 Implements the algorithm used by [Bird et al. in the paper “Mining Email social
-networks”](https://www.researchgate.net/publication/221657109_Mining_Email_social_networks).
-This does a whole bunch of pre-processing on the identities and pays attention
-to the difference between usernames and real first and last names.
+networks”](http://macbeth.cs.ucdavis.edu/msr06.pdf).  This does a whole bunch
+of pre-processing on the identities and pays attention to the difference
+between usernames and real first and last names.
 
 
 ## Papers

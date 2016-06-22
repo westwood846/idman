@@ -139,7 +139,7 @@ Graph::Man::Algorithm::Bird - crazy preprocessed identity merging
 An extension of C<Graph::Man::Algorithm::Similarity> and uses the Levenshtein
 similarity measure from that algorithm. Based on the work of Bird et al. in the
 paper Mining Email social networks, which is freely available under
-L<https://www.researchgate.net/publication/221657109_Mining_Email_social_networks>.
+L<http://macbeth.cs.ucdavis.edu/msr06.pdf>.
 
 We also treat usernames that can't be split into first and last names as e-mail
 prefixes, and because of that we call them aliases instead.
