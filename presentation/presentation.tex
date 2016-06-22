@@ -63,17 +63,34 @@
 
 
 \begin{frame}
+  \frametitle{Algorithm Performance: Bird ($t=0.8$)}
+  Example Repo: \texttt{django-oscar}
+  \begin{itemize}
+    \gitem Wrongly Merged: 50
+    \gitem Not Merged: 0
+    \gitem Correctly Merged: 155
+  \end{itemize}
+  \begin{itemize}
+    \gitem recall: 1 (Bird merged all of the identities that had to be merged)
+    \gitem precision: 0.756 (Not all merged identities should have been merged)
+    \gitem fmeasure: 0.861
+  \end{itemize}
+  \vfill
+\end{frame}
+
+
+\begin{frame}
   \frametitle{Algorithm Performance: Bird ($t=0.9$)}
   Example Repo: \texttt{django-oscar}
   \begin{itemize}
-    \gitem Wrongly Merged: 43
+    \gitem Wrongly Merged: 43 (less)
     \gitem Not Merged: 0
-    \gitem Correctly Merged: 162
+    \gitem Correctly Merged: 162 (more)
   \end{itemize}
   \begin{itemize}
     \gitem recall: 1 (Bird merged all of the identities that had to be merged)
     \gitem precision: 0.79 (Not all merged identities should have been merged)
-    \gitem fmeasure: 0.882
+    \gitem fmeasure: 0.882 (better)
   \end{itemize}
   \vfill
 \end{frame}
