@@ -98,17 +98,17 @@
 
 
 \begin{frame}
-  \frametitle{Algorithm Performance: Occurrence}
+  \frametitle{Algorithm Performance: Default}
   Example Repo: \texttt{django-oscar}
   \begin{itemize}
     \gitem Wrongly Merged: \textbf{0} (Much less)
-    \gitem Not Merged: \textbf{3} (Little more)
-    \gitem Correctly Merged: \textbf{202} (Much more)
+    \gitem Not Merged: \textbf{2} (Little more)
+    \gitem Correctly Merged: \textbf{203} (Much more)
   \end{itemize}
   \begin{itemize}
-    \gitem recall: \textbf{1} (Merged all of the identities that had to be merged)
-    \gitem precision: \textbf{0.985} (Only few merged identities should not have been merged)
-    \gitem fmeasure: \textbf{0.992} (Much better)
+    \gitem recall: \textbf{0.99} (Only missed very few identities that should have been merged)
+    \gitem precision: \textbf{1} (All merged identities were correct)
+    \gitem fmeasure: \textbf{0.995} (Much better)
   \end{itemize}
   \vfill
 \end{frame}
