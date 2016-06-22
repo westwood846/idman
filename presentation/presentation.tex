@@ -55,6 +55,7 @@
     \frametitle{Content}
     \begin{itemize}
        \gitem More Results
+       \gitem Ground Truth
        \gitem Some Graphs
        \gitem Usage
     \end{itemize}
@@ -117,22 +118,22 @@
 \begin{frame}
   \frametitle{Results}
   \begin{itemize}
-    \gitem Fancy Algorithms Bring No Improvement
-    \gitem Similar Names are Not the Problem
+    \gitem Improved Fancy Algorithms
+    \gitem They Get Things Wrong Though
   \end{itemize}
   \begin{table}[]
     \centering
     \caption{Resulting Identities with Different Algorithms}
     \label{tab:results}
-    \begin{tabular}{|l|c|c|c|c|}
+    \begin{tabular}{|l|c|c|c|c|c|}
       \hline
-      \textbf{Repo} & \textbf{Git} & \textbf{Occurrence} & \textbf{Wordsimilarity} & \textbf{Default}\\\hline
-      django-cms & 564 & 457 & 457 & 454\\\hline
-      django-oscar & 250 & 208 & 208 & 207\\\hline
-      django-wiki & 81 & 69 & 69 & 69\\\hline
-      elasticsearch & 913 & 797 & 797 & 795\\\hline
-      libgdx & 517 & 421 & 421 & 420\\\hline
-      spring-framework & 230 & 188 & 188 & 188\\\hline
+      \textbf{Repo}    & \textbf{Git} & \textbf{Occurrence} & \textbf{Default} & \textbf{Similarity} & \textbf{Bird}\\\hline
+      django-cms       & 564          & 457                 & 454              & 454                 & 340\\\hline
+      django-oscar     & 250          & 208                 & 207              & 206                 & 177\\\hline
+      django-wiki      & 81           & 69                  & 69               & 68                  & 68\\\hline
+      elasticsearch    & 913          & 797                 & 794              & 794                 & 480\\\hline
+      libgdx           & 517          & 421                 & 420              & 417                 & 336\\\hline
+      spring-framework & 230          & 188                 & 188              & 188                 & 173\\\hline
     \end{tabular}
   \end{table}
   \vfill

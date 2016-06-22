@@ -29,7 +29,7 @@ for my $algo (glob 'results/*') {
 }
 
 
-my @algorithms = qw(none occurrence wordsimilarity default);
+my @algorithms = qw(occurrence similarity default bird);
 print join ' & ', map { "\\textbf{\u$_}" } 'repo', @algorithms;
 print "\\\\\\hline\n";
 
