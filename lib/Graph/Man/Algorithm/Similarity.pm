@@ -54,7 +54,7 @@ sub similar {
 
 sub artifacts_equal {
     my ($self, $a1, $a2) = @_;
-    return $self->_similar($a1, $a2);
+    return $self->similar($a1, $a2);
 }
 
 
