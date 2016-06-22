@@ -87,6 +87,7 @@ sub _iterative_merge {
 sub identify {
     my ($fh, $algorithm, @args) = @_;
 
+    $algorithm = ucfirst lc $algorithm;
     require "Graph/Man/Algorithm/$algorithm.pm";
     my $logic = "Graph::Man::Algorithm::$algorithm"->new(@ARGV);
 

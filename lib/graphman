@@ -5,5 +5,4 @@ use File::Basename qw(dirname);
 use lib dirname(__FILE__);
 use Graph::Man;
 
-my $algorithm  = ucfirst lc shift @ARGV;
-print Graph::Man::identify(\*STDIN, $algorithm, @ARGV), "\n";
+print Graph::Man::identify(\*STDIN, @ARGV), "\n";
