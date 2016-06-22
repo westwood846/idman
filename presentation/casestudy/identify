@@ -4,13 +4,15 @@ use warnings;
 use autodie ':all';
 use File::Basename qw(basename);
 
-my @ALGORITHMS = qw(
-    default
-    occurrence
-    wordsimilarity
+my @ALGORITHMS = (
+    'default',
+    'occurrence',
+    'similarity',
+    'bird',
 );
 
 mkdir 'results' if not -d 'results';
+$ENV{GRAPHMAN_THRESHOLD} = 0.9;
 
 for my $algorithm (@ALGORITHMS) {
     my $dir = "results/$algorithm";
@@ -19,6 +21,6 @@ for my $algorithm (@ALGORITHMS) {
     for my $repo (glob 'repos/*') {
         my $base = basename($repo);
         print "$algorithm\t$base\n";
-        system "../../idman $repo $algorithm > $dir/$base.json";
+        system "../../idman $repo $algorithm > '$dir/$base.json'";
     }
 }
