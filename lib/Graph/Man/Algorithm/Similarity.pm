@@ -9,9 +9,9 @@ use Memoize;
 use Text::Levenshtein::XS qw(distance);
 
 
-memoize 'normalized_distance';
+memoize '_normalized_distance';
 
-sub normalized_distance {
+sub _normalized_distance {
     my ($str1, $str2) = @_;
     return 0 unless length($str1) && length($str2);
     return 1 - distance($str1, $str2) / max(length $str1, length $str2);
@@ -46,9 +46,9 @@ sub process_artifacts {
 }
 
 
-sub _similar {
+sub similar {
     my ($self, $str1, $str2) = @_;
-    return normalized_distance($str1, $str2) >= $self->{threshold};
+    return _normalized_distance($str1, $str2) >= $self->{threshold};
 }
 
 

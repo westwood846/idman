@@ -5,14 +5,14 @@ use Graph::Man::Algorithm;
 use Graph::Man::JSON;
 
 
-sub unique {
+sub _unique {
     my %merge;
     @merge{@_} = ();
     return keys %merge;
 }
 
 
-sub gather_identities {
+sub _gather_identities {
     my ($fh, $logic) = @_;
     my (@identities, %done);
 
@@ -26,7 +26,7 @@ sub gather_identities {
         );
 
         for my $keys (ARTIFACT_SETS) {
-            my @real = grep { length } unique(@{$commit}{@$keys});
+            my @real = grep { length } _unique(@{$commit}{@$keys});
             next unless @real;
 
             my $set = join "\0", @real;
@@ -34,7 +34,7 @@ sub gather_identities {
             if (!exists $done{$set}) {
                 push @identities, {
                     real      => \@real,
-                    processed => [unique($logic->process_artifacts(@real))],
+                    processed => [_unique($logic->process_artifacts(@real))],
                 };
                 $done{$set} = 1;
             }
@@ -45,19 +45,19 @@ sub gather_identities {
 }
 
 
-sub merge {
+sub _merge {
     my ($identities, $x, $y) = @_;
     my ($id1, $id2) = @{$identities}[$x, $y];
 
     $identities->[$x] = {
-        real      => [unique(@{$id1->{real     }}, @{$id2->{real     }})],
-        processed => [unique(@{$id1->{processed}}, @{$id2->{processed}})],
+        real      => [_unique(@{$id1->{real     }}, @{$id2->{real     }})],
+        processed => [_unique(@{$id1->{processed}}, @{$id2->{processed}})],
     };
 
     splice @$identities, $y, 1;
 }
 
-sub iterative_merge {
+sub _iterative_merge {
     my ($identities, $logic, $key) = @_;
     my ($again, %done);
 
@@ -74,7 +74,7 @@ sub iterative_merge {
                 $done{$set} = 1;
 
                 if ($logic->should_merge($id1, $id2)) {
-                    merge($identities, $x, $y);
+                    _merge($identities, $x, $y);
                     $again = 1;
                     --$y;
                 }
@@ -90,9 +90,9 @@ sub identify {
     require "Graph/Man/Algorithm/$algorithm.pm";
     my $logic = "Graph::Man::Algorithm::$algorithm"->new(@ARGV);
 
-    my $identities = gather_identities($fh, $logic);
-    iterative_merge($identities, $logic,                  'processed');
-    iterative_merge($identities, 'Graph::Man::Algorithm', 'real'     );
+    my $identities = _gather_identities($fh, $logic);
+    _iterative_merge($identities, $logic,                  'processed');
+    _iterative_merge($identities, 'Graph::Man::Algorithm', 'real'     );
 
     return encode_json([map { [sort @{$_->{real}}] } @$identities]);
 }

@@ -5,7 +5,7 @@ use feature qw(fc);
 use base 'Graph::Man::Algorithm::Similarity';
 
 
-sub make_alternation {
+sub _make_alternation {
     return join '|', map { quotemeta } @_;
 }
 
@@ -15,11 +15,11 @@ our @TERMS = qw(administrator admin. support development
 our @SUFFIXES = qw(mr. mrs. miss ms. prof. pr. dr. ir. rev.
                    ing. jr. d.d.s. ph.d. capt. lt.);
 
-our $TERM   = qr/\b${\make_alternation(@TERMS)}\b/;
-our $SUFFIX = qr/${\make_alternation(@SUFFIXES)}$/;
+our $TERM   = qr/\b${\_make_alternation(@TERMS)}\b/;
+our $SUFFIX = qr/${\_make_alternation(@SUFFIXES)}$/;
 
 
-sub normalize {
+sub _normalize {
     my ($str) = @_;
     $str =  fc $str;
     $str =~ s/$TERM//g;
@@ -29,7 +29,7 @@ sub normalize {
     return $str;
 }
 
-sub initial_and_rest {
+sub _initial_and_rest {
     my ($str, $initial, $rest) = @_;
 
     my $index = index $str, $rest;
@@ -58,13 +58,13 @@ sub _save_artifact {
         ||  $str =~ /^(?<last>\S+)\s*,\s*(?<first>\S+)$/) {
             %artifact = (
                 type  => 'name',
-                first => normalize($+{first}),
-                last  => normalize($+{last}),
-                full  => normalize($+{full} // $str),
+                first => _normalize($+{first}),
+                last  => _normalize($+{last}),
+                full  => _normalize($+{full} // $str),
             );
         }
         else {
-            my $alias = normalize($str =~ /^([^@]+)@/ ? $1 : $str);
+            my $alias = _normalize($str =~ /^([^@]+)@/ ? $1 : $str);
             return unless length $alias;
             %artifact = (
                 type  => 'alias',
@@ -86,16 +86,16 @@ sub process_artifacts {
 
 sub _cmp_name_name {
     my ($self, $a1, $a2) = @_;
-    return $self->_similar($a1->{first}, $a2->{first})
-        && $self->_similar($a1->{last }, $a2->{last })
-        || $self->_similar($a1->{full }, $a2->{full });
+    return $self->similar($a1->{first}, $a2->{first})
+        && $self->similar($a1->{last }, $a2->{last })
+        || $self->similar($a1->{full }, $a2->{full });
 }
 
 sub _cmp_alias_alias {
     my ($self, $a1, $a2) = @_;
     return length($a1->{alias}) >= 3
         && length($a2->{alias}) >= 3
-        && $self->_similar($a1->{alias}, $a2->{alias});
+        && $self->similar($a1->{alias}, $a2->{alias});
 }
 
 sub _cmp_name_alias {
@@ -105,8 +105,8 @@ sub _cmp_name_alias {
 
     return length($first) >= 2
         && length($last ) >= 2
-        && (initial_and_rest($alias, $first, $last )
-         || initial_and_rest($alias, $last,  $first)
+        && (_initial_and_rest($alias, $first, $last )
+         || _initial_and_rest($alias, $last,  $first)
          || index($alias, $first) != -1 && index($alias, $last) != -1);
 }
 
