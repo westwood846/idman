@@ -9,6 +9,8 @@
 *.toc
 *.synctex.gz
 *.pyc
+*.bbl
+*.blg
 .idea
 !presentation/dancer.pdf
 !header.png
