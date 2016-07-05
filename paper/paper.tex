@@ -11,21 +11,23 @@
 \maketitle
 
 \begin{abstract}
-  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  \input parts/00-abstract
 \end{abstract}
 
 \section{Introduction}
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua \cite{goeminne2013comparison}. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-This can be seen in figure \ref{fig:graph-django-oscar}.
+\input parts/01-introduction
 
 \section{Related Work}
+\input parts/02-related-work
+
 \section{Identity Management}
+\input parts/03-idman
+
 \section{Validation}
+\input parts/04-validation
+
 \section{Results}
+\input parts/05-results
 
 \bibliography{paper}
 \bibliographystyle{plain}
@@ -34,46 +36,6 @@ This can be seen in figure \ref{fig:graph-django-oscar}.
 \appendix
 \section{Figures}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{../presentation/img/graph-django-cms.png}
-  \caption{The graph for django-cms, man.}
-  \label{fig:graph-django-cms}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{../presentation/img/graph-django-oscar.png}
-  \caption{The graph for django-oscar, man.}
-  \label{fig:graph-django-oscar}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{../presentation/img/graph-django-wiki.png}
-  \caption{The graph for django-wiki, man.}
-  \label{fig:graph-django-wiki}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{../presentation/img/graph-elasticsearch.png}
-  \caption{The graph for elasticsearch, man.}
-  \label{fig:graph-elasticsearch}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{../presentation/img/graph-libgdx.png}
-  \caption{The graph for libgdx, man.}
-  \label{fig:graph-libgdx}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1\textwidth]{../presentation/img/graph-spring-framework.png}
-  \caption{The graph for spring-framework, man.}
-  \label{fig:graph-spring-framework}
-\end{figure}
+\input parts/06-appendix-figures
 
 \end{document}
