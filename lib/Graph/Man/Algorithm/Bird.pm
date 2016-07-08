@@ -15,8 +15,8 @@ our @TERMS = qw(administrator admin. support development
 our @SUFFIXES = qw(mr. mrs. miss ms. prof. pr. dr. ir. rev.
                    ing. jr. d.d.s. ph.d. capt. lt.);
 
-our $TERM   = qr/\b${\_make_alternation(@TERMS)}\b/;
-our $SUFFIX = qr/${\_make_alternation(@SUFFIXES)}$/;
+our $TERM   = do { my $rx = _make_alternation(@TERMS   ); qr/\b$rx\b/ };
+our $SUFFIX = do { my $rx = _make_alternation(@SUFFIXES); qr/$rx$/    };
 
 
 sub _normalize {
