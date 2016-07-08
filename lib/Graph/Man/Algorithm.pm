@@ -10,9 +10,9 @@ sub new {
 }
 
 
-sub process_artifacts {
-    my ($self, @artifacts) = @_;
-    return @artifacts;
+sub preprocess {
+    my ($self, $name, $mail) = @_;
+    return [$name, $mail];
 }
 
 
@@ -30,7 +30,8 @@ sub should_merge {
 
 sub artifacts_equal {
     my ($self, $a1, $a2) = @_;
-    return $a1 eq $a2;
+    return $a1->[0] eq $a2->[0]
+        || $a1->[1] eq $a2->[1];
 }
 
 
@@ -68,15 +69,15 @@ The constructor here just builds an empty object. If you need attributes in
 your algorithm object, override this and C<bless> it yourself. You'll be given
 the values from C<@ARGV> as your arguments, so do with those what you want.
 
-=head2 process_artifacts
+=head2 preprocess
 
-    $self->process_artifacts(@artifacts)
+    $self->preprocess($name, $mail)
 
 This method gives you a chance to pre-process your artifacts. For example, you
 could case-fold them so that you can compare them case-insensitively later. You
-must return a list of strings from this.
+can return a list of whatever elements you want from this.
 
-The default is to just return C<@artifacts> and not do any pre-processing.
+The default is to just return the given name and e-mail address tuple.
 
 =head2 should_merge
 
@@ -96,6 +97,7 @@ L</artifacts_equal> if you want to override this equality check.
 Decide if the given artifacts C<$a1> and C<$a2> are equal. Return an
 appropriately truthy or falsy value.
 
-The default is to just to compare them via C<$a1 eq $a2>.
+The default is to assume that they're C<[name, e-mail address]> tuples, and it
+is checked if either pair of those are C<eq>ual.
 
 =cut

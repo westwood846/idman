@@ -5,13 +5,6 @@ use Graph::Man::Algorithm;
 use Graph::Man::JSON;
 
 
-sub _unique {
-    my %merge;
-    @merge{@_} = ();
-    return keys %merge;
-}
-
-
 sub _gather_identities {
     my ($fh, $logic) = @_;
     my (@identities, %done);
@@ -19,24 +12,22 @@ sub _gather_identities {
     while (<$fh>) {
         my $commit = decode_json($_);
 
-        use constant ARTIFACT_SETS => (
-            ['author_name',    'author_mail'   ],
-            ['committer_name', 'committer_mail'],
-            ['signer',         'signer_key'    ],
-        );
+        for my $key ('author', 'committer') {
+            my $name = $commit->{"${key}_name"} // '';
+            my $mail = $commit->{"${key}_mail"} // '';
 
-        for my $keys (ARTIFACT_SETS) {
-            my @real = grep { length } _unique(@{$commit}{@$keys});
-            next unless @real;
+            if (!length($name) && !length($mail)) {
+                next;
+            }
 
-            my $set = join "\0", @real;
+            my $done_key = "$name\0$mail";
 
-            if (!exists $done{$set}) {
+            if (!exists $done{$done_key}) {
                 push @identities, {
-                    real      => \@real,
-                    processed => [_unique($logic->process_artifacts(@real))],
+                    real      => [[$name, $mail]],
+                    processed => [$logic->preprocess($name, $mail)],
                 };
-                $done{$set} = 1;
+                $done{$done_key} = 1;
             }
         }
     }
@@ -50,8 +41,8 @@ sub _merge {
     my ($id1, $id2) = @{$identities}[$x, $y];
 
     $identities->[$x] = {
-        real      => [_unique(@{$id1->{real     }}, @{$id2->{real     }})],
-        processed => [_unique(@{$id1->{processed}}, @{$id2->{processed}})],
+        real      => [@{$id1->{real     }}, @{$id2->{real     }}],
+        processed => [@{$id1->{processed}}, @{$id2->{processed}}],
     };
 
     splice @$identities, $y, 1;
@@ -68,21 +59,27 @@ sub _iterative_merge {
 
             for (my $y = $x + 1; $y < @$identities; ++$y) {
                 my $id2 = $identities->[$y]{$key};
-                my $set = join "\0", @$id1, @$id2;
+                my $done_key = join "\0", @$id1, @$id2;
 
-                next if exists $done{$set};
-                $done{$set} = 1;
-
-                if ($logic->should_merge($id1, $id2)) {
-                    _merge($identities, $x, $y);
-                    $again = 1;
-                    --$y;
+                if (!exists $done{$done_key}) {
+                    if ($logic->should_merge($id1, $id2)) {
+                        _merge($identities, $x, $y);
+                        $again = 1;
+                        --$y;
+                    }
+                    $done{$done_key} = 1;
                 }
             }
         }
     } while ($again);
 }
 
+
+sub _unique {
+    my %merge;
+    @merge{map { join "\0", @$_ } @_} = @_;
+    return sort { "@$a" cmp "@$b" } values %merge;
+}
 
 sub identify {
     my ($fh, $algorithm, @args) = @_;
@@ -92,10 +89,13 @@ sub identify {
     my $logic = "Graph::Man::Algorithm::$algorithm"->new(@ARGV);
 
     my $identities = _gather_identities($fh, $logic);
-    _iterative_merge($identities, $logic,                  'processed');
-    _iterative_merge($identities, 'Graph::Man::Algorithm', 'real'     );
+    _iterative_merge($identities, $logic, 'processed');
 
-    return encode_json([map { [sort @{$_->{real}}] } @$identities]);
+    return encode_json([
+        sort { "@{$a->[0]}" cmp "@{$b->[0]}" }
+        map  { [_unique(@{$_->{real}})] }
+        @$identities
+    ]);
 }
 
 
@@ -126,13 +126,6 @@ Returns single-line JSON-encoded string of the resulting merged identities.
 =head1 INTERNALS
 
 Don't meddle with these from the outside.
-
-=head2 _unique
-
-    unique(@strings)
-
-Returns the given list of C<@strings> with all duplicates removed. The
-resulting list is in no particular order.
 
 =head2 _gather_identities
 
@@ -165,5 +158,12 @@ C<$identities> until it doesn't change anymore. Uses C<< $logic->should_merge
 
 The C<$key> can be either C<'real'> or C<'processed'>, depending on what set of
 identities you want to merge.
+
+=head2 _unique
+
+    unique(@artifacts)
+
+Returns the given list of C<@artifacts> (C<[name, e-mail address]> tuples) with
+all duplicates removed. The resulting list is sorted lexically.
 
 =cut

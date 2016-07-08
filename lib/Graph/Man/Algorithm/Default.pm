@@ -6,12 +6,8 @@ use parent 'Graph::Man::Algorithm';
 
 
 sub process_artifacts {
-    my ($self, @artifacts) = @_;
-    for (@artifacts) {
-        $_ = fc($_);
-        s/\.?\(none\)$//;
-    }
-    return @artifacts;
+    my ($self, $name, $mail) = @_;
+    return [fc($name), fc($mail) =~ s/\.?\(none\)$//r];
 }
 
 
@@ -30,10 +26,11 @@ address doesn't contain a dot.
 
 =head1 METHODS
 
-=head2 process_artifacts
+=head2 preprocess
 
-    $self->process_artifacts(@artifacts)
+    $self->preprocess($name, $mail)
 
-Override. Casefolds all C<@artifacts> and strips C<.(none)> from the end.
+Override. Casefolds the artifacts and strips off C<.(none)> from the end of
+C<$mail>.
 
 =cut

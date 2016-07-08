@@ -36,13 +36,9 @@ sub new {
 }
 
 
-sub process_artifacts {
-    my ($self, @artifacts) = @_;
-    for (@artifacts) {
-        $_ = fc $_;
-        s/\pP//g;
-    }
-    return @artifacts;
+sub preprocess {
+    my ($self, $name, $mail) = @_;
+    return [map { fc($_) =~ s/\pP//gr } $name, $mail];
 }
 
 
@@ -54,7 +50,8 @@ sub similar {
 
 sub artifacts_equal {
     my ($self, $a1, $a2) = @_;
-    return $self->similar($a1, $a2);
+    return $self->similar($a1->[0], $a2->[0])
+        || $self->similar($a1->[1], $a2->[1]);
 }
 
 
@@ -90,11 +87,18 @@ C<GRAPHMAN_THRESHOLD> environment variable.
 Returns if the normalized Levenshtein between the given strings exceeds the
 threshold passed to L</new>.
 
-=head2 process_artifacts
+=head2 preprocess
 
-    $self->process_artifacts(@artifacts)
+    $self->preprocess($name, $mail)
 
-Override. Casefolds all C<@artifacts> and strips punctuation from them.
+Override. Casefolds the artifacts and strips punctuation from them.
+
+=head2 artifacts_equal
+
+    $self->artifacts_equal($a1, $a2)
+
+Override. Returns if the names or e-mail addresses of the given artifacts are
+L</similar>.
 
 =head1 ATTRIBUTES
 

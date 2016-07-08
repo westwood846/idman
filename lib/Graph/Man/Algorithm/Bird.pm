@@ -41,47 +41,30 @@ sub _initial_and_rest {
 }
 
 
-sub new {
-    my ($class, @args) = @_;
-    my $self = $class->SUPER::new(@args);
-    $self->{artifacts} = {};
-    return $self;
-}
+sub _process_artifact {
+    my ($str) = @_;
 
-
-sub _save_artifact {
-    my ($self, $str) = @_;
-
-    if (!$self->{artifacts}{$str}) {
-        my %artifact;
-
-        if ($str =~ /^(?<first>\S+)\s+(?<last>\S+)$/
-        ||  $str =~ /^(?<last>\S+)\s*,\s*(?<first>\S+)$/) {
-            %artifact = (
-                type  => 'name',
-                first => _normalize($+{first}),
-                last  => _normalize($+{last}),
-                full  => _normalize($+{full} // $str),
-            );
-        }
-        else {
-            my $alias = _normalize($str =~ /^([^@]+)@/ ? $1 : $str);
-            return unless length $alias;
-            %artifact = (
-                type  => 'alias',
-                alias => $alias,
-            );
-        }
-
-        $self->{artifacts}{$str} = \%artifact;
+    if ($str =~ /^(?<first>\S+)\s+(?<last>\S+)$/
+    ||  $str =~ /^(?<last>\S+)\s*,\s*(?<first>\S+)$/) {
+        return {
+            type  => 'name',
+            first => _normalize($+{first}),
+            last  => _normalize($+{last}),
+            full  => _normalize($+{full} // $str),
+        };
+    }
+    else {
+        my $alias = _normalize($str =~ /^([^@]+)@/ ? $1 : $str);
+        return {
+            type  => 'alias',
+            alias => $alias,
+        };
     }
 }
 
-
-sub process_artifacts {
-    my ($self, @artifacts) = @_;
-    $self->_save_artifact($_) for @artifacts;
-    return @artifacts;
+sub preprocess {
+    my ($self, $name, $mail) = @_;
+    return [_process_artifact($name), _process_artifact($mail)];
 }
 
 
@@ -116,14 +99,18 @@ sub _cmp_alias_name {
     return $self->_cmp_name_alias($a2, $a1);
 }
 
-
-sub artifacts_equal {
-    my $self      = shift;
-    my ($a1, $a2) = @{$self->{artifacts}}{@_};
-    return unless $a1 && $a2;
-
+sub _cmp {
+    my ($self, $a1, $a2) = @_;
     my $method = "_cmp_$a1->{type}_$a2->{type}";
     return $self->$method($a1, $a2);
+}
+
+sub artifacts_equal {
+    my ($self, $p1, $p2) = @_;
+    return $self->_cmp($p1->[0], $p2->[0])
+        || $self->_cmp($p1->[0], $p2->[1])
+        || $self->_cmp($p1->[1], $p2->[0])
+        || $self->_cmp($p1->[1], $p2->[1]);
 }
 
 
@@ -186,37 +173,12 @@ first or last name and the entirety of the other, with no overlap.
 
 =head1 METHODS
 
-=head2 new
+=head2 preprocess
 
-    Graph::Man::Algorithm::Bird->new('--threshold=0.8')
+    $self->preprocess($name, $mail)
 
-Constructor, dispatches to C<< Graph::Man::Algorithm::Similarity->new >> and
-adds futher attributes to C<$self>.
-
-=head2 process_artifacts
-
-    $self->process_artifacts(@artifacts)
-
-Override. Calls L<_save_artifact> on each artifact and then just returns
-C<@artifacts> unchanged since the processed representation is stashed in
-C<< $self->{artifacts} >>.
-
-=head2 artifacts_equal
-
-    $self->artifacts_equal($a1, $a2)
-
-Override. Loads the given artifacts from C<< $self->{artifacts} >>. Dispatches
-to one of L</_cmp_name_name>, L</_cmp_alias_alias>, L</_cmp_name_alias> or
-L</_cmp_alias_name>, depending on the types of the artifacts.
-
-=head1 ATTRIBUTES
-
-=head2 artifacts
-
-    $self->{artifacts}
-
-A hash mapping from artifact name to a artifact hash. Each artifact is either a
-name like:
+Override. Calls L<_process_artifact> on its arguments and returns those
+processed artifacts in an arrayref. Each artifact is either a name like:
 
     {
         type  => 'name',
@@ -232,7 +194,12 @@ Or an alias like:
         alias => 'jdoe',
     }
 
-See also L</_save_artifact>.
+=head2 artifacts_equal
+
+    $self->artifacts_equal($p1, $p2)
+
+Override. Dispatches to L</_cmp> for each element of the tuples and returns
+true if either one compares equal.
 
 =head1 INTERNALS
 
@@ -254,11 +221,11 @@ Checks if the given C<$str> contains the first character of C<$initial> and the
 entirety of C<$rest>, with no overlap. That is, the section of the string that
 contains the C<$rest> can't also contain the single character from C<$initial>.
 
-=head2 _save_artifact
+=head2 _process_artifact
 
-    $self->_save_artifact($str)
+    _process_artifact($str)
 
-Saves the given artifact C<$str> inside C<< $self->{artifacts} >>.
+Twiddles the given C<$str> into a normalized artifact.
 
 If the string looks like C<firstname lastname> or C<lastname, firstname>, it's
 considered a name and is saved as a name, with first, last and full names.
@@ -270,6 +237,15 @@ away.
 Otherwise, the entire string is considered an alias and saved.
 
 All of the saved strings are L</_normalize>d.
+
+
+=head2 _cmp
+
+    $self->_cmp($a1, $a2)
+
+Dispatches to one of L</_cmp_name_name>, L</_cmp_alias_alias>,
+L</_cmp_name_alias> or L</_cmp_alias_name>, depending on the types of the
+artifacts.
 
 =head2 _cmp_name_name
 

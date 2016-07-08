@@ -14,25 +14,25 @@ my %identity_map;
 
 for my $i (0 .. $#$identities) {
     for my $identifier (@{$identities->[$i]}) {
-        if (exists $identity_map{$identifier}) {
+        my ($name, $mail) = @$identifier;
+        if (exists $identity_map{$name}{$mail}) {
             die "Duplicate identifier '$identifier'\n";
         }
-        $identity_map{$identifier} = $i;
+        $identity_map{$name}{$mail} = $i;
     }
 }
 
 
 sub identify {
-    my ($first, @rest) = grep { defined } @identity_map{@_};
-    return undef unless defined $first;
+    my $name = shift // '';
+    my $mail = shift // '';
 
-    if (any { $_ ne $first } @rest) {
-        my $keys   = join ', ', grep { defined } @_;
-        my $values = join ', ', $first, @rest;
-        die "Multiple different identities for $keys: $values\n";
+    if (!length($name) && !length($mail)) {
+        return undef;
     }
 
-    return int $first;
+    my $index = $identity_map{$name}{$mail};
+    return defined($index) ? int($index) : undef;
 }
 
 
@@ -44,7 +44,6 @@ while (<STDIN>) {
         %$commit,
         author    => identify(@{$commit}{   'author_name',    'author_mail'}),
         committer => identify(@{$commit}{'committer_name', 'committer_mail'}),
-        signer    => identify($commit->{signer}),
     };
 }
 
