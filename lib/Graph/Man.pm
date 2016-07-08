@@ -1,5 +1,5 @@
 package Graph::Man;
-use strict;
+use 5.016;
 use warnings;
 use Graph::Man::Algorithm;
 use Graph::Man::JSON;

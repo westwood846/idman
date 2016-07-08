@@ -1,11 +1,11 @@
 #!/usr/bin/env perl
-use strict;
+use 5.016;
 use warnings;
 use File::Basename qw(dirname);
 use lib dirname(__FILE__);
 use Graph::Man;
 
-print Graph::Man::identify(\*STDIN, @ARGV), "\n";
+say Graph::Man::identify(\*STDIN, @ARGV);
 
 __END__
 

@@ -1,7 +1,6 @@
 package Graph::Man::Algorithm::Default;
-use strict;
+use 5.016;
 use warnings;
-use feature qw(fc);
 use parent 'Graph::Man::Algorithm';
 
 

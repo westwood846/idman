@@ -1,5 +1,5 @@
 package Graph::Man::Algorithm;
-use strict;
+use 5.016;
 use warnings;
 use List::Util qw(any);
 
@@ -48,7 +48,7 @@ Make your own algorithm in the F<Algorithm> folder, such as
 C<Graph/Man/Algorithm/Sample>, and override the necessary methods.
 
     package Graph::Man::Algorithm::Sample;
-    use strict;
+    use 5.016;
     use warnings;
     use base 'Graph::Man::Algorithm';
 

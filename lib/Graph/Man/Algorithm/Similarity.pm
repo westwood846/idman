@@ -1,7 +1,6 @@
 package Graph::Man::Algorithm::Similarity;
-use strict;
+use 5.016;
 use warnings;
-use feature qw(fc);
 use parent 'Graph::Man::Algorithm';
 use Getopt::Long qw(GetOptionsFromArray);
 use List::Util qw(max);

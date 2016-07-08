@@ -12,7 +12,7 @@ every commit in that repository according to the merged identities. If no
 
 * git (obviously)
 
-* perl (git depends on this, so you probably have it already)
+* perl 5.16 or higher (git depends on perl, so you probably have it already)
 
 * some [algorithms](#algorithms) may require additional things
 

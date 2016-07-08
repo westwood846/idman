@@ -1,5 +1,5 @@
 package Graph::Man::JSON;
-use strict;
+use 5.016;
 use warnings;
 use Exporter 'import';
 our @EXPORT = qw(decode_json encode_json);

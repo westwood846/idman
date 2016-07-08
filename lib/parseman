@@ -1,5 +1,5 @@
 #!/usr/bin/env perl
-use strict;
+use 5.016;
 use warnings;
 use autodie;
 use charnames ':full';
@@ -75,11 +75,11 @@ for my $repo_path (@ARGV) {
     while (<$fh>) {
         chomp;
         my ($log, $diff) = split $DIFF_SEPARATOR, decode('UTF-8', $_);
-        print encode_json({
+        say encode_json({
             repo => $repo_path,
             parse_log($log),
             parse_diff($diff),
-        }), "\n";
+        });
     }
 
     close $fh;
