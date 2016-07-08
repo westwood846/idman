@@ -3,9 +3,9 @@
 Usage: `./idman GIT_REPO_FOLDER [ALGORITHM ARGS...]`.
 
 Will perform the given identity merge `ALGORITHM` (optionally with additional
-`ARGS`) on the given `GIT_REPO_FOLDER` and output the author, committer and
-signer of every commit in that repository according to the merged identities.
-If no `ALGORITHM` is given, the default one is used.
+`ARGS`) on the given `GIT_REPO_FOLDER` and output the author and committer of
+every commit in that repository according to the merged identities. If no
+`ALGORITHM` is given, the default one is used.
 
 
 ## Requirements
@@ -27,7 +27,7 @@ The idman output will be a JSON object. It contains the following keys:
 #### `identities`
 
 An array of identities, each representing an individual contributor. Each
-identity is a list of identifiers, such as usernames and e-mail addresses.
+identity is a list of `[name, e-mail address]` tuples.
 
 #### `commits`
 
@@ -37,8 +37,6 @@ individual commit contains the following keys:
 ##### `author`
 
 ##### `committer`
-
-##### `signer`
 
 These values are integers referring to indexes in the `identities` array, or
 null if no such association exists. Use these to tell who authored, committed
@@ -52,11 +50,9 @@ or signed this particular commit.
 
 ##### `committer_mail`
 
-##### `signer`
-
 These are the raw names and e-mails from git. Don't use these for
-identification, they are raw and the identities aren't merged! Use `author`,
-`committer` and `signer` instead.
+identification, they are raw and the identities aren't merged! Use `author` and
+`committer` instead.
 
 ##### `repo`
 
@@ -88,6 +84,10 @@ The rest of the commit message.
 
 The notes attached to the commit. Basically a message in addition to the
 regular commit message.
+
+##### `signer`
+
+The name or e-mail or whatever else the person who signed the commit put here.
 
 ##### `signer_key`
 
@@ -158,7 +158,7 @@ This algorithm requires the `Text::Levenshtein::XS` Perl module. Install it via
 
 An extension of the similarity algorithm above, the same requirements apply.
 Implements the algorithm used by [Bird et al. in the paper “Mining Email social
-networks”](http://macbeth.cs.ucdavis.edu/msr06.pdf).  This does a whole bunch
+networks”](http://macbeth.cs.ucdavis.edu/msr06.pdf). This does a whole bunch
 of pre-processing on the identities and pays attention to the difference
 between usernames and real first and last names.
 

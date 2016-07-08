@@ -73,8 +73,8 @@ being the C<graphman> output and the rest being the C<parseman> output.
 The output on stdout will be a pretty-printed JSON object, see F<../README.md>
 for the detailed description of the structure.
 
-If a single artifact cannot be clearly mapped to an identity or if a
-author/committer/signer resolves to more than one identity, this will die,
-overwhelmed from all the ambiguity.
+If a single artifact cannot be clearly mapped to an identity or if an author or
+committer resolves to more than one identity, this will die, overwhelmed from
+all the ambiguity.
 
 =cut
