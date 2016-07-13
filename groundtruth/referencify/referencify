@@ -5,6 +5,7 @@ use File::Basename qw(basename);
 use File::Spec::Functions qw(catfile catdir);
 use FindBin;
 use Mojo::Util qw(slurp);
+use Storable;
 
 
 my $data = catdir($FindBin::Bin, 'data');
@@ -17,20 +18,6 @@ sub to_repo {
         name => $name,
         left => scalar @files,
     };
-}
-
-sub load_identity {
-    my ($file) = @_;
-    my @tuples;
-
-    open my $fh, '<:encoding(UTF-8)', $file;
-    while (<$fh>) {
-        chomp;
-        push @tuples, [split "\0", $_, 2];
-    }
-    close $fh;
-
-    return \@tuples;
 }
 
 
@@ -61,7 +48,7 @@ get '/api/repo/:name' => sub {
         my $file  = $files[int rand @files];
         return $c->render(json => {
             name     => basename($file),
-            identity => load_identity($file),
+            identity => retrieve($file),
             left     => scalar @files,
         });
     }
@@ -85,16 +72,10 @@ post '/api/repo/:name' => sub {
     if (-f "$work/$name") {
         my $i = 0;
 
-        for (@{$req->{identities}}) {
-            my @tuples = @$_;
-            next unless @tuples;
-            ++$i;
-
-            open my $fh, '>:encoding(UTF-8)', catfile($done, "$name-$i");
-            for (@tuples) {
-                print {$fh} join("\0", @$_), "\n";
+        for my $identity (@{$req->{identities}}) {
+            if (@$identity) {
+                store($identity, catfile($done, join('-', $name, ++$i)));
             }
-            close $fh;
         }
 
         unlink "$work/$name";

@@ -3,9 +3,10 @@ use 5.016;
 use warnings;
 use autodie ':all';
 use FindBin;
-use File::Spec::Functions qw(canonpath);
-use Mojo::JSON qw(encode_json decode_json);
+use File::Spec::Functions qw(canonpath catfile);
+use Mojo::JSON qw(decode_json);
 use Mojo::Util qw(slurp);
+use Storable;
 
 
 if (!@ARGV) {
@@ -16,13 +17,7 @@ if (!@ARGV) {
 sub spew_identity {
     my ($dir, $identity) = @_;
     state $id = 0;
-    ++$id;
-
-    open my $fh, '>:encoding(UTF-8)', "$dir/$id";
-    for (@$identity) {
-        print {$fh} join("\0", @$_), "\n";
-    }
-    close $fh;
+    store($identity, catfile($dir, ++$id));
 }
 
 
