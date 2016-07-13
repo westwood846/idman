@@ -1,796 +1,1298 @@
 [
    [
-      "13003062543@qq.com",
-      "youmoo",
-      "youmoolee@gmail.com"
+      [
+         "Agim Emruli",
+         "agimemruli@gmail.com"
+      ]
+   ],
+   [
+      [
+         "Alex Antonov",
+         "alex@antonov.ws"
+      ]
+   ],
+   [
+      [
+         "Alex Panchenko",
+         "alex.panchenko@gmail.com"
+      ]
+   ],
+   [
+      [
+         "Alex Yursha",
+         "alex.yursha@icloud.com"
+      ],
+      [
+         "Alex Yursha",
+         "alexyursha@gmail.com"
+      ]
+   ],
+   [
+      [
+         "Anders D. Johnson",
+         "adjohnson916@gmail.com"
+      ]
+   ],
+   [
+      [
+         "Andy Clement",
+         "aclement@gopivotal.com"
+      ],
+      [
+         "Andy Clement",
+         "aclement@pivotal.io"
+      ],
+      [
+         "Andy Clement",
+         "aclement@vmware.com"
+      ],
+      [
+         "Andy Clement",
+         "andrew.clement@gmail.com"
+      ]
    ],
    [
-      "150349407@qq.com",
-      "Xiaolong Zuo"
+      [
+         "Andy Wilkinson",
+         "awilkinson@gopivotal.com"
+      ],
+      [
+         "Andy Wilkinson",
+         "awilkinson@pivotal.io"
+      ]
    ],
    [
-      "abilan@gopivotal.com",
-      "Artem Bilan"
+      [
+         "Anton Bobov",
+         "anton@bobov.name"
+      ]
    ],
    [
-      "aclement@gopivotal.com",
-      "aclement@pivotal.io",
-      "aclement@vmware.com",
-      "andrew.clement@gmail.com",
-      "Andy Clement"
+      [
+         "Antonio Marrero",
+         "antonio.marrero@terra.com"
+      ]
+   ],
+   [
+      [
+         "Arjan van Bentem",
+         "github@avbentem.dds.nl"
+      ]
+   ],
+   [
+      [
+         "Arjen Poutsma",
+         "apoutsma@gopivotal.com"
+      ],
+      [
+         "Arjen Poutsma",
+         "apoutsma@pivotal.io"
+      ],
+      [
+         "Arjen Poutsma",
+         "apoutsma@vmware.com"
+      ],
+      [
+         "Arjen Poutsma",
+         "poutsma@mac.com"
+      ]
+   ],
+   [
+      [
+         "Arnaud Cogoluègnes",
+         "acogoluegnes@gmail.com"
+      ]
    ],
    [
-      "acogoluegnes@gmail.com",
-      "Arnaud Cogoluègnes"
+      [
+         "Artem Bilan",
+         "abilan@gopivotal.com"
+      ]
    ],
    [
-      "adjohnson916@gmail.com",
-      "Anders D. Johnson"
+      [
+         "Ben Hale",
+         "bhale@vmware.com"
+      ]
    ],
    [
-      "Agim Emruli",
-      "agimemruli@gmail.com"
+      [
+         "Ben Manes",
+         "ben.manes@gmail.com"
+      ]
    ],
    [
-      "ajookkari@gmail.com",
-      "Min Ho Pak"
+      [
+         "Biju Kunjummen",
+         "Biju.Kunjummen@gmail.com"
+      ]
    ],
    [
-      "Alex Antonov",
-      "alex@antonov.ws"
+      [
+         "Brian Clozel",
+         "bclozel@gopivotal.com"
+      ],
+      [
+         "Brian Clozel",
+         "bclozel@pivotal.io"
+      ]
    ],
    [
-      "Alex Panchenko",
-      "alex.panchenko@gmail.com"
+      [
+         "Brian Westrich",
+         "bw@mcwest.com"
+      ]
    ],
    [
-      "Alex Yursha",
-      "alex.yursha@icloud.com",
-      "alexyursha@gmail.com"
+      [
+         "Carson McDonald",
+         "carson@ioncannon.net"
+      ]
    ],
    [
-      "andrei.holub@gmail.com",
-      "holub"
+      [
+         "Chexpir",
+         "Chexpir@users.noreply.github.com"
+      ]
    ],
    [
-      "andrewss@vmware.com",
-      "Scott Andrews"
+      [
+         "Chin Huang",
+         "pukkaone@gmail.com"
+      ]
    ],
    [
-      "Andy Wilkinson",
-      "awilkinson@gopivotal.com",
-      "awilkinson@pivotal.io"
+      [
+         "Chris Beams",
+         "cbeams@gmail.com"
+      ],
+      [
+         "Chris Beams",
+         "cbeams@gopivotal.com"
+      ],
+      [
+         "Chris Beams",
+         "cbeams@vmware.com"
+      ],
+      [
+         "Chris Beams",
+         "chris@beams.io"
+      ]
    ],
    [
-      "Anton Bobov",
-      "anton@bobov.name"
+      [
+         "Christian Dupuis",
+         "cdupuis@gopivotal.com"
+      ],
+      [
+         "Christian Dupuis",
+         "cdupuis@vmware.com"
+      ]
    ],
    [
-      "Antonio Marrero",
-      "antonio.marrero@terra.com"
+      [
+         "Clément Plantier",
+         "clemplantier@gmail.com"
+      ],
+      [
+         "clemp6r",
+         "clemplantier@gmail.com"
+      ]
    ],
    [
-      "apoutsma@gopivotal.com",
-      "apoutsma@pivotal.io",
-      "apoutsma@vmware.com",
-      "Arjen Poutsma",
-      "poutsma@mac.com"
+      [
+         "Colin Sampaleanu",
+         "csampaleanu@vmware.com"
+      ]
    ],
    [
-      "Arjan van Bentem",
-      "github@avbentem.dds.nl"
+      [
+         "Cory Klein",
+         "cory.klein@domo.com"
+      ]
    ],
    [
-      "bclozel@gopivotal.com",
-      "bclozel@pivotal.io",
-      "Brian Clozel"
+      [
+         "Costin Leau",
+         "cleau@vmware.com"
+      ]
    ],
    [
-      "Ben Hale",
-      "bhale@vmware.com"
+      [
+         "Craig Andrews",
+         "candrews@integralblue.com"
+      ]
    ],
    [
-      "Ben Manes",
-      "ben.manes@gmail.com"
+      [
+         "Craig Walls",
+         "cwalls@vmware.com"
+      ]
    ],
    [
-      "ben.madore@slalom.com",
-      "madorb"
+      [
+         "Dapeng",
+         "verydapeng@gmail.com"
+      ]
    ],
    [
-      "betterrus@gmail.com",
-      "Ruslan Sibgatullin"
+      [
+         "Dave Brosius",
+         "dbrosius@mebigfatguy.com"
+      ]
    ],
    [
-      "Biju Kunjummen",
-      "Biju.Kunjummen@gmail.com"
+      [
+         "Dave Syer",
+         "david_syer@hotmail.com"
+      ],
+      [
+         "Dave Syer",
+         "dsyer@pivotal.io"
+      ],
+      [
+         "Dave Syer",
+         "dsyer@vmware.com"
+      ],
+      [
+         "David Syer",
+         "dsyer@vmware.com"
+      ]
    ],
    [
-      "bk@lgcns.com",
-      "Kang Baek-kyu"
+      [
+         "David Haraburda",
+         "david@haraburda.com"
+      ]
    ],
    [
-      "bobin@reksoft.ru",
-      "Fedor Bobin"
+      [
+         "David Harkness",
+         "dharkness@gmail.com"
+      ]
    ],
    [
-      "Brian Westrich",
-      "bw@mcwest.com"
+      [
+         "David J. Biesack",
+         "David.Biesack@sas.com"
+      ]
    ],
    [
-      "buildmaster@springframework.org",
-      "Spring Buildmaster"
+      [
+         "David Tombs",
+         "cyan.spam@gmail.com"
+      ]
    ],
    [
-      "candrews@integralblue.com",
-      "Craig Andrews"
+      [
+         "Deline Neo",
+         "delineneo@gmail.com"
+      ]
    ],
    [
-      "Carson McDonald",
-      "carson@ioncannon.net"
+      [
+         "Dennis Kieselhorst",
+         "mail@dekies.de"
+      ]
    ],
    [
-      "cbaldwin74",
-      "cbaldwin@shaw.ca"
+      [
+         "Dmitry Katsubo",
+         "dmitry.katsubo@gmai.com"
+      ],
+      [
+         "Dmitry Katsubo",
+         "dmitry.katsubo@gmail.com"
+      ]
    ],
    [
-      "cbeams@gmail.com",
-      "cbeams@gopivotal.com",
-      "cbeams@vmware.com",
-      "Chris Beams",
-      "chris@beams.io"
+      [
+         "Dridi Boukelmoune",
+         "dridi.b@laposte.net"
+      ]
    ],
    [
-      "cdupuis@gopivotal.com",
-      "cdupuis@vmware.com",
-      "Christian Dupuis"
+      [
+         "Eddú Meléndez",
+         "eddu.melendez@gmail.com"
+      ]
    ],
    [
-      "Chexpir",
-      "Chexpir@users.noreply.github.com"
+      [
+         "Elizabeth Chatman",
+         "echatman@users.noreply.github.com"
+      ]
    ],
    [
-      "Chin Huang",
-      "pukkaone@gmail.com"
+      [
+         "Eric Bottard",
+         "eric.bottard+github@gmail.com"
+      ]
    ],
    [
-      "cleau@vmware.com",
-      "Costin Leau"
+      [
+         "Eric Dahl",
+         "eric.c.dahl@gmail.com"
+      ]
    ],
    [
-      "clemp6r",
-      "clemplantier@gmail.com",
-      "Clément Plantier"
+      [
+         "Eric Weinberg",
+         "eric.weinberg@wrx-us.com"
+      ]
    ],
    [
-      "Colin Sampaleanu",
-      "csampaleanu@vmware.com"
+      [
+         "Erik van Paassen",
+         "erik@evpwebdesign.nl"
+      ]
    ],
    [
-      "Cory Klein",
-      "cory.klein@domo.com"
+      [
+         "Esko Luontola",
+         "esko.luontola@gmail.com"
+      ]
    ],
    [
-      "Craig Walls",
-      "cwalls@vmware.com"
+      [
+         "Ezequiel Ballesi",
+         "ezequielballesi@gmail.com"
+      ]
    ],
    [
-      "cyan.spam@gmail.com",
-      "David Tombs"
+      [
+         "Fedor Bobin",
+         "bobin@reksoft.ru"
+      ]
    ],
    [
-      "Dapeng",
-      "verydapeng@gmail.com"
+      [
+         "Felix",
+         "felixbarny@users.noreply.github.com"
+      ]
    ],
    [
-      "Dave Brosius",
-      "dbrosius@mebigfatguy.com"
+      [
+         "Fredrik Sundberg",
+         "fredrik.sundberg@gmail.com"
+      ]
    ],
    [
-      "Dave Syer",
-      "David Syer",
-      "david_syer@hotmail.com",
-      "dsyer@pivotal.io",
-      "dsyer@vmware.com"
+      [
+         "Gabriel Axel",
+         "guznik@gmail.com"
+      ]
    ],
    [
-      "David Haraburda",
-      "david@haraburda.com"
+      [
+         "Gareth Davis",
+         "gareth.davis@mac.com"
+      ]
    ],
    [
-      "David Harkness",
-      "dharkness@gmail.com"
+      [
+         "Gary Russell",
+         "grussell@gopivotal.com"
+      ],
+      [
+         "Gary Russell",
+         "grussell@pivotal.io"
+      ],
+      [
+         "Gary Russell",
+         "grussell@vmware.com"
+      ]
    ],
    [
-      "David J. Biesack",
-      "David.Biesack@sas.com"
+      [
+         "Gildas Cuisinier",
+         "gildas.cuisinier@gmail.com"
+      ]
    ],
    [
-      "Deline Neo",
-      "delineneo@gmail.com"
+      [
+         "Glyn Normington",
+         "gnormington@vmware.com"
+      ]
    ],
    [
-      "Dennis Kieselhorst",
-      "mail@dekies.de"
+      [
+         "Graham Lea",
+         "graham@grahamlea.com"
+      ]
    ],
    [
-      "dev@sokol-web.de",
-      "Kamill Sokol"
+      [
+         "Greg Turnquist",
+         "gturnquist@gopivotal.com"
+      ],
+      [
+         "Greg Turnquist",
+         "gturnquist@pivotal.io"
+      ]
    ],
    [
-      "Dmitry Katsubo",
-      "dmitry.katsubo@gmai.com",
-      "dmitry.katsubo@gmail.com"
+      [
+         "Grzegorz Rożniecki",
+         "xaerxess@gmail.com"
+      ]
    ],
    [
-      "dominik.hurnaus@gmail.com",
-      "hupfis"
+      [
+         "Hasan Kara",
+         "haisi@users.noreply.github.com"
+      ]
    ],
    [
-      "Dridi Boukelmoune",
-      "dridi.b@laposte.net"
+      [
+         "HejiaHo",
+         "hejiahe7@gmail.com"
+      ]
    ],
    [
-      "echatman@users.noreply.github.com",
-      "Elizabeth Chatman"
+      [
+         "Hronom",
+         "hronom@gmail.com"
+      ]
    ],
    [
-      "eddu.melendez@gmail.com",
-      "Eddú Meléndez"
+      [
+         "Ian Brandt",
+         "ian@ianbrandt.com"
+      ]
    ],
    [
-      "enide.github@gmail.com",
-      "Paul Verest"
+      [
+         "Ian Chan",
+         "icha024@gmail.com"
+      ]
    ],
    [
-      "Eric Bottard",
-      "eric.bottard+github@gmail.com"
+      [
+         "Ivo Smid",
+         "ivo.smid@gmail.com"
+      ]
    ],
    [
-      "Eric Dahl",
-      "eric.c.dahl@gmail.com"
+      [
+         "Jakub Narloch",
+         "jmnarloch@gmail.com"
+      ]
    ],
    [
-      "Eric Weinberg",
-      "eric.weinberg@wrx-us.com"
+      [
+         "Jan Machacek",
+         "jan.machacek@gmail.com"
+      ]
    ],
    [
-      "Erik van Paassen",
-      "erik@evpwebdesign.nl"
+      [
+         "Jan Stamer",
+         "j.stamer@pe-international.com"
+      ]
    ],
    [
-      "Esko Luontola",
-      "esko.luontola@gmail.com"
+      [
+         "Janning Vygen",
+         "vygen@kicktipp.de"
+      ]
    ],
    [
-      "eujung kim",
-      "eujung.kim@gmail.com"
+      [
+         "Jasper de Vries",
+         "litpho@gmail.com"
+      ]
    ],
    [
-      "Ezequiel Ballesi",
-      "ezequielballesi@gmail.com"
+      [
+         "Jeff Brown",
+         "jbrown@vmware.com"
+      ],
+      [
+         "Jeff Brown",
+         "jeff@jeffandbetsy.net"
+      ]
    ],
    [
-      "Felix",
-      "felixbarny@users.noreply.github.com"
+      [
+         "Jennifer Hickey",
+         "jhickey@vmware.com"
+      ]
    ],
    [
-      "fisache",
-      "hwang031451@gamil.com"
+      [
+         "Jeremy Grelle",
+         "jgrelle@gopivotal.com"
+      ],
+      [
+         "Jeremy Grelle",
+         "jgrelle@vmware.com"
+      ]
    ],
    [
-      "Fredrik Sundberg",
-      "fredrik.sundberg@gmail.com"
+      [
+         "John Feminella",
+         "jxf@jxf.me"
+      ]
    ],
    [
-      "Gabriel Axel",
-      "guznik@gmail.com"
+      [
+         "John Tims",
+         "john.k.tims@gmail.com"
+      ],
+      [
+         "John",
+         "john.k.tims@gmail.com"
+      ]
    ],
    [
-      "Gareth Davis",
-      "gareth.davis@mac.com"
+      [
+         "Johnny Lim",
+         "izeye@naver.com"
+      ],
+      [
+         "izeye",
+         "izeye@naver.com"
+      ]
    ],
    [
-      "Gary Russell",
-      "grussell@gopivotal.com",
-      "grussell@pivotal.io",
-      "grussell@vmware.com"
+      [
+         "Josh King",
+         "josh.king@xirrus.com"
+      ]
    ],
    [
-      "Gildas Cuisinier",
-      "gildas.cuisinier@gmail.com"
+      [
+         "Juergen Hoeller",
+         "jhoeller@gopivotal.com"
+      ],
+      [
+         "Juergen Hoeller",
+         "jhoeller@pivotal.io"
+      ],
+      [
+         "Juergen Hoeller",
+         "jhoeller@vmware.com"
+      ],
+      [
+         "jhoeller",
+         "jhoeller@vmware.com"
+      ]
    ],
    [
-      "giovanni.dalloglio@addvalue.it",
-      "giovannidalloglio"
+      [
+         "Kamil Szymanski",
+         "kamil.szymanski.dev@gmail.com"
+      ]
    ],
    [
-      "Glyn Normington",
-      "gnormington@vmware.com"
+      [
+         "Kamill Sokol",
+         "dev@sokol-web.de"
+      ]
    ],
    [
-      "Graham Lea",
-      "graham@grahamlea.com"
+      [
+         "Kang Baek-kyu",
+         "bk@lgcns.com"
+      ]
    ],
    [
-      "Greg Turnquist",
-      "gturnquist@gopivotal.com",
-      "gturnquist@pivotal.io"
+      [
+         "Kazuki Shimizu",
+         "kazuki43zoo@gmail.com"
+      ]
    ],
    [
-      "Grzegorz Rożniecki",
-      "xaerxess@gmail.com"
+      [
+         "Keith Donald",
+         "kdonald@vmware.com"
+      ]
    ],
    [
-      "haisi@users.noreply.github.com",
-      "Hasan Kara"
+      [
+         "Ken Dombeck",
+         "kdombeck@sevenventures.net"
+      ]
    ],
    [
-      "hejiahe7@gmail.com",
-      "HejiaHo"
+      [
+         "Konstantin Petrukhnov",
+         "konstantin.petrukhnov@gmail.com"
+      ]
    ],
    [
-      "hengyunabc",
-      "hengyunabc@gmail.com"
+      [
+         "Kris De Volder",
+         "kris.de.volder@gmail.com"
+      ]
    ],
    [
-      "Hronom",
-      "hronom@gmail.com"
+      [
+         "Lea Farmer",
+         "learemraf@gmail.com"
+      ]
    ],
    [
-      "Ian Brandt",
-      "ian@ianbrandt.com"
+      [
+         "Lifu Zhou",
+         "zlf369777684@gmail.com"
+      ]
    ],
    [
-      "Ian Chan",
-      "icha024@gmail.com"
+      [
+         "Lonre Wang",
+         "me@wanglong.me"
+      ]
    ],
    [
-      "Ivo Smid",
-      "ivo.smid@gmail.com"
+      [
+         "Luciano Leggieri",
+         "lleggieri@despegar.com"
+      ]
    ],
    [
-      "izeye",
-      "izeye@naver.com",
-      "Johnny Lim"
+      [
+         "Lukasz Kryger",
+         "l.kryger@ed.ac.uk"
+      ],
+      [
+         "Lukasz Kryger",
+         "lukasz.kryger@gmail.com"
+      ]
    ],
    [
-      "j.stamer@pe-international.com",
-      "Jan Stamer"
+      [
+         "Luke Taylor",
+         "ltaylor@vmware.com"
+      ]
    ],
    [
-      "Jakub Narloch",
-      "jmnarloch@gmail.com"
+      [
+         "Maciej Ziarko",
+         "Maciej.Ziarko@gmail.com"
+      ]
    ],
    [
-      "james",
-      "james.bergamin@local.ch"
+      [
+         "Marcin Mielnicki",
+         "marcin.mielnicki@gmail.com"
+      ]
    ],
    [
-      "Jan Machacek",
-      "jan.machacek@gmail.com"
+      [
+         "Mark Fisher",
+         "markfisher@vmware.com"
+      ]
    ],
    [
-      "JanecekPetr@seznam.cz",
-      "Petr Janecek"
+      [
+         "Mark Galea",
+         "mmgalea@gmail.com"
+      ]
    ],
    [
-      "Janning Vygen",
-      "vygen@kicktipp.de"
+      [
+         "Mark Pollack",
+         "mpollack@vmware.com"
+      ]
    ],
    [
-      "Jasper de Vries",
-      "litpho@gmail.com"
+      [
+         "Markus Malkusch",
+         "markus@malkusch.de"
+      ]
    ],
    [
-      "jbrown@vmware.com",
-      "Jeff Brown",
-      "jeff@jeffandbetsy.net"
+      [
+         "Marten Deinum",
+         "mdeinum@gmail.com"
+      ]
    ],
    [
-      "Jennifer Hickey",
-      "jhickey@vmware.com"
+      [
+         "Martin Lippert",
+         "mlippert@pivotal.io"
+      ]
    ],
    [
-      "Jeremy Grelle",
-      "jgrelle@gopivotal.com",
-      "jgrelle@vmware.com"
+      [
+         "Martin Macko",
+         "macko.mar@gmail.com"
+      ]
    ],
    [
-      "jhoeller",
-      "jhoeller@gopivotal.com",
-      "jhoeller@pivotal.io",
-      "jhoeller@vmware.com",
-      "Juergen Hoeller"
+      [
+         "Mattias Severson",
+         "matsev@gmail.com"
+      ]
    ],
    [
-      "John",
-      "John Tims",
-      "john.k.tims@gmail.com"
+      [
+         "Maxim Valyanskiy",
+         "max.valjanski@gmail.com"
+      ]
    ],
    [
-      "John Feminella",
-      "jxf@jxf.me"
+      [
+         "Micha Kiener",
+         "micha.kiener@mimacom.ch"
+      ]
    ],
    [
-      "johnson.james2@gmail.com",
-      "logicg8"
+      [
+         "Michael Irwin",
+         "mikesir87@gmail.com"
+      ]
    ],
    [
-      "Josh King",
-      "josh.king@xirrus.com"
+      [
+         "Michael Isvy",
+         "misvy@vmware.com"
+      ]
    ],
    [
-      "J�rgen@Aspire.(none)",
-      "unknown"
+      [
+         "Michael Simons",
+         "michael@simons.ac"
+      ]
    ],
    [
-      "Kamil Szymanski",
-      "kamil.szymanski.dev@gmail.com"
+      [
+         "Michal Karolik",
+         "michal.karolik@eniro.com"
+      ]
    ],
    [
-      "Kazuki Shimizu",
-      "kazuki43zoo@gmail.com"
+      [
+         "Mike Krumlauf",
+         "mjkrumlauf@gmail.com"
+      ]
    ],
    [
-      "kdombeck@sevenventures.net",
-      "Ken Dombeck"
+      [
+         "Min Ho Pak",
+         "ajookkari@gmail.com"
+      ]
    ],
    [
-      "kdonald@vmware.com",
-      "Keith Donald"
+      [
+         "Nicholas Williams",
+         "nicholas@nicholaswilliams.net"
+      ],
+      [
+         "Nick Williams",
+         "nicholas@nicholaswilliams.net"
+      ]
    ],
    [
-      "Konstantin Petrukhnov",
-      "konstantin.petrukhnov@gmail.com"
+      [
+         "Nicolas Labrot",
+         "nithril@gmail.com"
+      ]
    ],
    [
-      "Kris De Volder",
-      "kris.de.volder@gmail.com"
+      [
+         "Nikita Tovstoles",
+         "nikita.tovstoles@gmail.com"
+      ]
    ],
    [
-      "ksseo0701@lgcns.com",
-      "Seo, Kyung-Seok"
+      [
+         "Oleg Atamanenko",
+         "oleg.atamanenko@gmail.com"
+      ]
    ],
    [
-      "l.kryger@ed.ac.uk",
-      "Lukasz Kryger",
-      "lukasz.kryger@gmail.com"
+      [
+         "Oleg Kalnichevski",
+         "olegk@apache.org"
+      ]
    ],
    [
-      "Lea Farmer",
-      "learemraf@gmail.com"
+      [
+         "Oleg Lomaka",
+         "oleg.lomaka@gmail.com"
+      ]
    ],
    [
-      "leizhiyuan",
-      "leizhiyuan@gmail.com"
+      [
+         "Oliver Becker",
+         "ob@obqo.de"
+      ]
    ],
    [
-      "Lifu Zhou",
-      "zlf369777684@gmail.com"
+      [
+         "Oliver Gierke",
+         "ogierke@gopivotal.com"
+      ],
+      [
+         "Oliver Gierke",
+         "ogierke@vmware.com"
+      ]
    ],
    [
-      "lleggieri@despegar.com",
-      "Luciano Leggieri"
+      [
+         "Paul Verest",
+         "enide.github@gmail.com"
+      ]
    ],
    [
-      "Lonre Wang",
-      "me@wanglong.me"
+      [
+         "Petr Janecek",
+         "JanecekPetr@seznam.cz"
+      ]
    ],
    [
-      "ltaylor@vmware.com",
-      "Luke Taylor"
+      [
+         "Phani Kandula",
+         "phani.kandula@gmail.com"
+      ]
    ],
    [
-      "Maciej Ziarko",
-      "Maciej.Ziarko@gmail.com"
+      [
+         "Philippe Marschall",
+         "philippe.marschall@gmail.com"
+      ]
    ],
    [
-      "macko.mar@gmail.com",
-      "Martin Macko"
+      [
+         "Phillip Webb",
+         "pwebb@gopivotal.com"
+      ],
+      [
+         "Phillip Webb",
+         "pwebb@pivotal.io"
+      ],
+      [
+         "Phillip Webb",
+         "pwebb@vmware.com"
+      ]
    ],
    [
-      "mailmd@web.de",
-      "md42"
+      [
+         "Radosław Józwik",
+         "rjozwik@interia.pl"
+      ]
    ],
    [
-      "makingx@gmail.com",
-      "Toshiaki Maki"
+      [
+         "Ralph Schaer",
+         "ralphschaer@gmail.com"
+      ]
    ],
    [
-      "Marcin Mielnicki",
-      "marcin.mielnicki@gmail.com"
+      [
+         "Ramnivas Laddad",
+         "rladdad@vmware.com"
+      ]
    ],
    [
-      "Mark Fisher",
-      "markfisher@vmware.com"
+      [
+         "Ritesh Rathore",
+         "rcrathore@yahoo.com"
+      ]
    ],
    [
-      "Mark Galea",
-      "mmgalea@gmail.com"
+      [
+         "Rob Harrop",
+         "rharrop@vmware.com"
+      ]
    ],
    [
-      "Mark Pollack",
-      "mpollack@vmware.com"
+      [
+         "Rob Winch",
+         "rwinch@gopivotal.com"
+      ],
+      [
+         "Rob Winch",
+         "rwinch@users.noreply.github.com"
+      ],
+      [
+         "Rob Winch",
+         "rwinch@vmware.com"
+      ]
    ],
    [
-      "Markus Malkusch",
-      "markus@malkusch.de"
+      [
+         "Rossen Stoyanchev",
+         "rstoyanchev@gopivotal.com"
+      ],
+      [
+         "Rossen Stoyanchev",
+         "rstoyanchev@pivotal.io"
+      ],
+      [
+         "Rossen Stoyanchev",
+         "rstoyanchev@users.noreply.github.com"
+      ],
+      [
+         "Rossen Stoyanchev",
+         "rstoyanchev@vmware.com"
+      ]
    ],
    [
-      "Marten Deinum",
-      "mdeinum@gmail.com"
+      [
+         "Roy Clarkson",
+         "rclarkson@gopivotal.com"
+      ],
+      [
+         "Roy Clarkson",
+         "rclarkson@pivotal.io"
+      ]
    ],
    [
-      "Martin Lippert",
-      "mlippert@pivotal.io"
+      [
+         "Ruben Dijkstra",
+         "rubendijkstra123@gmail.com"
+      ]
    ],
    [
-      "Martin.Hock@gfk.com",
-      "mnhock"
+      [
+         "Ruslan Sibgatullin",
+         "betterrus@gmail.com"
+      ]
    ],
    [
-      "matsev@gmail.com",
-      "Mattias Severson"
+      [
+         "Ryan Skow",
+         "ryan@skow.org"
+      ]
    ],
    [
-      "matthew-pearson",
-      "matthew.pearson@linuxmail.org"
+      [
+         "Sam Brannen",
+         "sam@sambrannen.com"
+      ]
    ],
    [
-      "max.valjanski@gmail.com",
-      "Maxim Valyanskiy"
+      [
+         "Sammy Chu",
+         "sammychu@amberroad.com"
+      ]
    ],
    [
-      "melissa.m.hartsock@gmail.com",
-      "mhartsock Melissa Hartsock"
+      [
+         "Sang Gi Ryu",
+         "ryucsion@gmail.com"
+      ]
    ],
    [
-      "mgooty",
-      "mgooty@paypal.com"
+      [
+         "Sanghyuk Jung",
+         "sanghyuk.jung@navercorp.com"
+      ]
    ],
    [
-      "Micha Kiener",
-      "micha.kiener@mimacom.ch"
+      [
+         "Satyapal Reddy",
+         "satyapal.reddy@emc.com"
+      ]
    ],
    [
-      "Michael Irwin",
-      "mikesir87@gmail.com"
+      [
+         "Scott Andrews",
+         "andrewss@vmware.com"
+      ]
    ],
    [
-      "Michael Isvy",
-      "misvy@vmware.com"
+      [
+         "Sebastien Deleuze",
+         "sdeleuze@gopivotal.com"
+      ],
+      [
+         "Sebastien Deleuze",
+         "sdeleuze@pivotal.io"
+      ]
    ],
    [
-      "Michael Simons",
-      "michael@simons.ac"
+      [
+         "Seo, Kyung-Seok",
+         "ksseo0701@lgcns.com"
+      ]
    ],
    [
-      "Michal Karolik",
-      "michal.karolik@eniro.com"
+      [
+         "Siva Prasad Valluru",
+         "sivaprasad.valluru@gmail.com"
+      ]
    ],
    [
-      "Mike Krumlauf",
-      "mjkrumlauf@gmail.com"
+      [
+         "Spring Buildmaster",
+         "buildmaster@springframework.org"
+      ]
    ],
    [
-      "ndebeiss",
-      "ndebeiss@gmail.com"
+      [
+         "Stas Volsky",
+         "stas.volsky@gmail.com"
+      ]
    ],
    [
-      "Nicholas Williams",
-      "nicholas@nicholaswilliams.net",
-      "Nick Williams"
+      [
+         "Stefan Ferstl",
+         "st.ferstl@gmail.com"
+      ]
    ],
    [
-      "Nicolas Labrot",
-      "nithril@gmail.com"
+      [
+         "Stephane Maldini",
+         "smaldini@gopivotal.com"
+      ]
    ],
    [
-      "Nikita Tovstoles",
-      "nikita.tovstoles@gmail.com"
+      [
+         "Stephane Nicoll",
+         "snicoll@gopivotal.com"
+      ],
+      [
+         "Stephane Nicoll",
+         "snicoll@pivotal.io"
+      ]
    ],
    [
-      "nurkiewicz@gmail.com",
-      "Tomasz Nurkiewicz"
+      [
+         "Stevo Slavic",
+         "sslavic@gmail.com"
+      ]
    ],
    [
-      "ob@obqo.de",
-      "Oliver Becker"
+      [
+         "Sylwester Niewczas",
+         "sniewczas@users.noreply.github.com"
+      ]
    ],
    [
-      "ogierke@gopivotal.com",
-      "ogierke@vmware.com",
-      "Oliver Gierke"
+      [
+         "Tadaya Tsuyukubo",
+         "tadaya@ttddyy.net"
+      ]
    ],
    [
-      "Oleg Atamanenko",
-      "oleg.atamanenko@gmail.com"
+      [
+         "Thomas Risberg",
+         "trisberg@vmware.com"
+      ]
    ],
    [
-      "Oleg Kalnichevski",
-      "olegk@apache.org"
+      [
+         "Tim Meighen",
+         "timmeighen.public@gmail.com"
+      ]
    ],
    [
-      "Oleg Lomaka",
-      "oleg.lomaka@gmail.com"
+      [
+         "Tobias Montagna-Hay",
+         "tobias@montagnahay.com"
+      ]
    ],
    [
-      "Phani Kandula",
-      "phani.kandula@gmail.com"
+      [
+         "Tobias Stoeckmann",
+         "tobias@stoeckmann.org"
+      ]
    ],
    [
-      "Philippe Marschall",
-      "philippe.marschall@gmail.com"
+      [
+         "Tokuhiro Matsuno",
+         "tokuhirom@gmail.com"
+      ]
    ],
    [
-      "Phillip Webb",
-      "pwebb@gopivotal.com",
-      "pwebb@pivotal.io",
-      "pwebb@vmware.com"
+      [
+         "Tom Mack",
+         "tom@tom-mack.com"
+      ]
    ],
    [
-      "Radosław Józwik",
-      "rjozwik@interia.pl"
+      [
+         "Tomasz Nurkiewicz",
+         "nurkiewicz@gmail.com"
+      ]
    ],
    [
-      "Ralph Schaer",
-      "ralphschaer@gmail.com"
+      [
+         "Tony Sweeney",
+         "tony.sweeney@springsource.com"
+      ]
    ],
    [
-      "Ramnivas Laddad",
-      "rladdad@vmware.com"
+      [
+         "Toshiaki Maki",
+         "makingx@gmail.com"
+      ]
    ],
    [
-      "rclarkson@gopivotal.com",
-      "rclarkson@pivotal.io",
-      "Roy Clarkson"
+      [
+         "Vasyl Tretiakov",
+         "vasyl.tretiakov@gmail.com"
+      ]
    ],
    [
-      "rcrathore@yahoo.com",
-      "Ritesh Rathore"
+      [
+         "Venil Noronha",
+         "venil.noronha@gmail.com"
+      ]
    ],
    [
-      "rharrop@vmware.com",
-      "Rob Harrop"
+      [
+         "Wesley Hall",
+         "wesley.hall@prociss.com"
+      ]
    ],
    [
-      "Rob Winch",
-      "rwinch@gopivotal.com",
-      "rwinch@users.noreply.github.com",
-      "rwinch@vmware.com"
+      [
+         "Xiaolong Zuo",
+         "150349407@qq.com"
+      ]
    ],
    [
-      "Rossen Stoyanchev",
-      "rstoyanchev@gopivotal.com",
-      "rstoyanchev@pivotal.io",
-      "rstoyanchev@users.noreply.github.com",
-      "rstoyanchev@vmware.com"
+      [
+         "Yanming Zhou",
+         "zhouyanming@gmail.com"
+      ]
    ],
    [
-      "Ruben Dijkstra",
-      "rubendijkstra123@gmail.com"
+      [
+         "cbaldwin74",
+         "cbaldwin@shaw.ca"
+      ]
    ],
    [
-      "Ryan Skow",
-      "ryan@skow.org"
+      [
+         "eujung kim",
+         "eujung.kim@gmail.com"
+      ]
    ],
    [
-      "ryucsion@gmail.com",
-      "Sang Gi Ryu"
+      [
+         "fisache",
+         "hwang031451@gamil.com"
+      ]
    ],
    [
-      "Sam Brannen",
-      "sam@sambrannen.com"
+      [
+         "giovannidalloglio",
+         "giovanni.dalloglio@addvalue.it"
+      ]
    ],
    [
-      "Sammy Chu",
-      "sammychu@amberroad.com"
+      [
+         "hengyunabc",
+         "hengyunabc@gmail.com"
+      ]
    ],
    [
-      "Sanghyuk Jung",
-      "sanghyuk.jung@navercorp.com"
+      [
+         "holub",
+         "andrei.holub@gmail.com"
+      ]
    ],
    [
-      "Satyapal Reddy",
-      "satyapal.reddy@emc.com"
+      [
+         "hupfis",
+         "dominik.hurnaus@gmail.com"
+      ]
    ],
    [
-      "sdeleuze@gopivotal.com",
-      "sdeleuze@pivotal.io",
-      "Sebastien Deleuze"
+      [
+         "james",
+         "james.bergamin@local.ch"
+      ]
    ],
    [
-      "Siva Prasad Valluru",
-      "sivaprasad.valluru@gmail.com"
+      [
+         "leizhiyuan",
+         "leizhiyuan@gmail.com"
+      ]
    ],
    [
-      "smaldini@gopivotal.com",
-      "Stephane Maldini"
+      [
+         "logicg8",
+         "johnson.james2@gmail.com"
+      ]
    ],
    [
-      "snicoll@gopivotal.com",
-      "snicoll@pivotal.io",
-      "Stephane Nicoll"
+      [
+         "madorb",
+         "ben.madore@slalom.com"
+      ]
    ],
    [
-      "sniewczas@users.noreply.github.com",
-      "Sylwester Niewczas"
+      [
+         "matthew-pearson",
+         "matthew.pearson@linuxmail.org"
+      ]
    ],
    [
-      "soldier.kam@gmail.com",
-      "soldierkam"
+      [
+         "md42",
+         "mailmd@web.de"
+      ]
    ],
    [
-      "sslavic@gmail.com",
-      "Stevo Slavic"
+      [
+         "mgooty",
+         "mgooty@paypal.com"
+      ]
    ],
    [
-      "st.ferstl@gmail.com",
-      "Stefan Ferstl"
+      [
+         "mhartsock Melissa Hartsock",
+         "melissa.m.hartsock@gmail.com"
+      ]
    ],
    [
-      "Stas Volsky",
-      "stas.volsky@gmail.com"
+      [
+         "mnhock",
+         "Martin.Hock@gfk.com"
+      ]
    ],
    [
-      "Tadaya Tsuyukubo",
-      "tadaya@ttddyy.net"
+      [
+         "ndebeiss",
+         "ndebeiss@gmail.com"
+      ]
    ],
    [
-      "Thomas Risberg",
-      "trisberg@vmware.com"
+      [
+         "soldierkam",
+         "soldier.kam@gmail.com"
+      ]
    ],
    [
-      "Tim Meighen",
-      "timmeighen.public@gmail.com"
+      [
+         "twhitmorenz",
+         "twhitmore.nz@gmail.com"
+      ]
    ],
    [
-      "Tobias Montagna-Hay",
-      "tobias@montagnahay.com"
+      [
+         "unknown",
+         "J�rgen@Aspire.(none)"
+      ]
    ],
    [
-      "Tobias Stoeckmann",
-      "tobias@stoeckmann.org"
+      [
+         "unpush",
+         "unpush@gmail.com"
+      ]
    ],
    [
-      "Tokuhiro Matsuno",
-      "tokuhirom@gmail.com"
+      [
+         "xueyua",
+         "xueyua@chanjet.com"
+      ]
    ],
    [
-      "Tom Mack",
-      "tom@tom-mack.com"
-   ],
-   [
-      "Tony Sweeney",
-      "tony.sweeney@springsource.com"
-   ],
-   [
-      "twhitmore.nz@gmail.com",
-      "twhitmorenz"
-   ],
-   [
-      "unpush",
-      "unpush@gmail.com"
-   ],
-   [
-      "Vasyl Tretiakov",
-      "vasyl.tretiakov@gmail.com"
-   ],
-   [
-      "Venil Noronha",
-      "venil.noronha@gmail.com"
-   ],
-   [
-      "Wesley Hall",
-      "wesley.hall@prociss.com"
-   ],
-   [
-      "xueyua",
-      "xueyua@chanjet.com"
-   ],
-   [
-      "Yanming Zhou",
-      "zhouyanming@gmail.com"
+      [
+         "youmoo",
+         "13003062543@qq.com"
+      ],
+      [
+         "youmoo",
+         "youmoolee@gmail.com"
+      ]
    ]
 ]
