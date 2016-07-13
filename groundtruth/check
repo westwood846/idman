@@ -56,17 +56,15 @@ sub identify {
 }
 
 
-sub strip_garbage {
-    my ($reference, $got) = @_;
-    my %valid = map { ($_ => 1) } map { @$_ } @$reference;
-    return [map { [grep { $valid{$_} } @$_] } @$got];
+sub key {
+    my ($list) = @_;
+    return join "\0", @$list;
 }
-
 
 sub find_identities {
     my ($got, $ref_id) = @_;
-    my %ref = map { ($_ => 1) } @$ref_id;
-    return grep { any { $ref{$_} } @$_ } @$got;
+    my %ref = map { (key($_) => 1) } @$ref_id;
+    return grep { any { $ref{key($_)} } @$_ } @$got;
 }
 
 sub compare {
@@ -125,7 +123,7 @@ for my $repo (sort keys %REPOS) {
     for my $algorithm (@ALGORITHMS) {
         print "$repo $algorithm\n";
 
-        my $got    = strip_garbage($expected, identify($repo, $algorithm));
+        my $got    = identify($repo, $algorithm);
         my $result = compare($repo, $algorithm, $expected, $got);
 
         maybe_mkdir("results/$algorithm");
