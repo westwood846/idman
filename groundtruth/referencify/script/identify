@@ -1,0 +1,35 @@
+#!/usr/bin/env perl
+use 5.016;
+use warnings;
+use autodie ':all';
+use FindBin;
+use File::Basename qw(basename);
+use File::Spec::Functions qw(canonpath);
+
+if (!@ARGV) {
+    die "Usage: $0 REPO...\n";
+}
+
+my $data      = canonpath("$FindBin::Bin/../data");
+my $idman     = canonpath("$FindBin::Bin/../../../idman");
+my @algorithm = qw(bird -t 0.65);
+
+if (!-d $data) {
+    mkdir $data;
+}
+
+for (@ARGV) {
+    my $path = canonpath($_);
+    my $name = basename($path);
+    my $json = "$data/$name.json";
+
+    say "idman $path @algorithm > $json";
+
+    open my $out, '>',  $json;
+    open my $in,  '-|', $idman, $path, @algorithm;
+
+    print {$out} <$in>;
+
+    close $in;
+    close $out;
+}

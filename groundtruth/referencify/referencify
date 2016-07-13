@@ -1,0 +1,107 @@
+#!/usr/bin/env perl
+use Mojolicious::Lite;
+use autodie ':all';
+use File::Basename qw(basename);
+use File::Spec::Functions qw(catfile catdir);
+use FindBin;
+use Mojo::Util qw(slurp);
+
+
+my $data = catdir($FindBin::Bin, 'data');
+
+sub to_repo {
+    my ($path) = @_;
+    my $name   = basename($path);
+    my @files  = glob "$_/work/*";
+    return {
+        name => $name,
+        left => scalar @files,
+    };
+}
+
+sub load_identity {
+    my ($file) = @_;
+    my @tuples;
+
+    open my $fh, '<:encoding(UTF-8)', $file;
+    while (<$fh>) {
+        chomp;
+        push @tuples, [split "\0", $_, 2];
+    }
+    close $fh;
+
+    return \@tuples;
+}
+
+
+get '/' => sub {
+    my ($c) = @_;
+    return $c->render('index', repo => '');
+};
+
+get '/:name' => sub {
+    my ($c) = @_;
+    return $c->render('index', repo => $c->param('name'));
+};
+
+
+get '/api/list' => sub {
+    my ($c) = @_;
+    my @repos = map { to_repo($_) } grep { -d } glob "$data/*";
+    return $c->render(json => \@repos);
+};
+
+
+get '/api/repo/:name' => sub {
+    my ($c)   = @_;
+    my $dir   = catdir($data, $c->param('name'), 'work');
+    my @files = glob "$dir/*";
+
+    if (@files) {
+        my $file  = $files[int rand @files];
+        return $c->render(json => {
+            name     => basename($file),
+            identity => load_identity($file),
+            left     => scalar @files,
+        });
+    }
+    else {
+        return $c->render(json => {
+            left => 0,
+        });
+    }
+};
+
+
+post '/api/repo/:name' => sub {
+    my ($c) = @_;
+    my $repo = $c->param('name');
+    my $work = catdir($data, $repo, 'work');
+    my $done = catdir($data, $repo, 'done');
+
+    my $req  = $c->req->json;
+    my $name = $req->{name};
+
+    if (-f "$work/$name") {
+        my $i = 0;
+
+        for (@{$req->{identities}}) {
+            my @tuples = @$_;
+            next unless @tuples;
+            ++$i;
+
+            open my $fh, '>:encoding(UTF-8)', catfile($done, "$name-$i");
+            for (@tuples) {
+                print {$fh} join("\0", @$_), "\n";
+            }
+            close $fh;
+        }
+
+        unlink "$work/$name";
+    }
+
+    return $c->render(text => '');
+};
+
+
+app->start;

@@ -1,0 +1,57 @@
+#!/usr/bin/env perl
+use 5.016;
+use warnings;
+use autodie ':all';
+use FindBin;
+use File::Spec::Functions qw(canonpath);
+use Mojo::JSON qw(encode_json decode_json);
+use Mojo::Util qw(slurp);
+
+
+if (!@ARGV) {
+    die "Usage: $0 NAME...\n";
+}
+
+
+sub spew_identity {
+    my ($dir, $identity) = @_;
+    state $id = 0;
+    ++$id;
+
+    open my $fh, '>:encoding(UTF-8)', "$dir/$id";
+    for (@$identity) {
+        print {$fh} join("\0", @$_), "\n";
+    }
+    close $fh;
+}
+
+
+my $data = canonpath("$FindBin::Bin/../data");
+
+for my $name (@ARGV) {
+    my $json = decode_json(slurp("$data/$name.json"));
+    my $dir  = "$data/$name";
+    my $done = "$dir/done";
+    my $work = "$dir/work";
+
+    mkdir $dir;
+    mkdir $done;
+    mkdir $work;
+
+    my $max = 0;
+
+    for my $identity (@{$json->{identities}}) {
+        if (@$identity > $max) {
+            $max = @$identity;
+        }
+
+        if (@$identity == 1) {
+            spew_identity($done, $identity);
+        }
+        else {
+            spew_identity($work, $identity);
+        }
+    }
+
+    say "$name (max identities per screen: $max)";
+}
