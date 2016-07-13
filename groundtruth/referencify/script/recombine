@@ -1,0 +1,45 @@
+#!/usr/bin/env perl
+use 5.016;
+use warnings;
+use autodie ':all';
+use FindBin;
+use File::Basename;
+use File::Spec::Functions qw(canonpath catfile catdir);
+use JSON::PP qw();
+use Mojo::Util qw(slurp spurt);
+use Storable;
+
+
+my $json  = JSON::PP->new->utf8->canonical->pretty;
+my $data  = canonpath("$FindBin::Bin/../data");
+my $out   = canonpath("$FindBin::Bin/../results");
+my @repos = grep { -d } glob "$data/*";
+
+
+sub retrieve_sorted {
+    my ($file) = @_;
+    my $identity = retrieve($file);
+    return [sort { "@$a" cmp "@$b" } @$identity];
+}
+
+
+for my $dir (@repos) {
+    my $repo = basename($dir);
+
+    my @work = glob "$dir/work/*";
+    if (@work) {
+        say "$repo: skipping because it's not done";
+        next;
+    }
+
+    my @identities = sort { "@{$a->[0]}" cmp "@{$b->[0]}" }
+                     map  { retrieve_sorted($_) }
+                     glob "$dir/done/*";
+
+    if (!-d $out) {
+        mkdir $out;
+    }
+
+    my $outfile = catfile($out, "$repo.json");
+    spurt($json->encode({identities => \@identities}), $outfile);
+}
