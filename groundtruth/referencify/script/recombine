@@ -41,5 +41,5 @@ for my $dir (@repos) {
     }
 
     my $outfile = catfile($out, "$repo.json");
-    spurt($json->encode({identities => \@identities}), $outfile);
+    spurt($json->encode(\@identities), $outfile);
 }
