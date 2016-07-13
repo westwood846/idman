@@ -12,7 +12,7 @@ if (!@ARGV) {
 
 my $data      = canonpath("$FindBin::Bin/../data");
 my $idman     = canonpath("$FindBin::Bin/../../../idman");
-my @algorithm = qw(bird -t 0.65);
+my @algorithm = qw(bird -t 0.7);
 
 if (!-d $data) {
     mkdir $data;
