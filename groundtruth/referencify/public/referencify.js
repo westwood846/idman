@@ -20,18 +20,39 @@ jQuery(function ($) {
     }
 
 
+    function makeArtifactList() {
+        return $('<ul></ul>')
+            .addClass('well')
+            .addClass('list-unstyled')
+            .addClass('artifacts');
+    }
+
+
     function listRepos() {
         get('list', function (repoList) {
             var ul = $('<ul></ul>');
             $.each(repoList, function (i, repoItem) {
-                $('<a></a>')
+                var repoLink = $('<a></a>')
                     .text(repoItem.name + ' (' + repoItem.left + ' left)')
                     .attr('href', '#')
                     .click(function () {
                         repo = repoItem.name;
                         referencify();
-                    })
-                    .appendTo($('<li></li>').appendTo(ul));
+                    });
+
+                var resultButton = $('<a></a>')
+                    .text('Results')
+                    .attr('href', '#')
+                    .click(function () {
+                        repo = repoItem.name;
+                        showResults();
+                    });
+
+                $('<li></li>')
+                    .append(repoLink)
+                    .append(' - ')
+                    .append(resultButton)
+                    .appendTo(ul);
             });
             ul.appendTo(main);
         });
@@ -41,11 +62,7 @@ jQuery(function ($) {
     function addLists(count) {
         var first;
         for (var i = 0; i < count; ++i) {
-            var ul = $('<ul></ul>')
-                .addClass('well')
-                .addClass('list-unstyled')
-                .addClass('artifacts')
-                .appendTo(main);
+            var ul = makeArtifactList().appendTo(main);
             first = first || ul;
         }
         $('.artifacts').sortable({connectWith : '.artifacts'});
@@ -112,6 +129,50 @@ jQuery(function ($) {
 
         post('repo/' + repo, {name : name, identities : results}, function () {
             referencify();
+        });
+    }
+
+
+    function showResults() {
+        get('results/' + repo, function (res) {
+            var keys = Object.keys(res);
+            keys.sort(function (a, b) { return a - b; });
+
+            $.each(keys, function (i, key) {
+                var panel = $('<div></div>')
+                    .addClass('panel')
+                    .addClass('panel-default')
+                    .appendTo(main);
+
+                var button = $('<button></button>')
+                    .text('Undo')
+                    .addClass('btn')
+                    .addClass('btn-danger')
+                    .click(function () {
+                        post('results/' + repo, {key : key}, function () {
+                            panel.remove();
+                        });
+                    });
+
+                var head = $('<div></div>')
+                    .text(key)
+                    .addClass('panel-heading')
+                    .append(' ')
+                    .append(button)
+                    .appendTo(panel);
+
+                var body = $('<div></div>')
+                    .addClass('panel-body')
+                    .appendTo(panel);
+
+                var identities = res[key];
+                $.each(identities, function (i, identity) {
+                    var ul = makeArtifactList().appendTo(body);
+                    $.each(identity, function (j, tuple) {
+                        addTuple(ul, tuple);
+                    });
+                });
+            });
         });
     }
 

@@ -59,7 +59,6 @@ get '/api/repo/:name' => sub {
     }
 };
 
-
 post '/api/repo/:name' => sub {
     my ($c) = @_;
     my $repo = $c->param('name');
@@ -80,6 +79,37 @@ post '/api/repo/:name' => sub {
 
         unlink "$work/$name";
     }
+
+    return $c->render(text => '');
+};
+
+
+get '/api/results/:name' => sub {
+    my ($c) = @_;
+    my $repo = $c->param('name');
+    my $done = catdir($data, $repo, 'done');
+
+    my %merged;
+    for (glob "$done/*-*") {
+        my ($key) = /(\d+)-\d+$/;
+        push @{$merged{$key}}, retrieve($_);
+    }
+
+    return $c->render(json => \%merged);
+};
+
+post '/api/results/:name' => sub {
+    my ($c) = @_;
+    my $repo = $c->param('name');
+    my $work = catdir($data, $repo, 'work');
+    my $done = catdir($data, $repo, 'done');
+
+    my $key   = $c->req->json->{key};
+    my @files = glob "$done/$key-*";
+    my @flat  = map { @{retrieve($_)} } @files;
+
+    store(\@flat, catfile($work, $key));
+    unlink for @files;
 
     return $c->render(text => '');
 };
