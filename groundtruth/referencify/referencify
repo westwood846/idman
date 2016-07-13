@@ -109,7 +109,7 @@ post '/api/results/:name' => sub {
     my @flat  = map { @{retrieve($_)} } @files;
 
     store(\@flat, catfile($work, $key));
-    unlink for @files;
+    unlink @files;
 
     return $c->render(text => '');
 };
