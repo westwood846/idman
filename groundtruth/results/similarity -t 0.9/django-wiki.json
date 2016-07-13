@@ -4,19 +4,27 @@
    "not_merged" : [
       {
          "expected" : [
-            "guettliml.github@thomas-guettler.de",
-            "info.git@thomas-guettler.de",
-            "Thomas Guettler",
-            "Thomas Güttler"
-         ],
-         "got" : [
-            [
-               "Thomas Güttler",
-               "guettliml.github@thomas-guettler.de"
-            ],
             [
                "Thomas Guettler",
                "info.git@thomas-guettler.de"
+            ],
+            [
+               "Thomas Güttler",
+               "guettliml.github@thomas-guettler.de"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Thomas Guettler",
+                  "info.git@thomas-guettler.de"
+               ]
+            ],
+            [
+               [
+                  "Thomas Güttler",
+                  "guettliml.github@thomas-guettler.de"
+               ]
             ]
          ]
       }

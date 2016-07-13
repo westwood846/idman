@@ -1,28 +1,62 @@
 {
-   "false_negatives" : 1,
+   "false_negatives" : 2,
    "false_positives" : 0,
    "not_merged" : [
       {
          "expected" : [
-            "Dan",
-            "Dan Atkinson",
-            "dan@danatkinson.com",
-            "danatk@gmail.com"
-         ],
-         "got" : [
-            [
-               "Dan",
-               "danatk@gmail.com"
-            ],
             [
                "Dan Atkinson",
                "dan@danatkinson.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dan Atkinson",
+                  "dan@danatkinson.com"
+               ]
+            ],
+            [
+               [
+                  "Dan",
+                  "danatk@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicola Marangon",
+               "marangon@pentaonline.it"
+            ],
+            [
+               "marangonico",
+               "nicolamarangon@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicola Marangon",
+                  "marangon@pentaonline.it"
+               ]
+            ],
+            [
+               [
+                  "marangonico",
+                  "nicolamarangon@gmail.com"
+               ]
             ]
          ]
       }
    ],
    "precision" : 1,
-   "recall" : 0.995121951219512,
-   "true_positives" : 204,
+   "recall" : 0.990196078431373,
+   "true_positives" : 202,
    "wrongly_merged" : []
 }

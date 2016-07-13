@@ -1,15 +1,9 @@
 {
-   "false_negatives" : 3,
+   "false_negatives" : 4,
    "false_positives" : 0,
    "not_merged" : [
       {
          "expected" : [
-            "Andrew Ingram",
-            "andrew.ingram@tangentlabs.co.uk",
-            "AndrewIngram",
-            "andy@andrewingram.net"
-         ],
-         "got" : [
             [
                "Andrew Ingram",
                "andrew.ingram@tangentlabs.co.uk"
@@ -18,37 +12,55 @@
                "AndrewIngram",
                "andy@andrewingram.net"
             ]
-         ]
-      },
-      {
-         "expected" : [
-            "Dan",
-            "Dan Atkinson",
-            "dan@danatkinson.com",
-            "danatk@gmail.com"
          ],
          "got" : [
             [
-               "Dan",
-               "danatk@gmail.com"
+               [
+                  "Andrew Ingram",
+                  "andrew.ingram@tangentlabs.co.uk"
+               ]
             ],
             [
-               "Dan Atkinson",
-               "dan@danatkinson.com"
+               [
+                  "AndrewIngram",
+                  "andy@andrewingram.net"
+               ]
             ]
          ]
       },
       {
          "expected" : [
-            "Fish",
-            "fish",
-            "fish@BM12.(none)",
-            "okfish@yandex.ru",
-            "Oleg Rybkin"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ]
          ],
          "got" : [
             [
+               [
+                  "Dan Atkinson",
+                  "dan@danatkinson.com"
+               ]
+            ],
+            [
+               [
+                  "Dan",
+                  "danatk@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
                "Fish",
+               "okfish@yandex.ru"
+            ],
+            [
                "Oleg Rybkin",
                "okfish@yandex.ru"
             ],
@@ -56,11 +68,55 @@
                "fish",
                "fish@BM12.(none)"
             ]
+         ],
+         "got" : [
+            [
+               [
+                  "Fish",
+                  "okfish@yandex.ru"
+               ],
+               [
+                  "Oleg Rybkin",
+                  "okfish@yandex.ru"
+               ]
+            ],
+            [
+               [
+                  "fish",
+                  "fish@BM12.(none)"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicola Marangon",
+               "marangon@pentaonline.it"
+            ],
+            [
+               "marangonico",
+               "nicolamarangon@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicola Marangon",
+                  "marangon@pentaonline.it"
+               ]
+            ],
+            [
+               [
+                  "marangonico",
+                  "nicolamarangon@gmail.com"
+               ]
+            ]
          ]
       }
    ],
    "precision" : 1,
-   "recall" : 0.985365853658537,
-   "true_positives" : 202,
+   "recall" : 0.980392156862745,
+   "true_positives" : 200,
    "wrongly_merged" : []
 }

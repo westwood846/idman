@@ -8,357 +8,600 @@
    "wrongly_merged" : [
       {
          "expected" : [
-            "Alex Antonov",
-            "alex@antonov.ws"
+            [
+               "Alex Antonov",
+               "alex@antonov.ws"
+            ]
          ],
          "got" : [
-            "Alex Antonov",
-            "Alex Panchenko",
-            "Alex Yursha",
-            "alex.panchenko@gmail.com",
-            "alex.yursha@icloud.com",
-            "alex@antonov.ws",
-            "alexyursha@gmail.com"
+            [
+               "Alex Antonov",
+               "alex@antonov.ws"
+            ],
+            [
+               "Alex Panchenko",
+               "alex.panchenko@gmail.com"
+            ],
+            [
+               "Alex Yursha",
+               "alex.yursha@icloud.com"
+            ],
+            [
+               "Alex Yursha",
+               "alexyursha@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Alex Panchenko",
-            "alex.panchenko@gmail.com"
+            [
+               "Alex Panchenko",
+               "alex.panchenko@gmail.com"
+            ]
          ],
          "got" : [
-            "Alex Antonov",
-            "Alex Panchenko",
-            "Alex Yursha",
-            "alex.panchenko@gmail.com",
-            "alex.yursha@icloud.com",
-            "alex@antonov.ws",
-            "alexyursha@gmail.com"
+            [
+               "Alex Antonov",
+               "alex@antonov.ws"
+            ],
+            [
+               "Alex Panchenko",
+               "alex.panchenko@gmail.com"
+            ],
+            [
+               "Alex Yursha",
+               "alex.yursha@icloud.com"
+            ],
+            [
+               "Alex Yursha",
+               "alexyursha@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Alex Yursha",
-            "alex.yursha@icloud.com",
-            "alexyursha@gmail.com"
+            [
+               "Alex Yursha",
+               "alex.yursha@icloud.com"
+            ],
+            [
+               "Alex Yursha",
+               "alexyursha@gmail.com"
+            ]
          ],
          "got" : [
-            "Alex Antonov",
-            "Alex Panchenko",
-            "Alex Yursha",
-            "alex.panchenko@gmail.com",
-            "alex.yursha@icloud.com",
-            "alex@antonov.ws",
-            "alexyursha@gmail.com"
+            [
+               "Alex Antonov",
+               "alex@antonov.ws"
+            ],
+            [
+               "Alex Panchenko",
+               "alex.panchenko@gmail.com"
+            ],
+            [
+               "Alex Yursha",
+               "alex.yursha@icloud.com"
+            ],
+            [
+               "Alex Yursha",
+               "alexyursha@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Arjan van Bentem",
-            "github@avbentem.dds.nl"
+            [
+               "Arjan van Bentem",
+               "github@avbentem.dds.nl"
+            ]
          ],
          "got" : [
-            "Arjan van Bentem",
-            "Ben Manes",
-            "Jan Machacek",
-            "Jan Stamer",
-            "Maxim Valyanskiy",
-            "ben.madore@slalom.com",
-            "ben.manes@gmail.com",
-            "github@avbentem.dds.nl",
-            "j.stamer@pe-international.com",
-            "jan.machacek@gmail.com",
-            "madorb",
-            "max.valjanski@gmail.com"
+            [
+               "Arjan van Bentem",
+               "github@avbentem.dds.nl"
+            ],
+            [
+               "Ben Manes",
+               "ben.manes@gmail.com"
+            ],
+            [
+               "Jan Machacek",
+               "jan.machacek@gmail.com"
+            ],
+            [
+               "Jan Stamer",
+               "j.stamer@pe-international.com"
+            ],
+            [
+               "Maxim Valyanskiy",
+               "max.valjanski@gmail.com"
+            ],
+            [
+               "madorb",
+               "ben.madore@slalom.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Ben Manes",
-            "ben.manes@gmail.com"
+            [
+               "Ben Manes",
+               "ben.manes@gmail.com"
+            ]
          ],
          "got" : [
-            "Arjan van Bentem",
-            "Ben Manes",
-            "Jan Machacek",
-            "Jan Stamer",
-            "Maxim Valyanskiy",
-            "ben.madore@slalom.com",
-            "ben.manes@gmail.com",
-            "github@avbentem.dds.nl",
-            "j.stamer@pe-international.com",
-            "jan.machacek@gmail.com",
-            "madorb",
-            "max.valjanski@gmail.com"
+            [
+               "Arjan van Bentem",
+               "github@avbentem.dds.nl"
+            ],
+            [
+               "Ben Manes",
+               "ben.manes@gmail.com"
+            ],
+            [
+               "Jan Machacek",
+               "jan.machacek@gmail.com"
+            ],
+            [
+               "Jan Stamer",
+               "j.stamer@pe-international.com"
+            ],
+            [
+               "Maxim Valyanskiy",
+               "max.valjanski@gmail.com"
+            ],
+            [
+               "madorb",
+               "ben.madore@slalom.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "ben.madore@slalom.com",
-            "madorb"
+            [
+               "Dave Syer",
+               "david_syer@hotmail.com"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@pivotal.io"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@vmware.com"
+            ],
+            [
+               "David Syer",
+               "dsyer@vmware.com"
+            ]
          ],
          "got" : [
-            "Arjan van Bentem",
-            "Ben Manes",
-            "Jan Machacek",
-            "Jan Stamer",
-            "Maxim Valyanskiy",
-            "ben.madore@slalom.com",
-            "ben.manes@gmail.com",
-            "github@avbentem.dds.nl",
-            "j.stamer@pe-international.com",
-            "jan.machacek@gmail.com",
-            "madorb",
-            "max.valjanski@gmail.com"
+            [
+               "Dave Syer",
+               "david_syer@hotmail.com"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@pivotal.io"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@vmware.com"
+            ],
+            [
+               "David J. Biesack",
+               "David.Biesack@sas.com"
+            ],
+            [
+               "David Syer",
+               "dsyer@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Dave Syer",
-            "David Syer",
-            "david_syer@hotmail.com",
-            "dsyer@pivotal.io",
-            "dsyer@vmware.com"
+            [
+               "David J. Biesack",
+               "David.Biesack@sas.com"
+            ]
          ],
          "got" : [
-            "Dave Syer",
-            "David J. Biesack",
-            "David Syer",
-            "David.Biesack@sas.com",
-            "david_syer@hotmail.com",
-            "dsyer@pivotal.io",
-            "dsyer@vmware.com"
+            [
+               "Dave Syer",
+               "david_syer@hotmail.com"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@pivotal.io"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@vmware.com"
+            ],
+            [
+               "David J. Biesack",
+               "David.Biesack@sas.com"
+            ],
+            [
+               "David Syer",
+               "dsyer@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "David J. Biesack",
-            "David.Biesack@sas.com"
+            [
+               "Eric Bottard",
+               "eric.bottard+github@gmail.com"
+            ]
          ],
          "got" : [
-            "Dave Syer",
-            "David J. Biesack",
-            "David Syer",
-            "David.Biesack@sas.com",
-            "david_syer@hotmail.com",
-            "dsyer@pivotal.io",
-            "dsyer@vmware.com"
+            [
+               "Eric Bottard",
+               "eric.bottard+github@gmail.com"
+            ],
+            [
+               "Eric Dahl",
+               "eric.c.dahl@gmail.com"
+            ],
+            [
+               "Eric Weinberg",
+               "eric.weinberg@wrx-us.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Eric Bottard",
-            "eric.bottard+github@gmail.com"
+            [
+               "Eric Dahl",
+               "eric.c.dahl@gmail.com"
+            ]
          ],
          "got" : [
-            "Eric Bottard",
-            "Eric Dahl",
-            "Eric Weinberg",
-            "eric.bottard+github@gmail.com",
-            "eric.c.dahl@gmail.com",
-            "eric.weinberg@wrx-us.com"
+            [
+               "Eric Bottard",
+               "eric.bottard+github@gmail.com"
+            ],
+            [
+               "Eric Dahl",
+               "eric.c.dahl@gmail.com"
+            ],
+            [
+               "Eric Weinberg",
+               "eric.weinberg@wrx-us.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Eric Dahl",
-            "eric.c.dahl@gmail.com"
+            [
+               "Eric Weinberg",
+               "eric.weinberg@wrx-us.com"
+            ]
          ],
          "got" : [
-            "Eric Bottard",
-            "Eric Dahl",
-            "Eric Weinberg",
-            "eric.bottard+github@gmail.com",
-            "eric.c.dahl@gmail.com",
-            "eric.weinberg@wrx-us.com"
+            [
+               "Eric Bottard",
+               "eric.bottard+github@gmail.com"
+            ],
+            [
+               "Eric Dahl",
+               "eric.c.dahl@gmail.com"
+            ],
+            [
+               "Eric Weinberg",
+               "eric.weinberg@wrx-us.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Eric Weinberg",
-            "eric.weinberg@wrx-us.com"
+            [
+               "Graham Lea",
+               "graham@grahamlea.com"
+            ]
          ],
          "got" : [
-            "Eric Bottard",
-            "Eric Dahl",
-            "Eric Weinberg",
-            "eric.bottard+github@gmail.com",
-            "eric.c.dahl@gmail.com",
-            "eric.weinberg@wrx-us.com"
+            [
+               "Graham Lea",
+               "graham@grahamlea.com"
+            ],
+            [
+               "Mark Galea",
+               "mmgalea@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Graham Lea",
-            "graham@grahamlea.com"
+            [
+               "Jan Machacek",
+               "jan.machacek@gmail.com"
+            ]
          ],
          "got" : [
-            "Graham Lea",
-            "Mark Galea",
-            "graham@grahamlea.com",
-            "mmgalea@gmail.com"
+            [
+               "Arjan van Bentem",
+               "github@avbentem.dds.nl"
+            ],
+            [
+               "Ben Manes",
+               "ben.manes@gmail.com"
+            ],
+            [
+               "Jan Machacek",
+               "jan.machacek@gmail.com"
+            ],
+            [
+               "Jan Stamer",
+               "j.stamer@pe-international.com"
+            ],
+            [
+               "Maxim Valyanskiy",
+               "max.valjanski@gmail.com"
+            ],
+            [
+               "madorb",
+               "ben.madore@slalom.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "j.stamer@pe-international.com",
-            "Jan Stamer"
+            [
+               "Jan Stamer",
+               "j.stamer@pe-international.com"
+            ]
          ],
          "got" : [
-            "Arjan van Bentem",
-            "Ben Manes",
-            "Jan Machacek",
-            "Jan Stamer",
-            "Maxim Valyanskiy",
-            "ben.madore@slalom.com",
-            "ben.manes@gmail.com",
-            "github@avbentem.dds.nl",
-            "j.stamer@pe-international.com",
-            "jan.machacek@gmail.com",
-            "madorb",
-            "max.valjanski@gmail.com"
+            [
+               "Arjan van Bentem",
+               "github@avbentem.dds.nl"
+            ],
+            [
+               "Ben Manes",
+               "ben.manes@gmail.com"
+            ],
+            [
+               "Jan Machacek",
+               "jan.machacek@gmail.com"
+            ],
+            [
+               "Jan Stamer",
+               "j.stamer@pe-international.com"
+            ],
+            [
+               "Maxim Valyanskiy",
+               "max.valjanski@gmail.com"
+            ],
+            [
+               "madorb",
+               "ben.madore@slalom.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Jan Machacek",
-            "jan.machacek@gmail.com"
+            [
+               "Mark Galea",
+               "mmgalea@gmail.com"
+            ]
          ],
          "got" : [
-            "Arjan van Bentem",
-            "Ben Manes",
-            "Jan Machacek",
-            "Jan Stamer",
-            "Maxim Valyanskiy",
-            "ben.madore@slalom.com",
-            "ben.manes@gmail.com",
-            "github@avbentem.dds.nl",
-            "j.stamer@pe-international.com",
-            "jan.machacek@gmail.com",
-            "madorb",
-            "max.valjanski@gmail.com"
+            [
+               "Graham Lea",
+               "graham@grahamlea.com"
+            ],
+            [
+               "Mark Galea",
+               "mmgalea@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Mark Galea",
-            "mmgalea@gmail.com"
+            [
+               "Maxim Valyanskiy",
+               "max.valjanski@gmail.com"
+            ]
          ],
          "got" : [
-            "Graham Lea",
-            "Mark Galea",
-            "graham@grahamlea.com",
-            "mmgalea@gmail.com"
+            [
+               "Arjan van Bentem",
+               "github@avbentem.dds.nl"
+            ],
+            [
+               "Ben Manes",
+               "ben.manes@gmail.com"
+            ],
+            [
+               "Jan Machacek",
+               "jan.machacek@gmail.com"
+            ],
+            [
+               "Jan Stamer",
+               "j.stamer@pe-international.com"
+            ],
+            [
+               "Maxim Valyanskiy",
+               "max.valjanski@gmail.com"
+            ],
+            [
+               "madorb",
+               "ben.madore@slalom.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "max.valjanski@gmail.com",
-            "Maxim Valyanskiy"
+            [
+               "Micha Kiener",
+               "micha.kiener@mimacom.ch"
+            ]
          ],
          "got" : [
-            "Arjan van Bentem",
-            "Ben Manes",
-            "Jan Machacek",
-            "Jan Stamer",
-            "Maxim Valyanskiy",
-            "ben.madore@slalom.com",
-            "ben.manes@gmail.com",
-            "github@avbentem.dds.nl",
-            "j.stamer@pe-international.com",
-            "jan.machacek@gmail.com",
-            "madorb",
-            "max.valjanski@gmail.com"
+            [
+               "Micha Kiener",
+               "micha.kiener@mimacom.ch"
+            ],
+            [
+               "Michal Karolik",
+               "michal.karolik@eniro.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Micha Kiener",
-            "micha.kiener@mimacom.ch"
+            [
+               "Michal Karolik",
+               "michal.karolik@eniro.com"
+            ]
          ],
          "got" : [
-            "Micha Kiener",
-            "Michal Karolik",
-            "micha.kiener@mimacom.ch",
-            "michal.karolik@eniro.com"
+            [
+               "Micha Kiener",
+               "micha.kiener@mimacom.ch"
+            ],
+            [
+               "Michal Karolik",
+               "michal.karolik@eniro.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Michal Karolik",
-            "michal.karolik@eniro.com"
+            [
+               "Oleg Atamanenko",
+               "oleg.atamanenko@gmail.com"
+            ]
          ],
          "got" : [
-            "Micha Kiener",
-            "Michal Karolik",
-            "micha.kiener@mimacom.ch",
-            "michal.karolik@eniro.com"
+            [
+               "Oleg Atamanenko",
+               "oleg.atamanenko@gmail.com"
+            ],
+            [
+               "Oleg Kalnichevski",
+               "olegk@apache.org"
+            ],
+            [
+               "Oleg Lomaka",
+               "oleg.lomaka@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Oleg Atamanenko",
-            "oleg.atamanenko@gmail.com"
+            [
+               "Oleg Kalnichevski",
+               "olegk@apache.org"
+            ]
          ],
          "got" : [
-            "Oleg Atamanenko",
-            "Oleg Kalnichevski",
-            "Oleg Lomaka",
-            "oleg.atamanenko@gmail.com",
-            "oleg.lomaka@gmail.com",
-            "olegk@apache.org"
+            [
+               "Oleg Atamanenko",
+               "oleg.atamanenko@gmail.com"
+            ],
+            [
+               "Oleg Kalnichevski",
+               "olegk@apache.org"
+            ],
+            [
+               "Oleg Lomaka",
+               "oleg.lomaka@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Oleg Kalnichevski",
-            "olegk@apache.org"
+            [
+               "Oleg Lomaka",
+               "oleg.lomaka@gmail.com"
+            ]
          ],
          "got" : [
-            "Oleg Atamanenko",
-            "Oleg Kalnichevski",
-            "Oleg Lomaka",
-            "oleg.atamanenko@gmail.com",
-            "oleg.lomaka@gmail.com",
-            "olegk@apache.org"
+            [
+               "Oleg Atamanenko",
+               "oleg.atamanenko@gmail.com"
+            ],
+            [
+               "Oleg Kalnichevski",
+               "olegk@apache.org"
+            ],
+            [
+               "Oleg Lomaka",
+               "oleg.lomaka@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Oleg Lomaka",
-            "oleg.lomaka@gmail.com"
+            [
+               "Tobias Montagna-Hay",
+               "tobias@montagnahay.com"
+            ]
          ],
          "got" : [
-            "Oleg Atamanenko",
-            "Oleg Kalnichevski",
-            "Oleg Lomaka",
-            "oleg.atamanenko@gmail.com",
-            "oleg.lomaka@gmail.com",
-            "olegk@apache.org"
+            [
+               "Tobias Montagna-Hay",
+               "tobias@montagnahay.com"
+            ],
+            [
+               "Tobias Stoeckmann",
+               "tobias@stoeckmann.org"
+            ]
          ]
       },
       {
          "expected" : [
-            "Tobias Montagna-Hay",
-            "tobias@montagnahay.com"
+            [
+               "Tobias Stoeckmann",
+               "tobias@stoeckmann.org"
+            ]
          ],
          "got" : [
-            "Tobias Montagna-Hay",
-            "Tobias Stoeckmann",
-            "tobias@montagnahay.com",
-            "tobias@stoeckmann.org"
+            [
+               "Tobias Montagna-Hay",
+               "tobias@montagnahay.com"
+            ],
+            [
+               "Tobias Stoeckmann",
+               "tobias@stoeckmann.org"
+            ]
          ]
       },
       {
          "expected" : [
-            "Tobias Stoeckmann",
-            "tobias@stoeckmann.org"
+            [
+               "madorb",
+               "ben.madore@slalom.com"
+            ]
          ],
          "got" : [
-            "Tobias Montagna-Hay",
-            "Tobias Stoeckmann",
-            "tobias@montagnahay.com",
-            "tobias@stoeckmann.org"
+            [
+               "Arjan van Bentem",
+               "github@avbentem.dds.nl"
+            ],
+            [
+               "Ben Manes",
+               "ben.manes@gmail.com"
+            ],
+            [
+               "Jan Machacek",
+               "jan.machacek@gmail.com"
+            ],
+            [
+               "Jan Stamer",
+               "j.stamer@pe-international.com"
+            ],
+            [
+               "Maxim Valyanskiy",
+               "max.valjanski@gmail.com"
+            ],
+            [
+               "madorb",
+               "ben.madore@slalom.com"
+            ]
          ]
       }
    ]

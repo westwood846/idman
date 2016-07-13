@@ -8,38 +8,86 @@
    "wrongly_merged" : [
       {
          "expected" : [
-            "dev@michael-monschau.de",
-            "dev@mmonschau.eu",
-            "github@michael-monschau.de",
-            "Michael Monschau",
-            "mmonschau@uni-koblenz.de",
-            "mmonschau@users.noreply.github.com"
+            [
+               "GitHub",
+               "noreply@github.com"
+            ]
          ],
          "got" : [
-            "GitHub",
-            "Michael Monschau",
-            "dev@michael-monschau.de",
-            "dev@mmonschau.eu",
-            "github@michael-monschau.de",
-            "mmonschau@uni-koblenz.de",
-            "mmonschau@users.noreply.github.com",
-            "noreply@github.com"
+            [
+               "GitHub",
+               "noreply@github.com"
+            ],
+            [
+               "Michael Monschau",
+               "dev@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "dev@mmonschau.eu"
+            ],
+            [
+               "Michael Monschau",
+               "github@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@uni-koblenz.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@users.noreply.github.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "GitHub",
-            "noreply@github.com"
+            [
+               "Michael Monschau",
+               "dev@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "dev@mmonschau.eu"
+            ],
+            [
+               "Michael Monschau",
+               "github@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@uni-koblenz.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@users.noreply.github.com"
+            ]
          ],
          "got" : [
-            "GitHub",
-            "Michael Monschau",
-            "dev@michael-monschau.de",
-            "dev@mmonschau.eu",
-            "github@michael-monschau.de",
-            "mmonschau@uni-koblenz.de",
-            "mmonschau@users.noreply.github.com",
-            "noreply@github.com"
+            [
+               "GitHub",
+               "noreply@github.com"
+            ],
+            [
+               "Michael Monschau",
+               "dev@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "dev@mmonschau.eu"
+            ],
+            [
+               "Michael Monschau",
+               "github@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@uni-koblenz.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@users.noreply.github.com"
+            ]
          ]
       }
    ]

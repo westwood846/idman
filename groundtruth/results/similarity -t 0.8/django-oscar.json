@@ -1,106 +1,194 @@
 {
-   "false_negatives" : 1,
+   "false_negatives" : 2,
    "false_positives" : 6,
    "not_merged" : [
       {
          "expected" : [
-            "Dan",
-            "Dan Atkinson",
-            "dan@danatkinson.com",
-            "danatk@gmail.com"
-         ],
-         "got" : [
-            [
-               "Dan",
-               "danatk@gmail.com"
-            ],
             [
                "Dan Atkinson",
                "dan@danatkinson.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dan Atkinson",
+                  "dan@danatkinson.com"
+               ]
+            ],
+            [
+               [
+                  "Dan",
+                  "danatk@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicola Marangon",
+               "marangon@pentaonline.it"
+            ],
+            [
+               "marangonico",
+               "nicolamarangon@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicola Marangon",
+                  "marangon@pentaonline.it"
+               ]
+            ],
+            [
+               [
+                  "marangonico",
+                  "nicolamarangon@gmail.com"
+               ]
             ]
          ]
       }
    ],
-   "precision" : 0.970588235294118,
-   "recall" : 0.994974874371859,
-   "true_positives" : 198,
+   "precision" : 0.97029702970297,
+   "recall" : 0.98989898989899,
+   "true_positives" : 196,
    "wrongly_merged" : [
       {
          "expected" : [
-            "atreidesone@gmail.com",
-            "PaulO"
+            [
+               "Gump",
+               "gump@tangentlabs.co.uk"
+            ],
+            [
+               "Gump",
+               "michal@michal.tv"
+            ]
          ],
          "got" : [
-            "Pablo",
-            "PaulO",
-            "atreidesone@gmail.com",
-            "oubiga@yahoo.es"
+            [
+               "Gump",
+               "gump@tangentlabs.co.uk"
+            ],
+            [
+               "Gump",
+               "michal@michal.tv"
+            ],
+            [
+               "Kura",
+               "kura@deviling.net"
+            ],
+            [
+               "Kura",
+               "kura@tangentlabs.co.uk"
+            ]
          ]
       },
       {
          "expected" : [
-            "Gump",
-            "gump@tangentlabs.co.uk",
-            "michal@michal.tv"
+            [
+               "Kit La Touche",
+               "kit@simpleenergy.com"
+            ]
          ],
          "got" : [
-            "Gump",
-            "Kura",
-            "gump@tangentlabs.co.uk",
-            "kura@deviling.net",
-            "kura@tangentlabs.co.uk",
-            "michal@michal.tv"
+            [
+               "Kit La Touche",
+               "kit@simpleenergy.com"
+            ],
+            [
+               "Piper Merriam",
+               "piper@simpleenergy.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Kit La Touche",
-            "kit@simpleenergy.com"
+            [
+               "Kura",
+               "kura@deviling.net"
+            ],
+            [
+               "Kura",
+               "kura@tangentlabs.co.uk"
+            ]
          ],
          "got" : [
-            "Kit La Touche",
-            "Piper Merriam",
-            "kit@simpleenergy.com",
-            "piper@simpleenergy.com"
+            [
+               "Gump",
+               "gump@tangentlabs.co.uk"
+            ],
+            [
+               "Gump",
+               "michal@michal.tv"
+            ],
+            [
+               "Kura",
+               "kura@deviling.net"
+            ],
+            [
+               "Kura",
+               "kura@tangentlabs.co.uk"
+            ]
          ]
       },
       {
          "expected" : [
-            "Kura",
-            "kura@deviling.net",
-            "kura@tangentlabs.co.uk"
+            [
+               "Pablo",
+               "oubiga@yahoo.es"
+            ]
          ],
          "got" : [
-            "Gump",
-            "Kura",
-            "gump@tangentlabs.co.uk",
-            "kura@deviling.net",
-            "kura@tangentlabs.co.uk",
-            "michal@michal.tv"
+            [
+               "Pablo",
+               "oubiga@yahoo.es"
+            ],
+            [
+               "PaulO",
+               "atreidesone@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "oubiga@yahoo.es",
-            "Pablo"
+            [
+               "PaulO",
+               "atreidesone@gmail.com"
+            ]
          ],
          "got" : [
-            "Pablo",
-            "PaulO",
-            "atreidesone@gmail.com",
-            "oubiga@yahoo.es"
+            [
+               "Pablo",
+               "oubiga@yahoo.es"
+            ],
+            [
+               "PaulO",
+               "atreidesone@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Piper Merriam",
-            "piper@simpleenergy.com"
+            [
+               "Piper Merriam",
+               "piper@simpleenergy.com"
+            ]
          ],
          "got" : [
-            "Kit La Touche",
-            "Piper Merriam",
-            "kit@simpleenergy.com",
-            "piper@simpleenergy.com"
+            [
+               "Kit La Touche",
+               "kit@simpleenergy.com"
+            ],
+            [
+               "Piper Merriam",
+               "piper@simpleenergy.com"
+            ]
          ]
       }
    ]

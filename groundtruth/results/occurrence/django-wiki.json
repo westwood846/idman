@@ -4,41 +4,69 @@
    "not_merged" : [
       {
          "expected" : [
-            "guettliml.github@thomas-guettler.de",
-            "info.git@thomas-guettler.de",
-            "Thomas Guettler",
-            "Thomas Güttler"
+            [
+               "Russell Jones",
+               "Russell-Jones@github.com"
+            ],
+            [
+               "Russell Jones",
+               "russell.jones@gmail.com"
+            ],
+            [
+               "Russell Jones",
+               "russell@yellow.(none)"
+            ],
+            [
+               "Russell-Jones",
+               "Russell-Jones@users.noreply.github.com"
+            ]
          ],
          "got" : [
             [
-               "Thomas Güttler",
-               "guettliml.github@thomas-guettler.de"
+               [
+                  "Russell Jones",
+                  "Russell-Jones@github.com"
+               ],
+               [
+                  "Russell Jones",
+                  "russell.jones@gmail.com"
+               ],
+               [
+                  "Russell Jones",
+                  "russell@yellow.(none)"
+               ]
             ],
             [
-               "Thomas Guettler",
-               "info.git@thomas-guettler.de"
+               [
+                  "Russell-Jones",
+                  "Russell-Jones@users.noreply.github.com"
+               ]
             ]
          ]
       },
       {
          "expected" : [
-            "Russell Jones",
-            "Russell-Jones",
-            "Russell-Jones@github.com",
-            "Russell-Jones@users.noreply.github.com",
-            "russell.jones@gmail.com",
-            "russell@yellow.(none)"
+            [
+               "Thomas Guettler",
+               "info.git@thomas-guettler.de"
+            ],
+            [
+               "Thomas Güttler",
+               "guettliml.github@thomas-guettler.de"
+            ]
          ],
          "got" : [
             [
-               "Russell-Jones",
-               "Russell-Jones@users.noreply.github.com"
+               [
+                  "Thomas Guettler",
+                  "info.git@thomas-guettler.de"
+               ]
             ],
             [
-               "Russell Jones",
-               "Russell-Jones@github.com",
-               "russell.jones@gmail.com",
-               "russell@yellow.(none)"
+               [
+                  "Thomas Güttler",
+                  "guettliml.github@thomas-guettler.de"
+               ]
             ]
          ]
       }

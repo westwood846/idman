@@ -8,121 +8,256 @@
    "wrongly_merged" : [
       {
          "expected" : [
-            "cbeams@gmail.com",
-            "cbeams@gopivotal.com",
-            "cbeams@vmware.com",
-            "Chris Beams",
-            "chris@beams.io"
+            [
+               "Chexpir",
+               "Chexpir@users.noreply.github.com"
+            ]
          ],
          "got" : [
-            "Chris Beams",
-            "Costin Leau",
-            "cbeams@gmail.com",
-            "cbeams@gopivotal.com",
-            "cbeams@vmware.com",
-            "chris@beams.io",
-            "cleau@vmware.com"
+            [
+               "Chexpir",
+               "Chexpir@users.noreply.github.com"
+            ],
+            [
+               "Hasan Kara",
+               "haisi@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@gopivotal.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Chexpir",
-            "Chexpir@users.noreply.github.com"
+            [
+               "Chris Beams",
+               "cbeams@gmail.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@gopivotal.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@vmware.com"
+            ],
+            [
+               "Chris Beams",
+               "chris@beams.io"
+            ]
          ],
          "got" : [
-            "Chexpir",
-            "Chexpir@users.noreply.github.com",
-            "Hasan Kara",
-            "Rob Winch",
-            "haisi@users.noreply.github.com",
-            "rwinch@gopivotal.com",
-            "rwinch@users.noreply.github.com",
-            "rwinch@vmware.com"
+            [
+               "Chris Beams",
+               "cbeams@gmail.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@gopivotal.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@vmware.com"
+            ],
+            [
+               "Chris Beams",
+               "chris@beams.io"
+            ],
+            [
+               "Costin Leau",
+               "cleau@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "cleau@vmware.com",
-            "Costin Leau"
+            [
+               "Costin Leau",
+               "cleau@vmware.com"
+            ]
          ],
          "got" : [
-            "Chris Beams",
-            "Costin Leau",
-            "cbeams@gmail.com",
-            "cbeams@gopivotal.com",
-            "cbeams@vmware.com",
-            "chris@beams.io",
-            "cleau@vmware.com"
+            [
+               "Chris Beams",
+               "cbeams@gmail.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@gopivotal.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@vmware.com"
+            ],
+            [
+               "Chris Beams",
+               "chris@beams.io"
+            ],
+            [
+               "Costin Leau",
+               "cleau@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "haisi@users.noreply.github.com",
-            "Hasan Kara"
+            [
+               "Hasan Kara",
+               "haisi@users.noreply.github.com"
+            ]
          ],
          "got" : [
-            "Chexpir",
-            "Chexpir@users.noreply.github.com",
-            "Hasan Kara",
-            "Rob Winch",
-            "haisi@users.noreply.github.com",
-            "rwinch@gopivotal.com",
-            "rwinch@users.noreply.github.com",
-            "rwinch@vmware.com"
+            [
+               "Chexpir",
+               "Chexpir@users.noreply.github.com"
+            ],
+            [
+               "Hasan Kara",
+               "haisi@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@gopivotal.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Jeremy Grelle",
-            "jgrelle@gopivotal.com",
-            "jgrelle@vmware.com"
+            [
+               "Jeremy Grelle",
+               "jgrelle@gopivotal.com"
+            ],
+            [
+               "Jeremy Grelle",
+               "jgrelle@vmware.com"
+            ]
          ],
          "got" : [
-            "Jeremy Grelle",
-            "Juergen Hoeller",
-            "jgrelle@gopivotal.com",
-            "jgrelle@vmware.com",
-            "jhoeller",
-            "jhoeller@gopivotal.com",
-            "jhoeller@pivotal.io",
-            "jhoeller@vmware.com"
+            [
+               "Jeremy Grelle",
+               "jgrelle@gopivotal.com"
+            ],
+            [
+               "Jeremy Grelle",
+               "jgrelle@vmware.com"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@gopivotal.com"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@pivotal.io"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@vmware.com"
+            ],
+            [
+               "jhoeller",
+               "jhoeller@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "jhoeller",
-            "jhoeller@gopivotal.com",
-            "jhoeller@pivotal.io",
-            "jhoeller@vmware.com",
-            "Juergen Hoeller"
+            [
+               "Juergen Hoeller",
+               "jhoeller@gopivotal.com"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@pivotal.io"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@vmware.com"
+            ],
+            [
+               "jhoeller",
+               "jhoeller@vmware.com"
+            ]
          ],
          "got" : [
-            "Jeremy Grelle",
-            "Juergen Hoeller",
-            "jgrelle@gopivotal.com",
-            "jgrelle@vmware.com",
-            "jhoeller",
-            "jhoeller@gopivotal.com",
-            "jhoeller@pivotal.io",
-            "jhoeller@vmware.com"
+            [
+               "Jeremy Grelle",
+               "jgrelle@gopivotal.com"
+            ],
+            [
+               "Jeremy Grelle",
+               "jgrelle@vmware.com"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@gopivotal.com"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@pivotal.io"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@vmware.com"
+            ],
+            [
+               "jhoeller",
+               "jhoeller@vmware.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Rob Winch",
-            "rwinch@gopivotal.com",
-            "rwinch@users.noreply.github.com",
-            "rwinch@vmware.com"
+            [
+               "Rob Winch",
+               "rwinch@gopivotal.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@vmware.com"
+            ]
          ],
          "got" : [
-            "Chexpir",
-            "Chexpir@users.noreply.github.com",
-            "Hasan Kara",
-            "Rob Winch",
-            "haisi@users.noreply.github.com",
-            "rwinch@gopivotal.com",
-            "rwinch@users.noreply.github.com",
-            "rwinch@vmware.com"
+            [
+               "Chexpir",
+               "Chexpir@users.noreply.github.com"
+            ],
+            [
+               "Hasan Kara",
+               "haisi@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@gopivotal.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@vmware.com"
+            ]
          ]
       }
    ]

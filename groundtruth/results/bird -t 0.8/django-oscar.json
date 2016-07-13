@@ -1,834 +1,1473 @@
 {
    "false_negatives" : 0,
-   "false_positives" : 50,
+   "false_positives" : 48,
    "not_merged" : [],
-   "precision" : 0.75609756097561,
+   "precision" : 0.764705882352941,
    "recall" : 1,
-   "true_positives" : 155,
+   "true_positives" : 156,
    "wrongly_merged" : [
       {
          "expected" : [
-            "ad@kapt.mobi",
-            "Adrien Delhorme"
+            [
+               "Adam Bogdal",
+               "adam@bogdal.pl"
+            ]
          ],
          "got" : [
-            "Adrien Delhorme",
-            "Adrien Saladin",
-            "ad@kapt.mobi",
-            "adrien.saladin@gmail.com"
+            [
+               "Adam Bogdal",
+               "adam@bogdal.pl"
+            ],
+            [
+               "Adam Chainz",
+               "adam@adamj.eu"
+            ],
+            [
+               "Adam Endicott",
+               "adamendicott@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Adam Bogdal",
-            "adam@bogdal.pl"
+            [
+               "Adam Chainz",
+               "adam@adamj.eu"
+            ]
          ],
          "got" : [
-            "Adam Bogdal",
-            "Adam Chainz",
-            "Adam Endicott",
-            "adam@adamj.eu",
-            "adam@bogdal.pl",
-            "adamendicott@gmail.com"
+            [
+               "Adam Bogdal",
+               "adam@bogdal.pl"
+            ],
+            [
+               "Adam Chainz",
+               "adam@adamj.eu"
+            ],
+            [
+               "Adam Endicott",
+               "adamendicott@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Adam Chainz",
-            "adam@adamj.eu"
+            [
+               "Adam Endicott",
+               "adamendicott@gmail.com"
+            ]
          ],
          "got" : [
-            "Adam Bogdal",
-            "Adam Chainz",
-            "Adam Endicott",
-            "adam@adamj.eu",
-            "adam@bogdal.pl",
-            "adamendicott@gmail.com"
+            [
+               "Adam Bogdal",
+               "adam@bogdal.pl"
+            ],
+            [
+               "Adam Chainz",
+               "adam@adamj.eu"
+            ],
+            [
+               "Adam Endicott",
+               "adamendicott@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Adam Endicott",
-            "adamendicott@gmail.com"
+            [
+               "Adrien Delhorme",
+               "ad@kapt.mobi"
+            ]
          ],
          "got" : [
-            "Adam Bogdal",
-            "Adam Chainz",
-            "Adam Endicott",
-            "adam@adamj.eu",
-            "adam@bogdal.pl",
-            "adamendicott@gmail.com"
+            [
+               "Adrien Delhorme",
+               "ad@kapt.mobi"
+            ],
+            [
+               "Adrien Saladin",
+               "adrien.saladin@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Adrien Saladin",
-            "adrien.saladin@gmail.com"
+            [
+               "Adrien Saladin",
+               "adrien.saladin@gmail.com"
+            ]
          ],
          "got" : [
-            "Adrien Delhorme",
-            "Adrien Saladin",
-            "ad@kapt.mobi",
-            "adrien.saladin@gmail.com"
+            [
+               "Adrien Delhorme",
+               "ad@kapt.mobi"
+            ],
+            [
+               "Adrien Saladin",
+               "adrien.saladin@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Alex Crawley",
-            "alexcrawley@outlook.com"
+            [
+               "Alex Crawley",
+               "alexcrawley@outlook.com"
+            ]
          ],
          "got" : [
-            "Alex Crawley",
-            "Alexander Clausen",
-            "Alexander Gaevsky",
-            "Alexander Pugachev",
-            "alex@gc-web.de",
-            "alexander.pugachev@gmail.com",
-            "alexcrawley@outlook.com",
-            "sasha@sasha0.ru"
+            [
+               "Alex Crawley",
+               "alexcrawley@outlook.com"
+            ],
+            [
+               "Alexander Clausen",
+               "alex@gc-web.de"
+            ],
+            [
+               "Alexander Gaevsky",
+               "sasha@sasha0.ru"
+            ],
+            [
+               "Alexander Pugachev",
+               "alexander.pugachev@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "alex@gc-web.de",
-            "Alexander Clausen"
+            [
+               "Alexander Clausen",
+               "alex@gc-web.de"
+            ]
          ],
          "got" : [
-            "Alex Crawley",
-            "Alexander Clausen",
-            "Alexander Gaevsky",
-            "Alexander Pugachev",
-            "alex@gc-web.de",
-            "alexander.pugachev@gmail.com",
-            "alexcrawley@outlook.com",
-            "sasha@sasha0.ru"
+            [
+               "Alex Crawley",
+               "alexcrawley@outlook.com"
+            ],
+            [
+               "Alexander Clausen",
+               "alex@gc-web.de"
+            ],
+            [
+               "Alexander Gaevsky",
+               "sasha@sasha0.ru"
+            ],
+            [
+               "Alexander Pugachev",
+               "alexander.pugachev@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Alexander Gaevsky",
-            "sasha@sasha0.ru"
+            [
+               "Alexander Gaevsky",
+               "sasha@sasha0.ru"
+            ]
          ],
          "got" : [
-            "Alex Crawley",
-            "Alexander Clausen",
-            "Alexander Gaevsky",
-            "Alexander Pugachev",
-            "alex@gc-web.de",
-            "alexander.pugachev@gmail.com",
-            "alexcrawley@outlook.com",
-            "sasha@sasha0.ru"
+            [
+               "Alex Crawley",
+               "alexcrawley@outlook.com"
+            ],
+            [
+               "Alexander Clausen",
+               "alex@gc-web.de"
+            ],
+            [
+               "Alexander Gaevsky",
+               "sasha@sasha0.ru"
+            ],
+            [
+               "Alexander Pugachev",
+               "alexander.pugachev@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Alexander Pugachev",
-            "alexander.pugachev@gmail.com"
+            [
+               "Alexander Pugachev",
+               "alexander.pugachev@gmail.com"
+            ]
          ],
          "got" : [
-            "Alex Crawley",
-            "Alexander Clausen",
-            "Alexander Gaevsky",
-            "Alexander Pugachev",
-            "alex@gc-web.de",
-            "alexander.pugachev@gmail.com",
-            "alexcrawley@outlook.com",
-            "sasha@sasha0.ru"
+            [
+               "Alex Crawley",
+               "alexcrawley@outlook.com"
+            ],
+            [
+               "Alexander Clausen",
+               "alex@gc-web.de"
+            ],
+            [
+               "Alexander Gaevsky",
+               "sasha@sasha0.ru"
+            ],
+            [
+               "Alexander Pugachev",
+               "alexander.pugachev@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Art Skvira",
-            "artem.skvira@gmail.com",
-            "Artёm Skvira"
+            [
+               "Art Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Artёm Skvira",
+               "artem.skvira@gmail.com"
+            ]
          ],
          "got" : [
-            "Art Skvira",
-            "Artёm Skvira",
-            "Bart",
-            "José Duarte",
-            "artem.skvira@gmail.com",
-            "bartosz.gryszko@gmail.com",
-            "jose.fduarte@gmail.com"
+            [
+               "Art Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Artёm Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Bart",
+               "bartosz.gryszko@gmail.com"
+            ],
+            [
+               "José Duarte",
+               "jose.fduarte@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "atreidesone@gmail.com",
-            "PaulO"
+            [
+               "Bart",
+               "bartosz.gryszko@gmail.com"
+            ]
          ],
          "got" : [
-            "Pablo",
-            "PaulO",
-            "atreidesone@gmail.com",
-            "oubiga@yahoo.es"
+            [
+               "Art Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Artёm Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Bart",
+               "bartosz.gryszko@gmail.com"
+            ],
+            [
+               "José Duarte",
+               "jose.fduarte@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Bart",
-            "bartosz.gryszko@gmail.com"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ]
          ],
          "got" : [
-            "Art Skvira",
-            "Artёm Skvira",
-            "Bart",
-            "José Duarte",
-            "artem.skvira@gmail.com",
-            "bartosz.gryszko@gmail.com",
-            "jose.fduarte@gmail.com"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan Helyar",
+               "dan.helyar@kitesystems.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Daniel Hepper",
+               "daniel.hepper@gmail.com"
+            ],
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "danyilmaz",
+               "danyilmaz117@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "kemar",
+               "marc@marcarea.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "bitrut@gmail.com",
-            "contact@pawelkowalski.info",
-            "Paweł Kowalski"
+            [
+               "Dan Helyar",
+               "dan.helyar@kitesystems.com"
+            ]
          ],
          "got" : [
-            "Eleni Lixourioti",
-            "Geekfish",
-            "Paweł Kowalski",
-            "bitrut@gmail.com",
-            "contact@eleni.co",
-            "contact@pawelkowalski.info",
-            "eleni.lixourioti@tangentlabs.co.uk",
-            "eleni@nefelia.(none)",
-            "inelegr88@gmail.com"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan Helyar",
+               "dan.helyar@kitesystems.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Daniel Hepper",
+               "daniel.hepper@gmail.com"
+            ],
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "danyilmaz",
+               "danyilmaz117@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "kemar",
+               "marc@marcarea.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "contact@eleni.co",
-            "Eleni Lixourioti",
-            "eleni@nefelia.(none)",
-            "inelegr88@gmail.com"
+            [
+               "Daniel Hepper",
+               "daniel.hepper@gmail.com"
+            ]
          ],
          "got" : [
-            "Eleni Lixourioti",
-            "Geekfish",
-            "Paweł Kowalski",
-            "bitrut@gmail.com",
-            "contact@eleni.co",
-            "contact@pawelkowalski.info",
-            "eleni.lixourioti@tangentlabs.co.uk",
-            "eleni@nefelia.(none)",
-            "inelegr88@gmail.com"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan Helyar",
+               "dan.helyar@kitesystems.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Daniel Hepper",
+               "daniel.hepper@gmail.com"
+            ],
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "danyilmaz",
+               "danyilmaz117@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "kemar",
+               "marc@marcarea.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Dan",
-            "Dan Atkinson",
-            "dan@danatkinson.com",
-            "danatk@gmail.com"
+            [
+               "Darian Moody",
+               "mail@djm.org.uk"
+            ]
          ],
          "got" : [
-            "Dan",
-            "Dan Atkinson",
-            "Dan Helyar",
-            "Daniel Hepper",
-            "Marco Badan",
-            "dan.helyar@kitesystems.com",
-            "dan@danatkinson.com",
-            "danatk@gmail.com",
-            "daniel.hepper@gmail.com",
-            "danyilmaz",
-            "danyilmaz117@gmail.com",
-            "itbabu",
-            "kemar",
-            "marc@marcarea.com",
-            "marco",
-            "marco.badan@gmail.com"
+            [
+               "Darian Moody",
+               "mail@djm.org.uk"
+            ],
+            [
+               "Peter Brooks",
+               "mail@pbrooks.net"
+            ]
          ]
       },
       {
          "expected" : [
-            "Dan Helyar",
-            "dan.helyar@kitesystems.com"
+            [
+               "David Tilleyshort",
+               "david.tilleyshort@gmail.com"
+            ]
          ],
          "got" : [
-            "Dan",
-            "Dan Atkinson",
-            "Dan Helyar",
-            "Daniel Hepper",
-            "Marco Badan",
-            "dan.helyar@kitesystems.com",
-            "dan@danatkinson.com",
-            "danatk@gmail.com",
-            "daniel.hepper@gmail.com",
-            "danyilmaz",
-            "danyilmaz117@gmail.com",
-            "itbabu",
-            "kemar",
-            "marc@marcarea.com",
-            "marco",
-            "marco.badan@gmail.com"
+            [
+               "David Tilleyshort",
+               "david.tilleyshort@gmail.com"
+            ],
+            [
+               "David Winterbottom",
+               "david.winterbottom@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Daniel Hepper",
-            "daniel.hepper@gmail.com"
+            [
+               "David Winterbottom",
+               "david.winterbottom@gmail.com"
+            ]
          ],
          "got" : [
-            "Dan",
-            "Dan Atkinson",
-            "Dan Helyar",
-            "Daniel Hepper",
-            "Marco Badan",
-            "dan.helyar@kitesystems.com",
-            "dan@danatkinson.com",
-            "danatk@gmail.com",
-            "daniel.hepper@gmail.com",
-            "danyilmaz",
-            "danyilmaz117@gmail.com",
-            "itbabu",
-            "kemar",
-            "marc@marcarea.com",
-            "marco",
-            "marco.badan@gmail.com"
+            [
+               "David Tilleyshort",
+               "david.tilleyshort@gmail.com"
+            ],
+            [
+               "David Winterbottom",
+               "david.winterbottom@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "danyilmaz",
-            "danyilmaz117@gmail.com"
+            [
+               "Eleni Lixourioti",
+               "contact@eleni.co"
+            ],
+            [
+               "Eleni Lixourioti",
+               "eleni@nefelia.(none)"
+            ],
+            [
+               "Eleni Lixourioti",
+               "inelegr88@gmail.com"
+            ]
          ],
          "got" : [
-            "Dan",
-            "Dan Atkinson",
-            "Dan Helyar",
-            "Daniel Hepper",
-            "Marco Badan",
-            "dan.helyar@kitesystems.com",
-            "dan@danatkinson.com",
-            "danatk@gmail.com",
-            "daniel.hepper@gmail.com",
-            "danyilmaz",
-            "danyilmaz117@gmail.com",
-            "itbabu",
-            "kemar",
-            "marc@marcarea.com",
-            "marco",
-            "marco.badan@gmail.com"
+            [
+               "Eleni Lixourioti",
+               "contact@eleni.co"
+            ],
+            [
+               "Eleni Lixourioti",
+               "eleni@nefelia.(none)"
+            ],
+            [
+               "Eleni Lixourioti",
+               "inelegr88@gmail.com"
+            ],
+            [
+               "Geekfish",
+               "eleni.lixourioti@tangentlabs.co.uk"
+            ],
+            [
+               "Paweł Kowalski",
+               "bitrut@gmail.com"
+            ],
+            [
+               "Paweł Kowalski",
+               "contact@pawelkowalski.info"
+            ]
          ]
       },
       {
          "expected" : [
-            "Darian Moody",
-            "mail@djm.org.uk"
+            [
+               "Geekfish",
+               "eleni.lixourioti@tangentlabs.co.uk"
+            ]
          ],
          "got" : [
-            "Darian Moody",
-            "Peter Brooks",
-            "mail@djm.org.uk",
-            "mail@pbrooks.net"
+            [
+               "Eleni Lixourioti",
+               "contact@eleni.co"
+            ],
+            [
+               "Eleni Lixourioti",
+               "eleni@nefelia.(none)"
+            ],
+            [
+               "Eleni Lixourioti",
+               "inelegr88@gmail.com"
+            ],
+            [
+               "Geekfish",
+               "eleni.lixourioti@tangentlabs.co.uk"
+            ],
+            [
+               "Paweł Kowalski",
+               "bitrut@gmail.com"
+            ],
+            [
+               "Paweł Kowalski",
+               "contact@pawelkowalski.info"
+            ]
          ]
       },
       {
          "expected" : [
-            "David Tilleyshort",
-            "david.tilleyshort@gmail.com"
+            [
+               "Gump",
+               "gump@tangentlabs.co.uk"
+            ],
+            [
+               "Gump",
+               "michal@michal.tv"
+            ]
          ],
          "got" : [
-            "David Tilleyshort",
-            "David Winterbottom",
-            "david.tilleyshort@gmail.com",
-            "david.winterbottom@gmail.com"
+            [
+               "Gump",
+               "gump@tangentlabs.co.uk"
+            ],
+            [
+               "Gump",
+               "michal@michal.tv"
+            ],
+            [
+               "Michael",
+               "michaelvantellingen@gmail.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "m.vantellingen@lukkien.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "michael@mvantellingen.nl"
+            ],
+            [
+               "Michael van Tellingen",
+               "michaelvantellingen@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "David Winterbottom",
-            "david.winterbottom@gmail.com"
+            [
+               "Ido Rosen",
+               "github@idorosen.com"
+            ]
          ],
          "got" : [
-            "David Tilleyshort",
-            "David Winterbottom",
-            "david.tilleyshort@gmail.com",
-            "david.winterbottom@gmail.com"
+            [
+               "Ido Rosen",
+               "github@idorosen.com"
+            ],
+            [
+               "Izidor Matušov",
+               "izidor.matusov@gmail.com"
+            ],
+            [
+               "Izidor Matušov",
+               "izidor.matusov@tangentsnowball.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "eleni.lixourioti@tangentlabs.co.uk",
-            "Geekfish"
+            [
+               "Izidor Matušov",
+               "izidor.matusov@gmail.com"
+            ],
+            [
+               "Izidor Matušov",
+               "izidor.matusov@tangentsnowball.com"
+            ]
          ],
          "got" : [
-            "Eleni Lixourioti",
-            "Geekfish",
-            "Paweł Kowalski",
-            "bitrut@gmail.com",
-            "contact@eleni.co",
-            "contact@pawelkowalski.info",
-            "eleni.lixourioti@tangentlabs.co.uk",
-            "eleni@nefelia.(none)",
-            "inelegr88@gmail.com"
+            [
+               "Ido Rosen",
+               "github@idorosen.com"
+            ],
+            [
+               "Izidor Matušov",
+               "izidor.matusov@gmail.com"
+            ],
+            [
+               "Izidor Matušov",
+               "izidor.matusov@tangentsnowball.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "github@idorosen.com",
-            "Ido Rosen"
+            [
+               "John Papanastasiou",
+               "johnpapps@hotmail.com"
+            ],
+            [
+               "John Papanastasiou",
+               "johnpapps@ubuntu.(none)"
+            ],
+            [
+               "kinygos",
+               "johnpapps@hotmail.com"
+            ]
          ],
          "got" : [
-            "Ido Rosen",
-            "Izidor Matušov",
-            "github@idorosen.com",
-            "izidor.matusov@gmail.com",
-            "izidor.matusov@tangentsnowball.com"
+            [
+               "John Papanastasiou",
+               "johnpapps@hotmail.com"
+            ],
+            [
+               "John Papanastasiou",
+               "johnpapps@ubuntu.(none)"
+            ],
+            [
+               "John Parton",
+               "john.parton@plushrugs.com"
+            ],
+            [
+               "kinygos",
+               "johnpapps@hotmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Gump",
-            "gump@tangentlabs.co.uk",
-            "michal@michal.tv"
+            [
+               "John Parton",
+               "john.parton@plushrugs.com"
+            ]
          ],
          "got" : [
-            "Gump",
-            "Michael",
-            "Michael van Tellingen",
-            "gump@tangentlabs.co.uk",
-            "m.vantellingen@lukkien.com",
-            "michael@mvantellingen.nl",
-            "michaelvantellingen@gmail.com",
-            "michal@michal.tv"
+            [
+               "John Papanastasiou",
+               "johnpapps@hotmail.com"
+            ],
+            [
+               "John Papanastasiou",
+               "johnpapps@ubuntu.(none)"
+            ],
+            [
+               "John Parton",
+               "john.parton@plushrugs.com"
+            ],
+            [
+               "kinygos",
+               "johnpapps@hotmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "itbabu",
-            "marco",
-            "Marco Badan",
-            "marco.badan@gmail.com"
+            [
+               "Jon Aylard",
+               "jonath4n@gmail.com"
+            ]
          ],
          "got" : [
-            "Dan",
-            "Dan Atkinson",
-            "Dan Helyar",
-            "Daniel Hepper",
-            "Marco Badan",
-            "dan.helyar@kitesystems.com",
-            "dan@danatkinson.com",
-            "danatk@gmail.com",
-            "daniel.hepper@gmail.com",
-            "danyilmaz",
-            "danyilmaz117@gmail.com",
-            "itbabu",
-            "kemar",
-            "marc@marcarea.com",
-            "marco",
-            "marco.badan@gmail.com"
+            [
+               "Jon Aylard",
+               "jonath4n@gmail.com"
+            ],
+            [
+               "Jonas Borges",
+               "jonasborgesalves@gmail.com"
+            ],
+            [
+               "Jonathan Fiebelkorn",
+               "jonathan@machtfit.de"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Nathan Humphreys",
+               "nathan.humphreys@tangentsnowball.com"
+            ],
+            [
+               "Nathan Staines",
+               "nathan@nathanstaines.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Izidor Matušov",
-            "izidor.matusov@gmail.com",
-            "izidor.matusov@tangentsnowball.com"
+            [
+               "Jonas Borges",
+               "jonasborgesalves@gmail.com"
+            ]
          ],
          "got" : [
-            "Ido Rosen",
-            "Izidor Matušov",
-            "github@idorosen.com",
-            "izidor.matusov@gmail.com",
-            "izidor.matusov@tangentsnowball.com"
+            [
+               "Jon Aylard",
+               "jonath4n@gmail.com"
+            ],
+            [
+               "Jonas Borges",
+               "jonasborgesalves@gmail.com"
+            ],
+            [
+               "Jonathan Fiebelkorn",
+               "jonathan@machtfit.de"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Nathan Humphreys",
+               "nathan.humphreys@tangentsnowball.com"
+            ],
+            [
+               "Nathan Staines",
+               "nathan@nathanstaines.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "John Papanastasiou",
-            "johnpapps@hotmail.com",
-            "johnpapps@ubuntu.(none)",
-            "kinygos"
+            [
+               "Jonathan Fiebelkorn",
+               "jonathan@machtfit.de"
+            ]
          ],
          "got" : [
-            "John Papanastasiou",
-            "John Parton",
-            "john.parton@plushrugs.com",
-            "johnpapps@hotmail.com",
-            "johnpapps@ubuntu.(none)",
-            "kinygos"
+            [
+               "Jon Aylard",
+               "jonath4n@gmail.com"
+            ],
+            [
+               "Jonas Borges",
+               "jonasborgesalves@gmail.com"
+            ],
+            [
+               "Jonathan Fiebelkorn",
+               "jonathan@machtfit.de"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Nathan Humphreys",
+               "nathan.humphreys@tangentsnowball.com"
+            ],
+            [
+               "Nathan Staines",
+               "nathan@nathanstaines.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "John Parton",
-            "john.parton@plushrugs.com"
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ]
          ],
          "got" : [
-            "John Papanastasiou",
-            "John Parton",
-            "john.parton@plushrugs.com",
-            "johnpapps@hotmail.com",
-            "johnpapps@ubuntu.(none)",
-            "kinygos"
+            [
+               "Jon Aylard",
+               "jonath4n@gmail.com"
+            ],
+            [
+               "Jonas Borges",
+               "jonasborgesalves@gmail.com"
+            ],
+            [
+               "Jonathan Fiebelkorn",
+               "jonathan@machtfit.de"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Nathan Humphreys",
+               "nathan.humphreys@tangentsnowball.com"
+            ],
+            [
+               "Nathan Staines",
+               "nathan@nathanstaines.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Jon Aylard",
-            "jonath4n@gmail.com"
+            [
+               "José Duarte",
+               "jose.fduarte@gmail.com"
+            ]
          ],
          "got" : [
-            "Jon Aylard",
-            "Jonas Borges",
-            "Jonathan Fiebelkorn",
-            "Jonathan Moss",
-            "Moose",
-            "Nathan Humphreys",
-            "Nathan Staines",
-            "jonasborgesalves@gmail.com",
-            "jonath4n@gmail.com",
-            "jonathan.moss@tangentone.com.au",
-            "jonathan.moss@tangentsnowball.com.au",
-            "jonathan@machtfit.de",
-            "nathan.humphreys@tangentsnowball.com",
-            "nathan@nathanstaines.com",
-            "xirisr@gmail.com"
+            [
+               "Art Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Artёm Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Bart",
+               "bartosz.gryszko@gmail.com"
+            ],
+            [
+               "José Duarte",
+               "jose.fduarte@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Jonas Borges",
-            "jonasborgesalves@gmail.com"
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
          ],
          "got" : [
-            "Jon Aylard",
-            "Jonas Borges",
-            "Jonathan Fiebelkorn",
-            "Jonathan Moss",
-            "Moose",
-            "Nathan Humphreys",
-            "Nathan Staines",
-            "jonasborgesalves@gmail.com",
-            "jonath4n@gmail.com",
-            "jonathan.moss@tangentone.com.au",
-            "jonathan.moss@tangentsnowball.com.au",
-            "jonathan@machtfit.de",
-            "nathan.humphreys@tangentsnowball.com",
-            "nathan@nathanstaines.com",
-            "xirisr@gmail.com"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan Helyar",
+               "dan.helyar@kitesystems.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Daniel Hepper",
+               "daniel.hepper@gmail.com"
+            ],
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "danyilmaz",
+               "danyilmaz117@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "kemar",
+               "marc@marcarea.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Jonathan Fiebelkorn",
-            "jonathan@machtfit.de"
+            [
+               "Marek Matulka",
+               "marek@matulka.net"
+            ]
          ],
          "got" : [
-            "Jon Aylard",
-            "Jonas Borges",
-            "Jonathan Fiebelkorn",
-            "Jonathan Moss",
-            "Moose",
-            "Nathan Humphreys",
-            "Nathan Staines",
-            "jonasborgesalves@gmail.com",
-            "jonath4n@gmail.com",
-            "jonathan.moss@tangentone.com.au",
-            "jonathan.moss@tangentsnowball.com.au",
-            "jonathan@machtfit.de",
-            "nathan.humphreys@tangentsnowball.com",
-            "nathan@nathanstaines.com",
-            "xirisr@gmail.com"
+            [
+               "Marek Matulka",
+               "marek@matulka.net"
+            ],
+            [
+               "Mirek Mencel",
+               "mirek@mirumee.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Jonathan Moss",
-            "jonathan.moss@tangentone.com.au",
-            "jonathan.moss@tangentsnowball.com.au",
-            "Moose",
-            "xirisr@gmail.com"
+            [
+               "Matt Miller",
+               "matt@flashnotes.com"
+            ]
          ],
          "got" : [
-            "Jon Aylard",
-            "Jonas Borges",
-            "Jonathan Fiebelkorn",
-            "Jonathan Moss",
-            "Moose",
-            "Nathan Humphreys",
-            "Nathan Staines",
-            "jonasborgesalves@gmail.com",
-            "jonath4n@gmail.com",
-            "jonathan.moss@tangentone.com.au",
-            "jonathan.moss@tangentsnowball.com.au",
-            "jonathan@machtfit.de",
-            "nathan.humphreys@tangentsnowball.com",
-            "nathan@nathanstaines.com",
-            "xirisr@gmail.com"
+            [
+               "Matt Miller",
+               "matt@flashnotes.com"
+            ],
+            [
+               "Matt Moran",
+               "matt@mattmoran.co.uk"
+            ],
+            [
+               "Matthew O'Loughlin",
+               "mattdevmail@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "jose.fduarte@gmail.com",
-            "José Duarte"
+            [
+               "Matt Moran",
+               "matt@mattmoran.co.uk"
+            ]
          ],
          "got" : [
-            "Art Skvira",
-            "Artёm Skvira",
-            "Bart",
-            "José Duarte",
-            "artem.skvira@gmail.com",
-            "bartosz.gryszko@gmail.com",
-            "jose.fduarte@gmail.com"
+            [
+               "Matt Miller",
+               "matt@flashnotes.com"
+            ],
+            [
+               "Matt Moran",
+               "matt@mattmoran.co.uk"
+            ],
+            [
+               "Matthew O'Loughlin",
+               "mattdevmail@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "kemar",
-            "marc@marcarea.com"
+            [
+               "Matthew O'Loughlin",
+               "mattdevmail@gmail.com"
+            ]
          ],
          "got" : [
-            "Dan",
-            "Dan Atkinson",
-            "Dan Helyar",
-            "Daniel Hepper",
-            "Marco Badan",
-            "dan.helyar@kitesystems.com",
-            "dan@danatkinson.com",
-            "danatk@gmail.com",
-            "daniel.hepper@gmail.com",
-            "danyilmaz",
-            "danyilmaz117@gmail.com",
-            "itbabu",
-            "kemar",
-            "marc@marcarea.com",
-            "marco",
-            "marco.badan@gmail.com"
+            [
+               "Matt Miller",
+               "matt@flashnotes.com"
+            ],
+            [
+               "Matt Moran",
+               "matt@mattmoran.co.uk"
+            ],
+            [
+               "Matthew O'Loughlin",
+               "mattdevmail@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "m.dingjan@lukkien.com",
-            "Mike Dingjan",
-            "mike@mikedingjan.nl"
+            [
+               "Michael",
+               "michaelvantellingen@gmail.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "m.vantellingen@lukkien.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "michael@mvantellingen.nl"
+            ],
+            [
+               "Michael van Tellingen",
+               "michaelvantellingen@gmail.com"
+            ]
          ],
          "got" : [
-            "Mike Dingjan",
-            "Mike de Bock",
-            "m.dingjan@lukkien.com",
-            "mike.debock@masterwebber.nl",
-            "mike@mikedingjan.nl"
+            [
+               "Gump",
+               "gump@tangentlabs.co.uk"
+            ],
+            [
+               "Gump",
+               "michal@michal.tv"
+            ],
+            [
+               "Michael",
+               "michaelvantellingen@gmail.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "m.vantellingen@lukkien.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "michael@mvantellingen.nl"
+            ],
+            [
+               "Michael van Tellingen",
+               "michaelvantellingen@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "m.vantellingen@lukkien.com",
-            "Michael",
-            "Michael van Tellingen",
-            "michael@mvantellingen.nl",
-            "michaelvantellingen@gmail.com"
+            [
+               "Mike Dingjan",
+               "m.dingjan@lukkien.com"
+            ],
+            [
+               "Mike Dingjan",
+               "mike@mikedingjan.nl"
+            ]
          ],
          "got" : [
-            "Gump",
-            "Michael",
-            "Michael van Tellingen",
-            "gump@tangentlabs.co.uk",
-            "m.vantellingen@lukkien.com",
-            "michael@mvantellingen.nl",
-            "michaelvantellingen@gmail.com",
-            "michal@michal.tv"
+            [
+               "Mike Dingjan",
+               "m.dingjan@lukkien.com"
+            ],
+            [
+               "Mike Dingjan",
+               "mike@mikedingjan.nl"
+            ],
+            [
+               "Mike de Bock",
+               "mike.debock@masterwebber.nl"
+            ]
          ]
       },
       {
          "expected" : [
-            "mail@pbrooks.net",
-            "Peter Brooks"
+            [
+               "Mike de Bock",
+               "mike.debock@masterwebber.nl"
+            ]
          ],
          "got" : [
-            "Darian Moody",
-            "Peter Brooks",
-            "mail@djm.org.uk",
-            "mail@pbrooks.net"
+            [
+               "Mike Dingjan",
+               "m.dingjan@lukkien.com"
+            ],
+            [
+               "Mike Dingjan",
+               "mike@mikedingjan.nl"
+            ],
+            [
+               "Mike de Bock",
+               "mike.debock@masterwebber.nl"
+            ]
          ]
       },
       {
          "expected" : [
-            "marangon@pentaonline.it",
-            "Nicola Marangon"
+            [
+               "Mirek Mencel",
+               "mirek@mirumee.com"
+            ]
          ],
          "got" : [
-            "Nicola Marangon",
-            "marangon@pentaonline.it",
-            "marangonico",
-            "nicolamarangon@gmail.com"
+            [
+               "Marek Matulka",
+               "marek@matulka.net"
+            ],
+            [
+               "Mirek Mencel",
+               "mirek@mirumee.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "marangonico",
-            "nicolamarangon@gmail.com"
+            [
+               "Nathan Humphreys",
+               "nathan.humphreys@tangentsnowball.com"
+            ]
          ],
          "got" : [
-            "Nicola Marangon",
-            "marangon@pentaonline.it",
-            "marangonico",
-            "nicolamarangon@gmail.com"
+            [
+               "Jon Aylard",
+               "jonath4n@gmail.com"
+            ],
+            [
+               "Jonas Borges",
+               "jonasborgesalves@gmail.com"
+            ],
+            [
+               "Jonathan Fiebelkorn",
+               "jonathan@machtfit.de"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Nathan Humphreys",
+               "nathan.humphreys@tangentsnowball.com"
+            ],
+            [
+               "Nathan Staines",
+               "nathan@nathanstaines.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Marek Matulka",
-            "marek@matulka.net"
+            [
+               "Nathan Staines",
+               "nathan@nathanstaines.com"
+            ]
          ],
          "got" : [
-            "Marek Matulka",
-            "Mirek Mencel",
-            "marek@matulka.net",
-            "mirek@mirumee.com"
+            [
+               "Jon Aylard",
+               "jonath4n@gmail.com"
+            ],
+            [
+               "Jonas Borges",
+               "jonasborgesalves@gmail.com"
+            ],
+            [
+               "Jonathan Fiebelkorn",
+               "jonathan@machtfit.de"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Nathan Humphreys",
+               "nathan.humphreys@tangentsnowball.com"
+            ],
+            [
+               "Nathan Staines",
+               "nathan@nathanstaines.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Matt Miller",
-            "matt@flashnotes.com"
+            [
+               "Pablo",
+               "oubiga@yahoo.es"
+            ]
          ],
          "got" : [
-            "Matt Miller",
-            "Matt Moran",
-            "Matthew O'Loughlin",
-            "matt@flashnotes.com",
-            "matt@mattmoran.co.uk",
-            "mattdevmail@gmail.com"
+            [
+               "Pablo",
+               "oubiga@yahoo.es"
+            ],
+            [
+               "PaulO",
+               "atreidesone@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Matt Moran",
-            "matt@mattmoran.co.uk"
+            [
+               "PaulO",
+               "atreidesone@gmail.com"
+            ]
          ],
          "got" : [
-            "Matt Miller",
-            "Matt Moran",
-            "Matthew O'Loughlin",
-            "matt@flashnotes.com",
-            "matt@mattmoran.co.uk",
-            "mattdevmail@gmail.com"
+            [
+               "Pablo",
+               "oubiga@yahoo.es"
+            ],
+            [
+               "PaulO",
+               "atreidesone@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "mattdevmail@gmail.com",
-            "Matthew O'Loughlin"
+            [
+               "Paweł Kowalski",
+               "bitrut@gmail.com"
+            ],
+            [
+               "Paweł Kowalski",
+               "contact@pawelkowalski.info"
+            ]
          ],
          "got" : [
-            "Matt Miller",
-            "Matt Moran",
-            "Matthew O'Loughlin",
-            "matt@flashnotes.com",
-            "matt@mattmoran.co.uk",
-            "mattdevmail@gmail.com"
+            [
+               "Eleni Lixourioti",
+               "contact@eleni.co"
+            ],
+            [
+               "Eleni Lixourioti",
+               "eleni@nefelia.(none)"
+            ],
+            [
+               "Eleni Lixourioti",
+               "inelegr88@gmail.com"
+            ],
+            [
+               "Geekfish",
+               "eleni.lixourioti@tangentlabs.co.uk"
+            ],
+            [
+               "Paweł Kowalski",
+               "bitrut@gmail.com"
+            ],
+            [
+               "Paweł Kowalski",
+               "contact@pawelkowalski.info"
+            ]
          ]
       },
       {
          "expected" : [
-            "Mike de Bock",
-            "mike.debock@masterwebber.nl"
+            [
+               "Peter Brooks",
+               "mail@pbrooks.net"
+            ]
          ],
          "got" : [
-            "Mike Dingjan",
-            "Mike de Bock",
-            "m.dingjan@lukkien.com",
-            "mike.debock@masterwebber.nl",
-            "mike@mikedingjan.nl"
+            [
+               "Darian Moody",
+               "mail@djm.org.uk"
+            ],
+            [
+               "Peter Brooks",
+               "mail@pbrooks.net"
+            ]
          ]
       },
       {
          "expected" : [
-            "Mirek Mencel",
-            "mirek@mirumee.com"
+            [
+               "Rachel Graves",
+               "rachel@didlix.net"
+            ]
          ],
          "got" : [
-            "Marek Matulka",
-            "Mirek Mencel",
-            "marek@matulka.net",
-            "mirek@mirumee.com"
+            [
+               "Rachel Graves",
+               "rachel@didlix.net"
+            ],
+            [
+               "Rachel Willmer",
+               "rachel@hobthross.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Nathan Humphreys",
-            "nathan.humphreys@tangentsnowball.com"
+            [
+               "Rachel Willmer",
+               "rachel@hobthross.com"
+            ]
          ],
          "got" : [
-            "Jon Aylard",
-            "Jonas Borges",
-            "Jonathan Fiebelkorn",
-            "Jonathan Moss",
-            "Moose",
-            "Nathan Humphreys",
-            "Nathan Staines",
-            "jonasborgesalves@gmail.com",
-            "jonath4n@gmail.com",
-            "jonathan.moss@tangentone.com.au",
-            "jonathan.moss@tangentsnowball.com.au",
-            "jonathan@machtfit.de",
-            "nathan.humphreys@tangentsnowball.com",
-            "nathan@nathanstaines.com",
-            "xirisr@gmail.com"
+            [
+               "Rachel Graves",
+               "rachel@didlix.net"
+            ],
+            [
+               "Rachel Willmer",
+               "rachel@hobthross.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "Nathan Staines",
-            "nathan@nathanstaines.com"
+            [
+               "danyilmaz",
+               "danyilmaz117@gmail.com"
+            ]
          ],
          "got" : [
-            "Jon Aylard",
-            "Jonas Borges",
-            "Jonathan Fiebelkorn",
-            "Jonathan Moss",
-            "Moose",
-            "Nathan Humphreys",
-            "Nathan Staines",
-            "jonasborgesalves@gmail.com",
-            "jonath4n@gmail.com",
-            "jonathan.moss@tangentone.com.au",
-            "jonathan.moss@tangentsnowball.com.au",
-            "jonathan@machtfit.de",
-            "nathan.humphreys@tangentsnowball.com",
-            "nathan@nathanstaines.com",
-            "xirisr@gmail.com"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan Helyar",
+               "dan.helyar@kitesystems.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Daniel Hepper",
+               "daniel.hepper@gmail.com"
+            ],
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "danyilmaz",
+               "danyilmaz117@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "kemar",
+               "marc@marcarea.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
          ]
       },
       {
          "expected" : [
-            "oubiga@yahoo.es",
-            "Pablo"
+            [
+               "kemar",
+               "marc@marcarea.com"
+            ]
          ],
          "got" : [
-            "Pablo",
-            "PaulO",
-            "atreidesone@gmail.com",
-            "oubiga@yahoo.es"
-         ]
-      },
-      {
-         "expected" : [
-            "Rachel Graves",
-            "rachel@didlix.net"
-         ],
-         "got" : [
-            "Rachel Graves",
-            "Rachel Willmer",
-            "rachel@didlix.net",
-            "rachel@hobthross.com"
-         ]
-      },
-      {
-         "expected" : [
-            "Rachel Willmer",
-            "rachel@hobthross.com"
-         ],
-         "got" : [
-            "Rachel Graves",
-            "Rachel Willmer",
-            "rachel@didlix.net",
-            "rachel@hobthross.com"
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan Helyar",
+               "dan.helyar@kitesystems.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ],
+            [
+               "Daniel Hepper",
+               "daniel.hepper@gmail.com"
+            ],
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "danyilmaz",
+               "danyilmaz117@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "kemar",
+               "marc@marcarea.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
          ]
       }
    ]
