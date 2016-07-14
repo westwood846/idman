@@ -17,4 +17,4 @@ Grounding the truth, one artifact at a time.
 
 * Run `carton exec morbo referencify` to run the development server.
 
-* Point your browser at http://localhost:3000/ and enjoy.
+* Point your browser at <http://localhost:3000/> and enjoy.
