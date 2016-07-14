@@ -4,19 +4,19 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         %= stylesheet 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'
         <style media="screen">
-        .link-unstyled {
-            color: inherit;
-            text-decoration: inherit;
+            .link-unstyled {
+                color: inherit;
+                text-decoration: inherit;
             }
 
             .link-unstyled:link {
-            color: inherit;
-            text-decoration: inherit;
+                color: inherit;
+                text-decoration: inherit;
             }
 
             .link-unstyled:hover {
-            color: inherit;
-            text-decoration: inherit;
+                color: inherit;
+                text-decoration: inherit;
             }
         </style>
     </head>
