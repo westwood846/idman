@@ -11,6 +11,7 @@ my %REPOS = (
     'django-oscar'     => 'https://github.com/django-oscar/django-oscar.git',
     'django-wiki'      => 'https://github.com/django-wiki/django-wiki.git',
     'spring-framework' => 'https://github.com/spring-projects/spring-framework.git',
+    'libgdx'           => 'https://github.com/libgdx/libgdx.git',
 );
 
 my @ALGORITHMS = (

@@ -1,0 +1,5781 @@
+{
+   "false_negatives" : 2,
+   "false_positives" : 91,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Justin Shapcott",
+                  "justin@mobidevelop.com"
+               ],
+               [
+                  "Justin Shapcott",
+                  "support@mobidevelop.com"
+               ],
+               [
+                  "unknown",
+                  "justin.s@SG-PC025.innitech.lan"
+               ],
+               [
+                  "unknown",
+                  "karlm@SEA-6900058548.ant.amazon.com"
+               ]
+            ],
+            [
+               [
+                  "MobiDevelop",
+                  "support@mobidevelop.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "MJ",
+               "czyzby@users.noreply.github.com"
+            ],
+            [
+               "MJ",
+               "john.hervicc@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "MJ",
+                  "czyzby@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "MJ",
+                  "john.hervicc@gmail.com"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 0.774752475247525,
+   "recall" : 0.993650793650794,
+   "true_positives" : 313,
+   "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Alex Crist",
+               "alexecrist@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Alex Crist",
+               "alexecrist@gmail.com"
+            ],
+            [
+               "C-Alexander",
+               "alexander@contritio.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ],
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ],
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ],
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Angel Eduardo Garcia Hernandez",
+               "egarcia@atlassian.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Angel Eduardo Garcia Hernandez",
+               "egarcia@atlassian.com"
+            ],
+            [
+               "Nacho Garcia",
+               "ngdelamo@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Anthony Teestudio",
+               "li-de-france@mail.ru"
+            ]
+         ],
+         "got" : [
+            [
+               "Anthony Teestudio",
+               "li-de-france@mail.ru"
+            ],
+            [
+               "Justin Hamilton",
+               "justinanthonyhamilton@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ],
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ],
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ],
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ],
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ],
+         "got" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ],
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ],
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ],
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "C-Alexander",
+               "alexander@contritio.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Alex Crist",
+               "alexecrist@gmail.com"
+            ],
+            [
+               "C-Alexander",
+               "alexander@contritio.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dani Rodríguez",
+               "danirod@outlook.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Dani Rodríguez",
+               "danirod@outlook.com"
+            ],
+            [
+               "Daniel Heinrich",
+               "dannynullzwo@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "Daniel Ludwig",
+               "codi@code-disaster.com"
+            ],
+            [
+               "Daniel",
+               "danielheim@gmail.com"
+            ],
+            [
+               "danieruru@gmail.com",
+               "danieruru@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel Heinrich",
+               "dannynullzwo@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Dani Rodríguez",
+               "danirod@outlook.com"
+            ],
+            [
+               "Daniel Heinrich",
+               "dannynullzwo@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "Daniel Ludwig",
+               "codi@code-disaster.com"
+            ],
+            [
+               "Daniel",
+               "danielheim@gmail.com"
+            ],
+            [
+               "danieruru@gmail.com",
+               "danieruru@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Dani Rodríguez",
+               "danirod@outlook.com"
+            ],
+            [
+               "Daniel Heinrich",
+               "dannynullzwo@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "Daniel Ludwig",
+               "codi@code-disaster.com"
+            ],
+            [
+               "Daniel",
+               "danielheim@gmail.com"
+            ],
+            [
+               "danieruru@gmail.com",
+               "danieruru@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel Ludwig",
+               "codi@code-disaster.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Dani Rodríguez",
+               "danirod@outlook.com"
+            ],
+            [
+               "Daniel Heinrich",
+               "dannynullzwo@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "Daniel Ludwig",
+               "codi@code-disaster.com"
+            ],
+            [
+               "Daniel",
+               "danielheim@gmail.com"
+            ],
+            [
+               "danieruru@gmail.com",
+               "danieruru@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel",
+               "danielheim@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Dani Rodríguez",
+               "danirod@outlook.com"
+            ],
+            [
+               "Daniel Heinrich",
+               "dannynullzwo@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "Daniel Ludwig",
+               "codi@code-disaster.com"
+            ],
+            [
+               "Daniel",
+               "danielheim@gmail.com"
+            ],
+            [
+               "danieruru@gmail.com",
+               "danieruru@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ],
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ],
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ],
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ],
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ],
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ],
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ],
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ],
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ],
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ],
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ],
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ],
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ],
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ],
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ],
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ],
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ],
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ],
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ],
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ]
+         ],
+         "got" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ],
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ],
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ],
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ]
+         ],
+         "got" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ],
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ],
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ],
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ],
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ],
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ],
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ],
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "J Fixby",
+               "github@jfixby.com"
+            ]
+         ],
+         "got" : [
+            [
+               "J Fixby",
+               "github@jfixby.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "git@schleinzer.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "github@schleinzer.com"
+            ],
+            [
+               "bitiotic",
+               "github@bitiotic.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "James Durie",
+               "duriej@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "James Durie",
+               "duriej@gmail.com"
+            ],
+            [
+               "James Pilfold",
+               "jamespilfold@gmail.com"
+            ],
+            [
+               "James Pilfold",
+               "jamespilfold@googlemail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "James Jurach",
+               "james.jurach@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "James Jurach",
+               "james.jurach@gmail.com"
+            ],
+            [
+               "TheJimJames40",
+               "Tom.TSmeets@Gmail.com"
+            ],
+            [
+               "Tom Mast",
+               "loadstar81@users.sourceforge.net"
+            ],
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomas Junnonen",
+               "tomas1@gmail.com"
+            ],
+            [
+               "Tommy C. Li",
+               "tommycli@keepword.com"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "James Pilfold",
+               "jamespilfold@gmail.com"
+            ],
+            [
+               "James Pilfold",
+               "jamespilfold@googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "James Durie",
+               "duriej@gmail.com"
+            ],
+            [
+               "James Pilfold",
+               "jamespilfold@gmail.com"
+            ],
+            [
+               "James Pilfold",
+               "jamespilfold@googlemail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ]
+         ],
+         "got" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ],
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ],
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ],
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Andrew Shu",
+               "talklittle@gmail.com"
+            ],
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "GJ Roelofs",
+               "info@codepoke.net"
+            ],
+            [
+               "Herjanz",
+               "herjanpater@solcon.nl"
+            ],
+            [
+               "Jan Peter",
+               "jp@jppresents.net"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Risse",
+               "StrongJoshua@users.noreply.github.com"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John Bates",
+               "jbates@google.com"
+            ]
+         ],
+         "got" : [
+            [
+               "John Bates",
+               "jbates@google.com"
+            ],
+            [
+               "John Bernard Lambe",
+               "jlambe@jlambe.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John Bernard Lambe",
+               "jlambe@jlambe.com"
+            ]
+         ],
+         "got" : [
+            [
+               "John Bates",
+               "jbates@google.com"
+            ],
+            [
+               "John Bernard Lambe",
+               "jlambe@jlambe.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jon Renner",
+               "rennerjc@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Jon Renner",
+               "rennerjc@gmail.com"
+            ],
+            [
+               "Jonas Carpay",
+               "jonascarpay@gmail.com"
+            ],
+            [
+               "Jonas Dann",
+               "jonas.chr.dann@gmail.com"
+            ],
+            [
+               "Jonas Eschner",
+               "jonas.eschner@gmx.de"
+            ],
+            [
+               "Jonathan Pearl",
+               "jonathantpearl@gmail.com"
+            ],
+            [
+               "lordjone",
+               "drodrigu86@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jonas Carpay",
+               "jonascarpay@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Jon Renner",
+               "rennerjc@gmail.com"
+            ],
+            [
+               "Jonas Carpay",
+               "jonascarpay@gmail.com"
+            ],
+            [
+               "Jonas Dann",
+               "jonas.chr.dann@gmail.com"
+            ],
+            [
+               "Jonas Eschner",
+               "jonas.eschner@gmx.de"
+            ],
+            [
+               "Jonathan Pearl",
+               "jonathantpearl@gmail.com"
+            ],
+            [
+               "lordjone",
+               "drodrigu86@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jonas Dann",
+               "jonas.chr.dann@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Jon Renner",
+               "rennerjc@gmail.com"
+            ],
+            [
+               "Jonas Carpay",
+               "jonascarpay@gmail.com"
+            ],
+            [
+               "Jonas Dann",
+               "jonas.chr.dann@gmail.com"
+            ],
+            [
+               "Jonas Eschner",
+               "jonas.eschner@gmx.de"
+            ],
+            [
+               "Jonathan Pearl",
+               "jonathantpearl@gmail.com"
+            ],
+            [
+               "lordjone",
+               "drodrigu86@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jonas Eschner",
+               "jonas.eschner@gmx.de"
+            ]
+         ],
+         "got" : [
+            [
+               "Jon Renner",
+               "rennerjc@gmail.com"
+            ],
+            [
+               "Jonas Carpay",
+               "jonascarpay@gmail.com"
+            ],
+            [
+               "Jonas Dann",
+               "jonas.chr.dann@gmail.com"
+            ],
+            [
+               "Jonas Eschner",
+               "jonas.eschner@gmx.de"
+            ],
+            [
+               "Jonathan Pearl",
+               "jonathantpearl@gmail.com"
+            ],
+            [
+               "lordjone",
+               "drodrigu86@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jonathan Pearl",
+               "jonathantpearl@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Jon Renner",
+               "rennerjc@gmail.com"
+            ],
+            [
+               "Jonas Carpay",
+               "jonascarpay@gmail.com"
+            ],
+            [
+               "Jonas Dann",
+               "jonas.chr.dann@gmail.com"
+            ],
+            [
+               "Jonas Eschner",
+               "jonas.eschner@gmx.de"
+            ],
+            [
+               "Jonathan Pearl",
+               "jonathantpearl@gmail.com"
+            ],
+            [
+               "lordjone",
+               "drodrigu86@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Joseph Hager",
+               "ajhager@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Joseph Hager",
+               "ajhager@gmail.com"
+            ],
+            [
+               "josephknight",
+               "josephknight.com@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Justin Hamilton",
+               "justinanthonyhamilton@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Anthony Teestudio",
+               "li-de-france@mail.ru"
+            ],
+            [
+               "Justin Hamilton",
+               "justinanthonyhamilton@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kevin Koshiol",
+               "NTARelix@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Kevin Koshiol",
+               "NTARelix@users.noreply.github.com"
+            ],
+            [
+               "Kevin S. Clarke",
+               "ksclarke@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kevin S. Clarke",
+               "ksclarke@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Kevin Koshiol",
+               "NTARelix@users.noreply.github.com"
+            ],
+            [
+               "Kevin S. Clarke",
+               "ksclarke@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lestat",
+               "carlosmartinezdev@gmail.com"
+            ],
+            [
+               "xLestat",
+               "carlosmartinezdev@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Lestat",
+               "carlosmartinezdev@gmail.com"
+            ],
+            [
+               "Martin Lang",
+               "martin@eiveo.net"
+            ],
+            [
+               "Richard Martin",
+               "Zomby2D@users.noreply.github.com"
+            ],
+            [
+               "Richard Martin",
+               "zomby@cablevision.qc.ca"
+            ],
+            [
+               "xLestat",
+               "carlosmartinezdev@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Antti Kolehmainen",
+               "antionio@gmail.com"
+            ],
+            [
+               "David Ackerman",
+               "david.w.ackerman@gmail.com"
+            ],
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "David Springer",
+               "dspringer@google.com"
+            ],
+            [
+               "Ion Agorria",
+               "ion@agorria.com"
+            ],
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Martin Lang",
+               "martin@eiveo.net"
+            ]
+         ],
+         "got" : [
+            [
+               "Lestat",
+               "carlosmartinezdev@gmail.com"
+            ],
+            [
+               "Martin Lang",
+               "martin@eiveo.net"
+            ],
+            [
+               "Richard Martin",
+               "Zomby2D@users.noreply.github.com"
+            ],
+            [
+               "Richard Martin",
+               "zomby@cablevision.qc.ca"
+            ],
+            [
+               "xLestat",
+               "carlosmartinezdev@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mathias Garbe",
+               "mail@mathias-garbe.de"
+            ]
+         ],
+         "got" : [
+            [
+               "Mathias Garbe",
+               "mail@mathias-garbe.de"
+            ],
+            [
+               "Thomas Pronold",
+               "mail@tomgrill.de"
+            ],
+            [
+               "Thomas Pronold",
+               "tp@tpronold.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Matthew Dean",
+               "deanmatthew16@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Matthew Dean",
+               "deanmatthew16@gmail.com"
+            ],
+            [
+               "TheInventionist",
+               "Gregan@TheInventionist.com"
+            ],
+            [
+               "Tubeman, The",
+               "av@tube42.se"
+            ],
+            [
+               "U-InventionistPC\\TheInventionist",
+               "TheInventionist@InventionistPC.(none)"
+            ],
+            [
+               "matthew",
+               "matthew@foursquare.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Michael Barkholt",
+               "michael@corteza.dk"
+            ]
+         ],
+         "got" : [
+            [
+               "Michael Barkholt",
+               "michael@corteza.dk"
+            ],
+            [
+               "Michael",
+               "mike@agamz.com"
+            ],
+            [
+               "mike",
+               "dajos7@web.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Michael",
+               "mike@agamz.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Michael Barkholt",
+               "michael@corteza.dk"
+            ],
+            [
+               "Michael",
+               "mike@agamz.com"
+            ],
+            [
+               "mike",
+               "dajos7@web.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "MoopsLC",
+               "zombierobopirate@yahoo.com"
+            ]
+         ],
+         "got" : [
+            [
+               "MoopsLC",
+               "zombierobopirate@yahoo.com"
+            ],
+            [
+               "Rob Bogie",
+               "bogie.rob@gmail.com"
+            ],
+            [
+               "Rob Rendell",
+               "RobRendell@github.com"
+            ],
+            [
+               "Robert Massaioli",
+               "rmassaioli@atlassian.com"
+            ],
+            [
+               "Robert Massaioli",
+               "robertmassaioli@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nacho Garcia",
+               "ngdelamo@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Angel Eduardo Garcia Hernandez",
+               "egarcia@atlassian.com"
+            ],
+            [
+               "Nacho Garcia",
+               "ngdelamo@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nick Badal",
+               "nick@ouya.tv"
+            ]
+         ],
+         "got" : [
+            [
+               "Nick Badal",
+               "nick@ouya.tv"
+            ],
+            [
+               "nbilyk",
+               "nick@nbilyk.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicolas Fantone",
+               "nfantone@contentamobile.com"
+            ],
+            [
+               "nfantone",
+               "nfantone@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Nicolas Fantone",
+               "nfantone@contentamobile.com"
+            ],
+            [
+               "Nicolás A. Ortega",
+               "nicolas.ortega.froysa@gmail.com"
+            ],
+            [
+               "nfantone",
+               "nfantone@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicolás A. Ortega",
+               "nicolas.ortega.froysa@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Nicolas Fantone",
+               "nfantone@contentamobile.com"
+            ],
+            [
+               "Nicolás A. Ortega",
+               "nicolas.ortega.froysa@gmail.com"
+            ],
+            [
+               "nfantone",
+               "nfantone@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Richard Martin",
+               "Zomby2D@users.noreply.github.com"
+            ],
+            [
+               "Richard Martin",
+               "zomby@cablevision.qc.ca"
+            ]
+         ],
+         "got" : [
+            [
+               "Lestat",
+               "carlosmartinezdev@gmail.com"
+            ],
+            [
+               "Martin Lang",
+               "martin@eiveo.net"
+            ],
+            [
+               "Richard Martin",
+               "Zomby2D@users.noreply.github.com"
+            ],
+            [
+               "Richard Martin",
+               "zomby@cablevision.qc.ca"
+            ],
+            [
+               "xLestat",
+               "carlosmartinezdev@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Rob Bogie",
+               "bogie.rob@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "MoopsLC",
+               "zombierobopirate@yahoo.com"
+            ],
+            [
+               "Rob Bogie",
+               "bogie.rob@gmail.com"
+            ],
+            [
+               "Rob Rendell",
+               "RobRendell@github.com"
+            ],
+            [
+               "Robert Massaioli",
+               "rmassaioli@atlassian.com"
+            ],
+            [
+               "Robert Massaioli",
+               "robertmassaioli@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Rob Rendell",
+               "RobRendell@github.com"
+            ]
+         ],
+         "got" : [
+            [
+               "MoopsLC",
+               "zombierobopirate@yahoo.com"
+            ],
+            [
+               "Rob Bogie",
+               "bogie.rob@gmail.com"
+            ],
+            [
+               "Rob Rendell",
+               "RobRendell@github.com"
+            ],
+            [
+               "Robert Massaioli",
+               "rmassaioli@atlassian.com"
+            ],
+            [
+               "Robert Massaioli",
+               "robertmassaioli@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Robert Massaioli",
+               "rmassaioli@atlassian.com"
+            ],
+            [
+               "Robert Massaioli",
+               "robertmassaioli@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "MoopsLC",
+               "zombierobopirate@yahoo.com"
+            ],
+            [
+               "Rob Bogie",
+               "bogie.rob@gmail.com"
+            ],
+            [
+               "Rob Rendell",
+               "RobRendell@github.com"
+            ],
+            [
+               "Robert Massaioli",
+               "rmassaioli@atlassian.com"
+            ],
+            [
+               "Robert Massaioli",
+               "robertmassaioli@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "TheInventionist",
+               "Gregan@TheInventionist.com"
+            ],
+            [
+               "U-InventionistPC\\TheInventionist",
+               "TheInventionist@InventionistPC.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               "Matthew Dean",
+               "deanmatthew16@gmail.com"
+            ],
+            [
+               "TheInventionist",
+               "Gregan@TheInventionist.com"
+            ],
+            [
+               "Tubeman, The",
+               "av@tube42.se"
+            ],
+            [
+               "U-InventionistPC\\TheInventionist",
+               "TheInventionist@InventionistPC.(none)"
+            ],
+            [
+               "matthew",
+               "matthew@foursquare.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "TheJimJames40",
+               "Tom.TSmeets@Gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "James Jurach",
+               "james.jurach@gmail.com"
+            ],
+            [
+               "TheJimJames40",
+               "Tom.TSmeets@Gmail.com"
+            ],
+            [
+               "Tom Mast",
+               "loadstar81@users.sourceforge.net"
+            ],
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomas Junnonen",
+               "tomas1@gmail.com"
+            ],
+            [
+               "Tommy C. Li",
+               "tommycli@keepword.com"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Thomas Pronold",
+               "mail@tomgrill.de"
+            ],
+            [
+               "Thomas Pronold",
+               "tp@tpronold.de"
+            ]
+         ],
+         "got" : [
+            [
+               "Mathias Garbe",
+               "mail@mathias-garbe.de"
+            ],
+            [
+               "Thomas Pronold",
+               "mail@tomgrill.de"
+            ],
+            [
+               "Thomas Pronold",
+               "tp@tpronold.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Thorsten Schleinzer",
+               "git@schleinzer.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "github@schleinzer.com"
+            ]
+         ],
+         "got" : [
+            [
+               "J Fixby",
+               "github@jfixby.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "git@schleinzer.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "github@schleinzer.com"
+            ],
+            [
+               "bitiotic",
+               "github@bitiotic.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tom Mast",
+               "loadstar81@users.sourceforge.net"
+            ]
+         ],
+         "got" : [
+            [
+               "James Jurach",
+               "james.jurach@gmail.com"
+            ],
+            [
+               "TheJimJames40",
+               "Tom.TSmeets@Gmail.com"
+            ],
+            [
+               "Tom Mast",
+               "loadstar81@users.sourceforge.net"
+            ],
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomas Junnonen",
+               "tomas1@gmail.com"
+            ],
+            [
+               "Tommy C. Li",
+               "tommycli@keepword.com"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ],
+         "got" : [
+            [
+               "James Jurach",
+               "james.jurach@gmail.com"
+            ],
+            [
+               "TheJimJames40",
+               "Tom.TSmeets@Gmail.com"
+            ],
+            [
+               "Tom Mast",
+               "loadstar81@users.sourceforge.net"
+            ],
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomas Junnonen",
+               "tomas1@gmail.com"
+            ],
+            [
+               "Tommy C. Li",
+               "tommycli@keepword.com"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tomas Junnonen",
+               "tomas1@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "James Jurach",
+               "james.jurach@gmail.com"
+            ],
+            [
+               "TheJimJames40",
+               "Tom.TSmeets@Gmail.com"
+            ],
+            [
+               "Tom Mast",
+               "loadstar81@users.sourceforge.net"
+            ],
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomas Junnonen",
+               "tomas1@gmail.com"
+            ],
+            [
+               "Tommy C. Li",
+               "tommycli@keepword.com"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tommy C. Li",
+               "tommycli@keepword.com"
+            ]
+         ],
+         "got" : [
+            [
+               "James Jurach",
+               "james.jurach@gmail.com"
+            ],
+            [
+               "TheJimJames40",
+               "Tom.TSmeets@Gmail.com"
+            ],
+            [
+               "Tom Mast",
+               "loadstar81@users.sourceforge.net"
+            ],
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomas Junnonen",
+               "tomas1@gmail.com"
+            ],
+            [
+               "Tommy C. Li",
+               "tommycli@keepword.com"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tubeman, The",
+               "av@tube42.se"
+            ]
+         ],
+         "got" : [
+            [
+               "Matthew Dean",
+               "deanmatthew16@gmail.com"
+            ],
+            [
+               "TheInventionist",
+               "Gregan@TheInventionist.com"
+            ],
+            [
+               "Tubeman, The",
+               "av@tube42.se"
+            ],
+            [
+               "U-InventionistPC\\TheInventionist",
+               "TheInventionist@InventionistPC.(none)"
+            ],
+            [
+               "matthew",
+               "matthew@foursquare.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "bitiotic",
+               "github@bitiotic.com"
+            ]
+         ],
+         "got" : [
+            [
+               "J Fixby",
+               "github@jfixby.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "git@schleinzer.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "github@schleinzer.com"
+            ],
+            [
+               "bitiotic",
+               "github@bitiotic.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "danieruru@gmail.com",
+               "danieruru@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               "Dani Rodríguez",
+               "danirod@outlook.com"
+            ],
+            [
+               "Daniel Heinrich",
+               "dannynullzwo@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "Daniel Ludwig",
+               "codi@code-disaster.com"
+            ],
+            [
+               "Daniel",
+               "danielheim@gmail.com"
+            ],
+            [
+               "danieruru@gmail.com",
+               "danieruru@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "josephknight",
+               "josephknight.com@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Joseph Hager",
+               "ajhager@gmail.com"
+            ],
+            [
+               "josephknight",
+               "josephknight.com@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "lordjone",
+               "drodrigu86@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Jon Renner",
+               "rennerjc@gmail.com"
+            ],
+            [
+               "Jonas Carpay",
+               "jonascarpay@gmail.com"
+            ],
+            [
+               "Jonas Dann",
+               "jonas.chr.dann@gmail.com"
+            ],
+            [
+               "Jonas Eschner",
+               "jonas.eschner@gmx.de"
+            ],
+            [
+               "Jonathan Pearl",
+               "jonathantpearl@gmail.com"
+            ],
+            [
+               "lordjone",
+               "drodrigu86@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "matthew",
+               "matthew@foursquare.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Matthew Dean",
+               "deanmatthew16@gmail.com"
+            ],
+            [
+               "TheInventionist",
+               "Gregan@TheInventionist.com"
+            ],
+            [
+               "Tubeman, The",
+               "av@tube42.se"
+            ],
+            [
+               "U-InventionistPC\\TheInventionist",
+               "TheInventionist@InventionistPC.(none)"
+            ],
+            [
+               "matthew",
+               "matthew@foursquare.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "mike",
+               "dajos7@web.de"
+            ]
+         ],
+         "got" : [
+            [
+               "Michael Barkholt",
+               "michael@corteza.dk"
+            ],
+            [
+               "Michael",
+               "mike@agamz.com"
+            ],
+            [
+               "mike",
+               "dajos7@web.de"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "nbilyk",
+               "nick@nbilyk.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Nick Badal",
+               "nick@ouya.tv"
+            ],
+            [
+               "nbilyk",
+               "nick@nbilyk.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "snovak",
+               "sean@novak.us"
+            ]
+         ],
+         "got" : [
+            [
+               "(no author)",
+               "(no author)@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Alex Vega",
+               "semtiko@gmail.com"
+            ],
+            [
+               "Alexander Dorokhov",
+               "alex.dorokhov@gmail.com"
+            ],
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ],
+            [
+               "Chun-hao Hu",
+               "zegg90@gmail.com"
+            ],
+            [
+               "Jacek Nowosielski",
+               "jacek.nowosielski@gmail.com"
+            ],
+            [
+               "John Sullivan",
+               "john.t.sullivan@gmail.com"
+            ],
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Milutin Jovanović",
+               "jovanovic.milutin@gmail.com"
+            ],
+            [
+               "Paul Siegel",
+               "psiegelnospam@binkystick.com"
+            ],
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ],
+            [
+               "Xiao Chuan Yu",
+               "xcyu.se@gmail.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "anserran",
+               "angelserranolaguna@gmail.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "hneuer",
+               "hanno.neuer@gmail.com"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "snovak",
+               "sean@novak.us"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ]
+         ],
+         "got" : [
+            [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ],
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ],
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ]
+      }
+   ]
+}
