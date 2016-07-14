@@ -70,8 +70,17 @@ jQuery(function ($) {
     }
 
     function addTuple(list, tuple) {
+        var name = $('<div></div>')
+            .addClass('col-sm-6')
+            .css('text-align', 'right')
+            .text(tuple[0] + ' ');
+        var email = $('<div></div>')
+            .addClass('col-sm-6')
+            .css('text-align', 'left')
+            .text('<' + tuple[1] + '>');
         var link = $('<a></a>')
-            .text(tuple[0] + ' <' + tuple[1] + '>')
+            .append(name)
+            .append(email)
             .addClass('btn')
             .addClass('btn-default')
             .css('width', '100%');
