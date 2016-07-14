@@ -69,6 +69,16 @@ jQuery(function ($) {
         return first;
     }
 
+    function appendToNextEmptyList() {
+        var current = $(this);
+        $(current.parent().parent().children().get().reverse()).each(function() {
+            if ($(this).is(':empty')) {
+                $(this).append(current);
+                return;
+            }
+        });
+    }
+
     function addTuple(list, tuple) {
         var name = $('<div></div>')
             .addClass('col-sm-6')
@@ -88,6 +98,7 @@ jQuery(function ($) {
             .attr('data-name', tuple[0])
             .attr('data-mail', tuple[1])
             .css('line-height', '3em')
+            .on("click", appendToNextEmptyList)
             .append(link)
             .appendTo(list);
     }
