@@ -98,7 +98,7 @@ jQuery(function ($) {
             .attr('data-name', tuple[0])
             .attr('data-mail', tuple[1])
             .css('line-height', '3em')
-            .on("click", appendToNextEmptyList)
+            .dblclick(appendToNextEmptyList)
             .append(link)
             .appendTo(list);
     }
