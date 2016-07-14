@@ -55,8 +55,9 @@ sub _process_artifact {
     else {
         my $alias = _normalize($str =~ /^([^@]+)@/ ? $1 : $str);
         return {
-            type  => 'alias',
-            alias => $alias,
+            type     => 'alias',
+            alias    => $alias,
+            original => $str,
         };
     }
 }
@@ -76,7 +77,8 @@ sub _cmp_name_name {
 
 sub _cmp_alias_alias {
     my ($self, $a1, $a2) = @_;
-    return length($a1->{alias}) >= 3
+    return $a1->{original} eq $a2->{original}
+        || length($a1->{alias}) >= 3
         && length($a2->{alias}) >= 3
         && $self->similar($a1->{alias}, $a2->{alias});
 }
