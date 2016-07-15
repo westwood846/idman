@@ -1,0 +1,299 @@
+{
+   "false_negatives" : 9,
+   "false_positives" : 2,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Ask Bjørn Hansen",
+               "ask@develooper.com"
+            ],
+            [
+               "Aske Hansen",
+               "aske@deeco.dk"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Ask Bjørn Hansen",
+                  "ask@develooper.com"
+               ]
+            ],
+            [
+               [
+                  "Aske Hansen",
+                  "aske@deeco.dk"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Bill Hwang",
+               "bill.hwang@elasticsearch.com"
+            ],
+            [
+               "b.hwang",
+               "mrsolo@users.noreply.github.com"
+            ],
+            [
+               "mrsolo",
+               "bill.hwang@elasticsearch.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Bill Hwang",
+                  "bill.hwang@elasticsearch.com"
+               ],
+               [
+                  "mrsolo",
+                  "bill.hwang@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "b.hwang",
+                  "mrsolo@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jay Modi",
+               "jaymode@users.noreply.github.com"
+            ],
+            [
+               "jayesh.modi",
+               "jmodi@netuitive.com"
+            ],
+            [
+               "jaymode",
+               "jay.modi@elasticsearch.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jay Modi",
+                  "jaymode@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "jayesh.modi",
+                  "jmodi@netuitive.com"
+               ]
+            ],
+            [
+               [
+                  "jaymode",
+                  "jay.modi@elasticsearch.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Leonardo Menezes",
+               "leonardo.menezes@xing.com"
+            ],
+            [
+               "leonardo menezes",
+               "lmenezes@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Leonardo Menezes",
+                  "leonardo.menezes@xing.com"
+               ]
+            ],
+            [
+               [
+                  "leonardo menezes",
+                  "lmenezes@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lukasz Dywicki",
+               "luke@code-house.org"
+            ],
+            [
+               "violuke",
+               "luke@viovet.co.uk"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Lukasz Dywicki",
+                  "luke@code-house.org"
+               ]
+            ],
+            [
+               [
+                  "violuke",
+                  "luke@viovet.co.uk"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nick",
+               "nick.a.sarbicki@gmail.com"
+            ],
+            [
+               "nick.a.sarbicki@gmail.com",
+               "Nick.A.Sarbicki@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nick",
+                  "nick.a.sarbicki@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "nick.a.sarbicki@gmail.com",
+                  "Nick.A.Sarbicki@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Peter Johnson @insertcoffee",
+               "insomnia@rcpt.at"
+            ],
+            [
+               "Peter Johnson a.k.a. insertcoffee",
+               "wiz@wiz.co.nz"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Peter Johnson @insertcoffee",
+                  "insomnia@rcpt.at"
+               ]
+            ],
+            [
+               [
+                  "Peter Johnson a.k.a. insertcoffee",
+                  "wiz@wiz.co.nz"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Robert Berg",
+               "rjberg7@gmail.com"
+            ],
+            [
+               "robert berg",
+               "rberg@homeaway.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Robert Berg",
+                  "rjberg7@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "robert berg",
+                  "rberg@homeaway.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "tomoya yokota",
+               "yokotaso.t@gmail.com"
+            ],
+            [
+               "yokotaso",
+               "tomoya-yokota@cybozu.co.jp"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "tomoya yokota",
+                  "yokotaso.t@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "yokotaso",
+                  "tomoya-yokota@cybozu.co.jp"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 0.997435897435897,
+   "recall" : 0.98856416772554,
+   "true_positives" : 778,
+   "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "unknown",
+               "adoran@.ET.LOCAL"
+            ]
+         ],
+         "got" : [
+            [
+               "unknown",
+               "adoran@.ET.LOCAL"
+            ],
+            [
+               "unknown",
+               "wull2think@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "unknown",
+               "wull2think@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "unknown",
+               "adoran@.ET.LOCAL"
+            ],
+            [
+               "unknown",
+               "wull2think@gmail.com"
+            ]
+         ]
+      }
+   ]
+}

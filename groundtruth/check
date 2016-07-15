@@ -12,6 +12,8 @@ my %REPOS = (
     'django-wiki'      => 'https://github.com/django-wiki/django-wiki.git',
     'spring-framework' => 'https://github.com/spring-projects/spring-framework.git',
     'libgdx'           => 'https://github.com/libgdx/libgdx.git',
+    'django-cms'       => 'https://github.com/divio/django-cms.git',
+    'elasticsearch'    => 'https://github.com/elastic/elasticsearch.git',
 );
 
 my @ALGORITHMS = (

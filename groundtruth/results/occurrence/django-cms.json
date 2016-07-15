@@ -1,0 +1,395 @@
+{
+   "false_negatives" : 8,
+   "false_positives" : 5,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Daniele Procida",
+               "daniele@vurt.org"
+            ],
+            [
+               "daniele",
+               "daniele@w128.medcn.uwcm.ac.uk"
+            ],
+            [
+               "evildmp",
+               "daniele@apple-juice.co.uk"
+            ],
+            [
+               "evildmp",
+               "daniele@vurt.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Daniele Procida",
+                  "daniele@vurt.org"
+               ],
+               [
+                  "evildmp",
+                  "daniele@apple-juice.co.uk"
+               ],
+               [
+                  "evildmp",
+                  "daniele@vurt.org"
+               ]
+            ],
+            [
+               [
+                  "daniele",
+                  "daniele@w128.medcn.uwcm.ac.uk"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "GaretJax",
+               "jonathan@garetjax.info"
+            ],
+            [
+               "Jonathan Stoppani",
+               "garetjax@Jonathan-Stoppanis-MacBook-Pro.local"
+            ],
+            [
+               "Jonathan Stoppani",
+               "jonathan@stoppani.name"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "GaretJax",
+                  "jonathan@garetjax.info"
+               ]
+            ],
+            [
+               [
+                  "Jonathan Stoppani",
+                  "garetjax@Jonathan-Stoppanis-MacBook-Pro.local"
+               ],
+               [
+                  "Jonathan Stoppani",
+                  "jonathan@stoppani.name"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "MW",
+               "pigletto@pcc1.(none)"
+            ],
+            [
+               "Pigletto",
+               "pigletto@pigletto-laptop.(none)"
+            ],
+            [
+               "pigletto",
+               "pigletto@gmail.com"
+            ],
+            [
+               "pigletto",
+               "pigletto@pcc1"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "MW",
+                  "pigletto@pcc1.(none)"
+               ]
+            ],
+            [
+               [
+                  "Pigletto",
+                  "pigletto@pigletto-laptop.(none)"
+               ]
+            ],
+            [
+               [
+                  "pigletto",
+                  "pigletto@gmail.com"
+               ],
+               [
+                  "pigletto",
+                  "pigletto@pcc1"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Marco Rimoldi",
+               "marcor@scatoletta.(none)"
+            ],
+            [
+               "marcor",
+               "marcor@scatoletta"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Marco Rimoldi",
+                  "marcor@scatoletta.(none)"
+               ]
+            ],
+            [
+               [
+                  "marcor",
+                  "marcor@scatoletta"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Patrick Lauber",
+               "digi@treepy.com"
+            ],
+            [
+               "Patrick Lauber",
+               "patrick.lauber@divio.ch"
+            ],
+            [
+               "digi604",
+               "patrick.lauber@divio.ch"
+            ],
+            [
+               "patricklauber",
+               "none@none"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Patrick Lauber",
+                  "digi@treepy.com"
+               ],
+               [
+                  "Patrick Lauber",
+                  "patrick.lauber@divio.ch"
+               ],
+               [
+                  "digi604",
+                  "patrick.lauber@divio.ch"
+               ]
+            ],
+            [
+               [
+                  "maiklust",
+                  "none@none"
+               ],
+               [
+                  "patricklauber",
+                  "none@none"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Paulo Alvarado",
+               "commonzenpython@gmail.com"
+            ],
+            [
+               "Paulo",
+               "commonzenpython@gmail.com"
+            ],
+            [
+               "paul",
+               "paul@ubuntu-server.localdomain"
+            ],
+            [
+               "paulo",
+               "commonzenpython@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Paulo Alvarado",
+                  "commonzenpython@gmail.com"
+               ],
+               [
+                  "Paulo",
+                  "commonzenpython@gmail.com"
+               ],
+               [
+                  "paulo",
+                  "commonzenpython@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "paul",
+                  "paul@ubuntu-server.localdomain"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Peter Farrell",
+               "pjf@maestropublishing.com"
+            ],
+            [
+               "Peter J. Farrell",
+               "pfarrell@greatbiztools.com"
+            ],
+            [
+               "peterfarrell",
+               "pfarrell@greatbiztools.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Peter Farrell",
+                  "pjf@maestropublishing.com"
+               ]
+            ],
+            [
+               [
+                  "Peter J. Farrell",
+                  "pfarrell@greatbiztools.com"
+               ],
+               [
+                  "peterfarrell",
+                  "pfarrell@greatbiztools.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Samuel Luescher",
+               "samuel@formlabs.com"
+            ],
+            [
+               "Samuel Lüscher",
+               "samuelluscher@sam-imac.local"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Samuel Luescher",
+                  "samuel@formlabs.com"
+               ]
+            ],
+            [
+               [
+                  "Samuel Lüscher",
+                  "samuelluscher@sam-imac.local"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 0.988713318284424,
+   "recall" : 0.982062780269058,
+   "true_positives" : 438,
+   "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "User",
+               "cms2@Mainframe2.levangernett.no"
+            ]
+         ],
+         "got" : [
+            [
+               "User",
+               "cms2@Mainframe2.levangernett.no"
+            ],
+            [
+               "User",
+               "learnit24@Mainframe2.levangernett.no"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "User",
+               "learnit24@Mainframe2.levangernett.no"
+            ]
+         ],
+         "got" : [
+            [
+               "User",
+               "cms2@Mainframe2.levangernett.no"
+            ],
+            [
+               "User",
+               "learnit24@Mainframe2.levangernett.no"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "maiklust",
+               "none@none"
+            ]
+         ],
+         "got" : [
+            [
+               "maiklust",
+               "none@none"
+            ],
+            [
+               "patricklauber",
+               "none@none"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "root",
+               "root@fox-laptop.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               "root",
+               "root@fox-laptop.(none)"
+            ],
+            [
+               "root",
+               "root@ks36044.kimsufi.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "root",
+               "root@ks36044.kimsufi.com"
+            ]
+         ],
+         "got" : [
+            [
+               "root",
+               "root@fox-laptop.(none)"
+            ],
+            [
+               "root",
+               "root@ks36044.kimsufi.com"
+            ]
+         ]
+      }
+   ]
+}
