@@ -180,3 +180,7 @@ between usernames and real first and last names.
 * **Mining Email Social Networks** (<http://macbeth.cs.ucdavis.edu/msr06.pdf>)
 
 * **A Comparison of String Distance Metrics for Name-Matching Tasks** (<http://dc-pubs.dbs.uni-leipzig.de/files/Cohen2003Acomparisonofstringdistance.pdf>)
+
+* **StackOverflow and GitHub: Associations between Software Development and Crowdsourced Knowledge** (<ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6693332>)
+
+* **Involvement, contribution and influence in GitHub and stack overflow** (<http://dl.acm.org/citation.cfm?id=2735522.2735527>)
