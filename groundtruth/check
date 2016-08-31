@@ -104,13 +104,16 @@ sub compare {
 
     my $fn = @not_merged;
     my $fp = @wrongly_merged;
+    my $precision = $tp / ($tp + $fp);
+    my $recall = $tp / ($tp + $fn);
 
     return {
         true_positives  => $tp,
         false_positives => $fp,
         false_negatives => $fn,
-        precision       => $tp / ($tp + $fp),
-        recall          => $tp / ($tp + $fn),
+        precision       => $precision,
+        recall          => $recall,
+        fmeasure        => (2 * $precision * $recall) / ($precision + $recall),
         not_merged      => \@not_merged,
         wrongly_merged  => \@wrongly_merged,
     };
