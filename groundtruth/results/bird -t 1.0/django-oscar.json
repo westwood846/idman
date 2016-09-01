@@ -1,6 +1,7 @@
 {
    "false_negatives" : 0,
    "false_positives" : 41,
+   "fmeasure" : 0.888283378746594,
    "not_merged" : [],
    "precision" : 0.799019607843137,
    "recall" : 1,
