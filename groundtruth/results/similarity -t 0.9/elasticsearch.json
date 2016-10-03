@@ -1,7 +1,7 @@
 {
    "false_negatives" : 6,
-   "false_positives" : 5,
-   "fmeasure" : 0.992980216975112,
+   "false_positives" : 3,
+   "fmeasure" : 0.994256541161455,
    "not_merged" : [
       {
          "expected" : [
@@ -178,9 +178,9 @@
          ]
       }
    ],
-   "precision" : 0.993614303959132,
-   "recall" : 0.99234693877551,
-   "true_positives" : 778,
+   "precision" : 0.99616368286445,
+   "recall" : 0.992356687898089,
+   "true_positives" : 779,
    "wrongly_merged" : [
       {
          "expected" : [
@@ -197,42 +197,6 @@
             [
                "Jakob Reiter",
                "jakob@elastic.co"
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Mathias Fussenegger",
-               "f.mathias@zignar.net"
-            ]
-         ],
-         "got" : [
-            [
-               "Mathias Fussenegger",
-               "f.mathias@zignar.net"
-            ],
-            [
-               "Mathias Fußenegger",
-               "mfussenegger@users.noreply.github.com"
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Mathias Fußenegger",
-               "mfussenegger@users.noreply.github.com"
-            ]
-         ],
-         "got" : [
-            [
-               "Mathias Fussenegger",
-               "f.mathias@zignar.net"
-            ],
-            [
-               "Mathias Fußenegger",
-               "mfussenegger@users.noreply.github.com"
             ]
          ]
       },

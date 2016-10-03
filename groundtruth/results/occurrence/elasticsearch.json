@@ -1,7 +1,7 @@
 {
-   "false_negatives" : 9,
+   "false_negatives" : 10,
    "false_positives" : 3,
-   "fmeasure" : 0.992337164750958,
+   "fmeasure" : 0.991682661548305,
    "not_merged" : [
       {
          "expected" : [
@@ -154,6 +154,32 @@
       {
          "expected" : [
             [
+               "Mathias Fussenegger",
+               "f.mathias@zignar.net"
+            ],
+            [
+               "Mathias Fußenegger",
+               "mfussenegger@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mathias Fussenegger",
+                  "f.mathias@zignar.net"
+               ]
+            ],
+            [
+               [
+                  "Mathias Fußenegger",
+                  "mfussenegger@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
                "Nick",
                "nick.a.sarbicki@gmail.com"
             ],
@@ -256,9 +282,9 @@
          ]
       }
    ],
-   "precision" : 0.996153846153846,
-   "recall" : 0.988549618320611,
-   "true_positives" : 777,
+   "precision" : 0.996143958868895,
+   "recall" : 0.987261146496815,
+   "true_positives" : 775,
    "wrongly_merged" : [
       {
          "expected" : [

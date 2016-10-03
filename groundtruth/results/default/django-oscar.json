@@ -1,34 +1,8 @@
 {
-   "false_negatives" : 4,
+   "false_negatives" : 2,
    "false_positives" : 0,
-   "fmeasure" : 0.990291262135922,
+   "fmeasure" : 0.995169082125604,
    "not_merged" : [
-      {
-         "expected" : [
-            [
-               "Andrew Ingram",
-               "andrew.ingram@tangentlabs.co.uk"
-            ],
-            [
-               "AndrewIngram",
-               "andy@andrewingram.net"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Andrew Ingram",
-                  "andrew.ingram@tangentlabs.co.uk"
-               ]
-            ],
-            [
-               [
-                  "AndrewIngram",
-                  "andy@andrewingram.net"
-               ]
-            ]
-         ]
-      },
       {
          "expected" : [
             [
@@ -51,40 +25,6 @@
                [
                   "Dan",
                   "danatk@gmail.com"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Fish",
-               "okfish@yandex.ru"
-            ],
-            [
-               "Oleg Rybkin",
-               "okfish@yandex.ru"
-            ],
-            [
-               "fish",
-               "fish@BM12.(none)"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Fish",
-                  "okfish@yandex.ru"
-               ],
-               [
-                  "Oleg Rybkin",
-                  "okfish@yandex.ru"
-               ]
-            ],
-            [
-               [
-                  "fish",
-                  "fish@BM12.(none)"
                ]
             ]
          ]
@@ -117,7 +57,7 @@
       }
    ],
    "precision" : 1,
-   "recall" : 0.980769230769231,
-   "true_positives" : 204,
+   "recall" : 0.990384615384615,
+   "true_positives" : 206,
    "wrongly_merged" : []
 }

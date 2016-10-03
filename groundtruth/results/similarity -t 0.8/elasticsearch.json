@@ -1,7 +1,7 @@
 {
    "false_negatives" : 5,
-   "false_positives" : 50,
-   "fmeasure" : 0.963887065003283,
+   "false_positives" : 48,
+   "fmeasure" : 0.965200262639527,
    "not_merged" : [
       {
          "expected" : [
@@ -652,9 +652,9 @@
          ]
       }
    ],
-   "precision" : 0.936224489795918,
-   "recall" : 0.993234100135318,
-   "true_positives" : 734,
+   "precision" : 0.938697318007663,
+   "recall" : 0.993243243243243,
+   "true_positives" : 735,
    "wrongly_merged" : [
       {
          "expected" : [
@@ -4781,42 +4781,6 @@
             [
                "xuzha",
                "xu@elastic.co"
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Mathias Fussenegger",
-               "f.mathias@zignar.net"
-            ]
-         ],
-         "got" : [
-            [
-               "Mathias Fussenegger",
-               "f.mathias@zignar.net"
-            ],
-            [
-               "Mathias Fußenegger",
-               "mfussenegger@users.noreply.github.com"
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Mathias Fußenegger",
-               "mfussenegger@users.noreply.github.com"
-            ]
-         ],
-         "got" : [
-            [
-               "Mathias Fussenegger",
-               "f.mathias@zignar.net"
-            ],
-            [
-               "Mathias Fußenegger",
-               "mfussenegger@users.noreply.github.com"
             ]
          ]
       },

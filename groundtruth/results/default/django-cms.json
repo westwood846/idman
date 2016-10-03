@@ -1,7 +1,7 @@
 {
-   "false_negatives" : 8,
-   "false_positives" : 5,
-   "fmeasure" : 0.985343855693348,
+   "false_negatives" : 4,
+   "false_positives" : 6,
+   "fmeasure" : 0.98876404494382,
    "not_merged" : [
       {
          "expected" : [
@@ -82,122 +82,6 @@
       {
          "expected" : [
             [
-               "MW",
-               "pigletto@pcc1.(none)"
-            ],
-            [
-               "Pigletto",
-               "pigletto@pigletto-laptop.(none)"
-            ],
-            [
-               "pigletto",
-               "pigletto@gmail.com"
-            ],
-            [
-               "pigletto",
-               "pigletto@pcc1"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "MW",
-                  "pigletto@pcc1.(none)"
-               ]
-            ],
-            [
-               [
-                  "Pigletto",
-                  "pigletto@pigletto-laptop.(none)"
-               ]
-            ],
-            [
-               [
-                  "pigletto",
-                  "pigletto@gmail.com"
-               ],
-               [
-                  "pigletto",
-                  "pigletto@pcc1"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Marco Rimoldi",
-               "marcor@scatoletta.(none)"
-            ],
-            [
-               "marcor",
-               "marcor@scatoletta"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Marco Rimoldi",
-                  "marcor@scatoletta.(none)"
-               ]
-            ],
-            [
-               [
-                  "marcor",
-                  "marcor@scatoletta"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Patrick Lauber",
-               "digi@treepy.com"
-            ],
-            [
-               "Patrick Lauber",
-               "patrick.lauber@divio.ch"
-            ],
-            [
-               "digi604",
-               "patrick.lauber@divio.ch"
-            ],
-            [
-               "patricklauber",
-               "none@none"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Patrick Lauber",
-                  "digi@treepy.com"
-               ],
-               [
-                  "Patrick Lauber",
-                  "patrick.lauber@divio.ch"
-               ],
-               [
-                  "digi604",
-                  "patrick.lauber@divio.ch"
-               ]
-            ],
-            [
-               [
-                  "maiklust",
-                  "none@none"
-               ],
-               [
-                  "patricklauber",
-                  "none@none"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "Paulo Alvarado",
                "commonzenpython@gmail.com"
             ],
@@ -240,40 +124,6 @@
       {
          "expected" : [
             [
-               "Peter Farrell",
-               "pjf@maestropublishing.com"
-            ],
-            [
-               "Peter J. Farrell",
-               "pfarrell@greatbiztools.com"
-            ],
-            [
-               "peterfarrell",
-               "pfarrell@greatbiztools.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Peter Farrell",
-                  "pjf@maestropublishing.com"
-               ]
-            ],
-            [
-               [
-                  "Peter J. Farrell",
-                  "pfarrell@greatbiztools.com"
-               ],
-               [
-                  "peterfarrell",
-                  "pfarrell@greatbiztools.com"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "Samuel Luescher",
                "samuel@formlabs.com"
             ],
@@ -298,10 +148,52 @@
          ]
       }
    ],
-   "precision" : 0.98868778280543,
-   "recall" : 0.982022471910112,
-   "true_positives" : 437,
+   "precision" : 0.986547085201794,
+   "recall" : 0.990990990990991,
+   "true_positives" : 440,
    "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "Patrick Lauber",
+               "digi@treepy.com"
+            ],
+            [
+               "Patrick Lauber",
+               "patrick.lauber@divio.ch"
+            ],
+            [
+               "digi604",
+               "patrick.lauber@divio.ch"
+            ],
+            [
+               "patricklauber",
+               "none@none"
+            ]
+         ],
+         "got" : [
+            [
+               "Patrick Lauber",
+               "digi@treepy.com"
+            ],
+            [
+               "Patrick Lauber",
+               "patrick.lauber@divio.ch"
+            ],
+            [
+               "digi604",
+               "patrick.lauber@divio.ch"
+            ],
+            [
+               "maiklust",
+               "none@none"
+            ],
+            [
+               "patricklauber",
+               "none@none"
+            ]
+         ]
+      },
       {
          "expected" : [
             [
@@ -346,6 +238,18 @@
             ]
          ],
          "got" : [
+            [
+               "Patrick Lauber",
+               "digi@treepy.com"
+            ],
+            [
+               "Patrick Lauber",
+               "patrick.lauber@divio.ch"
+            ],
+            [
+               "digi604",
+               "patrick.lauber@divio.ch"
+            ],
             [
                "maiklust",
                "none@none"

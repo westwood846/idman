@@ -1,7 +1,7 @@
 {
-   "false_negatives" : 18,
+   "false_negatives" : 11,
    "false_positives" : 2,
-   "fmeasure" : 0.974747474747475,
+   "fmeasure" : 0.983729662077597,
    "not_merged" : [
       {
          "expected" : [
@@ -33,68 +33,6 @@
                [
                   "andgeno@googlemail.com",
                   "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Ariel Coppes",
-               "ariel.coppes@gemserk.com"
-            ],
-            [
-               "ariel.coppes@gmail.com",
-               "ariel.coppes@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Ariel Coppes",
-                  "ariel.coppes@gemserk.com"
-               ]
-            ],
-            [
-               [
-                  "ariel.coppes@gmail.com",
-                  "ariel.coppes@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "AurelienRibon",
-               "aurelien.ribon@gmail.com"
-            ],
-            [
-               "aurelien.ribon",
-               "aurelien.ribon@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ],
-            [
-               "aurelien.ribon@gmail.com",
-               "aurelien.ribon@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "AurelienRibon",
-                  "aurelien.ribon@gmail.com"
-               ]
-            ],
-            [
-               [
-                  "aurelien.ribon",
-                  "aurelien.ribon@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ],
-            [
-               [
-                  "aurelien.ribon@gmail.com",
-                  "aurelien.ribon@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
                ]
             ]
          ]
@@ -257,9 +195,7 @@
                [
                   "badlogicgames",
                   "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ],
-            [
+               ],
                [
                   "badlogicgames@gmail.com",
                   "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
@@ -269,48 +205,6 @@
                [
                   "mzechner-textsense",
                   "mzechner@know-center.at"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Nathan Sweet",
-               "nathan.sweet@gmail.com"
-            ],
-            [
-               "NathanSweet",
-               "misc@n4te.com"
-            ],
-            [
-               "NathanSweet",
-               "nathan.sweet@gmail.com"
-            ],
-            [
-               "nathan.sweet",
-               "nathan.sweet@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Nathan Sweet",
-                  "nathan.sweet@gmail.com"
-               ],
-               [
-                  "NathanSweet",
-                  "misc@n4te.com"
-               ],
-               [
-                  "NathanSweet",
-                  "nathan.sweet@gmail.com"
-               ]
-            ],
-            [
-               [
-                  "nathan.sweet",
-                  "nathan.sweet@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
                ]
             ]
          ]
@@ -446,32 +340,6 @@
       {
          "expected" : [
             [
-               "TamasJano@gmail.com",
-               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ],
-            [
-               "tamasjano@gmail.com",
-               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "TamasJano@gmail.com",
-                  "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ],
-            [
-               [
-                  "tamasjano@gmail.com",
-                  "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "TheInventionist",
                "Gregan@TheInventionist.com"
             ],
@@ -520,89 +388,11 @@
                ]
             ]
          ]
-      },
-      {
-         "expected" : [
-            [
-               "davedx",
-               "davedx@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ],
-            [
-               "davedx@gmail.com",
-               "davedx@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "davedx",
-                  "davedx@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ],
-            [
-               [
-                  "davedx@gmail.com",
-                  "davedx@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "dfraska",
-               "dfraska@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ],
-            [
-               "dfraska@gmail.com",
-               "dfraska@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "dfraska",
-                  "dfraska@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ],
-            [
-               [
-                  "dfraska@gmail.com",
-                  "dfraska@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "zortness",
-               "zortness@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ],
-            [
-               "zortness@gmail.com",
-               "zortness@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "zortness",
-                  "zortness@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ],
-            [
-               [
-                  "zortness@gmail.com",
-                  "zortness@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
       }
    ],
-   "precision" : 0.994845360824742,
-   "recall" : 0.955445544554455,
-   "true_positives" : 386,
+   "precision" : 0.994936708860759,
+   "recall" : 0.972772277227723,
+   "true_positives" : 393,
    "wrongly_merged" : [
       {
          "expected" : [

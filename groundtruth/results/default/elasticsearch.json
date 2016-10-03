@@ -1,7 +1,7 @@
 {
-   "false_negatives" : 9,
+   "false_negatives" : 6,
    "false_positives" : 3,
-   "fmeasure" : 0.992337164750958,
+   "fmeasure" : 0.994256541161455,
    "not_merged" : [
       {
          "expected" : [
@@ -102,32 +102,6 @@
       {
          "expected" : [
             [
-               "Leonardo Menezes",
-               "leonardo.menezes@xing.com"
-            ],
-            [
-               "leonardo menezes",
-               "lmenezes@users.noreply.github.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Leonardo Menezes",
-                  "leonardo.menezes@xing.com"
-               ]
-            ],
-            [
-               [
-                  "leonardo menezes",
-                  "lmenezes@users.noreply.github.com"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "Lukasz Dywicki",
                "luke@code-house.org"
             ],
@@ -147,32 +121,6 @@
                [
                   "violuke",
                   "luke@viovet.co.uk"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Nick",
-               "nick.a.sarbicki@gmail.com"
-            ],
-            [
-               "nick.a.sarbicki@gmail.com",
-               "Nick.A.Sarbicki@gmail.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Nick",
-                  "nick.a.sarbicki@gmail.com"
-               ]
-            ],
-            [
-               [
-                  "nick.a.sarbicki@gmail.com",
-                  "Nick.A.Sarbicki@gmail.com"
                ]
             ]
          ]
@@ -206,32 +154,6 @@
       {
          "expected" : [
             [
-               "Robert Berg",
-               "rjberg7@gmail.com"
-            ],
-            [
-               "robert berg",
-               "rberg@homeaway.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Robert Berg",
-                  "rjberg7@gmail.com"
-               ]
-            ],
-            [
-               [
-                  "robert berg",
-                  "rberg@homeaway.com"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "tomoya yokota",
                "yokotaso.t@gmail.com"
             ],
@@ -256,9 +178,9 @@
          ]
       }
    ],
-   "precision" : 0.996153846153846,
-   "recall" : 0.988549618320611,
-   "true_positives" : 777,
+   "precision" : 0.99616368286445,
+   "recall" : 0.992356687898089,
+   "true_positives" : 779,
    "wrongly_merged" : [
       {
          "expected" : [
