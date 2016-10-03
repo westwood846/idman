@@ -1,7 +1,7 @@
 {
    "false_negatives" : 3,
    "false_positives" : 0,
-   "fmeasure" : 0.992592592592593,
+   "fmeasure" : 0.99273607748184,
    "not_merged" : [
       {
          "expected" : [
@@ -83,7 +83,7 @@
       }
    ],
    "precision" : 1,
-   "recall" : 0.985294117647059,
-   "true_positives" : 201,
+   "recall" : 0.985576923076923,
+   "true_positives" : 205,
    "wrongly_merged" : []
 }

@@ -1,11 +1,11 @@
 {
    "false_negatives" : 0,
-   "false_positives" : 41,
-   "fmeasure" : 0.888283378746594,
+   "false_positives" : 42,
+   "fmeasure" : 0.887700534759358,
    "not_merged" : [],
-   "precision" : 0.799019607843137,
+   "precision" : 0.798076923076923,
    "recall" : 1,
-   "true_positives" : 163,
+   "true_positives" : 166,
    "wrongly_merged" : [
       {
          "expected" : [
@@ -912,11 +912,41 @@
       {
          "expected" : [
             [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ]
+         ],
+         "got" : [
+            [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
+            [
+               "Matt Miller",
+               "matt@flashnotes.com"
+            ],
+            [
+               "Matt Moran",
+               "matt@mattmoran.co.uk"
+            ],
+            [
+               "Matthew O'Loughlin",
+               "mattdevmail@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
                "Matt Miller",
                "matt@flashnotes.com"
             ]
          ],
          "got" : [
+            [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
             [
                "Matt Miller",
                "matt@flashnotes.com"
@@ -940,6 +970,10 @@
          ],
          "got" : [
             [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
+            [
                "Matt Miller",
                "matt@flashnotes.com"
             ],
@@ -961,6 +995,10 @@
             ]
          ],
          "got" : [
+            [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
             [
                "Matt Miller",
                "matt@flashnotes.com"

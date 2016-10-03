@@ -1,84 +1,11 @@
 {
-   "false_negatives" : 2,
-   "false_positives" : 96,
-   "fmeasure" : 0.862745098039216,
-   "not_merged" : [
-      {
-         "expected" : [
-            [
-               "Justin Shapcott",
-               "justin@mobidevelop.com"
-            ],
-            [
-               "Justin Shapcott",
-               "support@mobidevelop.com"
-            ],
-            [
-               "MobiDevelop",
-               "support@mobidevelop.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Justin Shapcott",
-                  "justin@mobidevelop.com"
-               ],
-               [
-                  "Justin Shapcott",
-                  "support@mobidevelop.com"
-               ],
-               [
-                  "Karl",
-                  "karloveraa@gmail.com"
-               ],
-               [
-                  "unknown",
-                  "justin.s@SG-PC025.innitech.lan"
-               ],
-               [
-                  "unknown",
-                  "karlm@SEA-6900058548.ant.amazon.com"
-               ]
-            ],
-            [
-               [
-                  "MobiDevelop",
-                  "support@mobidevelop.com"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "MJ",
-               "czyzby@users.noreply.github.com"
-            ],
-            [
-               "MJ",
-               "john.hervicc@gmail.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "MJ",
-                  "czyzby@users.noreply.github.com"
-               ]
-            ],
-            [
-               [
-                  "MJ",
-                  "john.hervicc@gmail.com"
-               ]
-            ]
-         ]
-      }
-   ],
-   "precision" : 0.762376237623762,
-   "recall" : 0.993548387096774,
-   "true_positives" : 308,
+   "false_negatives" : 0,
+   "false_positives" : 97,
+   "fmeasure" : 0.864335664335664,
+   "not_merged" : [],
+   "precision" : 0.761083743842365,
+   "recall" : 1,
+   "true_positives" : 309,
    "wrongly_merged" : [
       {
          "expected" : [
@@ -2885,6 +2812,48 @@
       {
          "expected" : [
             [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "Karl",
+               "karloveraa@gmail.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ],
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ],
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
                "Karl",
                "karloveraa@gmail.com"
             ]
@@ -2901,6 +2870,10 @@
             [
                "Karl",
                "karloveraa@gmail.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
             ],
             [
                "unknown",
@@ -5925,6 +5898,10 @@
                "karloveraa@gmail.com"
             ],
             [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ],
+            [
                "unknown",
                "justin.s@SG-PC025.innitech.lan"
             ],
@@ -5953,6 +5930,10 @@
             [
                "Karl",
                "karloveraa@gmail.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
             ],
             [
                "unknown",

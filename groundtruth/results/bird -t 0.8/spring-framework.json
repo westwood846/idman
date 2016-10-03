@@ -1,9 +1,9 @@
 {
    "false_negatives" : 0,
-   "false_positives" : 23,
-   "fmeasure" : 0.934844192634561,
+   "false_positives" : 27,
+   "fmeasure" : 0.92436974789916,
    "not_merged" : [],
-   "precision" : 0.877659574468085,
+   "precision" : 0.859375,
    "recall" : 1,
    "true_positives" : 165,
    "wrongly_merged" : [
@@ -384,6 +384,54 @@
       {
          "expected" : [
             [
+               "Lukas Krecan",
+               "lukas@krecan.net"
+            ]
+         ],
+         "got" : [
+            [
+               "Lukas Krecan",
+               "lukas@krecan.net"
+            ],
+            [
+               "Lukasz Kryger",
+               "l.kryger@ed.ac.uk"
+            ],
+            [
+               "Lukasz Kryger",
+               "lukasz.kryger@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lukasz Kryger",
+               "l.kryger@ed.ac.uk"
+            ],
+            [
+               "Lukasz Kryger",
+               "lukasz.kryger@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Lukas Krecan",
+               "lukas@krecan.net"
+            ],
+            [
+               "Lukasz Kryger",
+               "l.kryger@ed.ac.uk"
+            ],
+            [
+               "Lukasz Kryger",
+               "lukasz.kryger@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
                "Mark Galea",
                "mmgalea@gmail.com"
             ]
@@ -532,6 +580,78 @@
             [
                "Oleg Lomaka",
                "oleg.lomaka@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Stephane Maldini",
+               "smaldini@gopivotal.com"
+            ],
+            [
+               "Stephane Maldini",
+               "smaldini@pivotal.io"
+            ],
+            [
+               "Stephane Maldini",
+               "stephane.maldini@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Stephane Maldini",
+               "smaldini@gopivotal.com"
+            ],
+            [
+               "Stephane Maldini",
+               "smaldini@pivotal.io"
+            ],
+            [
+               "Stephane Maldini",
+               "stephane.maldini@gmail.com"
+            ],
+            [
+               "Stephane Nicoll",
+               "snicoll@gopivotal.com"
+            ],
+            [
+               "Stephane Nicoll",
+               "snicoll@pivotal.io"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Stephane Nicoll",
+               "snicoll@gopivotal.com"
+            ],
+            [
+               "Stephane Nicoll",
+               "snicoll@pivotal.io"
+            ]
+         ],
+         "got" : [
+            [
+               "Stephane Maldini",
+               "smaldini@gopivotal.com"
+            ],
+            [
+               "Stephane Maldini",
+               "smaldini@pivotal.io"
+            ],
+            [
+               "Stephane Maldini",
+               "stephane.maldini@gmail.com"
+            ],
+            [
+               "Stephane Nicoll",
+               "snicoll@gopivotal.com"
+            ],
+            [
+               "Stephane Nicoll",
+               "snicoll@pivotal.io"
             ]
          ]
       },

@@ -1,7 +1,7 @@
 {
    "false_negatives" : 6,
-   "false_positives" : 4,
-   "fmeasure" : 0.993622448979592,
+   "false_positives" : 5,
+   "fmeasure" : 0.992980216975112,
    "not_merged" : [
       {
          "expected" : [
@@ -178,10 +178,28 @@
          ]
       }
    ],
-   "precision" : 0.994891443167305,
-   "recall" : 0.992356687898089,
-   "true_positives" : 779,
+   "precision" : 0.993614303959132,
+   "recall" : 0.99234693877551,
+   "true_positives" : 778,
    "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "Jakob Reiter",
+               "jakob@elastic.co"
+            ],
+            [
+               "Jakob Reiter",
+               "jakommo@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Jakob Reiter",
+               "jakob@elastic.co"
+            ]
+         ]
+      },
       {
          "expected" : [
             [

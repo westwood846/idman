@@ -1,11 +1,11 @@
 {
    "false_negatives" : 0,
    "false_positives" : 7,
-   "fmeasure" : 0.981029810298103,
+   "fmeasure" : 0.981432360742706,
    "not_merged" : [],
-   "precision" : 0.962765957446808,
+   "precision" : 0.963541666666667,
    "recall" : 1,
-   "true_positives" : 181,
+   "true_positives" : 185,
    "wrongly_merged" : [
       {
          "expected" : [

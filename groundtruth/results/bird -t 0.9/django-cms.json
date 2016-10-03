@@ -1,7 +1,7 @@
 {
    "false_negatives" : 1,
-   "false_positives" : 143,
-   "fmeasure" : 0.810026385224274,
+   "false_positives" : 141,
+   "fmeasure" : 0.812664907651715,
    "not_merged" : [
       {
          "expected" : [
@@ -46,9 +46,9 @@
          ]
       }
    ],
-   "precision" : 0.682222222222222,
-   "recall" : 0.996753246753247,
-   "true_positives" : 307,
+   "precision" : 0.685968819599109,
+   "recall" : 0.996763754045307,
+   "true_positives" : 308,
    "wrongly_merged" : [
       {
          "expected" : [
@@ -137,18 +137,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -411,18 +399,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -713,18 +689,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -1013,18 +977,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -1469,18 +1421,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -1743,18 +1683,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -2021,18 +1949,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -2295,18 +2211,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -2569,18 +2473,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -2843,18 +2735,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -3119,18 +2999,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -3395,18 +3263,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -3669,18 +3525,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -3941,18 +3785,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -4259,18 +4091,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -4953,558 +4773,6 @@
       {
          "expected" : [
             [
-               "GitHub",
-               "noreply@github.com"
-            ]
-         ],
-         "got" : [
-            [
-               "Adi Sieker",
-               "adi@sieker.info"
-            ],
-            [
-               "Ales Zabala Alava (Shagi)",
-               "shagi@gisa-elkartea.org"
-            ],
-            [
-               "Angelo Dini",
-               "angelo.dini@divio.ch"
-            ],
-            [
-               "Angelo Dini",
-               "finalangeljp@hotmail.com"
-            ],
-            [
-               "Belegnar",
-               "admin@zilantkon.ru"
-            ],
-            [
-               "Chris Adams",
-               "chris@improbable.org"
-            ],
-            [
-               "Chris Franklin",
-               "chris@piemonster.me"
-            ],
-            [
-               "Chris Glass",
-               "christopher.glass@divio.ch"
-            ],
-            [
-               "Chris Glass",
-               "tribaal@gmail.com"
-            ],
-            [
-               "Chris Hughes",
-               "ctopher916@gmail.com"
-            ],
-            [
-               "Chris Jones",
-               "chris@brack3t.com"
-            ],
-            [
-               "Chris Wesseling",
-               "chris.wesseling@cwi.nl"
-            ],
-            [
-               "Chris Wilson",
-               "chris+github@aptivate.org"
-            ],
-            [
-               "Chris Wilson",
-               "chris+github@qwirx.com"
-            ],
-            [
-               "Christian Strappazzon",
-               "christian.strappazzon@indicod-ecr.it"
-            ],
-            [
-               "Christof Hagedorn",
-               "christof.hagedorn@kinea.de"
-            ],
-            [
-               "Christopher Grebs",
-               "cg@webshox.org"
-            ],
-            [
-               "Damir Arbula",
-               "damir.arbula@gmail.com"
-            ],
-            [
-               "DamirArbula",
-               "damir.arbula@gmail.com"
-            ],
-            [
-               "FinalAngel",
-               "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
-               "Jameel Al-Aziz",
-               "me@jalaziz.net"
-            ],
-            [
-               "James Richards",
-               "james@seesaw.net"
-            ],
-            [
-               "James Rutherford",
-               "james.rutherford@maplecroft.com"
-            ],
-            [
-               "Jimmy Lam",
-               "jimmylam@users.noreply.github.com"
-            ],
-            [
-               "Jimmy Lam",
-               "si.c.lam@biola.edu"
-            ],
-            [
-               "Jorge Vargas",
-               "jorge.vargas@gmail.com"
-            ],
-            [
-               "L-A Iscla",
-               "la@iscla.net"
-            ],
-            [
-               "Laura Feier",
-               "laura.feier@3pillarglobal.com"
-            ],
-            [
-               "Maik Lustenberger",
-               "maik.lustenberger@divio.ch"
-            ],
-            [
-               "Olivier Larchevêque",
-               "olivier.larcheveque@gmail.com"
-            ],
-            [
-               "Olivier Larchevêque",
-               "olivier.larcheveque@w.illi.am"
-            ],
-            [
-               "Olivier Le Brouster",
-               "olb@nebkha.net"
-            ],
-            [
-               "Olivier Le Brouster",
-               "olivier.le-brouster@webu.coop"
-            ],
-            [
-               "Patrick Arminio",
-               "patrick.arminio@gmail.com"
-            ],
-            [
-               "Patrick Lauber",
-               "digi@treepy.com"
-            ],
-            [
-               "Patrick Lauber",
-               "patrick.lauber@divio.ch"
-            ],
-            [
-               "Samuel Lahti",
-               "sam.lahti@tempo-db.com"
-            ],
-            [
-               "Samuel Luescher",
-               "samuel@formlabs.com"
-            ],
-            [
-               "Samuel Lüscher",
-               "samuelluscher@sam-imac.local"
-            ],
-            [
-               "Shahar Or",
-               "mightyiampresence@gmail.com"
-            ],
-            [
-               "Shatalov Vadim",
-               "vadimshatalov@gmail.com"
-            ],
-            [
-               "Sophie Leroy",
-               "mobula.diabolus@gmail.com"
-            ],
-            [
-               "Stefano Morandi",
-               "s.morandi@nephila.it"
-            ],
-            [
-               "Tanel Külaots",
-               "sealibora@gmail.com"
-            ],
-            [
-               "Tom Berger",
-               "tom.berger@divio.com"
-            ],
-            [
-               "Tom Berger",
-               "tom.berger@gmail.com"
-            ],
-            [
-               "Transifex Robot",
-               "noreply@transifex.net"
-            ],
-            [
-               "Transifex robot",
-               "admin@transifex.net"
-            ],
-            [
-               "Transifex robot",
-               "noreply@localhost"
-            ],
-            [
-               "Transifex robot",
-               "noreply@transifex.net"
-            ],
-            [
-               "Transifex robot",
-               "submitter@transifex.net"
-            ],
-            [
-               "Vadim Lopatyuk",
-               "qnub@users.noreply.github.com"
-            ],
-            [
-               "Vadim Sikora",
-               "vadim.sikora@divio.ch"
-            ],
-            [
-               "Vadim Sikora",
-               "vadim.sikora@gmail.com"
-            ],
-            [
-               "angular_circle",
-               "angular.circle+transifex@gmail.com"
-            ],
-            [
-               "darbula",
-               "damir.arbula@gmail.com"
-            ],
-            [
-               "digi604",
-               "patrick.lauber@divio.ch"
-            ],
-            [
-               "fcurella",
-               "flavio.curella@gmail.com"
-            ],
-            [
-               "jalaziz",
-               "me@jalaziz.net"
-            ],
-            [
-               "maiklust",
-               "none@none"
-            ],
-            [
-               "nikolas",
-               "nnyby@columbia.edu"
-            ],
-            [
-               "patricklauber",
-               "none@none"
-            ],
-            [
-               "sealibora",
-               "sealibora@gmail.com"
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ]
-         ],
-         "got" : [
-            [
-               "Adi Sieker",
-               "adi@sieker.info"
-            ],
-            [
-               "Ales Zabala Alava (Shagi)",
-               "shagi@gisa-elkartea.org"
-            ],
-            [
-               "Angelo Dini",
-               "angelo.dini@divio.ch"
-            ],
-            [
-               "Angelo Dini",
-               "finalangeljp@hotmail.com"
-            ],
-            [
-               "Belegnar",
-               "admin@zilantkon.ru"
-            ],
-            [
-               "Chris Adams",
-               "chris@improbable.org"
-            ],
-            [
-               "Chris Franklin",
-               "chris@piemonster.me"
-            ],
-            [
-               "Chris Glass",
-               "christopher.glass@divio.ch"
-            ],
-            [
-               "Chris Glass",
-               "tribaal@gmail.com"
-            ],
-            [
-               "Chris Hughes",
-               "ctopher916@gmail.com"
-            ],
-            [
-               "Chris Jones",
-               "chris@brack3t.com"
-            ],
-            [
-               "Chris Wesseling",
-               "chris.wesseling@cwi.nl"
-            ],
-            [
-               "Chris Wilson",
-               "chris+github@aptivate.org"
-            ],
-            [
-               "Chris Wilson",
-               "chris+github@qwirx.com"
-            ],
-            [
-               "Christian Strappazzon",
-               "christian.strappazzon@indicod-ecr.it"
-            ],
-            [
-               "Christof Hagedorn",
-               "christof.hagedorn@kinea.de"
-            ],
-            [
-               "Christopher Grebs",
-               "cg@webshox.org"
-            ],
-            [
-               "Damir Arbula",
-               "damir.arbula@gmail.com"
-            ],
-            [
-               "DamirArbula",
-               "damir.arbula@gmail.com"
-            ],
-            [
-               "FinalAngel",
-               "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
-               "Jameel Al-Aziz",
-               "me@jalaziz.net"
-            ],
-            [
-               "James Richards",
-               "james@seesaw.net"
-            ],
-            [
-               "James Rutherford",
-               "james.rutherford@maplecroft.com"
-            ],
-            [
-               "Jimmy Lam",
-               "jimmylam@users.noreply.github.com"
-            ],
-            [
-               "Jimmy Lam",
-               "si.c.lam@biola.edu"
-            ],
-            [
-               "Jorge Vargas",
-               "jorge.vargas@gmail.com"
-            ],
-            [
-               "L-A Iscla",
-               "la@iscla.net"
-            ],
-            [
-               "Laura Feier",
-               "laura.feier@3pillarglobal.com"
-            ],
-            [
-               "Maik Lustenberger",
-               "maik.lustenberger@divio.ch"
-            ],
-            [
-               "Olivier Larchevêque",
-               "olivier.larcheveque@gmail.com"
-            ],
-            [
-               "Olivier Larchevêque",
-               "olivier.larcheveque@w.illi.am"
-            ],
-            [
-               "Olivier Le Brouster",
-               "olb@nebkha.net"
-            ],
-            [
-               "Olivier Le Brouster",
-               "olivier.le-brouster@webu.coop"
-            ],
-            [
-               "Patrick Arminio",
-               "patrick.arminio@gmail.com"
-            ],
-            [
-               "Patrick Lauber",
-               "digi@treepy.com"
-            ],
-            [
-               "Patrick Lauber",
-               "patrick.lauber@divio.ch"
-            ],
-            [
-               "Samuel Lahti",
-               "sam.lahti@tempo-db.com"
-            ],
-            [
-               "Samuel Luescher",
-               "samuel@formlabs.com"
-            ],
-            [
-               "Samuel Lüscher",
-               "samuelluscher@sam-imac.local"
-            ],
-            [
-               "Shahar Or",
-               "mightyiampresence@gmail.com"
-            ],
-            [
-               "Shatalov Vadim",
-               "vadimshatalov@gmail.com"
-            ],
-            [
-               "Sophie Leroy",
-               "mobula.diabolus@gmail.com"
-            ],
-            [
-               "Stefano Morandi",
-               "s.morandi@nephila.it"
-            ],
-            [
-               "Tanel Külaots",
-               "sealibora@gmail.com"
-            ],
-            [
-               "Tom Berger",
-               "tom.berger@divio.com"
-            ],
-            [
-               "Tom Berger",
-               "tom.berger@gmail.com"
-            ],
-            [
-               "Transifex Robot",
-               "noreply@transifex.net"
-            ],
-            [
-               "Transifex robot",
-               "admin@transifex.net"
-            ],
-            [
-               "Transifex robot",
-               "noreply@localhost"
-            ],
-            [
-               "Transifex robot",
-               "noreply@transifex.net"
-            ],
-            [
-               "Transifex robot",
-               "submitter@transifex.net"
-            ],
-            [
-               "Vadim Lopatyuk",
-               "qnub@users.noreply.github.com"
-            ],
-            [
-               "Vadim Sikora",
-               "vadim.sikora@divio.ch"
-            ],
-            [
-               "Vadim Sikora",
-               "vadim.sikora@gmail.com"
-            ],
-            [
-               "angular_circle",
-               "angular.circle+transifex@gmail.com"
-            ],
-            [
-               "darbula",
-               "damir.arbula@gmail.com"
-            ],
-            [
-               "digi604",
-               "patrick.lauber@divio.ch"
-            ],
-            [
-               "fcurella",
-               "flavio.curella@gmail.com"
-            ],
-            [
-               "jalaziz",
-               "me@jalaziz.net"
-            ],
-            [
-               "maiklust",
-               "none@none"
-            ],
-            [
-               "nikolas",
-               "nnyby@columbia.edu"
-            ],
-            [
-               "patricklauber",
-               "none@none"
-            ],
-            [
-               "sealibora",
-               "sealibora@gmail.com"
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "Ian Lewis",
                "IanMLewis@gmail.com"
             ]
@@ -5665,18 +4933,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -5939,18 +5195,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -6211,18 +5455,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -6527,18 +5759,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -6799,18 +6019,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -7147,18 +6355,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -7467,18 +6663,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -7785,18 +6969,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -8661,18 +7833,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -8939,18 +8099,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -9213,18 +8361,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -9497,18 +8633,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -10323,18 +9447,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -10601,18 +9713,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -10875,18 +9975,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -11147,18 +10235,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -11505,18 +10581,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -11859,18 +10923,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -12165,18 +11217,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -12901,18 +11941,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -13379,18 +12407,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -13691,18 +12707,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -13967,18 +12971,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -14295,18 +13287,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",
@@ -14711,18 +13691,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -15065,18 +14033,6 @@
                "angelo.dini@divio.ch"
             ],
             [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
-            ],
-            [
                "Jameel Al-Aziz",
                "me@jalaziz.net"
             ],
@@ -15363,18 +14319,6 @@
             [
                "FinalAngel",
                "angelo.dini@divio.ch"
-            ],
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Iacopo Spalletti",
-               "github@spalletti.it"
-            ],
-            [
-               "Iacopo Spalletti",
-               "i.spalletti@nephila.it"
             ],
             [
                "Jameel Al-Aziz",

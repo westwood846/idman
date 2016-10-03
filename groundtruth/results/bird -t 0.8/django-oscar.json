@@ -1,11 +1,11 @@
 {
    "false_negatives" : 0,
-   "false_positives" : 48,
-   "fmeasure" : 0.866666666666667,
+   "false_positives" : 51,
+   "fmeasure" : 0.86027397260274,
    "not_merged" : [],
-   "precision" : 0.764705882352941,
+   "precision" : 0.754807692307692,
    "recall" : 1,
-   "true_positives" : 156,
+   "true_positives" : 157,
    "wrongly_merged" : [
       {
          "expected" : [
@@ -984,11 +984,41 @@
       {
          "expected" : [
             [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ]
+         ],
+         "got" : [
+            [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
+            [
+               "Matt Miller",
+               "matt@flashnotes.com"
+            ],
+            [
+               "Matt Moran",
+               "matt@mattmoran.co.uk"
+            ],
+            [
+               "Matthew O'Loughlin",
+               "mattdevmail@gmail.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
                "Matt Miller",
                "matt@flashnotes.com"
             ]
          ],
          "got" : [
+            [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
             [
                "Matt Miller",
                "matt@flashnotes.com"
@@ -1012,6 +1042,10 @@
          ],
          "got" : [
             [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
+            [
                "Matt Miller",
                "matt@flashnotes.com"
             ],
@@ -1033,6 +1067,10 @@
             ]
          ],
          "got" : [
+            [
+               "Matt Drayer",
+               "mattdrayer@edx.org"
+            ],
             [
                "Matt Miller",
                "matt@flashnotes.com"
@@ -1376,6 +1414,54 @@
             [
                "Rachel Willmer",
                "rachel@hobthross.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Samir Shah",
+               "samir@regulusweb.com"
+            ],
+            [
+               "Samir Shah",
+               "solaris.smoke@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Samir Shah",
+               "samir@regulusweb.com"
+            ],
+            [
+               "Samir Shah",
+               "solaris.smoke@gmail.com"
+            ],
+            [
+               "aamir",
+               "aamir@one.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "aamir",
+               "aamir@one.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Samir Shah",
+               "samir@regulusweb.com"
+            ],
+            [
+               "Samir Shah",
+               "solaris.smoke@gmail.com"
+            ],
+            [
+               "aamir",
+               "aamir@one.com"
             ]
          ]
       },

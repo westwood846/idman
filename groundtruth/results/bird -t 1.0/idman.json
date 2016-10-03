@@ -1,49 +1,15 @@
 {
    "false_negatives" : 0,
-   "false_positives" : 2,
-   "fmeasure" : 0.666666666666667,
+   "false_positives" : 1,
+   "fmeasure" : 0.8,
    "not_merged" : [],
-   "precision" : 0.5,
+   "precision" : 0.666666666666667,
    "recall" : 1,
    "true_positives" : 2,
    "wrongly_merged" : [
       {
          "expected" : [
             [
-               "GitHub",
-               "noreply@github.com"
-            ]
-         ],
-         "got" : [
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Michael Monschau",
-               "dev@michael-monschau.de"
-            ],
-            [
-               "Michael Monschau",
-               "dev@mmonschau.eu"
-            ],
-            [
-               "Michael Monschau",
-               "github@michael-monschau.de"
-            ],
-            [
-               "Michael Monschau",
-               "mmonschau@uni-koblenz.de"
-            ],
-            [
-               "Michael Monschau",
-               "mmonschau@users.noreply.github.com"
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "Michael Monschau",
                "dev@michael-monschau.de"
             ],
@@ -65,14 +31,6 @@
             ]
          ],
          "got" : [
-            [
-               "GitHub",
-               "noreply@github.com"
-            ],
-            [
-               "Michael Monschau",
-               "dev@michael-monschau.de"
-            ],
             [
                "Michael Monschau",
                "dev@mmonschau.eu"

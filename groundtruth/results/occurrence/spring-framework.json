@@ -5,6 +5,6 @@
    "not_merged" : [],
    "precision" : 1,
    "recall" : 1,
-   "true_positives" : 188,
+   "true_positives" : 192,
    "wrongly_merged" : []
 }

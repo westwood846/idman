@@ -1,80 +1,11 @@
 {
-   "false_negatives" : 2,
-   "false_positives" : 91,
-   "fmeasure" : 0.870653685674548,
-   "not_merged" : [
-      {
-         "expected" : [
-            [
-               "Justin Shapcott",
-               "justin@mobidevelop.com"
-            ],
-            [
-               "Justin Shapcott",
-               "support@mobidevelop.com"
-            ],
-            [
-               "MobiDevelop",
-               "support@mobidevelop.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Justin Shapcott",
-                  "justin@mobidevelop.com"
-               ],
-               [
-                  "Justin Shapcott",
-                  "support@mobidevelop.com"
-               ],
-               [
-                  "unknown",
-                  "justin.s@SG-PC025.innitech.lan"
-               ],
-               [
-                  "unknown",
-                  "karlm@SEA-6900058548.ant.amazon.com"
-               ]
-            ],
-            [
-               [
-                  "MobiDevelop",
-                  "support@mobidevelop.com"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "MJ",
-               "czyzby@users.noreply.github.com"
-            ],
-            [
-               "MJ",
-               "john.hervicc@gmail.com"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "MJ",
-                  "czyzby@users.noreply.github.com"
-               ]
-            ],
-            [
-               [
-                  "MJ",
-                  "john.hervicc@gmail.com"
-               ]
-            ]
-         ]
-      }
-   ],
-   "precision" : 0.774752475247525,
-   "recall" : 0.993650793650794,
-   "true_positives" : 313,
+   "false_negatives" : 0,
+   "false_positives" : 92,
+   "fmeasure" : 0.872222222222222,
+   "not_merged" : [],
+   "precision" : 0.773399014778325,
+   "recall" : 1,
+   "true_positives" : 314,
    "wrongly_merged" : [
       {
          "expected" : [
@@ -2847,6 +2778,44 @@
       {
          "expected" : [
             [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ],
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ],
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
                "Kevin Koshiol",
                "NTARelix@users.noreply.github.com"
             ]
@@ -5743,6 +5712,10 @@
                "support@mobidevelop.com"
             ],
             [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ],
+            [
                "unknown",
                "justin.s@SG-PC025.innitech.lan"
             ],
@@ -5766,6 +5739,10 @@
             ],
             [
                "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "MobiDevelop",
                "support@mobidevelop.com"
             ],
             [
