@@ -2,11 +2,15 @@ package Graph::Man::Algorithm::Default;
 use 5.016;
 use warnings;
 use parent 'Graph::Man::Algorithm';
+use Unicode::Normalize qw(NFKC);
 
 
-sub process_artifacts {
-    my ($self, $name, $mail) = @_;
-    return [fc($name), fc($mail) =~ s/\.?\(none\)$//r];
+sub preprocess {
+    my ($name, $mail) = map { fc NFKC($_) } @_[1, 2];
+    $name =~ s/\@.*//;         # strip e-mail suffix
+    $name =~ s/\pP|\s//g;      # strip punctuation and whitespace
+    $mail =~ s/\.?\(none\)$//; # strip random .(none) from the end
+    return [$name, $mail];
 }
 
 
@@ -19,9 +23,27 @@ Graph::Man::Algorithm::Default - identity merging with minimal pre-processing
 
 =head1 SYNOPSIS
 
-Similar to the occurrence algorithm, but fold-cases all artifacts and strips
-off C<.(none)> from the end, which git seems to randomly attach if the e-mail
-address doesn't contain a dot.
+Similar to the occurrence algorithm, but adds some minimal processing:
+
+=over
+
+=item
+
+Artifacts are case-folded and normalized to NFKC.
+
+=item
+
+E-mail suffixes (anything following an C<@>) are stripped from names.
+
+=item
+
+All punctuation is stripped from names.
+
+=item
+
+Random C<.(none)> at the end of e-mail addresses is stripped.
+
+=back
 
 =head1 METHODS
 
@@ -29,7 +51,6 @@ address doesn't contain a dot.
 
     $self->preprocess($name, $mail)
 
-Override. Casefolds the artifacts and strips off C<.(none)> from the end of
-C<$mail>.
+Override. Does the case-folding and stripping.
 
 =cut
