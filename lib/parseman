@@ -65,9 +65,16 @@ sub parse_diff {
 }
 
 
+my @git_args;
+
+if ($ENV{IDMAN_BEFORE}) {
+    push @git_args, "--before=$ENV{IDMAN_BEFORE}";
+}
+
+
 for my $repo_path (@ARGV) {
     open my $fh, '-|', 'git', "--git-dir=$repo_path/.git", 'log', '--all',
-                       "--format=$FORMAT", '-M', '-C', '--numstat';
+                       "--format=$FORMAT", '-M', '-C', '--numstat', @git_args;
 
     read $fh, $_, length $COMMIT_SEPARATOR; # strip leading separator
     local $/ = "\n$COMMIT_SEPARATOR";
