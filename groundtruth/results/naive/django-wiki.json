@@ -1,0 +1,279 @@
+{
+   "false_negatives" : 8,
+   "false_positives" : 0,
+   "fmeasure" : 0.936507936507936,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Benjamin Bach",
+               "benjamin@overtag.dk"
+            ],
+            [
+               "Benjamin Bach",
+               "benjaoming@gmail.com"
+            ],
+            [
+               "benjaoming",
+               "benjaoming@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Benjamin Bach",
+                  "benjamin@overtag.dk"
+               ]
+            ],
+            [
+               [
+                  "Benjamin Bach",
+                  "benjaoming@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "benjaoming",
+                  "benjaoming@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Christian Duvholt",
+               "christian@duvholt.net"
+            ],
+            [
+               "Christian Duvholt",
+               "cxhristian@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Christian Duvholt",
+                  "christian@duvholt.net"
+               ]
+            ],
+            [
+               [
+                  "Christian Duvholt",
+                  "cxhristian@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Juan Diego Caballero",
+               "jd_caballero@hotmail.com"
+            ],
+            [
+               "jdcaballero",
+               "jd_caballero@hotmail.com"
+            ],
+            [
+               "jdcaballerov",
+               "jd_caballero@hotmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Juan Diego Caballero",
+                  "jd_caballero@hotmail.com"
+               ]
+            ],
+            [
+               [
+                  "jdcaballero",
+                  "jd_caballero@hotmail.com"
+               ]
+            ],
+            [
+               [
+                  "jdcaballerov",
+                  "jd_caballero@hotmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Olivia K",
+               "inflrscns@users.noreply.github.com"
+            ],
+            [
+               "Olivia K",
+               "reedk865@gmail.com"
+            ],
+            [
+               "Olivia K.",
+               "inflrscns@users.noreply.github.com"
+            ],
+            [
+               "inflrscns",
+               "inflrscns@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Olivia K",
+                  "inflrscns@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Olivia K",
+                  "reedk865@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Olivia K.",
+                  "inflrscns@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "inflrscns",
+                  "inflrscns@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Russell Jones",
+               "Russell-Jones@github.com"
+            ],
+            [
+               "Russell Jones",
+               "russell.jones@gmail.com"
+            ],
+            [
+               "Russell Jones",
+               "russell@yellow.(none)"
+            ],
+            [
+               "Russell-Jones",
+               "Russell-Jones@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Russell Jones",
+                  "Russell-Jones@github.com"
+               ]
+            ],
+            [
+               [
+                  "Russell Jones",
+                  "russell.jones@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Russell Jones",
+                  "russell@yellow.(none)"
+               ]
+            ],
+            [
+               [
+                  "Russell-Jones",
+                  "Russell-Jones@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Thomas Guettler",
+               "info.git@thomas-guettler.de"
+            ],
+            [
+               "Thomas Güttler",
+               "guettliml.github@thomas-guettler.de"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Thomas Guettler",
+                  "info.git@thomas-guettler.de"
+               ]
+            ],
+            [
+               [
+                  "Thomas Güttler",
+                  "guettliml.github@thomas-guettler.de"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Thomas Lottermann",
+               "TomLottermann@googlemail.com"
+            ],
+            [
+               "TomLottermann",
+               "TomLottermann@googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Thomas Lottermann",
+                  "TomLottermann@googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "TomLottermann",
+                  "TomLottermann@googlemail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "tschmidt",
+               "tschmidt@sacfoodcoop.com"
+            ],
+            [
+               "tschmidt-dev",
+               "tschmidt@sacfoodcoop.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "tschmidt",
+                  "tschmidt@sacfoodcoop.com"
+               ]
+            ],
+            [
+               [
+                  "tschmidt-dev",
+                  "tschmidt@sacfoodcoop.com"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.880597014925373,
+   "true_positives" : 59,
+   "wrongly_merged" : []
+}

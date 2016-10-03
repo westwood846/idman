@@ -24,6 +24,9 @@ my @ALGORITHMS = (
     'bird -t 1.0',
     'bird -t 0.9',
     'bird -t 0.8',
+    'naive',
+    'naive --only name',
+    'naive --only mail',
 );
 
 

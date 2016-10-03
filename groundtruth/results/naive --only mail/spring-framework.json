@@ -1,0 +1,791 @@
+{
+   "false_negatives" : 24,
+   "false_positives" : 0,
+   "fmeasure" : 0.933333333333333,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Alex Yursha",
+               "alex.yursha@icloud.com"
+            ],
+            [
+               "Alex Yursha",
+               "alexyursha@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Alex Yursha",
+                  "alex.yursha@icloud.com"
+               ]
+            ],
+            [
+               [
+                  "Alex Yursha",
+                  "alexyursha@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andy Clement",
+               "aclement@gopivotal.com"
+            ],
+            [
+               "Andy Clement",
+               "aclement@pivotal.io"
+            ],
+            [
+               "Andy Clement",
+               "aclement@vmware.com"
+            ],
+            [
+               "Andy Clement",
+               "andrew.clement@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andy Clement",
+                  "aclement@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Andy Clement",
+                  "aclement@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Andy Clement",
+                  "aclement@vmware.com"
+               ]
+            ],
+            [
+               [
+                  "Andy Clement",
+                  "andrew.clement@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andy Wilkinson",
+               "awilkinson@gopivotal.com"
+            ],
+            [
+               "Andy Wilkinson",
+               "awilkinson@pivotal.io"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andy Wilkinson",
+                  "awilkinson@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Andy Wilkinson",
+                  "awilkinson@pivotal.io"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Arjen Poutsma",
+               "apoutsma@gopivotal.com"
+            ],
+            [
+               "Arjen Poutsma",
+               "apoutsma@pivotal.io"
+            ],
+            [
+               "Arjen Poutsma",
+               "apoutsma@vmware.com"
+            ],
+            [
+               "Arjen Poutsma",
+               "poutsma@mac.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Arjen Poutsma",
+                  "apoutsma@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Arjen Poutsma",
+                  "apoutsma@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Arjen Poutsma",
+                  "apoutsma@vmware.com"
+               ]
+            ],
+            [
+               [
+                  "Arjen Poutsma",
+                  "poutsma@mac.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Brian Clozel",
+               "bclozel@gopivotal.com"
+            ],
+            [
+               "Brian Clozel",
+               "bclozel@pivotal.io"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Brian Clozel",
+                  "bclozel@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Brian Clozel",
+                  "bclozel@pivotal.io"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Chris Beams",
+               "cbeams@gmail.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@gopivotal.com"
+            ],
+            [
+               "Chris Beams",
+               "cbeams@vmware.com"
+            ],
+            [
+               "Chris Beams",
+               "chris@beams.io"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Chris Beams",
+                  "cbeams@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Chris Beams",
+                  "cbeams@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Chris Beams",
+                  "cbeams@vmware.com"
+               ]
+            ],
+            [
+               [
+                  "Chris Beams",
+                  "chris@beams.io"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Christian Dupuis",
+               "cdupuis@gopivotal.com"
+            ],
+            [
+               "Christian Dupuis",
+               "cdupuis@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Christian Dupuis",
+                  "cdupuis@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Christian Dupuis",
+                  "cdupuis@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dave Syer",
+               "david_syer@hotmail.com"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@pivotal.io"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@vmware.com"
+            ],
+            [
+               "David Syer",
+               "dsyer@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dave Syer",
+                  "david_syer@hotmail.com"
+               ]
+            ],
+            [
+               [
+                  "Dave Syer",
+                  "dsyer@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Dave Syer",
+                  "dsyer@vmware.com"
+               ],
+               [
+                  "David Syer",
+                  "dsyer@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dmitry Katsubo",
+               "dmitry.katsubo@gmai.com"
+            ],
+            [
+               "Dmitry Katsubo",
+               "dmitry.katsubo@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dmitry Katsubo",
+                  "dmitry.katsubo@gmai.com"
+               ]
+            ],
+            [
+               [
+                  "Dmitry Katsubo",
+                  "dmitry.katsubo@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Gary Russell",
+               "grussell@gopivotal.com"
+            ],
+            [
+               "Gary Russell",
+               "grussell@pivotal.io"
+            ],
+            [
+               "Gary Russell",
+               "grussell@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Gary Russell",
+                  "grussell@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Gary Russell",
+                  "grussell@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Gary Russell",
+                  "grussell@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Greg Turnquist",
+               "gturnquist@gopivotal.com"
+            ],
+            [
+               "Greg Turnquist",
+               "gturnquist@pivotal.io"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Greg Turnquist",
+                  "gturnquist@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Greg Turnquist",
+                  "gturnquist@pivotal.io"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jeff Brown",
+               "jbrown@vmware.com"
+            ],
+            [
+               "Jeff Brown",
+               "jeff@jeffandbetsy.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jeff Brown",
+                  "jbrown@vmware.com"
+               ]
+            ],
+            [
+               [
+                  "Jeff Brown",
+                  "jeff@jeffandbetsy.net"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jeremy Grelle",
+               "jgrelle@gopivotal.com"
+            ],
+            [
+               "Jeremy Grelle",
+               "jgrelle@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jeremy Grelle",
+                  "jgrelle@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Jeremy Grelle",
+                  "jgrelle@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Juergen Hoeller",
+               "jhoeller@gopivotal.com"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@pivotal.io"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@vmware.com"
+            ],
+            [
+               "jhoeller",
+               "jhoeller@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Juergen Hoeller",
+                  "jhoeller@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Juergen Hoeller",
+                  "jhoeller@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Juergen Hoeller",
+                  "jhoeller@vmware.com"
+               ],
+               [
+                  "jhoeller",
+                  "jhoeller@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lukasz Kryger",
+               "l.kryger@ed.ac.uk"
+            ],
+            [
+               "Lukasz Kryger",
+               "lukasz.kryger@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Lukasz Kryger",
+                  "l.kryger@ed.ac.uk"
+               ]
+            ],
+            [
+               [
+                  "Lukasz Kryger",
+                  "lukasz.kryger@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Oliver Gierke",
+               "ogierke@gopivotal.com"
+            ],
+            [
+               "Oliver Gierke",
+               "ogierke@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Oliver Gierke",
+                  "ogierke@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Oliver Gierke",
+                  "ogierke@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Phillip Webb",
+               "pwebb@gopivotal.com"
+            ],
+            [
+               "Phillip Webb",
+               "pwebb@pivotal.io"
+            ],
+            [
+               "Phillip Webb",
+               "pwebb@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Phillip Webb",
+                  "pwebb@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Phillip Webb",
+                  "pwebb@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Phillip Webb",
+                  "pwebb@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Rob Winch",
+               "rwinch@gopivotal.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@users.noreply.github.com"
+            ],
+            [
+               "Rob Winch",
+               "rwinch@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Rob Winch",
+                  "rwinch@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Rob Winch",
+                  "rwinch@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Rob Winch",
+                  "rwinch@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Rossen Stoyanchev",
+               "rstoyanchev@gopivotal.com"
+            ],
+            [
+               "Rossen Stoyanchev",
+               "rstoyanchev@pivotal.io"
+            ],
+            [
+               "Rossen Stoyanchev",
+               "rstoyanchev@users.noreply.github.com"
+            ],
+            [
+               "Rossen Stoyanchev",
+               "rstoyanchev@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Rossen Stoyanchev",
+                  "rstoyanchev@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Rossen Stoyanchev",
+                  "rstoyanchev@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Rossen Stoyanchev",
+                  "rstoyanchev@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Rossen Stoyanchev",
+                  "rstoyanchev@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Roy Clarkson",
+               "rclarkson@gopivotal.com"
+            ],
+            [
+               "Roy Clarkson",
+               "rclarkson@pivotal.io"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Roy Clarkson",
+                  "rclarkson@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Roy Clarkson",
+                  "rclarkson@pivotal.io"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Sebastien Deleuze",
+               "sdeleuze@gopivotal.com"
+            ],
+            [
+               "Sebastien Deleuze",
+               "sdeleuze@pivotal.io"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Sebastien Deleuze",
+                  "sdeleuze@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Sebastien Deleuze",
+                  "sdeleuze@pivotal.io"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Stephane Maldini",
+               "smaldini@gopivotal.com"
+            ],
+            [
+               "Stephane Maldini",
+               "smaldini@pivotal.io"
+            ],
+            [
+               "Stephane Maldini",
+               "stephane.maldini@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Stephane Maldini",
+                  "smaldini@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Stephane Maldini",
+                  "smaldini@pivotal.io"
+               ]
+            ],
+            [
+               [
+                  "Stephane Maldini",
+                  "stephane.maldini@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Stephane Nicoll",
+               "snicoll@gopivotal.com"
+            ],
+            [
+               "Stephane Nicoll",
+               "snicoll@pivotal.io"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Stephane Nicoll",
+                  "snicoll@gopivotal.com"
+               ]
+            ],
+            [
+               [
+                  "Stephane Nicoll",
+                  "snicoll@pivotal.io"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "youmoo",
+               "13003062543@qq.com"
+            ],
+            [
+               "youmoo",
+               "youmoolee@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "youmoo",
+                  "13003062543@qq.com"
+               ]
+            ],
+            [
+               [
+                  "youmoo",
+                  "youmoolee@gmail.com"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.875,
+   "true_positives" : 168,
+   "wrongly_merged" : []
+}

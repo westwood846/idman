@@ -1,0 +1,80 @@
+{
+   "false_negatives" : 1,
+   "false_positives" : 1,
+   "fmeasure" : 0.5,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Marco Brack",
+               "PapstDonB@Googlemail.com"
+            ],
+            [
+               "turbopope",
+               "PapstDonB@Googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Marco Brack",
+                  "PapstDonB@Googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "turbopope",
+                  "PapstDonB@Googlemail.com"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 0.5,
+   "recall" : 0.5,
+   "true_positives" : 1,
+   "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "Michael Monschau",
+               "dev@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "dev@mmonschau.eu"
+            ],
+            [
+               "Michael Monschau",
+               "github@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@uni-koblenz.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Michael Monschau",
+               "dev@mmonschau.eu"
+            ],
+            [
+               "Michael Monschau",
+               "github@michael-monschau.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@uni-koblenz.de"
+            ],
+            [
+               "Michael Monschau",
+               "mmonschau@users.noreply.github.com"
+            ]
+         ]
+      }
+   ]
+}

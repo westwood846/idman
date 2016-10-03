@@ -1,0 +1,2742 @@
+{
+   "false_negatives" : 92,
+   "false_positives" : 1,
+   "fmeasure" : 0.937289278489548,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Alex Benusovich",
+               "qwerty4030@gmail.com"
+            ],
+            [
+               "qwerty4030",
+               "qwerty4030@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Alex Benusovich",
+                  "qwerty4030@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "qwerty4030",
+                  "qwerty4030@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Alexander Reelsen",
+               "alexander.reelsen@elasticsearch.com"
+            ],
+            [
+               "Alexander Reelsen",
+               "alexander@reelsen.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Alexander Reelsen",
+                  "alexander.reelsen@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Alexander Reelsen",
+                  "alexander@reelsen.net"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andrej Kazakov",
+               "andrejserafim@gmail.com"
+            ],
+            [
+               "andrejserafim",
+               "andrejserafim@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andrej Kazakov",
+                  "andrejserafim@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "andrejserafim",
+                  "andrejserafim@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andrew Ochsner",
+               "andrew.ochsner@csgi.com"
+            ],
+            [
+               "Andrew Ochsner",
+               "aochsner@cs.stanford.edu"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andrew Ochsner",
+                  "andrew.ochsner@csgi.com"
+               ]
+            ],
+            [
+               [
+                  "Andrew Ochsner",
+                  "aochsner@cs.stanford.edu"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andrew Raines",
+               "andrew@raines.me"
+            ],
+            [
+               "Drew Raines",
+               "aaraines@gmail.com"
+            ],
+            [
+               "Drew Raines",
+               "andrew@raines.me"
+            ],
+            [
+               "Drew Raines",
+               "drew@raines.me"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andrew Raines",
+                  "andrew@raines.me"
+               ]
+            ],
+            [
+               [
+                  "Drew Raines",
+                  "aaraines@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Drew Raines",
+                  "andrew@raines.me"
+               ]
+            ],
+            [
+               [
+                  "Drew Raines",
+                  "drew@raines.me"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andrew Selden",
+               "andrew.selden@elasticsearch.com"
+            ],
+            [
+               "Andrew Selden",
+               "andrew@combinatoric.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andrew Selden",
+                  "andrew.selden@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Andrew Selden",
+                  "andrew@combinatoric.net"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andrii Gakhov",
+               "andrii.gakhov@gmail.com"
+            ],
+            [
+               "Andrii Gakhov",
+               "gakhov@ferret-go.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andrii Gakhov",
+                  "andrii.gakhov@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Andrii Gakhov",
+                  "gakhov@ferret-go.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Areek Zillur",
+               "areek.zillur@elasticsearch.com"
+            ],
+            [
+               "Areek Zillur",
+               "areek@apache.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Areek Zillur",
+                  "areek.zillur@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Areek Zillur",
+                  "areek@apache.org"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Ask Bjørn Hansen",
+               "ask@develooper.com"
+            ],
+            [
+               "Aske Hansen",
+               "aske@deeco.dk"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Ask Bjørn Hansen",
+                  "ask@develooper.com"
+               ]
+            ],
+            [
+               [
+                  "Aske Hansen",
+                  "aske@deeco.dk"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Austin McKinley",
+               "amckinley@fb.com"
+            ],
+            [
+               "Austin McKinley",
+               "bearontheroof@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Austin McKinley",
+                  "amckinley@fb.com"
+               ]
+            ],
+            [
+               [
+                  "Austin McKinley",
+                  "bearontheroof@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Benjamin Devèze",
+               "benjamin.deveze@gmail.com"
+            ],
+            [
+               "Benjamin Devèze",
+               "benjamin.deveze@gmail.com"
+            ],
+            [
+               "Benjamin Devèze",
+               "benjamin@yakaz.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Benjamin Devèze",
+                  "benjamin.deveze@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Benjamin Devèze",
+                  "benjamin.deveze@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Benjamin Devèze",
+                  "benjamin@yakaz.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Bill Hwang",
+               "bill.hwang@elasticsearch.com"
+            ],
+            [
+               "b.hwang",
+               "mrsolo@users.noreply.github.com"
+            ],
+            [
+               "mrsolo",
+               "bill.hwang@elasticsearch.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Bill Hwang",
+                  "bill.hwang@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "b.hwang",
+                  "mrsolo@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "mrsolo",
+                  "bill.hwang@elasticsearch.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Boaz Leskes",
+               "b.leskes@gmail.com"
+            ],
+            [
+               "bleskes",
+               "b.leskes@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Boaz Leskes",
+                  "b.leskes@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "bleskes",
+                  "b.leskes@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Britta Weber",
+               "britta.weber@elasticsearch.com"
+            ],
+            [
+               "Britta Weber",
+               "brwe@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Britta Weber",
+                  "britta.weber@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Britta Weber",
+                  "brwe@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Brusic",
+               "ivan@brusic.com"
+            ],
+            [
+               "Ivan Brusic",
+               "ivan@brusic.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Brusic",
+                  "ivan@brusic.com"
+               ]
+            ],
+            [
+               [
+                  "Ivan Brusic",
+                  "ivan@brusic.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Camilo Diaz Repka",
+               "camilojdiaz@gmail.com"
+            ],
+            [
+               "Camilo Díaz Repka",
+               "camilojdiaz@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Camilo Diaz Repka",
+                  "camilojdiaz@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Camilo Díaz Repka",
+                  "camilojdiaz@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Chris Earle",
+               "chris.earle@elastic.co"
+            ],
+            [
+               "Chris Earle",
+               "chris.earle@elasticsearch.com"
+            ],
+            [
+               "Chris Earle",
+               "pickypg@gmail.com"
+            ],
+            [
+               "Chris Earle",
+               "pickypg@users.noreply.github.com"
+            ],
+            [
+               "pickypg",
+               "pickypg@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Chris Earle",
+                  "chris.earle@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Chris Earle",
+                  "chris.earle@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Chris Earle",
+                  "pickypg@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Chris Earle",
+                  "pickypg@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "pickypg",
+                  "pickypg@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Chris Male",
+               "chris.male@dutchworks.nl"
+            ],
+            [
+               "Chris Male",
+               "gento0nz@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Chris Male",
+                  "chris.male@dutchworks.nl"
+               ]
+            ],
+            [
+               [
+                  "Chris Male",
+                  "gento0nz@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Christoph Büscher",
+               "christoph.buescher@elasticsearch.com"
+            ],
+            [
+               "Christoph Büscher",
+               "christoph@elastic.co"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Christoph Büscher",
+                  "christoph.buescher@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Christoph Büscher",
+                  "christoph@elastic.co"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Colin Goodheart-Smithe",
+               "colin.goodheart-smithe@elasticsearch.com"
+            ],
+            [
+               "Colin Goodheart-Smithe",
+               "colings86@gmail.com"
+            ],
+            [
+               "Colin Goodheart-Smithe",
+               "colings86@users.noreply.github.com"
+            ],
+            [
+               "colings86",
+               "colings86@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Colin Goodheart-Smithe",
+                  "colin.goodheart-smithe@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Colin Goodheart-Smithe",
+                  "colings86@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Colin Goodheart-Smithe",
+                  "colings86@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "colings86",
+                  "colings86@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dan Everton",
+               "dan.everton@wotifgroup.com"
+            ],
+            [
+               "Dan Everton",
+               "dan@iocaine.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dan Everton",
+                  "dan.everton@wotifgroup.com"
+               ]
+            ],
+            [
+               [
+                  "Dan Everton",
+                  "dan@iocaine.org"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel Mitterdorfer",
+               "daniel.mitterdorfer@elastic.co"
+            ],
+            [
+               "Daniel Mitterdorfer",
+               "daniel.mitterdorfer@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Daniel Mitterdorfer",
+                  "daniel.mitterdorfer@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Daniel Mitterdorfer",
+                  "daniel.mitterdorfer@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel Winterstein",
+               "daniel.winterstein@gmail.com"
+            ],
+            [
+               "Daniel Winterstein",
+               "daniel@winterwell.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Daniel Winterstein",
+                  "daniel.winterstein@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Daniel Winterstein",
+                  "daniel@winterwell.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dave Parfitt",
+               "dave.parfitt@elastic.co"
+            ],
+            [
+               "Dave Parfitt",
+               "diparfitt@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dave Parfitt",
+                  "dave.parfitt@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Dave Parfitt",
+                  "diparfitt@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Pilato",
+               "david+github@pilato.fr"
+            ],
+            [
+               "David Pilato",
+               "david@pilato.fr"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "David Pilato",
+                  "david+github@pilato.fr"
+               ]
+            ],
+            [
+               [
+                  "David Pilato",
+                  "david@pilato.fr"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dimitrios Liappis",
+               "dimitrios.liappis@elastic.co"
+            ],
+            [
+               "Dimitrios Liappis",
+               "dimitrios.liappis@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dimitrios Liappis",
+                  "dimitrios.liappis@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Dimitrios Liappis",
+                  "dimitrios.liappis@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dylan Semler",
+               "dsem@users.noreply.github.com"
+            ],
+            [
+               "Dylan Semler",
+               "dylan@flashpoint-intel.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dylan Semler",
+                  "dsem@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Dylan Semler",
+                  "dylan@flashpoint-intel.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Elie A",
+               "abouhaydar.elias@gmail.com"
+            ],
+            [
+               "eliasah",
+               "abouhaydar.elias@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Elie A",
+                  "abouhaydar.elias@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "eliasah",
+                  "abouhaydar.elias@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Florian Schilling",
+               "florian.schilling@elasticsearch.com"
+            ],
+            [
+               "Florian Schilling",
+               "schilling@flonkings.com"
+            ],
+            [
+               "chilling",
+               "schilling@flonkings.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Florian Schilling",
+                  "florian.schilling@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Florian Schilling",
+                  "schilling@flonkings.com"
+               ]
+            ],
+            [
+               [
+                  "chilling",
+                  "schilling@flonkings.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Glen Smith",
+               "github@smithsrock.com"
+            ],
+            [
+               "Glen Smith",
+               "glen@smithsrock.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Glen Smith",
+                  "github@smithsrock.com"
+               ]
+            ],
+            [
+               [
+                  "Glen Smith",
+                  "glen@smithsrock.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Greg Marzouka",
+               "greg.marzouka@gmail.com"
+            ],
+            [
+               "gmarz",
+               "greg.marzouka@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Greg Marzouka",
+                  "greg.marzouka@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "gmarz",
+                  "greg.marzouka@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Hendrik Saly",
+               "hendrikdev22@gmail.com"
+            ],
+            [
+               "salyh",
+               "hendrikdev22@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Hendrik Saly",
+                  "hendrikdev22@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "salyh",
+                  "hendrikdev22@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Holger Hoffstaette",
+               "holger.hoffstaette@googlemail.com"
+            ],
+            [
+               "Holger Hoffstätte",
+               "holger.hoffstaette@elasticsearch.com"
+            ],
+            [
+               "Holger Hoffstätte",
+               "holger.hoffstaette@googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Holger Hoffstaette",
+                  "holger.hoffstaette@googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "Holger Hoffstätte",
+                  "holger.hoffstaette@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Holger Hoffstätte",
+                  "holger.hoffstaette@googlemail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Honza Kral",
+               "honza.kral@gmail.com"
+            ],
+            [
+               "Honza Král",
+               "honza.kral@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Honza Kral",
+                  "honza.kral@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Honza Král",
+                  "honza.kral@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Igor Motov",
+               "igor@motovs.org"
+            ],
+            [
+               "imotov",
+               "igor@motovs.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Igor Motov",
+                  "igor@motovs.org"
+               ]
+            ],
+            [
+               [
+                  "imotov",
+                  "igor@motovs.org"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Isabel Drost-Fromm",
+               "isabel.drostfromm@elastic.co"
+            ],
+            [
+               "Isabel Drost-Fromm",
+               "isabel.drostfromm@elasticsearch.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Isabel Drost-Fromm",
+                  "isabel.drostfromm@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Isabel Drost-Fromm",
+                  "isabel.drostfromm@elasticsearch.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Itamar Syn-Hershko",
+               "itamar@code972.com"
+            ],
+            [
+               "synhershko",
+               "itamar@code972.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Itamar Syn-Hershko",
+                  "itamar@code972.com"
+               ]
+            ],
+            [
+               [
+                  "synhershko",
+                  "itamar@code972.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jason Tedor",
+               "jason@jason-mbp.local"
+            ],
+            [
+               "Jason Tedor",
+               "jason@tedor.me"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jason Tedor",
+                  "jason@jason-mbp.local"
+               ]
+            ],
+            [
+               [
+                  "Jason Tedor",
+                  "jason@tedor.me"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jay Modi",
+               "jaymode@users.noreply.github.com"
+            ],
+            [
+               "jayesh.modi",
+               "jmodi@netuitive.com"
+            ],
+            [
+               "jaymode",
+               "jay.modi@elasticsearch.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jay Modi",
+                  "jaymode@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "jayesh.modi",
+                  "jmodi@netuitive.com"
+               ]
+            ],
+            [
+               [
+                  "jaymode",
+                  "jay.modi@elasticsearch.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jayson Minard",
+               "jayson.minard@gmail.com"
+            ],
+            [
+               "jayson.minard",
+               "jayson.minard@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jayson Minard",
+                  "jayson.minard@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "jayson.minard",
+                  "jayson.minard@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jim Ferenczi",
+               "jim.ferenczi@elastic.co"
+            ],
+            [
+               "Jim Ferenczi",
+               "jim.ferenczi@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jim Ferenczi",
+                  "jim.ferenczi@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Jim Ferenczi",
+                  "jim.ferenczi@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jimmy Jones",
+               "jimmyjones2@gmx.co.uk"
+            ],
+            [
+               "jimmyjones2",
+               "jimmyjones2@gmx.co.uk"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jimmy Jones",
+                  "jimmyjones2@gmx.co.uk"
+               ]
+            ],
+            [
+               [
+                  "jimmyjones2",
+                  "jimmyjones2@gmx.co.uk"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Joe Hillenbrand",
+               "joehillen@elastic.co"
+            ],
+            [
+               "Joe Hillenbrand",
+               "joehillen@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Joe Hillenbrand",
+                  "joehillen@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Joe Hillenbrand",
+                  "joehillen@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Joshua Rich",
+               "joshua.rich@elasticsearch.com"
+            ],
+            [
+               "Joshua Rich",
+               "joshua.rich@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Joshua Rich",
+                  "joshua.rich@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Joshua Rich",
+                  "joshua.rich@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jörg Prante",
+               "joergprante@gmail.com"
+            ],
+            [
+               "Jörg Prante",
+               "joergprante@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jörg Prante",
+                  "joergprante@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Jörg Prante",
+                  "joergprante@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Julien Pivotto",
+               "roidelapluie@gmail.com"
+            ],
+            [
+               "Julien Pivotto",
+               "roidelapluie@inuits.eu"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Julien Pivotto",
+                  "roidelapluie@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Julien Pivotto",
+                  "roidelapluie@inuits.eu"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Karel Minarik",
+               "karel.minarik@elasticsearch.org"
+            ],
+            [
+               "Karel Minarik",
+               "karmi@elasticsearch.com"
+            ],
+            [
+               "Karel Minarik",
+               "karmi@karmi.cz"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Karel Minarik",
+                  "karel.minarik@elasticsearch.org"
+               ]
+            ],
+            [
+               [
+                  "Karel Minarik",
+                  "karmi@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Karel Minarik",
+                  "karmi@karmi.cz"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kevin Kirsche",
+               "Kev.Kirsche+GitHub@gmail.com"
+            ],
+            [
+               "Kevin Kirsche",
+               "kev.kirsche@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Kevin Kirsche",
+                  "Kev.Kirsche+GitHub@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Kevin Kirsche",
+                  "kev.kirsche@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kevin Kluge",
+               "kevin.kluge@elasticsearch.com"
+            ],
+            [
+               "Kevin Kluge",
+               "kevinkluge@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Kevin Kluge",
+                  "kevin.kluge@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Kevin Kluge",
+                  "kevinkluge@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kevin Wang",
+               "kevin807359@gmail.com"
+            ],
+            [
+               "Kevin",
+               "kevin807359@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Kevin Wang",
+                  "kevin807359@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Kevin",
+                  "kevin807359@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kurt Hurtado",
+               "github@kurtado.com"
+            ],
+            [
+               "Kurt Hurtado",
+               "kurtado@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Kurt Hurtado",
+                  "github@kurtado.com"
+               ]
+            ],
+            [
+               [
+                  "Kurt Hurtado",
+                  "kurtado@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lee Hinman",
+               "dakrone@users.noreply.github.com"
+            ],
+            [
+               "Lee Hinman",
+               "lee@writequit.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Lee Hinman",
+                  "dakrone@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Lee Hinman",
+                  "lee@writequit.org"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Leonardo Menezes",
+               "leonardo.menezes@xing.com"
+            ],
+            [
+               "leonardo menezes",
+               "lmenezes@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Leonardo Menezes",
+                  "leonardo.menezes@xing.com"
+               ]
+            ],
+            [
+               [
+                  "leonardo menezes",
+                  "lmenezes@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Luca Cavanna",
+               "cavannaluca@gmail.com"
+            ],
+            [
+               "Luca Cavanna",
+               "javanna@users.noreply.github.com"
+            ],
+            [
+               "Luca Cavanna",
+               "luca.cavanna@elasticsearch.com"
+            ],
+            [
+               "Luca Cavanna",
+               "luca.cavanna@trifork.nl"
+            ],
+            [
+               "javanna",
+               "cavannaluca@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Luca Cavanna",
+                  "cavannaluca@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Luca Cavanna",
+                  "javanna@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Luca Cavanna",
+                  "luca.cavanna@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Luca Cavanna",
+                  "luca.cavanna@trifork.nl"
+               ]
+            ],
+            [
+               [
+                  "javanna",
+                  "cavannaluca@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lukas Vlcek",
+               "lukas.vlcek@gmail.com"
+            ],
+            [
+               "Lukáš Vlček",
+               "lukas.vlcek@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Lukas Vlcek",
+                  "lukas.vlcek@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Lukáš Vlček",
+                  "lukas.vlcek@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lukasz Dywicki",
+               "luke@code-house.org"
+            ],
+            [
+               "violuke",
+               "luke@viovet.co.uk"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Lukasz Dywicki",
+                  "luke@code-house.org"
+               ]
+            ],
+            [
+               [
+                  "violuke",
+                  "luke@viovet.co.uk"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mahendra M",
+               "Mahendra_M@infosys.com"
+            ],
+            [
+               "Mahendra M",
+               "mahendra.m@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mahendra M",
+                  "Mahendra_M@infosys.com"
+               ]
+            ],
+            [
+               [
+                  "Mahendra M",
+                  "mahendra.m@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mark Walkom",
+               "mark.walkom@elasticsearch.com"
+            ],
+            [
+               "Mark Walkom",
+               "mark@walkom.id.au"
+            ],
+            [
+               "Mark Walkom",
+               "markw@campaignmonitor.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mark Walkom",
+                  "mark.walkom@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Mark Walkom",
+                  "mark@walkom.id.au"
+               ]
+            ],
+            [
+               [
+                  "Mark Walkom",
+                  "markw@campaignmonitor.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Martijn Laarman",
+               "Mpdreamz@gmail.com"
+            ],
+            [
+               "Martijn Laarman",
+               "mpdreamz@gmail.com"
+            ],
+            [
+               "Mpdreamz",
+               "mpdreamz@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Martijn Laarman",
+                  "Mpdreamz@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Martijn Laarman",
+                  "mpdreamz@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Mpdreamz",
+                  "mpdreamz@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Martijn van Groningen",
+               "martijn.v.groningen@gmail.com"
+            ],
+            [
+               "Martijn van Groningen",
+               "martijn.vangroningen@searchworkings.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Martijn van Groningen",
+                  "martijn.v.groningen@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Martijn van Groningen",
+                  "martijn.vangroningen@searchworkings.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mathias Fussenegger",
+               "f.mathias@zignar.net"
+            ],
+            [
+               "Mathias Fußenegger",
+               "mfussenegger@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mathias Fussenegger",
+                  "f.mathias@zignar.net"
+               ]
+            ],
+            [
+               [
+                  "Mathias Fußenegger",
+                  "mfussenegger@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Michael McCandless",
+               "mail@mikemccandless.com"
+            ],
+            [
+               "Michael McCandless",
+               "mike@elastic.co"
+            ],
+            [
+               "mikemccand",
+               "mail@mikemccandless.com"
+            ],
+            [
+               "mikemccand",
+               "mike@elastic.co"
+            ],
+            [
+               "mikemccand",
+               "mike@elasticsearch.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Michael McCandless",
+                  "mail@mikemccandless.com"
+               ]
+            ],
+            [
+               [
+                  "Michael McCandless",
+                  "mike@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "mikemccand",
+                  "mail@mikemccandless.com"
+               ]
+            ],
+            [
+               [
+                  "mikemccand",
+                  "mike@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "mikemccand",
+                  "mike@elasticsearch.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicholas Knize",
+               "nknize@gmail.com"
+            ],
+            [
+               "Nick Knize",
+               "nknize@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicholas Knize",
+                  "nknize@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Nick Knize",
+                  "nknize@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nick",
+               "nick.a.sarbicki@gmail.com"
+            ],
+            [
+               "nick.a.sarbicki@gmail.com",
+               "Nick.A.Sarbicki@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nick",
+                  "nick.a.sarbicki@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "nick.a.sarbicki@gmail.com",
+                  "Nick.A.Sarbicki@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nirmal Chidambaram",
+               "nchidambaram@atlassian.com"
+            ],
+            [
+               "Nirmal Chidambaram",
+               "nirmal.chidambaram@bazaarvoice.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nirmal Chidambaram",
+                  "nchidambaram@atlassian.com"
+               ]
+            ],
+            [
+               [
+                  "Nirmal Chidambaram",
+                  "nirmal.chidambaram@bazaarvoice.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Olivier Bourgain",
+               "olivierbourgain02@gmail.com"
+            ],
+            [
+               "olivier bourgain",
+               "olivierbourgain02@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Olivier Bourgain",
+                  "olivierbourgain02@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "olivier bourgain",
+                  "olivierbourgain02@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Paul Echeverri",
+               "paul.echeverri@elasticsearch.com"
+            ],
+            [
+               "Paul Echeverri",
+               "pecheverri@elastic.co"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Paul Echeverri",
+                  "paul.echeverri@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Paul Echeverri",
+                  "pecheverri@elastic.co"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Peter Fabian Mitchell",
+               "petmit@gmail.com"
+            ],
+            [
+               "Peter Mitchell",
+               "petmit@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Peter Fabian Mitchell",
+                  "petmit@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Peter Mitchell",
+                  "petmit@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Peter Johnson @insertcoffee",
+               "insomnia@rcpt.at"
+            ],
+            [
+               "Peter Johnson a.k.a. insertcoffee",
+               "wiz@wiz.co.nz"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Peter Johnson @insertcoffee",
+                  "insomnia@rcpt.at"
+               ]
+            ],
+            [
+               [
+                  "Peter Johnson a.k.a. insertcoffee",
+                  "wiz@wiz.co.nz"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Pius",
+               "pius.fung@elasticsearch.com"
+            ],
+            [
+               "Pius",
+               "pius@elastic.co"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Pius",
+                  "pius.fung@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Pius",
+                  "pius@elastic.co"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Radu Gheorghe",
+               "radu.gheorghe@sematext.com"
+            ],
+            [
+               "Radu Gheorghe",
+               "radu0gheorghe@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Radu Gheorghe",
+                  "radu.gheorghe@sematext.com"
+               ]
+            ],
+            [
+               [
+                  "Radu Gheorghe",
+                  "radu0gheorghe@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Rhommel Lamas",
+               "roml@rhommell.com"
+            ],
+            [
+               "Rhommel",
+               "roml@rhommell.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Rhommel Lamas",
+                  "roml@rhommell.com"
+               ]
+            ],
+            [
+               [
+                  "Rhommel",
+                  "roml@rhommell.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Robert Berg",
+               "rjberg7@gmail.com"
+            ],
+            [
+               "robert berg",
+               "rberg@homeaway.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Robert Berg",
+                  "rjberg7@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "robert berg",
+                  "rberg@homeaway.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Robert Muir",
+               "rcmuir@gmail.com"
+            ],
+            [
+               "Robert Muir",
+               "rmuir@apache.org"
+            ],
+            [
+               "Robert Muir",
+               "robert.muir@lucidimagination.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Robert Muir",
+                  "rcmuir@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Robert Muir",
+                  "rmuir@apache.org"
+               ]
+            ],
+            [
+               [
+                  "Robert Muir",
+                  "robert.muir@lucidimagination.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Roland",
+               "szroland@freemail.hu"
+            ],
+            [
+               "szroland",
+               "szroland@freemail.hu"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Roland",
+                  "szroland@freemail.hu"
+               ]
+            ],
+            [
+               [
+                  "szroland",
+                  "szroland@freemail.hu"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Ryan Schneider",
+               "djschny@users.noreply.github.com"
+            ],
+            [
+               "Ryan Schneider",
+               "ryan.schneider@elastic.co"
+            ],
+            [
+               "Ryan Schneider",
+               "schneider@perka.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Ryan Schneider",
+                  "djschny@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Ryan Schneider",
+                  "ryan.schneider@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Ryan Schneider",
+                  "schneider@perka.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Sakthipriyan Vairamani",
+               "thefourtheye@users.noreply.github.com"
+            ],
+            [
+               "thefourtheye",
+               "thefourtheye@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Sakthipriyan Vairamani",
+                  "thefourtheye@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "thefourtheye",
+                  "thefourtheye@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Scott Florentino",
+               "smflorentino@users.noreply.github.com"
+            ],
+            [
+               "Scott Florentino",
+               "t-scflor@microsoft.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Scott Florentino",
+                  "smflorentino@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Scott Florentino",
+                  "t-scflor@microsoft.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Shay Banon",
+               "kimchy@gmail.com"
+            ],
+            [
+               "kimchy",
+               "kimchy@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Shay Banon",
+                  "kimchy@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "kimchy",
+                  "kimchy@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Shikhar Bhushan",
+               "sbhushan@etsy.com"
+            ],
+            [
+               "Shikhar Bhushan",
+               "shikhar@schmizz.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Shikhar Bhushan",
+                  "sbhushan@etsy.com"
+               ]
+            ],
+            [
+               [
+                  "Shikhar Bhushan",
+                  "shikhar@schmizz.net"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Simon Willnauer",
+               "simon.willnauer@elasticsearch.com"
+            ],
+            [
+               "Simon Willnauer",
+               "simonw@apache.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Simon Willnauer",
+                  "simon.willnauer@elasticsearch.com"
+               ]
+            ],
+            [
+               [
+                  "Simon Willnauer",
+                  "simonw@apache.org"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Spencer (spalger on irc)",
+               "spenceralger@users.noreply.github.com"
+            ],
+            [
+               "Spencer Alger",
+               "email@spalger.com"
+            ],
+            [
+               "Spencer Alger",
+               "spencer@spenceralger.com"
+            ],
+            [
+               "Spencer",
+               "spalger@users.noreply.github.com"
+            ],
+            [
+               "Spencer",
+               "spenceralger@users.noreply.github.com"
+            ],
+            [
+               "spalger",
+               "email@spalger.com"
+            ],
+            [
+               "spalger",
+               "spalger@users.noreply.github.com"
+            ],
+            [
+               "spenceralger",
+               "spenceralger@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Spencer (spalger on irc)",
+                  "spenceralger@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Spencer Alger",
+                  "email@spalger.com"
+               ]
+            ],
+            [
+               [
+                  "Spencer Alger",
+                  "spencer@spenceralger.com"
+               ]
+            ],
+            [
+               [
+                  "Spencer",
+                  "spalger@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Spencer",
+                  "spenceralger@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "spalger",
+                  "email@spalger.com"
+               ]
+            ],
+            [
+               [
+                  "spalger",
+                  "spalger@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "spenceralger",
+                  "spenceralger@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Stephen Samuel",
+               "sam@sksamuel.com"
+            ],
+            [
+               "sam",
+               "sam@sksamuel.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Stephen Samuel",
+                  "sam@sksamuel.com"
+               ]
+            ],
+            [
+               [
+                  "sam",
+                  "sam@sksamuel.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tal Levy",
+               "JubBoy333@gmail.com"
+            ],
+            [
+               "Tal Levy",
+               "jubboy333@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Tal Levy",
+                  "JubBoy333@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Tal Levy",
+                  "jubboy333@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tanguy Leroux",
+               "tlrx.dev@gmail.com"
+            ],
+            [
+               "tlrx",
+               "tlrx.dev@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Tanguy Leroux",
+                  "tlrx.dev@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "tlrx",
+                  "tlrx.dev@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Xu Zhang",
+               "xu@elastic.co"
+            ],
+            [
+               "Xu Zhang",
+               "xuzha@users.noreply.github.com"
+            ],
+            [
+               "xuzha",
+               "xu@elastic.co"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Xu Zhang",
+                  "xu@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Xu Zhang",
+                  "xuzha@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "xuzha",
+                  "xu@elastic.co"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Yannick Welsch",
+               "y.welsch@talkwalker.com"
+            ],
+            [
+               "Yannick Welsch",
+               "yannick@elastic.co"
+            ],
+            [
+               "Yannick Welsch",
+               "yannick@welsch.lu"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Yannick Welsch",
+                  "y.welsch@talkwalker.com"
+               ]
+            ],
+            [
+               [
+                  "Yannick Welsch",
+                  "yannick@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Yannick Welsch",
+                  "yannick@welsch.lu"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Zachary Tong",
+               "polyfractal@elastic.co"
+            ],
+            [
+               "Zachary Tong",
+               "zacharyjtong@gmail.com"
+            ],
+            [
+               "polyfractal",
+               "zacharyjtong@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Zachary Tong",
+                  "polyfractal@elastic.co"
+               ]
+            ],
+            [
+               [
+                  "Zachary Tong",
+                  "zacharyjtong@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "polyfractal",
+                  "zacharyjtong@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "astefan",
+               "andrei.stefan.ro@gmail.com"
+            ],
+            [
+               "astefan",
+               "astefan@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "astefan",
+                  "andrei.stefan.ro@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "astefan",
+                  "astefan@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "smayzak",
+               "stevemayzak@gmail.com"
+            ],
+            [
+               "steve mayzak",
+               "stevemayzak@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "smayzak",
+                  "stevemayzak@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "steve mayzak",
+                  "stevemayzak@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "tomoya yokota",
+               "yokotaso.t@gmail.com"
+            ],
+            [
+               "yokotaso",
+               "tomoya-yokota@cybozu.co.jp"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "tomoya yokota",
+                  "yokotaso.t@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "yokotaso",
+                  "tomoya-yokota@cybozu.co.jp"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "uboness",
+               "uboness@gmail.com"
+            ],
+            [
+               "uboness",
+               "uri.boness@elasticsearch.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "uboness",
+                  "uboness@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "uboness",
+                  "uri.boness@elasticsearch.com"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 0.998563218390805,
+   "recall" : 0.883100381194409,
+   "true_positives" : 695,
+   "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "Jakob Reiter",
+               "jakob@elastic.co"
+            ],
+            [
+               "Jakob Reiter",
+               "jakommo@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               "Jakob Reiter",
+               "jakob@elastic.co"
+            ]
+         ]
+      }
+   ]
+}

@@ -1,0 +1,769 @@
+{
+   "false_negatives" : 25,
+   "false_positives" : 0,
+   "fmeasure" : 0.936061381074169,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Andrew Ingram",
+               "andrew.ingram@tangentlabs.co.uk"
+            ],
+            [
+               "AndrewIngram",
+               "andy@andrewingram.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andrew Ingram",
+                  "andrew.ingram@tangentlabs.co.uk"
+               ]
+            ],
+            [
+               [
+                  "AndrewIngram",
+                  "andy@andrewingram.net"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andy Sellick",
+               "andy.sellick@tangentone.co.uk"
+            ],
+            [
+               "Andy Sellick",
+               "andy.sellick@tangentsnowball.com"
+            ],
+            [
+               "andysellick",
+               "andy.sellick@tangentsnowball.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andy Sellick",
+                  "andy.sellick@tangentone.co.uk"
+               ]
+            ],
+            [
+               [
+                  "Andy Sellick",
+                  "andy.sellick@tangentsnowball.com"
+               ],
+               [
+                  "andysellick",
+                  "andy.sellick@tangentsnowball.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Costas Basdekis",
+               "costas-basdekis@gmail.com"
+            ],
+            [
+               "Costas Basdekis",
+               "costas.basdekis@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Costas Basdekis",
+                  "costas-basdekis@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Costas Basdekis",
+                  "costas.basdekis@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dan Atkinson",
+                  "dan@danatkinson.com"
+               ]
+            ],
+            [
+               [
+                  "Dan",
+                  "danatk@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dawid Lorenz",
+               "adlorenz@gmail.com"
+            ],
+            [
+               "Dawid Lorenz",
+               "dawid.lorenz@tangentlabs.co.uk"
+            ],
+            [
+               "Dawid Lorenz",
+               "dawid@lorenz.co"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dawid Lorenz",
+                  "adlorenz@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Dawid Lorenz",
+                  "dawid.lorenz@tangentlabs.co.uk"
+               ]
+            ],
+            [
+               [
+                  "Dawid Lorenz",
+                  "dawid@lorenz.co"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Diederik van der Boor",
+               "vdboor@codingdomain.com"
+            ],
+            [
+               "Diederik van der Boor",
+               "vdboor@edoburu.nl"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Diederik van der Boor",
+                  "vdboor@codingdomain.com"
+               ]
+            ],
+            [
+               [
+                  "Diederik van der Boor",
+                  "vdboor@edoburu.nl"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Eleni Lixourioti",
+               "contact@eleni.co"
+            ],
+            [
+               "Eleni Lixourioti",
+               "eleni@nefelia.(none)"
+            ],
+            [
+               "Eleni Lixourioti",
+               "inelegr88@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Eleni Lixourioti",
+                  "contact@eleni.co"
+               ]
+            ],
+            [
+               [
+                  "Eleni Lixourioti",
+                  "eleni@nefelia.(none)"
+               ]
+            ],
+            [
+               [
+                  "Eleni Lixourioti",
+                  "inelegr88@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Fish",
+               "okfish@yandex.ru"
+            ],
+            [
+               "Oleg Rybkin",
+               "okfish@yandex.ru"
+            ],
+            [
+               "fish",
+               "fish@BM12.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Fish",
+                  "okfish@yandex.ru"
+               ],
+               [
+                  "Oleg Rybkin",
+                  "okfish@yandex.ru"
+               ]
+            ],
+            [
+               [
+                  "fish",
+                  "fish@BM12.(none)"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Francis Reyes",
+               "francis.mark.reyes@gmail.com"
+            ],
+            [
+               "Francis Reyes",
+               "francis.reyes@tangentone.com.au"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Francis Reyes",
+                  "francis.mark.reyes@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Francis Reyes",
+                  "francis.reyes@tangentone.com.au"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Gump",
+               "gump@tangentlabs.co.uk"
+            ],
+            [
+               "Gump",
+               "michal@michal.tv"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Gump",
+                  "gump@tangentlabs.co.uk"
+               ]
+            ],
+            [
+               [
+                  "Gump",
+                  "michal@michal.tv"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Izidor Matušov",
+               "izidor.matusov@gmail.com"
+            ],
+            [
+               "Izidor Matušov",
+               "izidor.matusov@tangentsnowball.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Izidor Matušov",
+                  "izidor.matusov@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Izidor Matušov",
+                  "izidor.matusov@tangentsnowball.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John Papanastasiou",
+               "johnpapps@hotmail.com"
+            ],
+            [
+               "John Papanastasiou",
+               "johnpapps@ubuntu.(none)"
+            ],
+            [
+               "kinygos",
+               "johnpapps@hotmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "John Papanastasiou",
+                  "johnpapps@hotmail.com"
+               ],
+               [
+                  "kinygos",
+                  "johnpapps@hotmail.com"
+               ]
+            ],
+            [
+               [
+                  "John Papanastasiou",
+                  "johnpapps@ubuntu.(none)"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jonathan Moss",
+                  "jonathan.moss@tangentone.com.au"
+               ]
+            ],
+            [
+               [
+                  "Jonathan Moss",
+                  "jonathan.moss@tangentsnowball.com.au"
+               ],
+               [
+                  "Moose",
+                  "jonathan.moss@tangentsnowball.com.au"
+               ]
+            ],
+            [
+               [
+                  "Jonathan Moss",
+                  "xirisr@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kura",
+               "kura@deviling.net"
+            ],
+            [
+               "Kura",
+               "kura@tangentlabs.co.uk"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Kura",
+                  "kura@deviling.net"
+               ]
+            ],
+            [
+               [
+                  "Kura",
+                  "kura@tangentlabs.co.uk"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Michael",
+               "michaelvantellingen@gmail.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "m.vantellingen@lukkien.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "michael@mvantellingen.nl"
+            ],
+            [
+               "Michael van Tellingen",
+               "michaelvantellingen@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Michael",
+                  "michaelvantellingen@gmail.com"
+               ],
+               [
+                  "Michael van Tellingen",
+                  "michaelvantellingen@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Michael van Tellingen",
+                  "m.vantellingen@lukkien.com"
+               ]
+            ],
+            [
+               [
+                  "Michael van Tellingen",
+                  "michael@mvantellingen.nl"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mike Dingjan",
+               "m.dingjan@lukkien.com"
+            ],
+            [
+               "Mike Dingjan",
+               "mike@mikedingjan.nl"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mike Dingjan",
+                  "m.dingjan@lukkien.com"
+               ]
+            ],
+            [
+               [
+                  "Mike Dingjan",
+                  "mike@mikedingjan.nl"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mohammad Abbas",
+               "mohammad.abbas86@gmail.com"
+            ],
+            [
+               "Mohammad Abbas",
+               "mohammad@mohammad-abbas.(none)"
+            ],
+            [
+               "Mohammad Abbas",
+               "mohammad@mohammad-laptop.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mohammad Abbas",
+                  "mohammad.abbas86@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Mohammad Abbas",
+                  "mohammad@mohammad-abbas.(none)"
+               ]
+            ],
+            [
+               [
+                  "Mohammad Abbas",
+                  "mohammad@mohammad-laptop.(none)"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicola Marangon",
+               "marangon@pentaonline.it"
+            ],
+            [
+               "marangonico",
+               "nicolamarangon@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicola Marangon",
+                  "marangon@pentaonline.it"
+               ]
+            ],
+            [
+               [
+                  "marangonico",
+                  "nicolamarangon@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Patryk Zawadzki",
+               "patrys@pld-linux.org"
+            ],
+            [
+               "Patryk Zawadzki",
+               "patrys@room-303.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Patryk Zawadzki",
+                  "patrys@pld-linux.org"
+               ]
+            ],
+            [
+               [
+                  "Patryk Zawadzki",
+                  "patrys@room-303.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Paweł Kowalski",
+               "bitrut@gmail.com"
+            ],
+            [
+               "Paweł Kowalski",
+               "contact@pawelkowalski.info"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Paweł Kowalski",
+                  "bitrut@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Paweł Kowalski",
+                  "contact@pawelkowalski.info"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Samir Shah",
+               "samir@regulusweb.com"
+            ],
+            [
+               "Samir Shah",
+               "solaris.smoke@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Samir Shah",
+                  "samir@regulusweb.com"
+               ]
+            ],
+            [
+               [
+                  "Samir Shah",
+                  "solaris.smoke@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Sebastian Vetter",
+               "sebastian.vetter@tangentone.com.au"
+            ],
+            [
+               "Sebastian Vetter",
+               "sebastian.vetter@tangentsnowball.com.au"
+            ],
+            [
+               "Sebastian Vetter",
+               "sebastian@roadside-developer.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Sebastian Vetter",
+                  "sebastian.vetter@tangentone.com.au"
+               ]
+            ],
+            [
+               [
+                  "Sebastian Vetter",
+                  "sebastian.vetter@tangentsnowball.com.au"
+               ]
+            ],
+            [
+               [
+                  "Sebastian Vetter",
+                  "sebastian@roadside-developer.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Sergey Maranchuk",
+               "mar.sergey@zojax.com"
+            ],
+            [
+               "Sergey Maranchuk",
+               "slav0nic0@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Sergey Maranchuk",
+                  "mar.sergey@zojax.com"
+               ]
+            ],
+            [
+               [
+                  "Sergey Maranchuk",
+                  "slav0nic0@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Victor Munene",
+               "victor@regulusweb.com"
+            ],
+            [
+               "Victor Munene",
+               "vikkimunene@gmail.com"
+            ],
+            [
+               "v1kku",
+               "vikkimunene@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Victor Munene",
+                  "victor@regulusweb.com"
+               ]
+            ],
+            [
+               [
+                  "Victor Munene",
+                  "vikkimunene@gmail.com"
+               ],
+               [
+                  "v1kku",
+                  "vikkimunene@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Łukasz Lechowicz",
+               "llechowicz@gmail.com"
+            ],
+            [
+               "Łukasz Lechowicz",
+               "owad@owad.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Łukasz Lechowicz",
+                  "llechowicz@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Łukasz Lechowicz",
+                  "owad@owad.(none)"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.879807692307692,
+   "true_positives" : 183,
+   "wrongly_merged" : []
+}

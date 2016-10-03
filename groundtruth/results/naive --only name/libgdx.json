@@ -1,0 +1,1864 @@
+{
+   "false_negatives" : 57,
+   "false_positives" : 2,
+   "fmeasure" : 0.921646746347942,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Aldous Pryce",
+               "aldouspryce@gmail.com"
+            ],
+            [
+               "Aldous",
+               "aldouspryce@gmail.com"
+            ],
+            [
+               "AldousP",
+               "aldouspryce@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Aldous Pryce",
+                  "aldouspryce@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Aldous",
+                  "aldouspryce@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "AldousP",
+                  "aldouspryce@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Alex",
+               "agentlex11@yandex.ru"
+            ],
+            [
+               "alex55i",
+               "agentlex11@yandex.ru"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Alex",
+                  "agentlex11@yandex.ru"
+               ]
+            ],
+            [
+               [
+                  "alex55i",
+                  "agentlex11@yandex.ru"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Alexander Mironov",
+               "alexander.mironoff@gmail.com"
+            ],
+            [
+               "alexander-mironov",
+               "alexander.mironoff@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Alexander Mironov",
+                  "alexander.mironoff@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "alexander-mironov",
+                  "alexander.mironoff@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andreas Oehlke",
+                  "andgeno@googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "Andreas",
+                  "andgeno@googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "andgeno@googlemail.com",
+                  "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Antag99",
+               "antag99@gmail.com"
+            ],
+            [
+               "Anton Gustafsson",
+               "antag99@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Antag99",
+                  "antag99@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Anton Gustafsson",
+                  "antag99@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Antoine Vianey",
+               "antoine.vianey@gmail.com"
+            ],
+            [
+               "avianey",
+               "antoine.vianey@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Antoine Vianey",
+                  "antoine.vianey@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "avianey",
+                  "antoine.vianey@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Ariel Coppes",
+               "ariel.coppes@gemserk.com"
+            ],
+            [
+               "ariel.coppes@gmail.com",
+               "ariel.coppes@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Ariel Coppes",
+                  "ariel.coppes@gemserk.com"
+               ]
+            ],
+            [
+               [
+                  "ariel.coppes@gmail.com",
+                  "ariel.coppes@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "AurelienRibon",
+               "aurelien.ribon@gmail.com"
+            ],
+            [
+               "aurelien.ribon",
+               "aurelien.ribon@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "aurelien.ribon@gmail.com",
+               "aurelien.ribon@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "AurelienRibon",
+                  "aurelien.ribon@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "aurelien.ribon",
+                  "aurelien.ribon@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "aurelien.ribon@gmail.com",
+                  "aurelien.ribon@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Avetis Zakharyan",
+               "avetis.zakharyan@gmail.com"
+            ],
+            [
+               "Avetis",
+               "avetis.zakharyan@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Avetis Zakharyan",
+                  "avetis.zakharyan@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Avetis",
+                  "avetis.zakharyan@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Badazdz",
+               "Syntaxer9@gmail.com"
+            ],
+            [
+               "badazdz",
+               "Syntaxer9@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Badazdz",
+                  "Syntaxer9@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "badazdz",
+                  "Syntaxer9@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "BlackBluegL",
+               "info@blackbluegl.de"
+            ],
+            [
+               "blackbluegl",
+               "info@blackbluegl.de"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "BlackBluegL",
+                  "info@blackbluegl.de"
+               ]
+            ],
+            [
+               [
+                  "blackbluegl",
+                  "info@blackbluegl.de"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "BlueRiverInteractive",
+               "blueriverteam@gmail.com"
+            ],
+            [
+               "BlueRiverTeam",
+               "blueriverteam@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "BlueRiverInteractive",
+                  "blueriverteam@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "BlueRiverTeam",
+                  "blueriverteam@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Buddy",
+               "b_betts@yahoo.com"
+            ],
+            [
+               "BuddyB",
+               "b_betts@yahoo.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Buddy",
+                  "b_betts@yahoo.com"
+               ]
+            ],
+            [
+               [
+                  "BuddyB",
+                  "b_betts@yahoo.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Cord Rehn",
+               "jordansg57@gmail.com"
+            ],
+            [
+               "SG57",
+               "jordansg57@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Cord Rehn",
+                  "jordansg57@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "SG57",
+                  "jordansg57@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dan Flettre",
+               "fletd01@yahoo.com"
+            ],
+            [
+               "flet",
+               "fletd01@yahoo.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dan Flettre",
+                  "fletd01@yahoo.com"
+               ]
+            ],
+            [
+               [
+                  "flet",
+                  "fletd01@yahoo.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Daniel Holderbaum",
+                  "danielholderbaum@gmail.com"
+               ],
+               [
+                  "Daniel Holderbaum",
+                  "nooone@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "nooone",
+                  "nooone@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Darkyenus",
+               "darkyenus@gmail.com"
+            ],
+            [
+               "Jan Polák",
+               "darkyenus@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Darkyenus",
+                  "darkyenus@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Jan Polák",
+                  "darkyenus@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "David Park",
+                  "bornskilled200@gmail.com"
+               ],
+               [
+                  "David Park",
+                  "davidpark4393@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "bornskilled200",
+                  "bornskilled200@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Saltares",
+               "david.saltares@gmail.com"
+            ],
+            [
+               "siondream",
+               "david.saltares@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "David Saltares",
+                  "david.saltares@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "siondream",
+                  "david.saltares@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Franck Wolff",
+               "frawolff@gmail.com"
+            ],
+            [
+               "fwolff",
+               "fwolff@graniteds.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Franck Wolff",
+                  "frawolff@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "fwolff",
+                  "fwolff@graniteds.org"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Fred",
+               "fred-2507@live.fr"
+            ],
+            [
+               "FredGithub",
+               "fred-2507@live.fr"
+            ],
+            [
+               "Frederic",
+               "fred-2507@live.fr"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Fred",
+                  "fred-2507@live.fr"
+               ]
+            ],
+            [
+               [
+                  "FredGithub",
+                  "fred-2507@live.fr"
+               ]
+            ],
+            [
+               [
+                  "Frederic",
+                  "fred-2507@live.fr"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Getterac7",
+               "wizkid8586@gmail.com"
+            ],
+            [
+               "wally",
+               "wizkid8586@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Getterac7",
+                  "wizkid8586@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "wally",
+                  "wizkid8586@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Greg Darke",
+               "gdarke@skunktrading.com"
+            ],
+            [
+               "skunktrading",
+               "gdarke@skunktrading.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Greg Darke",
+                  "gdarke@skunktrading.com"
+               ]
+            ],
+            [
+               [
+                  "skunktrading",
+                  "gdarke@skunktrading.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Guillaume Alvarez",
+               "guillaume-alvarez@users.noreply.github.com"
+            ],
+            [
+               "galvarez",
+               "guillaume.alvarez@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Guillaume Alvarez",
+                  "guillaume-alvarez@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "galvarez",
+                  "guillaume.alvarez@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Guillermo Andrades",
+               "guillermo.andrades@cremagames.com"
+            ],
+            [
+               "Guillermo Andrades",
+               "lokoyaw@gmail.com"
+            ],
+            [
+               "lokoyaw",
+               "lokoyaw@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Guillermo Andrades",
+                  "guillermo.andrades@cremagames.com"
+               ],
+               [
+                  "Guillermo Andrades",
+                  "lokoyaw@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "lokoyaw",
+                  "lokoyaw@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "IndiumIndeed",
+               "indiumindeed@gmail.com"
+            ],
+            [
+               "IndiumIndeed",
+               "indiumineed@gmail.com"
+            ],
+            [
+               "IndiumIndeed",
+               "jarmo.kukkola@gmail.com"
+            ],
+            [
+               "indiumindeed",
+               "indiumindeed@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "IndiumIndeed",
+                  "indiumindeed@gmail.com"
+               ],
+               [
+                  "IndiumIndeed",
+                  "indiumineed@gmail.com"
+               ],
+               [
+                  "IndiumIndeed",
+                  "jarmo.kukkola@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "indiumindeed",
+                  "indiumindeed@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "JS",
+               "realitix@gmail.com"
+            ],
+            [
+               "Jean-Sebastien Bevilacqua",
+               "realitix@gmail.com"
+            ],
+            [
+               "Js",
+               "realitix@gmail.com"
+            ],
+            [
+               "js xps13",
+               "realitix@gmail.com"
+            ],
+            [
+               "js78",
+               "realitix@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "JS",
+                  "realitix@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Jean-Sebastien Bevilacqua",
+                  "realitix@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Js",
+                  "realitix@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "js xps13",
+                  "realitix@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "js78",
+                  "realitix@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jakub Ksiezniak",
+               "jksiezniak@gmail.com"
+            ],
+            [
+               "Jakub Księżniak",
+               "jksiezniak@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jakub Ksiezniak",
+                  "jksiezniak@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Jakub Księżniak",
+                  "jksiezniak@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John",
+               "nobody.known21@gmail.com"
+            ],
+            [
+               "Unkn0wn0ne",
+               "Unkn0wn0ne"
+            ],
+            [
+               "Unkn0wn0ne",
+               "nobody.known21@gmail.com"
+            ],
+            [
+               "Unkn0wn0ne",
+               "thejca2323@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "John",
+                  "nobody.known21@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Unkn0wn0ne",
+                  "Unkn0wn0ne"
+               ],
+               [
+                  "Unkn0wn0ne",
+                  "nobody.known21@gmail.com"
+               ],
+               [
+                  "Unkn0wn0ne",
+                  "thejca2323@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Josh Berberick",
+               "berberick.j@gmail.com"
+            ],
+            [
+               "Joshua Berberick",
+               "berberick.j@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Josh Berberick",
+                  "berberick.j@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Joshua Berberick",
+                  "berberick.j@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Justin Shapcott",
+                  "justin@mobidevelop.com"
+               ],
+               [
+                  "Justin Shapcott",
+                  "support@mobidevelop.com"
+               ]
+            ],
+            [
+               [
+                  "MobiDevelop",
+                  "support@mobidevelop.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kjetil Mehl",
+               "aspic@mehl.no"
+            ],
+            [
+               "Kjetil Mehl",
+               "aspic@stalfos.samfundet.no"
+            ],
+            [
+               "aspic",
+               "kjetil861@gmail.com"
+            ],
+            [
+               "kjetil861@gmail.com",
+               "kjetil861@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Kjetil Mehl",
+                  "aspic@mehl.no"
+               ],
+               [
+                  "Kjetil Mehl",
+                  "aspic@stalfos.samfundet.no"
+               ]
+            ],
+            [
+               [
+                  "aspic",
+                  "kjetil861@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "kjetil861@gmail.com",
+                  "kjetil861@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lestat",
+               "carlosmartinezdev@gmail.com"
+            ],
+            [
+               "xLestat",
+               "carlosmartinezdev@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Lestat",
+                  "carlosmartinezdev@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "xLestat",
+                  "carlosmartinezdev@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Lioncash",
+               "mathew1800@gmail.com"
+            ],
+            [
+               "lioncash",
+               "mathew1800@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Lioncash",
+                  "mathew1800@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "lioncash",
+                  "mathew1800@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mario Zechner",
+                  "contact@badlogicgames.com"
+               ]
+            ],
+            [
+               [
+                  "badlogic",
+                  "badlogic@hadoop-vm1.(none)"
+               ],
+               [
+                  "badlogic",
+                  "badlogic@hadoop-vm2.(none)"
+               ],
+               [
+                  "badlogic",
+                  "badlogicgames@gmail.com"
+               ],
+               [
+                  "badlogic",
+                  "contact@badlogicgames.com"
+               ]
+            ],
+            [
+               [
+                  "badlogicgames",
+                  "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "badlogicgames@gmail.com",
+                  "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "mzechner-textsense",
+                  "mzechner@know-center.at"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Maxim Titov",
+               "m.m.titov@gmail.com"
+            ],
+            [
+               "maximtitov",
+               "m.m.titov@gmail.com"
+            ],
+            [
+               "titovmaxim",
+               "m.m.titov@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Maxim Titov",
+                  "m.m.titov@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "maximtitov",
+                  "m.m.titov@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "titovmaxim",
+                  "m.m.titov@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mickael Allonneau",
+               "mickael.allonneau@gmail.com"
+            ],
+            [
+               "Mickaël PC Portable",
+               "mickael.allonneau@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mickael Allonneau",
+                  "mickael.allonneau@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Mickaël PC Portable",
+                  "mickael.allonneau@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mikhail Churbanov",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "Mikhail",
+               "mihail.churbanov@gmail.com"
+            ],
+            [
+               "rinold",
+               "mihail.churbanov@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mikhail Churbanov",
+                  "mihail.churbanov@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Mikhail",
+                  "mihail.churbanov@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "rinold",
+                  "mihail.churbanov@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nathan Sweet",
+               "nathan.sweet@gmail.com"
+            ],
+            [
+               "NathanSweet",
+               "misc@n4te.com"
+            ],
+            [
+               "NathanSweet",
+               "nathan.sweet@gmail.com"
+            ],
+            [
+               "nathan.sweet",
+               "nathan.sweet@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nathan Sweet",
+                  "nathan.sweet@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "NathanSweet",
+                  "misc@n4te.com"
+               ],
+               [
+                  "NathanSweet",
+                  "nathan.sweet@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "nathan.sweet",
+                  "nathan.sweet@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicolas Fantone",
+               "nfantone@contentamobile.com"
+            ],
+            [
+               "nfantone",
+               "nfantone@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicolas Fantone",
+                  "nfantone@contentamobile.com"
+               ]
+            ],
+            [
+               [
+                  "nfantone",
+                  "nfantone@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Oscar Bigu",
+               "oscarbigu@gmail.com"
+            ],
+            [
+               "Oscar Bigu",
+               "riftergames@gmail.com"
+            ],
+            [
+               "oscarbigu",
+               "oscarbigu@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Oscar Bigu",
+                  "oscarbigu@gmail.com"
+               ],
+               [
+                  "Oscar Bigu",
+                  "riftergames@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "oscarbigu",
+                  "oscarbigu@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Patrick",
+               "rosthouse@gmail.com"
+            ],
+            [
+               "Rosthouse",
+               "rosthouse@gmail.com"
+            ],
+            [
+               "rosthouse@gmail.com",
+               "rosthouse@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Patrick",
+                  "rosthouse@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Rosthouse",
+                  "rosthouse@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "rosthouse@gmail.com",
+                  "rosthouse@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Robin S",
+               "serverkorken@gmail.com"
+            ],
+            [
+               "Robin S",
+               "serverkorken@googlemail.com"
+            ],
+            [
+               "Robin Stumm",
+               "dermetfan@users.noreply.github.com"
+            ],
+            [
+               "dermetfan",
+               "dermetfan@dermetfan"
+            ],
+            [
+               "dermetfan",
+               "serverkorken@googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Robin S",
+                  "serverkorken@gmail.com"
+               ],
+               [
+                  "Robin S",
+                  "serverkorken@googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "Robin Stumm",
+                  "dermetfan@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "dermetfan",
+                  "dermetfan@dermetfan"
+               ],
+               [
+                  "dermetfan",
+                  "serverkorken@googlemail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Sarkany Istvan",
+               "sarkany.istvan@gmail.com"
+            ],
+            [
+               "isarkany",
+               "sarkany.istvan@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Sarkany Istvan",
+                  "sarkany.istvan@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "isarkany",
+                  "sarkany.istvan@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Seraphim",
+               "seraphim6x7@gmail.com"
+            ],
+            [
+               "seraphim6x7@gmail.com",
+               "seraphim6x7@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Seraphim",
+                  "seraphim6x7@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "seraphim6x7@gmail.com",
+                  "seraphim6x7@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Stefan Bachmann",
+               "st.lebach@gmail.com"
+            ],
+            [
+               "st.lebach@gmail.com",
+               "st.lebach@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Stefan Bachmann",
+                  "st.lebach@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "st.lebach@gmail.com",
+                  "st.lebach@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "TamasJano@gmail.com",
+                  "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "tamasjano@gmail.com",
+                  "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "TheInventionist",
+               "Gregan@TheInventionist.com"
+            ],
+            [
+               "U-InventionistPC\\TheInventionist",
+               "TheInventionist@InventionistPC.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "TheInventionist",
+                  "Gregan@TheInventionist.com"
+               ]
+            ],
+            [
+               [
+                  "U-InventionistPC\\TheInventionist",
+                  "TheInventionist@InventionistPC.(none)"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "ThePickleMan",
+               "admin.aegamesi@gmail.com"
+            ],
+            [
+               "aegamesi",
+               "admin.aegamesi@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "ThePickleMan",
+                  "admin.aegamesi@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "aegamesi",
+                  "admin.aegamesi@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tim Scott",
+               "tescott425@gmail.com"
+            ],
+            [
+               "Timothy Scott",
+               "tescott425@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Tim Scott",
+                  "tescott425@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Timothy Scott",
+                  "tescott425@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Tom Wojciechowski",
+                  "tomwojciechowski@asidik.com"
+               ]
+            ],
+            [
+               [
+                  "Tom-Ski",
+                  "tomaszwojciechowski@hotmail.co.uk"
+               ]
+            ],
+            [
+               [
+                  "TomSki",
+                  "tomaszwojciechowski@hotmail.co.uk"
+               ]
+            ],
+            [
+               [
+                  "Tomski",
+                  "tomaszwojciechowski@hotmail.co.uk"
+               ],
+               [
+                  "Tomski",
+                  "tomcom103@hotmail.com"
+               ],
+               [
+                  "Tomski",
+                  "tomwojciechowski@asidik.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Vince",
+               "vinceangel3d@gmail.com"
+            ],
+            [
+               "VinceAngel",
+               "vinceangel3d@gmail.com"
+            ],
+            [
+               "Vinceangel",
+               "vinceangel3d@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Vince",
+                  "vinceangel3d@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "VinceAngel",
+                  "vinceangel3d@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Vinceangel",
+                  "vinceangel3d@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "broken-e",
+               "treyy333@gmail.com"
+            ],
+            [
+               "treymiller",
+               "treyy333@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "broken-e",
+                  "treyy333@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "treymiller",
+                  "treyy333@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "cjuillard",
+               "colin.juillard@gmail.com"
+            ],
+            [
+               "colinjuillard",
+               "colinjuillard@perblue.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "cjuillard",
+                  "colin.juillard@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "colinjuillard",
+                  "colinjuillard@perblue.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "davedx",
+               "davedx@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "davedx@gmail.com",
+               "davedx@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "davedx",
+                  "davedx@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "davedx@gmail.com",
+                  "davedx@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "dfraska",
+               "dfraska@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "dfraska@gmail.com",
+               "dfraska@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "dfraska",
+                  "dfraska@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "dfraska@gmail.com",
+                  "dfraska@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "zortness",
+               "zortness@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "zortness@gmail.com",
+               "zortness@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "zortness",
+                  "zortness@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "zortness@gmail.com",
+                  "zortness@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 0.994269340974212,
+   "recall" : 0.858910891089109,
+   "true_positives" : 347,
+   "wrongly_merged" : [
+      {
+         "expected" : [
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ]
+         ],
+         "got" : [
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ],
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ],
+         "got" : [
+            [
+               "unknown",
+               "justin.s@SG-PC025.innitech.lan"
+            ],
+            [
+               "unknown",
+               "karlm@SEA-6900058548.ant.amazon.com"
+            ]
+         ]
+      }
+   ]
+}

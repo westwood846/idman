@@ -1,0 +1,555 @@
+{
+   "false_negatives" : 18,
+   "false_positives" : 0,
+   "fmeasure" : 0.954773869346734,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Andrew Ingram",
+               "andrew.ingram@tangentlabs.co.uk"
+            ],
+            [
+               "AndrewIngram",
+               "andy@andrewingram.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andrew Ingram",
+                  "andrew.ingram@tangentlabs.co.uk"
+               ]
+            ],
+            [
+               [
+                  "AndrewIngram",
+                  "andy@andrewingram.net"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Andy Sellick",
+               "andy.sellick@tangentone.co.uk"
+            ],
+            [
+               "Andy Sellick",
+               "andy.sellick@tangentsnowball.com"
+            ],
+            [
+               "andysellick",
+               "andy.sellick@tangentsnowball.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andy Sellick",
+                  "andy.sellick@tangentone.co.uk"
+               ],
+               [
+                  "Andy Sellick",
+                  "andy.sellick@tangentsnowball.com"
+               ]
+            ],
+            [
+               [
+                  "andysellick",
+                  "andy.sellick@tangentsnowball.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Anentropic",
+               "ego@anentropic.com"
+            ],
+            [
+               "anentropic",
+               "ego@anentropic.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Anentropic",
+                  "ego@anentropic.com"
+               ]
+            ],
+            [
+               [
+                  "anentropic",
+                  "ego@anentropic.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Art Skvira",
+               "artem.skvira@gmail.com"
+            ],
+            [
+               "Artёm Skvira",
+               "artem.skvira@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Art Skvira",
+                  "artem.skvira@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Artёm Skvira",
+                  "artem.skvira@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dan Atkinson",
+               "dan@danatkinson.com"
+            ],
+            [
+               "Dan",
+               "danatk@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dan Atkinson",
+                  "dan@danatkinson.com"
+               ]
+            ],
+            [
+               [
+                  "Dan",
+                  "danatk@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dmitry Voronin",
+               "dimka665@gmail.com"
+            ],
+            [
+               "dimka665",
+               "dimka665@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dmitry Voronin",
+                  "dimka665@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "dimka665",
+                  "dimka665@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Fish",
+               "okfish@yandex.ru"
+            ],
+            [
+               "Oleg Rybkin",
+               "okfish@yandex.ru"
+            ],
+            [
+               "fish",
+               "fish@BM12.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Fish",
+                  "okfish@yandex.ru"
+               ]
+            ],
+            [
+               [
+                  "Oleg Rybkin",
+                  "okfish@yandex.ru"
+               ]
+            ],
+            [
+               [
+                  "fish",
+                  "fish@BM12.(none)"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "James Eddison",
+               "james@eddison.net"
+            ],
+            [
+               "jeddison",
+               "james@eddison.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "James Eddison",
+                  "james@eddison.net"
+               ]
+            ],
+            [
+               [
+                  "jeddison",
+                  "james@eddison.net"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John Papanastasiou",
+               "johnpapps@hotmail.com"
+            ],
+            [
+               "John Papanastasiou",
+               "johnpapps@ubuntu.(none)"
+            ],
+            [
+               "kinygos",
+               "johnpapps@hotmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "John Papanastasiou",
+                  "johnpapps@hotmail.com"
+               ],
+               [
+                  "John Papanastasiou",
+                  "johnpapps@ubuntu.(none)"
+               ]
+            ],
+            [
+               [
+                  "kinygos",
+                  "johnpapps@hotmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentone.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "jonathan.moss@tangentsnowball.com.au"
+            ],
+            [
+               "Jonathan Moss",
+               "xirisr@gmail.com"
+            ],
+            [
+               "Moose",
+               "jonathan.moss@tangentsnowball.com.au"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Jonathan Moss",
+                  "jonathan.moss@tangentone.com.au"
+               ],
+               [
+                  "Jonathan Moss",
+                  "jonathan.moss@tangentsnowball.com.au"
+               ],
+               [
+                  "Jonathan Moss",
+                  "xirisr@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Moose",
+                  "jonathan.moss@tangentsnowball.com.au"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Marco Badan",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "itbabu",
+               "marco.badan@gmail.com"
+            ],
+            [
+               "marco",
+               "marco.badan@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Marco Badan",
+                  "marco.badan@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "itbabu",
+                  "marco.badan@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "marco",
+                  "marco.badan@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Michael",
+               "michaelvantellingen@gmail.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "m.vantellingen@lukkien.com"
+            ],
+            [
+               "Michael van Tellingen",
+               "michael@mvantellingen.nl"
+            ],
+            [
+               "Michael van Tellingen",
+               "michaelvantellingen@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Michael",
+                  "michaelvantellingen@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Michael van Tellingen",
+                  "m.vantellingen@lukkien.com"
+               ],
+               [
+                  "Michael van Tellingen",
+                  "michael@mvantellingen.nl"
+               ],
+               [
+                  "Michael van Tellingen",
+                  "michaelvantellingen@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Monika Sulik",
+               "monika.sulik@tangentsnowball.com"
+            ],
+            [
+               "monikasulik",
+               "monika.sulik@tangentsnowball.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Monika Sulik",
+                  "monika.sulik@tangentsnowball.com"
+               ]
+            ],
+            [
+               [
+                  "monikasulik",
+                  "monika.sulik@tangentsnowball.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicola Marangon",
+               "marangon@pentaonline.it"
+            ],
+            [
+               "marangonico",
+               "nicolamarangon@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicola Marangon",
+                  "marangon@pentaonline.it"
+               ]
+            ],
+            [
+               [
+                  "marangonico",
+                  "nicolamarangon@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Oliver Randell",
+               "oliverrandell@gmail.com"
+            ],
+            [
+               "OliverRandell",
+               "oliverrandell@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Oliver Randell",
+                  "oliverrandell@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "OliverRandell",
+                  "oliverrandell@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tuna VARGI",
+               "tuna40@gmail.com"
+            ],
+            [
+               "tuna vargi",
+               "tuna40@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Tuna VARGI",
+                  "tuna40@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "tuna vargi",
+                  "tuna40@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Vedran Karačić",
+               "karacicvedran@gmail.com"
+            ],
+            [
+               "vkaracic",
+               "karacicvedran@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Vedran Karačić",
+                  "karacicvedran@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "vkaracic",
+                  "karacicvedran@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Victor Munene",
+               "victor@regulusweb.com"
+            ],
+            [
+               "Victor Munene",
+               "vikkimunene@gmail.com"
+            ],
+            [
+               "v1kku",
+               "vikkimunene@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Victor Munene",
+                  "victor@regulusweb.com"
+               ],
+               [
+                  "Victor Munene",
+                  "vikkimunene@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "v1kku",
+                  "vikkimunene@gmail.com"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.913461538461538,
+   "true_positives" : 190,
+   "wrongly_merged" : []
+}

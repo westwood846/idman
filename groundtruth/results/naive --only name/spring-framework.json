@@ -1,0 +1,199 @@
+{
+   "false_negatives" : 6,
+   "false_positives" : 0,
+   "fmeasure" : 0.984126984126984,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Clément Plantier",
+               "clemplantier@gmail.com"
+            ],
+            [
+               "clemp6r",
+               "clemplantier@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Clément Plantier",
+                  "clemplantier@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "clemp6r",
+                  "clemplantier@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Dave Syer",
+               "david_syer@hotmail.com"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@pivotal.io"
+            ],
+            [
+               "Dave Syer",
+               "dsyer@vmware.com"
+            ],
+            [
+               "David Syer",
+               "dsyer@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Dave Syer",
+                  "david_syer@hotmail.com"
+               ],
+               [
+                  "Dave Syer",
+                  "dsyer@pivotal.io"
+               ],
+               [
+                  "Dave Syer",
+                  "dsyer@vmware.com"
+               ]
+            ],
+            [
+               [
+                  "David Syer",
+                  "dsyer@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John Tims",
+               "john.k.tims@gmail.com"
+            ],
+            [
+               "John",
+               "john.k.tims@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "John Tims",
+                  "john.k.tims@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "John",
+                  "john.k.tims@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Johnny Lim",
+               "izeye@naver.com"
+            ],
+            [
+               "izeye",
+               "izeye@naver.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Johnny Lim",
+                  "izeye@naver.com"
+               ]
+            ],
+            [
+               [
+                  "izeye",
+                  "izeye@naver.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Juergen Hoeller",
+               "jhoeller@gopivotal.com"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@pivotal.io"
+            ],
+            [
+               "Juergen Hoeller",
+               "jhoeller@vmware.com"
+            ],
+            [
+               "jhoeller",
+               "jhoeller@vmware.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Juergen Hoeller",
+                  "jhoeller@gopivotal.com"
+               ],
+               [
+                  "Juergen Hoeller",
+                  "jhoeller@pivotal.io"
+               ],
+               [
+                  "Juergen Hoeller",
+                  "jhoeller@vmware.com"
+               ]
+            ],
+            [
+               [
+                  "jhoeller",
+                  "jhoeller@vmware.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicholas Williams",
+               "nicholas@nicholaswilliams.net"
+            ],
+            [
+               "Nick Williams",
+               "nicholas@nicholaswilliams.net"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicholas Williams",
+                  "nicholas@nicholaswilliams.net"
+               ]
+            ],
+            [
+               [
+                  "Nick Williams",
+                  "nicholas@nicholaswilliams.net"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.96875,
+   "true_positives" : 186,
+   "wrongly_merged" : []
+}

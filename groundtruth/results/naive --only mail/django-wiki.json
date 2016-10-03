@@ -1,0 +1,185 @@
+{
+   "false_negatives" : 5,
+   "false_positives" : 0,
+   "fmeasure" : 0.961240310077519,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Benjamin Bach",
+               "benjamin@overtag.dk"
+            ],
+            [
+               "Benjamin Bach",
+               "benjaoming@gmail.com"
+            ],
+            [
+               "benjaoming",
+               "benjaoming@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Benjamin Bach",
+                  "benjamin@overtag.dk"
+               ]
+            ],
+            [
+               [
+                  "Benjamin Bach",
+                  "benjaoming@gmail.com"
+               ],
+               [
+                  "benjaoming",
+                  "benjaoming@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Christian Duvholt",
+               "christian@duvholt.net"
+            ],
+            [
+               "Christian Duvholt",
+               "cxhristian@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Christian Duvholt",
+                  "christian@duvholt.net"
+               ]
+            ],
+            [
+               [
+                  "Christian Duvholt",
+                  "cxhristian@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Olivia K",
+               "inflrscns@users.noreply.github.com"
+            ],
+            [
+               "Olivia K",
+               "reedk865@gmail.com"
+            ],
+            [
+               "Olivia K.",
+               "inflrscns@users.noreply.github.com"
+            ],
+            [
+               "inflrscns",
+               "inflrscns@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Olivia K",
+                  "inflrscns@users.noreply.github.com"
+               ],
+               [
+                  "Olivia K.",
+                  "inflrscns@users.noreply.github.com"
+               ],
+               [
+                  "inflrscns",
+                  "inflrscns@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Olivia K",
+                  "reedk865@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Russell Jones",
+               "Russell-Jones@github.com"
+            ],
+            [
+               "Russell Jones",
+               "russell.jones@gmail.com"
+            ],
+            [
+               "Russell Jones",
+               "russell@yellow.(none)"
+            ],
+            [
+               "Russell-Jones",
+               "Russell-Jones@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Russell Jones",
+                  "Russell-Jones@github.com"
+               ]
+            ],
+            [
+               [
+                  "Russell Jones",
+                  "russell.jones@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Russell Jones",
+                  "russell@yellow.(none)"
+               ]
+            ],
+            [
+               [
+                  "Russell-Jones",
+                  "Russell-Jones@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Thomas Guettler",
+               "info.git@thomas-guettler.de"
+            ],
+            [
+               "Thomas Güttler",
+               "guettliml.github@thomas-guettler.de"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Thomas Guettler",
+                  "info.git@thomas-guettler.de"
+               ]
+            ],
+            [
+               [
+                  "Thomas Güttler",
+                  "guettliml.github@thomas-guettler.de"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.925373134328358,
+   "true_positives" : 62,
+   "wrongly_merged" : []
+}

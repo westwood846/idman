@@ -1,0 +1,1365 @@
+{
+   "false_negatives" : 42,
+   "false_positives" : 0,
+   "fmeasure" : 0.945454545454545,
+   "not_merged" : [
+      {
+         "expected" : [
+            [
+               "Andreas Oehlke",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "Andreas",
+               "andgeno@googlemail.com"
+            ],
+            [
+               "andgeno@googlemail.com",
+               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Andreas Oehlke",
+                  "andgeno@googlemail.com"
+               ],
+               [
+                  "Andreas",
+                  "andgeno@googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "andgeno@googlemail.com",
+                  "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Ariel Coppes",
+               "ariel.coppes@gemserk.com"
+            ],
+            [
+               "ariel.coppes@gmail.com",
+               "ariel.coppes@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Ariel Coppes",
+                  "ariel.coppes@gemserk.com"
+               ]
+            ],
+            [
+               [
+                  "ariel.coppes@gmail.com",
+                  "ariel.coppes@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "AurelienRibon",
+               "aurelien.ribon@gmail.com"
+            ],
+            [
+               "aurelien.ribon",
+               "aurelien.ribon@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "aurelien.ribon@gmail.com",
+               "aurelien.ribon@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "AurelienRibon",
+                  "aurelien.ribon@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "aurelien.ribon",
+                  "aurelien.ribon@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "aurelien.ribon@gmail.com",
+                  "aurelien.ribon@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Bartol Karuza",
+               "bartol.k@gmail.com"
+            ],
+            [
+               "Bartol Karuza",
+               "bartol.karuza@klm.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Bartol Karuza",
+                  "bartol.k@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Bartol Karuza",
+                  "bartol.karuza@klm.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Christoph Aschwanden",
+               "chris@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "contact@noblemaster.com"
+            ],
+            [
+               "Christoph Aschwanden",
+               "noblemaster@live.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Christoph Aschwanden",
+                  "chris@noblemaster.com"
+               ]
+            ],
+            [
+               [
+                  "Christoph Aschwanden",
+                  "contact@noblemaster.com"
+               ]
+            ],
+            [
+               [
+                  "Christoph Aschwanden",
+                  "noblemaster@live.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Daniel Holderbaum",
+               "danielholderbaum@gmail.com"
+            ],
+            [
+               "Daniel Holderbaum",
+               "nooone@users.noreply.github.com"
+            ],
+            [
+               "nooone",
+               "nooone@users.noreply.github.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Daniel Holderbaum",
+                  "danielholderbaum@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Daniel Holderbaum",
+                  "nooone@users.noreply.github.com"
+               ],
+               [
+                  "nooone",
+                  "nooone@users.noreply.github.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "David Park",
+               "bornskilled200@gmail.com"
+            ],
+            [
+               "David Park",
+               "davidpark4393@gmail.com"
+            ],
+            [
+               "bornskilled200",
+               "bornskilled200@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "David Park",
+                  "bornskilled200@gmail.com"
+               ],
+               [
+                  "bornskilled200",
+                  "bornskilled200@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "David Park",
+                  "davidpark4393@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Franck Wolff",
+               "frawolff@gmail.com"
+            ],
+            [
+               "fwolff",
+               "fwolff@graniteds.org"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Franck Wolff",
+                  "frawolff@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "fwolff",
+                  "fwolff@graniteds.org"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Guillaume Alvarez",
+               "guillaume-alvarez@users.noreply.github.com"
+            ],
+            [
+               "galvarez",
+               "guillaume.alvarez@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Guillaume Alvarez",
+                  "guillaume-alvarez@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "galvarez",
+                  "guillaume.alvarez@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Guillermo Andrades",
+               "guillermo.andrades@cremagames.com"
+            ],
+            [
+               "Guillermo Andrades",
+               "lokoyaw@gmail.com"
+            ],
+            [
+               "lokoyaw",
+               "lokoyaw@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Guillermo Andrades",
+                  "guillermo.andrades@cremagames.com"
+               ]
+            ],
+            [
+               [
+                  "Guillermo Andrades",
+                  "lokoyaw@gmail.com"
+               ],
+               [
+                  "lokoyaw",
+                  "lokoyaw@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "IndiumIndeed",
+               "indiumindeed@gmail.com"
+            ],
+            [
+               "IndiumIndeed",
+               "indiumineed@gmail.com"
+            ],
+            [
+               "IndiumIndeed",
+               "jarmo.kukkola@gmail.com"
+            ],
+            [
+               "indiumindeed",
+               "indiumindeed@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "IndiumIndeed",
+                  "indiumindeed@gmail.com"
+               ],
+               [
+                  "indiumindeed",
+                  "indiumindeed@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "IndiumIndeed",
+                  "indiumineed@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "IndiumIndeed",
+                  "jarmo.kukkola@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Ivan Perevezentsev",
+               "ivan.perevezentsev@gmail.com"
+            ],
+            [
+               "Ivan Perevezentsev",
+               "needhash@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Ivan Perevezentsev",
+                  "ivan.perevezentsev@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Ivan Perevezentsev",
+                  "needhash@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "James Pilfold",
+               "jamespilfold@gmail.com"
+            ],
+            [
+               "James Pilfold",
+               "jamespilfold@googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "James Pilfold",
+                  "jamespilfold@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "James Pilfold",
+                  "jamespilfold@googlemail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Johan Lövdahl",
+               "johan.lovdahl@gmail.com"
+            ],
+            [
+               "Johan Lövdahl",
+               "johan.lovdahl@uxvibe.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Johan Lövdahl",
+                  "johan.lovdahl@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Johan Lövdahl",
+                  "johan.lovdahl@uxvibe.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "John",
+               "nobody.known21@gmail.com"
+            ],
+            [
+               "Unkn0wn0ne",
+               "Unkn0wn0ne"
+            ],
+            [
+               "Unkn0wn0ne",
+               "nobody.known21@gmail.com"
+            ],
+            [
+               "Unkn0wn0ne",
+               "thejca2323@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "John",
+                  "nobody.known21@gmail.com"
+               ],
+               [
+                  "Unkn0wn0ne",
+                  "nobody.known21@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Unkn0wn0ne",
+                  "Unkn0wn0ne"
+               ]
+            ],
+            [
+               [
+                  "Unkn0wn0ne",
+                  "thejca2323@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Justin Shapcott",
+               "justin@mobidevelop.com"
+            ],
+            [
+               "Justin Shapcott",
+               "support@mobidevelop.com"
+            ],
+            [
+               "MobiDevelop",
+               "support@mobidevelop.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Justin Shapcott",
+                  "justin@mobidevelop.com"
+               ]
+            ],
+            [
+               [
+                  "Justin Shapcott",
+                  "support@mobidevelop.com"
+               ],
+               [
+                  "MobiDevelop",
+                  "support@mobidevelop.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Kjetil Mehl",
+               "aspic@mehl.no"
+            ],
+            [
+               "Kjetil Mehl",
+               "aspic@stalfos.samfundet.no"
+            ],
+            [
+               "aspic",
+               "kjetil861@gmail.com"
+            ],
+            [
+               "kjetil861@gmail.com",
+               "kjetil861@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Kjetil Mehl",
+                  "aspic@mehl.no"
+               ]
+            ],
+            [
+               [
+                  "Kjetil Mehl",
+                  "aspic@stalfos.samfundet.no"
+               ]
+            ],
+            [
+               [
+                  "aspic",
+                  "kjetil861@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "kjetil861@gmail.com",
+                  "kjetil861@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "MJ",
+               "czyzby@users.noreply.github.com"
+            ],
+            [
+               "MJ",
+               "john.hervicc@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "MJ",
+                  "czyzby@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "MJ",
+                  "john.hervicc@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Mario Zechner",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm1.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogic@hadoop-vm2.(none)"
+            ],
+            [
+               "badlogic",
+               "badlogicgames@gmail.com"
+            ],
+            [
+               "badlogic",
+               "contact@badlogicgames.com"
+            ],
+            [
+               "badlogicgames",
+               "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "badlogicgames@gmail.com",
+               "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "mzechner-textsense",
+               "mzechner@know-center.at"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Mario Zechner",
+                  "contact@badlogicgames.com"
+               ],
+               [
+                  "badlogic",
+                  "contact@badlogicgames.com"
+               ]
+            ],
+            [
+               [
+                  "badlogic",
+                  "badlogic@hadoop-vm1.(none)"
+               ]
+            ],
+            [
+               [
+                  "badlogic",
+                  "badlogic@hadoop-vm2.(none)"
+               ]
+            ],
+            [
+               [
+                  "badlogic",
+                  "badlogicgames@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "badlogicgames",
+                  "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "badlogicgames@gmail.com",
+                  "badlogicgames@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "mzechner-textsense",
+                  "mzechner@know-center.at"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nathan Sweet",
+               "nathan.sweet@gmail.com"
+            ],
+            [
+               "NathanSweet",
+               "misc@n4te.com"
+            ],
+            [
+               "NathanSweet",
+               "nathan.sweet@gmail.com"
+            ],
+            [
+               "nathan.sweet",
+               "nathan.sweet@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nathan Sweet",
+                  "nathan.sweet@gmail.com"
+               ],
+               [
+                  "NathanSweet",
+                  "nathan.sweet@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "NathanSweet",
+                  "misc@n4te.com"
+               ]
+            ],
+            [
+               [
+                  "nathan.sweet",
+                  "nathan.sweet@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Nicolas Fantone",
+               "nfantone@contentamobile.com"
+            ],
+            [
+               "nfantone",
+               "nfantone@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Nicolas Fantone",
+                  "nfantone@contentamobile.com"
+               ]
+            ],
+            [
+               [
+                  "nfantone",
+                  "nfantone@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Oscar Bigu",
+               "oscarbigu@gmail.com"
+            ],
+            [
+               "Oscar Bigu",
+               "riftergames@gmail.com"
+            ],
+            [
+               "oscarbigu",
+               "oscarbigu@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Oscar Bigu",
+                  "oscarbigu@gmail.com"
+               ],
+               [
+                  "oscarbigu",
+                  "oscarbigu@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Oscar Bigu",
+                  "riftergames@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Richard Martin",
+               "Zomby2D@users.noreply.github.com"
+            ],
+            [
+               "Richard Martin",
+               "zomby@cablevision.qc.ca"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Richard Martin",
+                  "Zomby2D@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "Richard Martin",
+                  "zomby@cablevision.qc.ca"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Richard Taylor",
+               "richard.taylor@mirpartners.com"
+            ],
+            [
+               "Richard Taylor",
+               "rtaylor205@googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Richard Taylor",
+                  "richard.taylor@mirpartners.com"
+               ]
+            ],
+            [
+               [
+                  "Richard Taylor",
+                  "rtaylor205@googlemail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Robert Massaioli",
+               "rmassaioli@atlassian.com"
+            ],
+            [
+               "Robert Massaioli",
+               "robertmassaioli@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Robert Massaioli",
+                  "rmassaioli@atlassian.com"
+               ]
+            ],
+            [
+               [
+                  "Robert Massaioli",
+                  "robertmassaioli@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Robin S",
+               "serverkorken@gmail.com"
+            ],
+            [
+               "Robin S",
+               "serverkorken@googlemail.com"
+            ],
+            [
+               "Robin Stumm",
+               "dermetfan@users.noreply.github.com"
+            ],
+            [
+               "dermetfan",
+               "dermetfan@dermetfan"
+            ],
+            [
+               "dermetfan",
+               "serverkorken@googlemail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Robin S",
+                  "serverkorken@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "Robin S",
+                  "serverkorken@googlemail.com"
+               ],
+               [
+                  "dermetfan",
+                  "serverkorken@googlemail.com"
+               ]
+            ],
+            [
+               [
+                  "Robin Stumm",
+                  "dermetfan@users.noreply.github.com"
+               ]
+            ],
+            [
+               [
+                  "dermetfan",
+                  "dermetfan@dermetfan"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Seraphim",
+               "seraphim6x7@gmail.com"
+            ],
+            [
+               "seraphim6x7@gmail.com",
+               "seraphim6x7@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Seraphim",
+                  "seraphim6x7@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "seraphim6x7@gmail.com",
+                  "seraphim6x7@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Stefan Bachmann",
+               "st.lebach@gmail.com"
+            ],
+            [
+               "st.lebach@gmail.com",
+               "st.lebach@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Stefan Bachmann",
+                  "st.lebach@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "st.lebach@gmail.com",
+                  "st.lebach@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Talin",
+               "talin@Ateva.(none)"
+            ],
+            [
+               "Talin",
+               "viridia@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Talin",
+                  "talin@Ateva.(none)"
+               ]
+            ],
+            [
+               [
+                  "Talin",
+                  "viridia@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "TamasJano@gmail.com",
+               "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "tamasjano@gmail.com",
+               "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "TamasJano@gmail.com",
+                  "TamasJano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "tamasjano@gmail.com",
+                  "tamasjano@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "TheInventionist",
+               "Gregan@TheInventionist.com"
+            ],
+            [
+               "U-InventionistPC\\TheInventionist",
+               "TheInventionist@InventionistPC.(none)"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "TheInventionist",
+                  "Gregan@TheInventionist.com"
+               ]
+            ],
+            [
+               [
+                  "U-InventionistPC\\TheInventionist",
+                  "TheInventionist@InventionistPC.(none)"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Thomas Pronold",
+               "mail@tomgrill.de"
+            ],
+            [
+               "Thomas Pronold",
+               "tp@tpronold.de"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Thomas Pronold",
+                  "mail@tomgrill.de"
+               ]
+            ],
+            [
+               [
+                  "Thomas Pronold",
+                  "tp@tpronold.de"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Thorsten Schleinzer",
+               "git@schleinzer.com"
+            ],
+            [
+               "Thorsten Schleinzer",
+               "github@schleinzer.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Thorsten Schleinzer",
+                  "git@schleinzer.com"
+               ]
+            ],
+            [
+               [
+                  "Thorsten Schleinzer",
+                  "github@schleinzer.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Tom Wojciechowski",
+               "tomwojciechowski@asidik.com"
+            ],
+            [
+               "Tom-Ski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "TomSki",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomaszwojciechowski@hotmail.co.uk"
+            ],
+            [
+               "Tomski",
+               "tomcom103@hotmail.com"
+            ],
+            [
+               "Tomski",
+               "tomwojciechowski@asidik.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Tom Wojciechowski",
+                  "tomwojciechowski@asidik.com"
+               ],
+               [
+                  "Tomski",
+                  "tomwojciechowski@asidik.com"
+               ]
+            ],
+            [
+               [
+                  "Tom-Ski",
+                  "tomaszwojciechowski@hotmail.co.uk"
+               ],
+               [
+                  "TomSki",
+                  "tomaszwojciechowski@hotmail.co.uk"
+               ],
+               [
+                  "Tomski",
+                  "tomaszwojciechowski@hotmail.co.uk"
+               ]
+            ],
+            [
+               [
+                  "Tomski",
+                  "tomcom103@hotmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Van Lim",
+               "van.lim@cyscorpions.com"
+            ],
+            [
+               "Van Lim",
+               "van.lim@klab.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Van Lim",
+                  "van.lim@cyscorpions.com"
+               ]
+            ],
+            [
+               [
+                  "Van Lim",
+                  "van.lim@klab.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Vincent Bousquet",
+               "vbousquet@free.fr"
+            ],
+            [
+               "Vincent Bousquet",
+               "vcbousquet@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Vincent Bousquet",
+                  "vbousquet@free.fr"
+               ]
+            ],
+            [
+               [
+                  "Vincent Bousquet",
+                  "vcbousquet@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "Xoppa",
+               "contact@xoppa.com"
+            ],
+            [
+               "Xoppa",
+               "contact@xoppa.nl"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "Xoppa",
+                  "contact@xoppa.com"
+               ]
+            ],
+            [
+               [
+                  "Xoppa",
+                  "contact@xoppa.nl"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "cjuillard",
+               "colin.juillard@gmail.com"
+            ],
+            [
+               "colinjuillard",
+               "colinjuillard@perblue.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "cjuillard",
+                  "colin.juillard@gmail.com"
+               ]
+            ],
+            [
+               [
+                  "colinjuillard",
+                  "colinjuillard@perblue.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "davedx",
+               "davedx@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "davedx@gmail.com",
+               "davedx@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "davedx",
+                  "davedx@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "davedx@gmail.com",
+                  "davedx@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "dfraska",
+               "dfraska@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "dfraska@gmail.com",
+               "dfraska@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "dfraska",
+                  "dfraska@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "dfraska@gmail.com",
+                  "dfraska@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "moly",
+               "0700689@live.abertay.ac.uk"
+            ],
+            [
+               "moly",
+               "tsweston@gmail.com"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "moly",
+                  "0700689@live.abertay.ac.uk"
+               ]
+            ],
+            [
+               [
+                  "moly",
+                  "tsweston@gmail.com"
+               ]
+            ]
+         ]
+      },
+      {
+         "expected" : [
+            [
+               "zortness",
+               "zortness@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ],
+            [
+               "zortness@gmail.com",
+               "zortness@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+            ]
+         ],
+         "got" : [
+            [
+               [
+                  "zortness",
+                  "zortness@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ],
+            [
+               [
+                  "zortness@gmail.com",
+                  "zortness@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
+               ]
+            ]
+         ]
+      }
+   ],
+   "precision" : 1,
+   "recall" : 0.896551724137931,
+   "true_positives" : 364,
+   "wrongly_merged" : []
+}
