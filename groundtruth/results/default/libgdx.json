@@ -1,42 +1,8 @@
 {
-   "false_negatives" : 11,
+   "false_negatives" : 8,
    "false_positives" : 2,
-   "fmeasure" : 0.983729662077597,
+   "fmeasure" : 0.987531172069825,
    "not_merged" : [
-      {
-         "expected" : [
-            [
-               "Andreas Oehlke",
-               "andgeno@googlemail.com"
-            ],
-            [
-               "Andreas",
-               "andgeno@googlemail.com"
-            ],
-            [
-               "andgeno@googlemail.com",
-               "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Andreas Oehlke",
-                  "andgeno@googlemail.com"
-               ],
-               [
-                  "Andreas",
-                  "andgeno@googlemail.com"
-               ]
-            ],
-            [
-               [
-                  "andgeno@googlemail.com",
-                  "andgeno@googlemail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
       {
          "expected" : [
             [
@@ -123,9 +89,7 @@
                [
                   "aspic",
                   "kjetil861@gmail.com"
-               ]
-            ],
-            [
+               ],
                [
                   "kjetil861@gmail.com",
                   "kjetil861@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
@@ -189,9 +153,7 @@
                [
                   "badlogic",
                   "contact@badlogicgames.com"
-               ]
-            ],
-            [
+               ],
                [
                   "badlogicgames",
                   "badlogicgames@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
@@ -288,58 +250,6 @@
       {
          "expected" : [
             [
-               "Seraphim",
-               "seraphim6x7@gmail.com"
-            ],
-            [
-               "seraphim6x7@gmail.com",
-               "seraphim6x7@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Seraphim",
-                  "seraphim6x7@gmail.com"
-               ]
-            ],
-            [
-               [
-                  "seraphim6x7@gmail.com",
-                  "seraphim6x7@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
-               "Stefan Bachmann",
-               "st.lebach@gmail.com"
-            ],
-            [
-               "st.lebach@gmail.com",
-               "st.lebach@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-            ]
-         ],
-         "got" : [
-            [
-               [
-                  "Stefan Bachmann",
-                  "st.lebach@gmail.com"
-               ]
-            ],
-            [
-               [
-                  "st.lebach@gmail.com",
-                  "st.lebach@gmail.com@6c4fd544-2939-11df-bb46-9574ba5d0bfa"
-               ]
-            ]
-         ]
-      },
-      {
-         "expected" : [
-            [
                "TheInventionist",
                "Gregan@TheInventionist.com"
             ],
@@ -390,9 +300,9 @@
          ]
       }
    ],
-   "precision" : 0.994936708860759,
-   "recall" : 0.972772277227723,
-   "true_positives" : 393,
+   "precision" : 0.994974874371859,
+   "recall" : 0.98019801980198,
+   "true_positives" : 396,
    "wrongly_merged" : [
       {
          "expected" : [

@@ -7,9 +7,10 @@ use Unicode::Normalize qw(NFKC);
 
 sub preprocess {
     my ($name, $mail) = map { fc NFKC($_) } @_[1, 2];
-    $name =~ s/\@.*//;         # strip e-mail suffix
-    $name =~ s/\pP|\s//g;      # strip punctuation and whitespace
-    $mail =~ s/\.?\(none\)$//; # strip random .(none) from the end
+    $name =~ s/\@.*//;                  # strip e-mail suffix
+    $name =~ s/\pP|\s//g;               # strip punctuation and whitespace
+    $mail =~ s/\.?\(none\)$//;          # strip random .(none) from the end
+    $mail =~ s/^([^@]*@[^@]*)\@.*$/$1/; # strip second e-mail suffix
     return [$name, $mail];
 }
 
@@ -42,6 +43,10 @@ All punctuation is stripped from names.
 =item
 
 Random C<.(none)> at the end of e-mail addresses is stripped.
+
+=item
+
+Duplicate e-mail suffixes are stripped after the second C<@>.
 
 =back
 
