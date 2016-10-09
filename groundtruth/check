@@ -143,6 +143,7 @@ sub compare {
     my $recall = $tp / ($tp + $fn);
 
     return {
+        identitites     => scalar @$got,
         true_positives  => $tp,
         false_positives => $fp,
         false_negatives => $fn,
