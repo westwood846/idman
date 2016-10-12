@@ -2,6 +2,7 @@
    "false_negatives" : 66,
    "false_positives" : 1,
    "fmeasure" : 0.955599734923791,
+   "identitites" : 869,
    "not_merged" : [
       {
          "expected" : [

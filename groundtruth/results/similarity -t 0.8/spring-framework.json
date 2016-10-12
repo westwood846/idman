@@ -2,6 +2,7 @@
    "false_negatives" : 0,
    "false_positives" : 7,
    "fmeasure" : 0.981432360742706,
+   "identitites" : 188,
    "not_merged" : [],
    "precision" : 0.963541666666667,
    "recall" : 1,
